@@ -1,0 +1,775 @@
+<div class="container">
+
+    <div class="row">
+        <!-- 
+        <div class="col-md-3">
+
+            <div class="vcard">
+
+                <a href="#settings" aria-label="Change your settings" class="vcard-avatar">
+
+                    <img src="/static/img/heads/username.jpg" class="img-responsive" alt="Your image">
+
+                </a>
+
+                <h1 class="vcard-names">
+                    <span class="vcard-fullname" itemprop="name">Jean Chassoul</span>
+                    <span class="vcard-username" itemprop="additionalName">jchassoul</span>
+                </h1>
+
+                <ul class="vcard-details list-unstyled">
+                    <li>
+                        <i class="fa fa-money fa-fw"></i>
+                        $1500
+                    </li>
+                    <li>
+                        <i class="fa fa-users fa-fw"></i>
+                        code machine
+                    </li>
+                    <li>
+                        <i class="fa fa-map-marker fa-fw"></i>
+                        Costa Rica
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope-o fa-fw"></i>
+                        <a class="email" href="mailto:cebus@iofun.io">jchassoul@codemachine.io</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-link fa-fw"></i>
+                        <a href="http://codemachine.io" class="url" rel="nofollow me">http://codemachine.io</a>
+                    </li>
+                   <li>
+                       <i class="fa fa-clock-o fa-fw"></i>
+                        <span class="join-label">Joined on </span>
+                        <span class="join-date">Jun 24, 2011</span>
+                   </li>
+                </ul>
+
+                <div class="vcard-stats">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a class="vcard-stat">
+                                <strong class="vcard-stat-count">0</strong>
+                                <span class="text-muted"><%= translate("win") %></span>
+                            </a>
+                            <a class="vcard-stat">
+                                <strong class="vcard-stat-count">0</strong>
+                                <span class="text-muted"><%= translate("loss") %></span>
+                            </a>
+                            <a class="vcard-stat">
+                                <strong class="vcard-stat-count">0</strong>
+                                <span class="text-muted"><%= translate("tie") %></span>
+                            </a>
+                        </div>
+                    </div>
+        
+                </div>
+
+            </div>
+
+        </div>
+
+ -->
+        <div class="col-md-12">
+            <div class="row">
+
+                 <ul class="nav nav-tabs">
+                    <li class="active"><a href="#currency-contributions-tab" data-toggle="tab"><i class="fa fa-stop fa-fw"></i> </a></li>
+                    <li><a href="#currency-three-tab" data-toggle="tab"><i class="fa fa-list-ol fa-fw"></i> </a></li>
+                    <li><a href="#currency-events-tab" data-toggle="tab"><i class="fa fa-align-justify fa-fw"></i> </a></li>
+                    <!-- <li><a href="#currency-contacts-tab" data-toggle="tab"><i class="fa fa-th fa-fw"></i> </a></li>  -->
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="currency-contributions-tab" class="tab-pane active">
+
+                        <div class="row">
+                            <section class="content">
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-2 dropdows-part">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1" name="exampleInputEmail1">Asset</label>
+                                                        <select class="form-control">
+                                                            <option value="0">AUD/CHF</option>}
+                                                            <option value="1">AUD/JPY</option>
+                                                            <option value="2">AUD/NZD</option>
+                                                            <option value="3">AUD/USD</option>
+                                                            <option value="4">CAD/JPY</option>
+                                                            <option value="5">EUR/AUD</option>
+                                                            <option value="6">EUR/CAD</option>
+                                                            <option value="7">EUR/GBP</option>
+                                                            <option value="8">EUR/JPY</option>
+                                                            <option value="9">EUR/USD</option>
+                                                            <option value="10">EUR/INR</option>
+                                                            <option value="11">EUR/CNY</option>
+                                                            <option value="12">EUR/ZAR</option>
+                                                            <option value="13">EUR/MXN</option>
+                                                            <option value="14">EUR/AED</option>
+                                                            <option value="15">EUR/RUB</option>
+                                                            <option value="16">GBP/CHF</option>
+                                                            <option value="17">NZD/USD</option>
+                                                            <option value="18">USD/CAD</option>
+                                                            <option value="19">USD/CHF</option>
+                                                            <option value="20">USD/JPY</option>
+                                                            <option value="21">USD/INR</option>
+                                                            <option value="22">USD/CNY</option>
+                                                            <option value="23">USD/ZAR</option>
+                                                            <option value="24">USD/MXN</option>
+                                                            <option value="25">USD/AED</option>
+                                                            <option value="26">USD/RUB</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Expiry</label>
+                                                        <select class="form-control" name="exampleInputEmail2">
+                                                            <option value="0">5</option>}
+                                                            <option value="1">10</option>
+                                                            <option value="2">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="4">30</option>
+                                                            <option value="5">1:00</option>
+                                                            <option value="6">2:00</option>
+                                                            <option value="7">2:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Amount</label>
+                                                        <input class="form-control" type="text"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                        <div class="row text-center top-buttons-row">
+                                            <button type="button" class="btn btn">30m</button>
+                                            <button type="button" class="btn btn">1h</button>
+                                            <button type="button" class="btn btn">2h</button>
+                                            <button type="button" class="btn btn">4h</button>
+                                            <button type="button" class="btn btn">6h</button>
+                                            <button type="button" class="btn btn">12h</button>
+                                        </div>
+                                        <!-- interactive chart -->
+                                        <div class="box box-primary" style="border-bottom: 3px solid #848180;" >
+                                            <div class="box-body">
+                                                <div id="interactive_0" style="height: 200px;"></div>
+                                            </div><!-- /.box-body-->
+                                        </div><!-- /.box -->
+                                    </div><!-- /.col -->
+                                    <div class="col-xs-2">
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #587d38;">CALL</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" disabled="disabled" class="center-buttons center-button-disabled">95.975</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #a11e21;">PUT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 info-col">
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Potential Payout</h4>
+                                                <p>$45.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h1>60%</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Protected Amount</h4>
+                                                <p>$0.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.row -->
+                            </section><!-- /.content -->    
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                        
+                            <div class="bs-example pull-right">
+
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><i class="fa fa-history fa-fw"></i> <span data-label-placement=""><%= translate("oneWeek") %></span> <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <input type="radio" id="act_1" name="act" value="1">
+                                            <label for="act_1"><%= translate("oneDay") %></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="act_2" name="act" value="2">
+                                            <label for="act_2"><%= translate("threeDays") %></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="act_3" name="act" value="3" checked="">
+                                            <label for="act_3"><%= translate("oneWeek") %></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="act_4" name="act" value="4">
+                                            <label for="act_4"><%= translate("oneMonth") %></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                    
+                            </div>
+                            <h4><%= translate("tradeActivity") %></h4>
+
+                            </div>
+                        </div>
+
+                        <div class="blankslate">
+                            <h4><%= translate("userNoActivityThisPeriod") %>.</h4>
+                        </div> 
+
+
+                    </div>
+
+
+                    <div id="currency-three-tab" class="tab-pane">
+
+                        <div class="row">
+                            <section class="content">
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-2 dropdows-part">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1" name="exampleInputEmail1">Asset</label>
+                                                        <select class="form-control">
+                                                            <option value="0">AUD/CHF</option>}
+                                                            <option value="1">AUD/JPY</option>
+                                                            <option value="2">AUD/NZD</option>
+                                                            <option value="3">AUD/USD</option>
+                                                            <option value="4">CAD/JPY</option>
+                                                            <option value="5">EUR/AUD</option>
+                                                            <option value="6">EUR/CAD</option>
+                                                            <option value="7">EUR/GBP</option>
+                                                            <option value="8">EUR/JPY</option>
+                                                            <option value="9">EUR/USD</option>
+                                                            <option value="10">EUR/INR</option>
+                                                            <option value="11">EUR/CNY</option>
+                                                            <option value="12">EUR/ZAR</option>
+                                                            <option value="13">EUR/MXN</option>
+                                                            <option value="14">EUR/AED</option>
+                                                            <option value="15">EUR/RUB</option>
+                                                            <option value="16">GBP/CHF</option>
+                                                            <option value="17">NZD/USD</option>
+                                                            <option value="18">USD/CAD</option>
+                                                            <option value="19">USD/CHF</option>
+                                                            <option value="20">USD/JPY</option>
+                                                            <option value="21">USD/INR</option>
+                                                            <option value="22">USD/CNY</option>
+                                                            <option value="23">USD/ZAR</option>
+                                                            <option value="24">USD/MXN</option>
+                                                            <option value="25">USD/AED</option>
+                                                            <option value="26">USD/RUB</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Expiry</label>
+                                                        <select class="form-control" name="exampleInputEmail2">
+                                                            <option value="0">5</option>}
+                                                            <option value="1">10</option>
+                                                            <option value="2">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="4">30</option>
+                                                            <option value="5">1:00</option>
+                                                            <option value="6">2:00</option>
+                                                            <option value="7">2:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Amount</label>
+                                                        <input class="form-control" type="text"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                        <div class="row text-center top-buttons-row">
+                                            <button type="button" class="btn btn">30m</button>
+                                            <button type="button" class="btn btn">1h</button>
+                                            <button type="button" class="btn btn">2h</button>
+                                            <button type="button" class="btn btn">4h</button>
+                                            <button type="button" class="btn btn">6h</button>
+                                            <button type="button" class="btn btn">12h</button>
+                                        </div>
+                                        <!-- interactive chart -->
+                                        <div class="box box-primary" style="border-bottom: 3px solid #848180;" >
+                                            <div class="box-body">
+                                                <div id="interactive_0" style="height: 200px;"></div>
+                                            </div><!-- /.box-body-->
+                                        </div><!-- /.box -->
+                                    </div><!-- /.col -->
+                                    <div class="col-xs-2">
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #587d38;">CALL</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" disabled="disabled" class="center-buttons center-button-disabled">95.975</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #a11e21;">PUT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 info-col">
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Potential Payout</h4>
+                                                <p>$45.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h1>60%</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Protected Amount</h4>
+                                                <p>$0.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.row -->
+                            </section><!-- /.content -->    
+
+                        </div>
+
+                        <div class="row">
+                            <section class="content">
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-2 dropdows-part">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1" name="exampleInputEmail1">Asset</label>
+                                                        <select class="form-control">
+                                                            <option value="0">AUD/CHF</option>}
+                                                            <option value="1">AUD/JPY</option>
+                                                            <option value="2">AUD/NZD</option>
+                                                            <option value="3">AUD/USD</option>
+                                                            <option value="4">CAD/JPY</option>
+                                                            <option value="5">EUR/AUD</option>
+                                                            <option value="6">EUR/CAD</option>
+                                                            <option value="7">EUR/GBP</option>
+                                                            <option value="8">EUR/JPY</option>
+                                                            <option value="9">EUR/USD</option>
+                                                            <option value="10">EUR/INR</option>
+                                                            <option value="11">EUR/CNY</option>
+                                                            <option value="12">EUR/ZAR</option>
+                                                            <option value="13">EUR/MXN</option>
+                                                            <option value="14">EUR/AED</option>
+                                                            <option value="15">EUR/RUB</option>
+                                                            <option value="16">GBP/CHF</option>
+                                                            <option value="17">NZD/USD</option>
+                                                            <option value="18">USD/CAD</option>
+                                                            <option value="19">USD/CHF</option>
+                                                            <option value="20">USD/JPY</option>
+                                                            <option value="21">USD/INR</option>
+                                                            <option value="22">USD/CNY</option>
+                                                            <option value="23">USD/ZAR</option>
+                                                            <option value="24">USD/MXN</option>
+                                                            <option value="25">USD/AED</option>
+                                                            <option value="26">USD/RUB</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Expiry</label>
+                                                        <select class="form-control" name="exampleInputEmail2">
+                                                            <option value="0">5</option>}
+                                                            <option value="1">10</option>
+                                                            <option value="2">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="4">30</option>
+                                                            <option value="5">1:00</option>
+                                                            <option value="6">2:00</option>
+                                                            <option value="7">2:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Amount</label>
+                                                        <input class="form-control" type="text"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                        <div class="row text-center top-buttons-row">
+                                            <button type="button" class="btn btn">30m</button>
+                                            <button type="button" class="btn btn">1h</button>
+                                            <button type="button" class="btn btn">2h</button>
+                                            <button type="button" class="btn btn">4h</button>
+                                            <button type="button" class="btn btn">6h</button>
+                                            <button type="button" class="btn btn">12h</button>
+                                        </div>
+                                        <!-- interactive chart -->
+                                        <div class="box box-primary" style="border-bottom: 3px solid #848180;" >
+                                            <div class="box-body">
+                                                <div id="interactive_0" style="height: 200px;"></div>
+                                            </div><!-- /.box-body-->
+                                        </div><!-- /.box -->
+                                    </div><!-- /.col -->
+                                    <div class="col-xs-2">
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #587d38;">CALL</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" disabled="disabled" class="center-buttons center-button-disabled">95.975</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #a11e21;">PUT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 info-col">
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Potential Payout</h4>
+                                                <p>$45.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h1>60%</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Protected Amount</h4>
+                                                <p>$0.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.row -->
+                            </section><!-- /.content -->    
+
+                        </div>
+
+                        <div class="row">
+                            <section class="content">
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-2 dropdows-part">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1" name="exampleInputEmail1">Asset</label>
+                                                        <select class="form-control">
+                                                            <option value="0">AUD/CHF</option>}
+                                                            <option value="1">AUD/JPY</option>
+                                                            <option value="2">AUD/NZD</option>
+                                                            <option value="3">AUD/USD</option>
+                                                            <option value="4">CAD/JPY</option>
+                                                            <option value="5">EUR/AUD</option>
+                                                            <option value="6">EUR/CAD</option>
+                                                            <option value="7">EUR/GBP</option>
+                                                            <option value="8">EUR/JPY</option>
+                                                            <option value="9">EUR/USD</option>
+                                                            <option value="10">EUR/INR</option>
+                                                            <option value="11">EUR/CNY</option>
+                                                            <option value="12">EUR/ZAR</option>
+                                                            <option value="13">EUR/MXN</option>
+                                                            <option value="14">EUR/AED</option>
+                                                            <option value="15">EUR/RUB</option>
+                                                            <option value="16">GBP/CHF</option>
+                                                            <option value="17">NZD/USD</option>
+                                                            <option value="18">USD/CAD</option>
+                                                            <option value="19">USD/CHF</option>
+                                                            <option value="20">USD/JPY</option>
+                                                            <option value="21">USD/INR</option>
+                                                            <option value="22">USD/CNY</option>
+                                                            <option value="23">USD/ZAR</option>
+                                                            <option value="24">USD/MXN</option>
+                                                            <option value="25">USD/AED</option>
+                                                            <option value="26">USD/RUB</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Expiry</label>
+                                                        <select class="form-control" name="exampleInputEmail2">
+                                                            <option value="0">5</option>}
+                                                            <option value="1">10</option>
+                                                            <option value="2">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="4">30</option>
+                                                            <option value="5">1:00</option>
+                                                            <option value="6">2:00</option>
+                                                            <option value="7">2:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Amount</label>
+                                                        <input class="form-control" type="text"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                        <div class="row text-center top-buttons-row">
+                                            <button type="button" class="btn btn">30m</button>
+                                            <button type="button" class="btn btn">1h</button>
+                                            <button type="button" class="btn btn">2h</button>
+                                            <button type="button" class="btn btn">4h</button>
+                                            <button type="button" class="btn btn">6h</button>
+                                            <button type="button" class="btn btn">12h</button>
+                                        </div>
+                                        <!-- interactive chart -->
+                                        <div class="box box-primary" style="border-bottom: 3px solid #848180;" >
+                                            <div class="box-body">
+                                                <div id="interactive_0" style="height: 200px;"></div>
+                                            </div><!-- /.box-body-->
+                                        </div><!-- /.box -->
+                                    </div><!-- /.col -->
+                                    <div class="col-xs-2">
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #587d38;">CALL</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" disabled="disabled" class="center-buttons center-button-disabled">95.975</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #a11e21;">PUT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 info-col">
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Potential Payout</h4>
+                                                <p>$45.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h1>60%</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Protected Amount</h4>
+                                                <p>$0.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.row -->
+                            </section><!-- /.content -->    
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- <div id="currency-contacts-tab" class="tab-pane">
+
+                        
+                    </div> -->
+
+                    <div id="currency-events-tab" class="tab-pane">
+                        <table id="done-tasks-list" class="table">
+                            <thead>
+                                <tr>
+                                    <th><%= translate("asset") %></th>
+                                    <th><%= translate("expireTime") %></th>
+                                    <th><%= translate("investment") %></th>
+                                    <th><%= translate("potentialPayout") %></th>
+                                    <th><%= translate("put") %></th>
+                                    <th><%= translate("rate") %></th>
+                                    <th><%= translate("call") %></th>
+                                    <th><%= translate("chart") %></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+
+                    
+                        
+                </div><!-- /.tab-content -->
+
+
+            </div>
+        </div>
+
+    </div>
+</div>

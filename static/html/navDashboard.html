@@ -1,0 +1,52 @@
+<ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-money fa-fw"></i>
+            Budget
+        </a>
+        <ul class="dropdown-menu" style="background color: #;background: #232323;">
+            <li id="current-budget"><a href="#home">Balance $517</a></li>
+            <li><a href="#deposit">Deposit</a></li>
+            <li><a href="#withdraw">Withdraw</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#messages" title="<%= translate("Messages") %>">
+            <i class="fa fa-envelope fa-fw"></i>
+            <%= translate("Messages") %>
+        </a>
+    </li>
+    <li>
+        <a data-toggle="dropdown" class="dropdown-toggle">
+            <span data-label-placement=""><i class="fa fa-user fa-fw"></i> <%= account %></span>
+        </a>
+        <ul id="account-list-ul" class="dropdown-menu">
+            <li>
+                <input type="radio" id="current_account_0" name="current_account" value="0"><label for="current_account_0"><i class="fa fa-user fa-fw"></i><%= account %></label>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#reports" title="<%= translate("Reports") %>">
+                    <i class="fa fa-pie-chart fa-fw"></i>
+                    <%= translate("Reports") %>
+                </a>
+            </li>
+            <li>
+                <a href="#settings" title="<%= translate("Settings") %>">
+                    <i class="fa fa-cog fa-fw"></i>
+                    <%= translate("Settings") %>
+                </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <input type="radio" id="current_account_admin" name="current_account" value="admin"><label for="current_account_admin"><i class="fa fa-puzzle-piece fa-fw"></i> <%= translate("systemAdmin") %></label>
+            </li>
+        </ul>      
+    </li>
+    <li>
+        <a href="#logout" title="<%= translate("Exit") %>">
+            <i class="fa fa-sign-out fa-fw"></i> 
+            <%= translate("Exit") %>
+        </a>
+    </li>
+</ul>

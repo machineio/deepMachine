@@ -1,0 +1,73 @@
+.dropdows-part {
+    padding: 5px;
+    margin-top: 30px;
+}
+
+.top-buttons-row {
+    margin-bottom: 10px;
+}
+
+.top-buttons-row button {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.center-buttons {
+    padding: 33px 20px 20px 20px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-image: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    color: #eee;
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid #eeeeee;
+}
+
+.center-buttons-div {
+    padding: 0;
+}
+
+.center-button-disabled {
+    background: #848180 !important;
+    color: #eeeeee;
+    padding: 30px 5px;
+    font-size: 30px;
+}
+
+.right-info div {
+    height: 33%;
+    width: 100%;
+}
+
+.right-info div h4 {
+    margin-top: 12px;
+}
+
+.info-col {
+    padding: 12px;
+    background-color: #eee;
+    margin-left: 15px;
+    width: 15%;
+    text-align: center;
+    
+
+}
+
+.small-box h3 {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    padding: 0;
+
+}
+
+.small-box {
+    border-radius: 2px;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
