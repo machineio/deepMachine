@@ -254,7 +254,6 @@ fun.Router = Backbone.Router.extend({
     landing: function(){
         'use strict';
         fun.utils.hideAll();
-        fun.utils.showLanding();
         fun.instances.navbar.render();
         fun.instances.landing.render();
         fun.instances.extra.render();
@@ -275,7 +274,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var about = translate('about');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(about);
         fun.instances.about.render();
@@ -286,7 +284,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var binary = translate('binary');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(binary);
         fun.instances.binary.render();
@@ -297,7 +294,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var elite = translate('elite');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(elite);
         fun.instances.elite.render();
@@ -308,7 +304,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var expert = translate('expert');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(expert);
         fun.instances.expert.render();
@@ -319,7 +314,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var intermediate = translate('intermediate');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(intermediate);
         fun.instances.intermediate.render();
@@ -330,7 +324,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var beginner = translate('beginner');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(beginner);
         fun.instances.beginner.render();
@@ -341,7 +334,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var purchase = translate('purchase');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(purchase);
         fun.instances.purchase.render();
@@ -352,7 +344,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var redeem = translate('redeem');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(redeem);
         fun.instances.redeem.render();
@@ -363,7 +354,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var categorizer = translate('categorizer');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(categorizer);
         fun.instances.categorizer.render();
@@ -374,7 +364,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var risk = translate('marketRiskAnalyst');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(risk);
         fun.instances.risk.render();
@@ -383,9 +372,8 @@ fun.Router = Backbone.Router.extend({
 
     trader: function(){
         'use strict';
-        var trader = translate('trader');
+        var trader = translate('trader'); # aqui aqui aqui
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(trader);
         fun.instances.trader.render();
@@ -396,7 +384,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var education = translate('education');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(education);
         fun.instances.education.render();
@@ -586,7 +573,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var assets = translate('assets');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(assets);
         fun.instances.subheader.renderHeadNavProfile();
@@ -598,7 +584,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var currencies = translate('currencies');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(currencies);
         fun.instances.subheader.renderHeadNavProfile();
@@ -610,7 +595,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var stocks = translate('stocks');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(stocks);
         fun.instances.subheader.renderHeadNavProfile();
@@ -622,7 +606,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var deposit = translate('deposit');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(deposit);
         fun.instances.deposit.render();
@@ -633,7 +616,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var withdraw = translate('withdraw');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(withdraw);
         fun.instances.withdraw.render();
@@ -644,7 +626,6 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var contact = translate('contact');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.subheader.render(contact);
         fun.instances.contact.render();
@@ -854,7 +835,6 @@ fun.Router = Backbone.Router.extend({
             fun.utils.redirect(fun.conf.hash.profile);
         } else {
             fun.utils.hideAll();
-            fun.utils.hideLanding();
             fun.instances.navbar.render();
             fun.instances.subheader.render(login);
             fun.instances.login.render();
@@ -931,7 +911,6 @@ fun.Router = Backbone.Router.extend({
             dashboard = translate('dashboard');
 
             fun.utils.hideAll();
-            fun.utils.hideLanding();
             fun.instances.navbar.render();
 
             fun.instances.subheader.render(dashboard);
@@ -971,7 +950,6 @@ fun.Router = Backbone.Router.extend({
         var profile = translate('binaryOptions');
 
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.navbar.renderDropdown();
         fun.instances.subheader.render(profile);
@@ -986,7 +964,6 @@ fun.Router = Backbone.Router.extend({
         if(fun.utils.loggedIn()){
             var reports = translate('reports');
             fun.utils.hideAll();
-            fun.utils.hideLanding();
             fun.instances.navbar.render();
             fun.instances.navbar.renderDropdown();
             fun.instances.subheader.render(reports);
@@ -1005,7 +982,6 @@ fun.Router = Backbone.Router.extend({
         this.account = localStorage.getItem("username");
         var settings = translate('settings');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.navbar.renderDropdown();
         fun.instances.subheader.render(settings);
@@ -1027,7 +1003,6 @@ fun.Router = Backbone.Router.extend({
         };
 
         fun.utils.hideAll();
-        fun.utils.hideLanding();
 
         fun.utils.logout({
             success: function() {
