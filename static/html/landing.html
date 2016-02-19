@@ -61,15 +61,113 @@
 <div class="container marketing">
 
     <div class="row">
+        <div class="col-md-12">
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="col-xs-2 dropdows-part">
+                        <form>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        
+                                        <label for="landing_first_asset" name="landing_first_asset">Asset</label>
 
-        <div class="col-md-12 marketing-header">
-            <span class="fa-stack fa-4x">
-                <i class="fa fa-circle-thin fa-stack-2x"></i>
-                <i class="fa fa-dot-circle-o fa-stack-1x"></i>
-            </span>
+                                        <select id="landing_first_asset" class="form-control">
+                                            <option value="EUR_USD">EUR/USD</option>}
+                                            <option value="EUR_GBP">EUR/GBP</option>
+                                            <option value="EUR_AUD">EUR/AUD</option>
+                                            <option value="EUR_CAD">EUR/CAD</option>
+                                            <option value="EUR_JPY">EUR/JPY</option>
+                                            <option value="EUR_ZAR">EUR/ZAR</option>
+                                            <option value="EUR_CHF">EUR/CHF</option>
+                                            <option value="USD_CAD">USD/CAD</option>
+                                            <option value="USD_JPY">USD/JPY</option>
+                                            <option value="USD_INR">USD/INR</option>
+                                            <option value="USD_ZAR">USD/ZAR</option>
+                                            <option value="USD_MXN">USD/MXN</option>
+                                            <option value="USD_CHF">USD/CHF</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail2">Expiry</label>
+                                        <select class="form-control" name="exampleInputEmail2">
+                                            <option value="0">5</option>}
+                                            <option value="1">10</option>
+                                            <option value="2">15</option>
+                                            <option value="3">20</option>
+                                            <option value="4">30</option>
+                                            <option value="5">1:00</option>
+                                            <option value="6">2:00</option>
+                                            <option value="7">2:30</option>
+                                        </select>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail2">Amount</label>
+                                        <input class="form-control" type="text"></input>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-6">
 
-            <h2><%= translate("funDescription") %></h2>         
-            <h4>Behind the scenes as the combined network volume increases additional monkeys are automatically spawned to make sure there is always the capacity and resources you need.</h4>
+                        <div class="row text-center top-buttons-row">
+                            <button type="button" class="btn btn">30m</button>
+                            <button type="button" class="btn btn">1h</button>
+                            <button type="button" class="btn btn">2h</button>
+                            <button type="button" class="btn btn">6h</button>
+                            <button type="button" class="btn btn">12h</button>
+                        </div>
+
+                        <div id="machine-landing-chart" class="chart-codemachine"></div>
+                        <!-- interactive chart -->
+                        <div class="box1">
+                            <div class="box-body">
+                                
+                            </div><!-- /.box-body-->
+                        </div><!-- /.box -->
+
+                    </div><!-- /.col -->
+                    <div class="col-xs-2">
+                        <div class="row">
+                            <div class="col-xs-12 center-buttons-div">
+                                <button type="button" class="center-buttons" id="background-color-call">CALL</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 center-buttons-div">
+                                <button id="landing-tick-feed" type="button" disabled="disabled" class="center-buttons center-button-disabled">0</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 center-buttons-div">
+                                <button type="button" class="center-buttons" id="background-color-put">PUT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 info-col">
+                        <div class="row right-info">
+                            <div class="col-xs-12">
+                                <h4>Potential Payout</h4>
+                                <p>$45.00</p>
+                            </div>
+                        </div>
+                        <div class="row right-info">
+                            <div class="col-xs-12">
+                                <h1>67%</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
