@@ -241,6 +241,7 @@ fun.strings = {
     getStarted: "Get started",
     enterprise: "Enterprise",
     features: "Features",
+    trader: "Auto-Trader",
     needEnterpriseResources: "Need enterprise resources",
     systemGoingReboot: "The system is going down for reboot NOW!",
     quickLinks: "Quick links",

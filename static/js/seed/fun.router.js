@@ -372,7 +372,7 @@ fun.Router = Backbone.Router.extend({
 
     trader: function(){
         'use strict';
-        var trader = translate('trader'); # aqui aqui aqui
+        var trader = translate('trader');
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.subheader.render(trader);
