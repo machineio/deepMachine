@@ -185,6 +185,51 @@ fun.models.AddressPrimary = Backbone.Collection.extend({
 });
 
 
+fun.models.Daemon = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.daemon,
+
+    url: function() {
+        'use strict';
+        var url;
+        if (!this.isNew()){
+            url = this.urlRoot.replace(fun.conf.uuidDaemon, this.id);
+        } else {
+            url = fun.conf.urls.daemons;
+        }
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.Daemons = Backbone.Collection.extend({
+
+    model: fun.models.Daemon,
+
+    urlRoot: fun.conf.urls.daemons,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.results;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
 fun.models.Resource = Backbone.Model.extend({
 
     idAttribute: 'uuid',
@@ -261,6 +306,110 @@ fun.models.ResourcesNodes = Backbone.Collection.extend({
     model: fun.models.Resource,
 
     urlRoot: fun.conf.urls.resourcesNodes,
+
+    url: function(){
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+})
+
+
+fun.models.Gateway = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.gateway,
+
+    url:function(){
+        'use strict';
+        var url;
+        if (!this.isNew()){
+            url = this.urlRoot.replace(fun.conf.uuidGateway, this.id);
+        } else {
+            url = fun.conf.urls.gateways;
+        }
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+})
+
+
+fun.models.Gateways = Backbone.Collection.extend({
+    model: fun.models.Gateway,
+
+    urlRoot: fun.conf.urls.gateways,
+
+    url: function(){
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+})
+
+
+fun.models.GatewaysActive = Backbone.Collection.extend({
+    model: fun.models.Gateway,
+
+    urlRoot: fun.conf.urls.gatewaysActive,
+
+    url: function(){
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+})
+
+
+fun.models.GatewaysInbound = Backbone.Collection.extend({
+    model: fun.models.Gateway,
+
+    urlRoot: fun.conf.urls.gatewaysInbound,
+
+    url: function(){
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+})
+
+
+fun.models.GatewaysOutbound = Backbone.Collection.extend({
+    model: fun.models.Gateway,
+
+    urlRoot: fun.conf.urls.gatewaysOutbound,
+
+    url: function(){
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+})
+
+
+fun.models.GatewaysMonitored = Backbone.Collection.extend({
+    model: fun.models.Gateway,
+
+    urlRoot: fun.conf.urls.gatewaysMonitored,
 
     url: function(){
         return this.urlRoot;
@@ -920,6 +1069,178 @@ fun.models.Directories = Backbone.Collection.extend({
 });
 
 
+fun.models.Campaign = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.campaign,
+
+    url: function() {
+        'use strict';
+        var url;
+        if (!this.isNew()){
+            url = this.urlRoot.replace(fun.conf.uuidCampaign, this.id);
+        } else {
+            url = fun.conf.urls.campaigns;
+        }
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.InboundCampaign = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.campaignInbound,
+
+    url: function() {
+        var url;
+        if (!this.isNew()){
+            url = this.urlRoot.replace(fun.conf.uuidCampaign, this.id);
+        } else {
+            url = fun.conf.urls.campaignsInbound;
+        }
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+fun.models.InboundCampaigns = Backbone.Collection.extend({
+
+    model: fun.models.InboundCampaign,
+
+    urlRoot: fun.conf.urls.campaignsInbound,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.campaigns;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.Campaigns = Backbone.Collection.extend({
+
+    model: fun.models.Campaign,
+
+    urlRoot: fun.conf.urls.campaigns,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.campaigns;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.CampaignsActive = Backbone.Collection.extend({
+
+    model: fun.models.Campaign,
+
+    urlRoot: fun.conf.urls.campaignsActive,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.campaigns;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.CampaignsPaused = Backbone.Collection.extend({
+
+    model: fun.models.Campaign,
+
+    urlRoot: fun.conf.urls.campaignsPaused,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.campaigns;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.CampaignsInbound = Backbone.Collection.extend({
+
+    model: fun.models.Campaign,
+
+    urlRoot: fun.conf.urls.campaignsInbound,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.campaigns;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.CampaignsOutbound = Backbone.Collection.extend({
+
+    model: fun.models.Campaign,
+
+    urlRoot: fun.conf.urls.campaignsOutbound,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.campaigns;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
 fun.models.Alert = Backbone.Model.extend({
 
     idAttribute: 'uuid',
@@ -956,6 +1277,93 @@ fun.models.Alerts = Backbone.Collection.extend({
 
     parse: function(response){
         return response.alerts;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.Recording = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.recording,
+
+    url: function() {
+        'use strict';
+        var url;
+        if (!this.isNew()){
+            url = this.urlRoot.replace(fun.conf.uuidRecording, this.id);
+        } else {
+            url = fun.conf.urls.alerts;
+        }
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.Recordings = Backbone.Collection.extend({
+
+    model: fun.models.Recording,
+
+    urlRoot: fun.conf.urls.recordings,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.recordings;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.RecordingsInbound = Backbone.Collection.extend({
+
+    model: fun.models.Recording,
+
+    urlRoot: fun.conf.urls.recordingsInbound,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.recordings;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.RecordingsOutbound = Backbone.Collection.extend({
+
+    model: fun.models.Recording,
+
+    urlRoot: fun.conf.urls.recordingsOutbound,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.recordings;
     },
 
     sync: function(method, model, options) {

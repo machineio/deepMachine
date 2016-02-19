@@ -1,17 +1,30 @@
-<!--Header_section-->
-<header id="header_outer">
-  <div class="container">
-    <div class="header_section">
-      <div class="logo"><a href="#home"><img src="./static/img/logob.png" alt=""></a></div>
-      <nav class="nav" id="nav">
-        <!-- renderLanding -->
-        <div id="fun-nav-landing"></div>
-        <!-- renderDashboard -->
-        <div id="fun-nav-dashboard"></div>
-        <!-- renderAdmin -->
-        <div id="fun-nav-admin"></div>
-      </nav>
-      <a class="res-nav_click animated wobble wow"  href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
-  </div>
-</header>
-<!--Header_section--> 
+<div class="navbar navbar-static-top">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only"><%= translate("ioFunNavigation") %></span>
+                <!-- navbar icon-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="brand-n-stuff" class="navbar-brand" href="#home">
+                <%= translate("iofun") %>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <!-- renderLanding -->
+            <div id="fun-nav-landing"></div>
+            <!-- renderDashboard -->
+            <div id="fun-nav-dashboard"></div>
+            <!-- renderAdmin -->
+            <div id="fun-nav-admin"></div>
+        </div>
+
+    </div>
+
+</div>

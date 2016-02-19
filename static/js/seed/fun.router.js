@@ -17,16 +17,22 @@ fun.Router = Backbone.Router.extend({
         "dashboard/a:account/o:org": "dashboard",
         "signup": "signup",
         "login": "login",
+        "features": "features",
+        "enterprise": "enterprise",
+        "pricing": "pricing",
         "terms": "terms",
         "security": "security",
         "privacy": "privacy",
         "status": "status",
         "help": "help",
-        "contact": "contact",
         "contacts": "contacts",
         "contacts/p:page": "contacts",
         "tasks": "tasks",
         "tasks/p:page": "tasks",
+        "companies": "companies",
+        "companies/p:page": "companies",
+        "campaigns": "campaigns",
+        "cubes": "cubes",
         "orgs": "orgs",
         "activity": "activity",
         "profile": "profile",
@@ -34,26 +40,12 @@ fun.Router = Backbone.Router.extend({
         "teams": "teams",
         "reports": "reports",
         "reports/p:page": "reports",
+        "phone": "phone",
         "accounts":"accounts",
         "messages": "messages",
-        "about": "about",
-        "binary": "binary",
-        "education": "education",
         "resources": "resources",
-        "assets":"assets",
-        "currencies":"currencies",
-        "stocks":"stocks",
-        "deposit": "deposit",
-        "withdraw": "withdraw",
-        "redeem":"redeem",
-        "purchase":"purchase",
-        "risk":"risk",
-        "trader":"trader",
-        "beginner":"beginner",
-        "intermediate":"intermediate",
-        "expert":"expert",
-        "elite":"elite",
-        "categorizer":"categorizer",
+        "recordings": "recordings",
+        "gateways": "gateways",
         "settings": "settings",
         "logout": "logout"
     },
@@ -71,6 +63,26 @@ fun.Router = Backbone.Router.extend({
         // landing
         fun.instances.landing = new fun.views.landing({
             el:"#fun-landing"
+        });
+        // features
+        fun.instances.features = new fun.views.features({
+            el:"#fun-features"
+        });
+        // enterprise
+        fun.instances.enterprise = new fun.views.enterprise({
+            el:"#fun-enterprise"
+        });
+        // calendars
+        fun.instances.calendars = new fun.views.calendars({
+            el:"#fun-calendars"
+        });
+        // monitors
+        fun.instances.monitors = new fun.views.monitors({
+            el:"#fun-monitors"
+        });
+        // pricing
+        fun.instances.pricing = new fun.views.pricing({
+            el:"#fun-pricing"
         });
         // terms
         fun.instances.terms = new fun.views.terms({
@@ -108,6 +120,10 @@ fun.Router = Backbone.Router.extend({
         fun.instances.profile = new fun.views.profile({
             el:"#fun-profile"
         });
+        // activity
+        fun.instances.activity = new fun.views.activity({
+            el:"#fun-activity"
+        });
         // members
         fun.instances.members = new fun.views.members({
             el:"#fun-members"
@@ -116,37 +132,37 @@ fun.Router = Backbone.Router.extend({
         fun.instances.teams = new fun.views.teams({
             el:"#fun-teams"
         });
+        // phone
+        fun.instances.phone = new fun.views.phone({
+            el:"#fun-phone"
+        });
+        // gateways
+        fun.instances.gateways = new fun.views.gateways({
+            el:"#fun-gateways"
+        });
         // tasks
         fun.instances.tasks = new fun.views.tasks({
             el:"#fun-tasks"
         });
-        // contact
-        fun.instances.contact = new fun.views.contact({
-            el:"#fun-contact"
+        // companies
+        fun.instances.companies = new fun.views.companies({
+            el:"#fun-companies"
+        });
+        // campaigns
+        fun.instances.campaigns = new fun.views.campaigns({
+            el:"#fun-campaigns"
         });
         // contacts
         fun.instances.contacts = new fun.views.contacts({
             el:"#fun-contacts"
         });
-        // assets
-        fun.instances.assets = new fun.views.assets({
-            el:"#fun-assets"
+        // cubes
+        fun.instances.cubes = new fun.views.cubes({
+            el:"#fun-cubes"
         });
-        // currencies
-        fun.instances.currencies = new fun.views.currencies({
-            el:"#fun-currencies"
-        });
-        // deposit
-        fun.instances.deposit = new fun.views.deposit({
-            el:"#fun-deposit"
-        });
-        // stocks
-        fun.instances.stocks = new fun.views.stocks({
-            el:"#fun-stocks"
-        });
-        // withdraw
-        fun.instances.withdraw = new fun.views.withdraw({
-            el:"#fun-withdraw"
+        // recordings
+        fun.instances.recordings = new fun.views.recordings({
+            el:"#fun-recordings"
         });
         // accounts
         fun.instances.accounts = new fun.views.accounts({
@@ -159,54 +175,6 @@ fun.Router = Backbone.Router.extend({
         // messages
         fun.instances.messages = new fun.views.messages({
             el:"#fun-messages"
-        });
-        // about
-        fun.instances.about = new fun.views.about({
-            el:"#fun-about"
-        });
-        // binary
-        fun.instances.binary = new fun.views.binary({
-            el:"#fun-binary"
-        });
-        // education
-        fun.instances.education = new fun.views.education({
-            el:"#fun-education"
-        });
-        // redeem
-        fun.instances.redeem = new fun.views.redeem({
-            el:"#fun-redeem"
-        });
-        // purchase
-        fun.instances.purchase = new fun.views.purchase({
-            el:"#fun-purchase"
-        });
-        // beginner
-        fun.instances.beginner = new fun.views.beginner({
-            el:"#fun-beginner"
-        });
-        // intermediate
-        fun.instances.intermediate = new fun.views.intermediate({
-            el:"#fun-intermediate"
-        });
-        // expert
-        fun.instances.expert = new fun.views.expert({
-            el:"#fun-expert"
-        });
-        // elite
-        fun.instances.elite = new fun.views.elite({
-            el:"#fun-elite"
-        });
-        // categorizer
-        fun.instances.categorizer = new fun.views.categorizer({
-            el:"#fun-categorizer"
-        });
-        // risk
-        fun.instances.risk = new fun.views.risk({
-            el:"#fun-risk"
-        });
-        // trader
-        fun.instances.trader = new fun.views.trader({
-            el:"#fun-trader"
         });
         // reports
         fun.instances.reports = new fun.views.reports({
@@ -254,10 +222,59 @@ fun.Router = Backbone.Router.extend({
     landing: function(){
         'use strict';
         fun.utils.hideAll();
-        fun.utils.showLanding();
         fun.instances.navbar.render();
         fun.instances.landing.render();
         fun.instances.extra.render();
+        fun.instances.footer.render();
+    },
+
+    features: function(){
+        'use strict';
+        var features = translate('features');
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        //fun.instances.subheader.render(features);
+        fun.instances.features.render();
+        fun.instances.footer.render();
+    },
+
+    enterprise: function(){
+        'use strict';
+        var enterprise = translate('enterprise');
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        //fun.instances.subheader.render(enterprise);
+        fun.instances.enterprise.render();
+        fun.instances.footer.render();
+    },
+
+    calendars: function(){
+        'use strict';
+        var calendars = translate('calendars');
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        fun.instances.subheader.render(calendars);
+        fun.instances.calendars.render();
+        fun.instances.footer.render();
+    },
+
+    monitors: function(){
+        'use strict';
+        var monitor = translate('monitor');
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        fun.instances.subheader.render(monitor);
+        fun.instances.monitors.render();
+        fun.instances.footer.render();
+    },
+
+    pricing: function(){
+        'use strict';
+        var pricing = translate('pricing');
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        //fun.instances.subheader.render(enterprise);
+        fun.instances.pricing.render();
         fun.instances.footer.render();
     },
 
@@ -268,148 +285,6 @@ fun.Router = Backbone.Router.extend({
         fun.instances.navbar.render();
         fun.instances.subheader.render(terms);
         fun.instances.terms.render();
-        fun.instances.footer.render();
-    },
-
-    about: function(){
-        'use strict';
-        var about = translate('about');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(about);
-        fun.instances.about.render();
-        fun.instances.footer.render();
-    },
-
-    binary: function(){
-        'use strict';
-        var binary = translate('binary');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(binary);
-        fun.instances.binary.render();
-        fun.instances.footer.render();
-    },
-
-    elite: function(){
-        'use strict';
-        var elite = translate('elite');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(elite);
-        fun.instances.elite.render();
-        fun.instances.footer.render();
-    },
-
-    expert: function(){
-        'use strict';
-        var expert = translate('expert');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(expert);
-        fun.instances.expert.render();
-        fun.instances.footer.render();
-    },
-
-    intermediate: function(){
-        'use strict';
-        var intermediate = translate('intermediate');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(intermediate);
-        fun.instances.intermediate.render();
-        fun.instances.footer.render();
-    },
-
-    beginner: function(){
-        'use strict';
-        var beginner = translate('beginner');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(beginner);
-        fun.instances.beginner.render();
-        fun.instances.footer.render();
-    },
-
-    purchase: function(){
-        'use strict';
-        var purchase = translate('purchase');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(purchase);
-        fun.instances.purchase.render();
-        fun.instances.footer.render();
-    },
-
-    redeem: function(){
-        'use strict';
-        var redeem = translate('redeem');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(redeem);
-        fun.instances.redeem.render();
-        fun.instances.footer.render();
-    },
-
-    categorizer: function(){
-        'use strict';
-        var categorizer = translate('categorizer');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(categorizer);
-        fun.instances.categorizer.render();
-        fun.instances.footer.render();
-    },
-
-    risk: function(){
-        'use strict';
-        var risk = translate('marketRiskAnalyst');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(risk);
-        fun.instances.risk.render();
-        fun.instances.footer.render();
-    },
-
-    trader: function(){
-        'use strict';
-        var trader = translate('trader');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(trader);
-        fun.instances.trader.render();
-        fun.instances.footer.render();
-    },
-
-    education: function(){
-        'use strict';
-        var education = translate('education');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(education);
-        fun.instances.education.render();
-        fun.instances.footer.render();
-    },
-
-    messages: function(){
-        'use strict';
-        var messages = translate('messages');
-        fun.utils.hideAll();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(messages);
-        fun.instances.messages.render();
         fun.instances.footer.render();
     },
 
@@ -582,75 +457,6 @@ fun.Router = Backbone.Router.extend({
         fun.instances.footer.render();
     },
 
-    assets: function(){
-        'use strict';
-        var assets = translate('assets');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(assets);
-        fun.instances.subheader.renderHeadNavProfile();
-        fun.instances.assets.render();
-        fun.instances.footer.render();
-    },
-
-    currencies: function(){
-        'use strict';
-        var currencies = translate('currencies');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(currencies);
-        fun.instances.subheader.renderHeadNavProfile();
-        fun.instances.currencies.render();
-        fun.instances.footer.render();
-    },
-
-    stocks: function(){
-        'use strict';
-        var stocks = translate('stocks');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(stocks);
-        fun.instances.subheader.renderHeadNavProfile();
-        fun.instances.stocks.render();
-        fun.instances.footer.render();
-    },
-
-    deposit: function(){
-        'use strict';
-        var deposit = translate('deposit');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(deposit);
-        fun.instances.deposit.render();
-        fun.instances.footer.render();
-    },
-
-    withdraw: function(){
-        'use strict';
-        var withdraw = translate('withdraw');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(withdraw);
-        fun.instances.withdraw.render();
-        fun.instances.footer.render();
-    },
-
-    contact: function(){
-        'use strict';
-        var contact = translate('contact');
-        fun.utils.hideAll();
-        fun.utils.hideLanding();
-        fun.instances.navbar.render();
-        fun.instances.subheader.render(contact);
-        fun.instances.contact.render();
-        fun.instances.footer.render();
-    },
-
     status: function(){
         'use strict';
         var status = translate('status');
@@ -668,6 +474,7 @@ fun.Router = Backbone.Router.extend({
         fun.instances.navbar.render();
         fun.instances.navbar.renderDropdown();
         fun.instances.subheader.render(help);
+        fun.instances.subheader.renderHeadNavHelp();
         fun.instances.help.render();
         fun.instances.footer.render();
     },
@@ -833,15 +640,27 @@ fun.Router = Backbone.Router.extend({
         fun.instances.footer.render();
     },
 
+    cubes: function(){
+        'use strict';
+        var cubes = translate('cubes');
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        fun.instances.navbar.renderDropdown();
+        fun.instances.subheader.render(cubes);
+        fun.instances.cubes.render();
+        fun.instances.subheader.renderHeadNav();
+        fun.instances.footer.render();
+    },
+
     signup: function(){
         'use strict';
-        var signup = translate('signUp');
+        var signUp = translate('signUp');
         if(fun.utils.loggedIn()){
             fun.utils.redirect(fun.conf.hash.profile);
         } else {
             fun.utils.hideAll();
             fun.instances.navbar.render();
-            fun.instances.subheader.render(signup);
+            fun.instances.subheader.render(signUp);
             fun.instances.signup.render();
         }
         fun.instances.footer.render();
@@ -849,12 +668,11 @@ fun.Router = Backbone.Router.extend({
 
     login: function(){
         'use strict';
-        var login = translate('login');
+        var login = translate('signIn');
         if(fun.utils.loggedIn()){
             fun.utils.redirect(fun.conf.hash.profile);
         } else {
             fun.utils.hideAll();
-            fun.utils.hideLanding();
             fun.instances.navbar.render();
             fun.instances.subheader.render(login);
             fun.instances.login.render();
@@ -916,7 +734,12 @@ fun.Router = Backbone.Router.extend({
                 fun.instances.dashboard.renderLatestRecords(
                     models.records
                 );
-                  
+
+                fun.instances.dashboard.renderTodayActivityChart(
+                    models.lapseSummary
+                );
+
+                // need to pass stuff to renderRecordType()                   
                 fun.instances.dashboard.renderRecordType();
 
                 // set profile info
@@ -931,7 +754,6 @@ fun.Router = Backbone.Router.extend({
             dashboard = translate('dashboard');
 
             fun.utils.hideAll();
-            fun.utils.hideLanding();
             fun.instances.navbar.render();
 
             fun.instances.subheader.render(dashboard);
@@ -943,6 +765,452 @@ fun.Router = Backbone.Router.extend({
                     success: onSuccess,
                     error: function() {
                         console.log('error!');
+                    }
+                });
+            }
+        } else {
+            fun.utils.redirect(fun.conf.hash.login);
+        }
+        fun.instances.footer.render();
+    },
+
+    campaigns: function(){
+        'use strict';
+        var campaigns,
+            account,
+            context,
+            vonCount = 0,
+            resources,
+            resource,
+            onSuccess;
+
+        campaigns = translate('campaigns');
+
+        // get account and context
+        account = localStorage.getItem("username");
+        context = sessionStorage.getItem("context");
+
+        console.log(
+            fun.utils.format('username: %s, context: %s', account, context)
+        );
+
+        resources = {
+            user: new fun.models.User({'account':account}),
+            //campaigns: new fun.models.Campaigns(),
+            //active: new fun.models.CampaignsActive(),
+            //paused: new fun.models.CampaignsPaused(),
+            inbound: new fun.models.CampaignsInbound(),
+            outbound: new fun.models.CampaignsOutbound()
+        };
+
+        // but, onSuccess we're rendering multiple times the same campaigns.render()
+        // and that stuff is bananas. ok
+
+        onSuccess = function(){
+            if(++vonCount === _.keys(resources).length){
+                console.log('get resources success!');
+
+                //fun.instances.campaigns.renderCampaignsList(
+                //    resources.campaigns
+                //);
+
+                //fun.instances.campaigns.renderActiveCampaignsList(
+                //    resources.active
+                //);
+
+                //fun.instances.campaigns.renderPausedCampaignsList(
+                //    resources.paused
+                //);
+
+                fun.instances.campaigns.renderInboundCampaignsList(
+                   resources.inbound
+                );
+
+                fun.instances.campaigns.renderOutboundCampaignsList(
+                   resources.outbound
+                );
+
+            }
+        };
+
+        if(fun.utils.loggedIn()){
+            fun.utils.hideAll();
+            fun.instances.navbar.render();
+            fun.instances.navbar.renderDropdown();
+            fun.instances.subheader.render(campaigns);
+            fun.instances.subheader.renderHeadNav();
+            
+            fun.instances.campaigns.render();
+
+            for (resource in resources){
+                resources[resource].fetch({
+                    success: onSuccess,
+                    error: function() {
+                        console.log('fuck error!');
+                    }
+                });
+            }
+        } else {
+            fun.utils.redirect(fun.conf.hash.login);
+        }
+
+        fun.instances.footer.render();
+    },
+
+    gateways: function(){
+        'use strict';
+        var accounts = translate('accounts'),
+            account,
+            context,
+            vonCount = 0,
+            resources,
+            gateways = translate('gateways'),
+            resource,
+            onSuccess;
+
+        // get account and context
+        account = localStorage.getItem("username");
+        context = sessionStorage.getItem("context");
+
+        resources = {
+            user: new fun.models.User({'account':account}),
+            all: new fun.models.Gateways(),
+            active: new fun.models.GatewaysActive(),
+            monitored: new fun.models.GatewaysMonitored(),
+            inbound: new fun.models.GatewaysInbound(),
+            outbound: new fun.models.GatewaysOutbound(),
+        };
+
+        onSuccess = function(){
+            if(++vonCount === _.keys(resources).length){
+                console.log('get resources success!');
+
+                fun.instances.gateways.renderAllGatewaysList(
+                    resources.all
+                );
+
+                fun.instances.gateways.renderActiveGatewaysList(
+                    resources.active
+                );
+
+                fun.instances.gateways.renderMonitoredGatewaysList(
+                    resources.monitored
+                );
+
+                fun.instances.gateways.renderInboundGatewaysList(
+                    resources.inbound
+                );
+
+                fun.instances.gateways.renderOutboundGatewaysList(
+                    resources.outbound
+                );
+            }
+        };
+
+        if(fun.utils.loggedIn()){
+            fun.utils.hideAll();
+            fun.instances.navbar.render();
+            fun.instances.navbar.renderDropdown();
+            fun.instances.subheader.render(gateways);
+            fun.instances.subheader.renderHeadNav();
+
+            fun.instances.gateways.render();
+
+            for (resource in resources){
+                resources[resource].fetch({
+                    success: onSuccess,
+                    error: function() {
+                        console.log('fuck error!');
+                    }
+                });
+            }
+        } else {
+            fun.utils.redirect(fun.conf.hash.login);
+        }
+        fun.instances.footer.render();
+    },
+
+    accounts: function(){
+        'use strict';
+
+        var accounts = translate('accounts'),
+            account,
+            context,
+            vonCount = 0,
+            resources,
+            resource,
+            onSuccess;
+
+        // get account and context
+        account = localStorage.getItem("username");
+        context = sessionStorage.getItem("context");
+
+        console.log(
+            fun.utils.format('username: %s, context: %s', account, context)
+        );
+
+        resources = {
+            user: new fun.models.User({'account':account}),
+            all: new fun.models.Users(),
+            active: new fun.models.UsersActive(),
+            users: new fun.models.Users(),
+            orgs: new fun.models.Orgs(),
+            disable: new fun.models.UsersDisable(),
+            suspended: new fun.models.UsersSuspended(),
+        };
+
+
+        onSuccess = function(){
+            if(++vonCount === _.keys(resources).length){
+                console.log('get resources success!');
+
+                // fun.instances.accounts.renderAccountsList(
+                //     resources.users
+                // );
+
+                fun.instances.accounts.renderAllAccountsList(
+                    resources.all
+                );
+
+                fun.instances.accounts.renderActiveAccountsList(
+                    resources.active
+                );
+
+                fun.instances.accounts.renderUsersAccountsList(
+                    resources.users
+                );
+
+                fun.instances.accounts.renderOrganizationsAccountsList(
+                    resources.orgs
+                );
+
+                fun.instances.accounts.renderDisableAccountsList(
+                    resources.disable
+                );
+
+                fun.instances.accounts.renderSuspendedAccountsList(
+                    resources.suspended
+                );
+            }
+        };
+
+        if(fun.utils.loggedIn()){
+            fun.utils.hideAll();
+            fun.instances.navbar.render();
+            fun.instances.navbar.renderDropdown();
+            fun.instances.subheader.render(accounts);
+            fun.instances.subheader.renderHeadNav();
+            
+            fun.instances.accounts.render();
+
+            for (resource in resources){
+                resources[resource].fetch({
+                    success: onSuccess,
+                    error: function() {
+                        console.log('fuck error!');
+                    }
+                });
+            }
+        } else {
+            fun.utils.redirect(fun.conf.hash.login);
+        }
+
+        fun.instances.footer.render();
+    },
+
+    messages: function(){
+        'use strict';
+
+        var messages = translate('messages'),
+            account,
+            context,
+            vonCount = 0,
+            resources,
+            resource,
+            onSuccess;
+
+        // get account and context
+        account = localStorage.getItem("username");
+        context = sessionStorage.getItem("context");
+
+        resources = {
+            user: new fun.models.User({'account':account}),
+            all: new fun.models.Messages(),
+            unread: new fun.models.MessagesUnread(),
+            notifications: new fun.models.MessagesNotifications(),
+            alerts: new fun.models.MessagesAlerts(),
+        };
+
+        onSuccess = function(){
+            if(++vonCount === _.keys(resources).length){
+                console.log('get resources success!');
+
+                fun.instances.messages.renderAllMessagesList(
+                    resources.all
+                );
+
+                fun.instances.settings.setProfileInformation(
+                    resources.user
+                );
+
+                fun.instances.messages.renderUnreadMessagesList(
+                    resources.unread
+                );
+
+                fun.instances.messages.renderNotificationsMessagesList(
+                    resources.notifications
+                );
+
+                fun.instances.messages.renderAlertsMessagesList(
+                    resources.alerts
+                );
+            }
+        };
+
+        if(fun.utils.loggedIn()){
+            fun.utils.hideAll();
+            fun.instances.navbar.render();
+            fun.instances.navbar.renderDropdown();
+            fun.instances.subheader.render(messages);
+            fun.instances.subheader.renderHeadNav();
+
+            fun.instances.messages.render();
+
+            for (resource in resources){
+                resources[resource].fetch({
+                    success: onSuccess,
+                    error: function() {
+                        console.log('fuck error!');
+                    }
+                });
+            }
+        } else {
+            fun.utils.redirect(fun.conf.hash.login);
+        }
+        fun.instances.footer.render();
+    },
+
+    recordings: function(){
+        'use strict';
+
+        var recordings = translate('recordings'),
+            account,
+            context,
+            vonCount = 0,
+            resources,
+            resource,
+            onSuccess;
+
+        // get account and context
+        account = localStorage.getItem("username");
+        context = sessionStorage.getItem("context");
+
+        resources = {
+            user: new fun.models.User({'account':account}),
+            // All recordings
+            all: new fun.models.Recordings(),
+            inbound: new fun.models.RecordingsInbound(),
+            outbound: new fun.models.RecordingsOutbound(),
+        };
+
+        onSuccess = function(){
+            if(++vonCount === _.keys(resources).length){
+                console.log('get resources success!');
+
+                fun.instances.recordings.renderAllRecordingsList(
+                    resources.all
+                );
+
+                fun.instances.settings.setProfileInformation(
+                    resources.user
+                );
+
+                fun.instances.recordings.renderInboundRecordingsList(
+                    resources.inbound
+                );
+
+                fun.instances.recordings.renderOutboundRecordingsList(
+                    resources.outbound
+                );
+            }
+        };
+
+        if(fun.utils.loggedIn()){
+            fun.utils.hideAll();
+            fun.instances.navbar.render();
+            fun.instances.navbar.renderDropdown();
+            fun.instances.subheader.render(recordings);
+            fun.instances.subheader.renderHeadNav();
+
+            fun.instances.recordings.render();
+
+            for (resource in resources){
+                resources[resource].fetch({
+                    success: onSuccess,
+                    error: function() {
+                        console.log('fuck error!');
+                    }
+                });
+            }
+        } else {
+            fun.utils.redirect(fun.conf.hash.login);
+        }
+        fun.instances.footer.render();
+    },
+
+    resources: function(){
+        'use strict';
+
+        var accounts = translate('accounts'),
+            account,
+            context,
+            vonCount = 0,
+            resources,
+            resource,
+            onSuccess;
+
+        var resourcesTitle = translate('resourcesTitle');
+
+        // get account and context
+        account = localStorage.getItem("username");
+        context = sessionStorage.getItem("context");
+
+        resources = {
+            user: new fun.models.User({'account':account}),
+            all: new fun.models.Resources(),
+            imps: new fun.models.ResourcesImps(),
+            nodes: new fun.models.ResourcesNodes(),
+        };
+
+        onSuccess = function(){
+            if(++vonCount === _.keys(resources).length){
+                console.log('get resources success!');
+                fun.instances.resources.renderAllResourcesList(
+                    resources.all
+                );
+                fun.instances.resources.renderImpsResourcesList(
+                    resources.imps
+                );
+                fun.instances.resources.renderNodesResourcesList(
+                    resources.nodes
+                );
+            }
+        };
+
+        if(fun.utils.loggedIn()){
+            fun.utils.hideAll();
+            fun.instances.navbar.render();
+            fun.instances.navbar.renderDropdown();
+            fun.instances.subheader.render(resourcesTitle);
+            fun.instances.subheader.renderHeadNav();
+
+            fun.instances.resources.render();
+
+            for (resource in resources){
+                resources[resource].fetch({
+                    success: onSuccess,
+                    error: function() {
+                        console.log('fuck error!');
                     }
                 });
             }
@@ -968,16 +1236,39 @@ fun.Router = Backbone.Router.extend({
 
     profile: function(){
         'use strict';
-        var profile = translate('binaryOptions');
+        var profile = translate('profile');
 
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.navbar.renderDropdown();
         fun.instances.subheader.render(profile);
         fun.instances.subheader.renderHeadNavProfile();
         fun.instances.profile.render();
+        fun.instances.footer.render();
+    },
+
+    activity: function(){
+        'use strict';
+        var activity = translate('activity');
+
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        fun.instances.navbar.renderDropdown();
+        fun.instances.subheader.render(activity);
+        fun.instances.subheader.renderHeadNav();
+        fun.instances.activity.render();
         
+        fun.instances.footer.render();
+    },
+
+    phone: function(){
+        'use strict';
+        var phone = translate('phone');
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        fun.instances.navbar.renderDropdown();
+        fun.instances.subheader.render(phone);
+        fun.instances.phone.render();
         fun.instances.footer.render();
     },
 
@@ -986,7 +1277,6 @@ fun.Router = Backbone.Router.extend({
         if(fun.utils.loggedIn()){
             var reports = translate('reports');
             fun.utils.hideAll();
-            fun.utils.hideLanding();
             fun.instances.navbar.render();
             fun.instances.navbar.renderDropdown();
             fun.instances.subheader.render(reports);
@@ -1005,7 +1295,6 @@ fun.Router = Backbone.Router.extend({
         this.account = localStorage.getItem("username");
         var settings = translate('settings');
         fun.utils.hideAll();
-        fun.utils.hideLanding();
         fun.instances.navbar.render();
         fun.instances.navbar.renderDropdown();
         fun.instances.subheader.render(settings);
@@ -1027,7 +1316,6 @@ fun.Router = Backbone.Router.extend({
         };
 
         fun.utils.hideAll();
-        fun.utils.hideLanding();
 
         fun.utils.logout({
             success: function() {

@@ -137,6 +137,21 @@ fun.views.subheader = Backbone.View.extend({
         headNav.html(template);
     },
 
+    renderHeadNavHelp: function(){
+        'use strict';
+        var template,
+            headNav;
+
+        template = _.template(
+            fun.utils.getTemplate(fun.conf.templates.headNavHelp)
+        );
+
+        headNav = this.$('#fun-head-nav');
+
+        headNav.html(template);
+
+    },
+
     renderHeadNavProfile: function(){
         'use strict';
         var template,

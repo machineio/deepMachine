@@ -107,7 +107,7 @@ fun.views.signup = Backbone.View.extend({
                 fun.utils.login(account, password,
                     {
                         success : function(xhr, status){
-                            fun.utils.redirect(fun.conf.hash.dashboard);
+                            fun.utils.redirect(fun.conf.hash.profile);
                         },
                         error : function(xhr, status, error){
                             switch(xhr.status) {

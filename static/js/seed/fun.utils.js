@@ -29,24 +29,10 @@ fun.utils.updater = {
         }
     },
 
-
     processMessage: function(message){
-
-        var message = message['message'];
-
-        if ("heartbeat" in message){
-            fun.omnibus.trigger("heartbeat:message");
-        }
-
-        if ("obelix" in message){
-            sessionStorage.setItem("obelix", message);
+        if (message['message'] !== 'heartbeat'){
+            sessionStorage.setItem("obelix", message['message']);
             fun.omnibus.trigger("obelix:message");
-        }
-        
-        if("time" in message) {
-            // do something
-            console.log(message);
-            fun.omnibus.trigger("binary:message");
         }
     }
 };
@@ -261,32 +247,6 @@ fun.utils.hideAll = function() {
     }
 };
 
-
-fun.utils.hideLanding = function(){
-    
-    $("#service").removeClass("show").addClass("hide");
-    $("#work_outer").removeClass("show").addClass("hide");
-    $("#education").removeClass("show").addClass("hide");
-    
-    
-    /*$("#landing-02").removeClass("show").addClass("hide");
-    $("#landing-03").removeClass("show").addClass("hide");
-    $("#landing-04").removeClass("show").addClass("hide");
-    $("#landing-05").removeClass("show").addClass("hide");
-    $("#main").removeClass("show").addClass("hide");*/
-};
-
-fun.utils.showLanding = function(){
-    
-    $("#service").removeClass("hide").addClass("show");
-    $("#work_outer").removeClass("hide").addClass("show");
-    $("#education").removeClass("hide").addClass("show");
-    /*$("#landing-02").removeClass("hide").addClass("show");
-    $("#landing-03").removeClass("hide").addClass("show");
-    $("#landing-04").removeClass("hide").addClass("show");
-    $("#landing-05").removeClass("hide").addClass("show");
-    $("#main").removeClass("hide").addClass("show");*/
-};
 
 /**
 * check if this stuff works on empty strings

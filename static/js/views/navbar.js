@@ -4,7 +4,6 @@ fun.views.navbar = Backbone.View.extend({
         'click #details-report-btn': 'detailsReport',
         'click input[name="current_account"]': 'setAccountContext',
         'click #current_account_0': 'goProfile',
-        'click #current_account_admin': 'goDashboard',
         'click #search': 'toggleMenu'
 	},
 
@@ -248,12 +247,8 @@ fun.views.navbar = Backbone.View.extend({
 
     goProfile: function(event){
         'use strict';
+        console.log('yeah bb');
         window.location = fun.conf.hash.profile;
-    },
-
-    goDashboard: function(event){
-        'use strict';
-        window.location = fun.conf.hash.dashboard;
     },
 
     toggleMenu: function(event){

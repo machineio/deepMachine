@@ -11,7 +11,13 @@ fun.views.contacts = Backbone.View.extend({
         'click .contact-popup': 'contactDetails',
         'click #close-contact-btn': 'closeContactDetails',
         'click #update-contact-btn': 'updateContactDetails',
-        'change #lead-type': 'leadTypeChange',
+        'change #mailing-address-different': 'showMailingAddressDifferent',
+        'change #marital-status': 'changeMaritalStatus',
+        'change #home-insurance-checkbox': 'changeTabs',
+        'change #health-insurance-checkbox': 'changeTabs',
+        'change #auto-insurance-checkbox': 'changeTabs',
+        'change #life-insurance-checkbox': 'changeTabs',
+        'change #ancilliary-insurance-checkbox': 'changeTabs',
     },
 
     /*
@@ -98,6 +104,19 @@ fun.views.contacts = Backbone.View.extend({
         } else {
             this.noContacts();
         }
+    },
+
+    renderContactModalForm: function(){
+        'use strict';
+        var contactModalTabs;
+        var template = _.template(
+            fun.utils.getTemplate(fun.conf.templates.contactFormModal)
+        );
+
+        console.log('TEMPLATE!!!!', template);
+        contactModalTabs = this.$('#contact-modal-tabs');
+        contactModalTabs.html(template);
+        contactModalTabs.removeClass("hide").addClass("show");
     },
 
     /*
@@ -343,6 +362,7 @@ fun.views.contacts = Backbone.View.extend({
         'use strict';
         event.preventDefault();
         //view cache
+        this.renderContactModalForm();
         var view = this,
             name,
             contact,
@@ -401,7 +421,7 @@ fun.views.contacts = Backbone.View.extend({
             state,
             city,
             zipCode,
-            propertyAddressDifferent,
+            mailingAddressDifferent,
             county,
             marketplaceEmail,
             propertyAddress,
@@ -699,7 +719,7 @@ fun.views.contacts = Backbone.View.extend({
         state = this.$('#state');
         city = this.$('#city');
         zipCode = this.$('#zip-code');
-        propertyAddressDifferent = this.$('#property-address-different');
+        mailingAddressDifferent = this.$('#mailing-address-different');
         county = this.$('#county');
         marketplaceEmail = this.$('#marketplace-email');
         propertyAddress = this.$('#property-address');
@@ -857,6 +877,8 @@ fun.views.contacts = Backbone.View.extend({
                 $('#homeOwnersInsurance').removeClass('show');
                 $('#automobileInsurance').addClass('hide');
                 $('#automobileInsurance').removeClass('show');
+                $('#lifeInsuranceTab').addClass('hide');
+                $('#lifeInsuranceTab').removeClass('show');
                 break;
 
             case 'homeownersInsurance':
@@ -872,6 +894,8 @@ fun.views.contacts = Backbone.View.extend({
                 $('#healthInsurance').removeClass('show');
                 $('#automobileInsurance').addClass('hide');
                 $('#automobileInsurance').removeClass('show');
+                $('#lifeInsuranceTab').addClass('hide');
+                $('#lifeInsuranceTab').removeClass('show');
                 break;
 
             case 'autoInsurance':
@@ -887,9 +911,13 @@ fun.views.contacts = Backbone.View.extend({
                 $('#homeOwnersInsurance').removeClass('show');
                 $('#healthInsurance').addClass('hide');
                 $('#healthInsurance').removeClass('show');
+                $('#lifeInsuranceTab').addClass('hide');
+                $('#lifeInsuranceTab').removeClass('show');
                 break;
 
             case 'lifeInsurance':
+                $('#lifeInsuranceTab').addClass('show');
+                $('#lifeInsuranceTab').removeClass('hide');
                 $('#automobileInsuranceTab').removeClass('show');
                 $('#automobileInsuranceTab').addClass('hide');
                 $('#healthInsuranceTab').removeClass('show');
@@ -917,6 +945,8 @@ fun.views.contacts = Backbone.View.extend({
                 $('#homeOwnersInsurance').removeClass('show');
                 $('#healthInsurance').addClass('hide');
                 $('#healthInsurance').removeClass('show');
+                $('#lifeInsuranceTab').addClass('hide');
+                $('#lifeInsuranceTab').removeClass('show');
                 break;
 
             case 'none':
@@ -932,6 +962,8 @@ fun.views.contacts = Backbone.View.extend({
                 $('#homeOwnersInsurance').removeClass('show');
                 $('#healthInsurance').addClass('hide');
                 $('#healthInsurance').removeClass('show');
+                $('#lifeInsuranceTab').addClass('hide');
+                $('#lifeInsuranceTab').removeClass('show');
                 break;
         }
     },
@@ -1078,5 +1110,82 @@ fun.views.contacts = Backbone.View.extend({
         // and save!
         update.save(contactStruct, {patch: true});
         $('#contactModal').modal('hide');
+    },
+
+    showMailingAddressDifferent: function(event){
+
+        if(event.target.checked===true){
+            $('#mailingAddressDifferentDiv').removeClass('hide');
+            $('#mailingAddressDifferentDiv').addClass('show');
+        } else {
+            $('#mailingAddressDifferentDiv').removeClass('show');
+            $('#mailingAddressDifferentDiv').addClass('hide');
+        }
+    },
+
+    changeMaritalStatus: function(event){
+
+        if($('#marital-status').val()==='none'||$('#marital-status').val()==='single'){
+            $('#contactSpouseInfoTab').removeClass('show');
+            $('#contactSpouseInfoTab').addClass('hide');
+        } else {
+            $('#contactSpouseInfoTab').removeClass('hide');
+            $('#contactSpouseInfoTab').addClass('show');
+        }
+    },
+
+    changeTabs: function(event){
+
+        switch(event.target.id){
+            case 'home-insurance-checkbox':
+                if(event.target.checked===true){
+                    $('#homeOwnersInsuranceTab').removeClass('hide');
+                    $('#homeOwnersInsuranceTab').addClass('show');
+                } else {
+                    $('#homeOwnersInsuranceTab').removeClass('show');
+                    $('#homeOwnersInsuranceTab').addClass('hide');
+                }
+                break;
+
+            case 'health-insurance-checkbox':
+                if(event.target.checked===true){
+                    $('#healthInsuranceTab').removeClass('hide');
+                    $('#healthInsuranceTab').addClass('show');
+                } else {
+                    $('#healthInsuranceTab').removeClass('show');
+                    $('#healthInsuranceTab').addClass('hide');
+                }
+                break;
+
+            case 'auto-insurance-checkbox':
+                if(event.target.checked===true){
+                    $('#automobileInsuranceTab').removeClass('hide');
+                    $('#automobileInsuranceTab').addClass('show');
+                } else {
+                    $('#automobileInsuranceTab').removeClass('show');
+                    $('#automobileInsuranceTab').addClass('hide');
+                }
+                break;
+
+            case 'life-insurance-checkbox':
+                if(event.target.checked===true){
+                    $('#lifeInsuranceTab').removeClass('hide');
+                    $('#lifeInsuranceTab').addClass('show');
+                } else {
+                    $('#lifeInsuranceTab').removeClass('show');
+                    $('#lifeInsuranceTab').addClass('hide');
+                }
+                break;
+
+            case 'ancilliary-insurance-checkbox':
+                if(event.target.checked===true){
+                    $('#ancilliaryInsuranceTab').removeClass('hide');
+                    $('#ancilliaryInsuranceTab').addClass('show');
+                } else {
+                    $('#ancilliaryInsuranceTab').removeClass('show');
+                    $('#ancilliaryInsuranceTab').addClass('hide');
+                }
+                break;
+        }
     }
 });

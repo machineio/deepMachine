@@ -1,5 +1,52 @@
-#binary > h4, #binary > h3, #binary > h2, #binary > h1 {
-    margin-top: 10px;
+.navbar-toggle .icon-bar {
+  background-color: #FFFFFF !important;
+}
+
+.navbar-collapse {
+  border: none !important;
+}
+
+
+.btn-warning {
+  background-image: none;
+  background: #eeeeee;
+  border: none;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+    background-position: 0;
+    background-image: none;
+    background: #eeeeee;
+    border: none;
+}
+
+
+
+.btn-warning:active, .btn-warning.active {
+    background-color: #858181;
+    border: none;
+}
+
+ul.pagination li > a {
+  color: #858181 !important;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+  border-radius: 0;
+}
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+  border-radius: 0;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background-color: #abc261;
+  border: none;
+  background-position: 0;
+}
+
+.btn-success {
+  background-color: #98b73e;
 }
 
 #footer {
@@ -17,26 +64,37 @@
   -webkit-box-shadow: none !important;
 }
 
+#dashboardRightFilters {
+  margin-top: 5px;
+}
+
+#rightMenuSubHeader {
+  padding-top: 12px;
+}
+
 #dashboardRightFilters .btn-default {
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
   background-image: none;
   text-shadow: none !important;
+  background-position: 0;
 }
 
 #dashboardRightFilters .btn-default.active {
   background-color: #858181;
-  border-color: #858181;
+  border: none;
   border-radius: 0 !important;
   color: #FFFFFF;
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
+  background-position: 0;
 }
 
 #dashboardRightFilters .btn-default:hover {
   background-color: #eee;
   border: none;
   color: #858181;
+  background-position: 0;
 }
 
 .form-control, .input-group-addon {
@@ -79,6 +137,7 @@
 
 .btn, .nav-pills>li>a, .pagination, .nav-tabs>li>a {
   border-radius: 0 !important;
+  border: none;
 }
 
 a {
@@ -401,27 +460,27 @@ body {
 
     html, body {
       width: auto !important;
-      overflow-x: hidden !important;
+      /*overflow-x: hidden !important;*/
     }
 
     html::-webkit-scrollbar {
         display: none;
     }
 
-    body::-webkit-scrollbar {
+    /*body::-webkit-scrollbar {
         display: none;
-    }
+    }*/
 
-    .modal-open .modal::-webkit-scrollbar {
+    /*.modal-open .modal::-webkit-scrollbar {
         display: none;
-    }
+    }*/
 
     textarea#task-comment {
         max-width: 85.8vw !important;
     }
 
     .navbar-brand {
-        margin-top: 2px !important;
+        margin-top: 5px !important;
         margin-left: 5vw !important;
     }
 

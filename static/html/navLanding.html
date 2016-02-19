@@ -1,95 +1,23 @@
 <div class="navbar-right">
-
-    <ul class="toggle">
-          <li><a href="#about">About</a></li>
-          <li><a href="#binary">Binary Options</a></li>
-        
-          <li class="dropdown">
-              <a href="#cashier" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cashier</a>
-              <ul class="dropdown-menu" style="background color: #;background: #232323;">
-                <li><a href="#purchase">Purchase</a></li>
-                <!--<li><a href="#redeem">Redeem</a></li>-->
-                
-              </ul>
-          </li>
-          
-          <li class="dropdown">
-              <a href="#memberships" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Memberships</a>
-              <ul class="dropdown-menu" style="background color: #;background: #fff;">
-
-                <li><a href="#beginner">Beginner</a></li>
-                <li><a href="#intermediate">Intermediate</a></li>
-                <li><a href="#expert">Expert</a></li>
-                <li><a href="#elite">Elite</a></li>
-                
-              </ul>
-          </li>
-
-          <li class="dropdown">
-              <a href="#tools" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
-              <ul class="dropdown-menu" style="background color: #;background: #fff;">
-                <li><a href="#categorizer">Categorizer</a></li>
-                <li><a href="#auto-trader">Auto-Trader</a></li>
-                <li><a href="#market-risk">Market Risk Analyst</a></li>
-                
-              </ul>
-          </li>
-
-          <li><a href="#forms">Forms</a></li>
-          <li><a href="#upcoming">Upcoming Events</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#login">Login</a></li>
+    <ul class="nav navbar-nav">
+        <li>
+            <a href="#features">
+                <i class="fa fa-dot-circle-o fa-fw"></i> 
+                <%= translate("Features") %>
+            </a>
+        </li>
+        <li>
+            <a href="#enterprise">
+                <i class="fa fa-suitcase fa-fw"></i> 
+                <%= translate("Enterprise") %>
+            </a>
+        </li>
+        <li>
+            <a href="#pricing"><%= translate("Pricing") %></a>
+        </li>
     </ul>
 
+    <a href="#signup" class="btn btn-success navbar-btn" role="button"><%= translate("Sign up") %></a>
 
-    <ul class="">
-          <!-- <li><a href="#about">About</a></li>
-          
-          <li><a href="#binary">Binary Options</a></li>
-          <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Budget</a>
-              <ul class="dropdown-menu" style="background: #232323;">
-                <li><a href="#deposit">Deposit</a></li>
-                <li><a href="#withdraw">Withdraw</a></li>
-                
-              </ul>
-          </li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#login">Login</a></li> -->
-          <li><a href="#about">About</a></li>
-          <li><a href="#binary">Binary Options</a></li>
-          
-          <li class="dropdown">
-              <a href="#cashier" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cashier</a>
-              <ul class="dropdown-menu" style="background color: #;background: #fff;">
-                <li><a href="#purchase">Purchase</a></li>
-                <!-- <li><a href="#redeem">Redeem</a></li> -->
-              </ul>
-          </li>
-          
-
-          <li class="dropdown">
-              <a href="#memberships" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Memberships</a>
-              <ul class="dropdown-menu" style="background color: #;background: #fff;">
-                <li><a href="#beginner">beginner</a></li>
-                <li><a href="#intermediate">Intermediate</a></li>
-                <li><a href="#expert">Expert</a></li>
-                <li><a href="#elite">Elite</a></li>
-                
-              </ul>
-          </li>
-
-          <li class="dropdown">
-              <a href="#tools" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools</a>
-              <ul class="dropdown-menu" id="color-bottom">
-                <li><a href="#categorizer">Categorizer</a></li>
-                <li><a href="#trader">Auto-Trader</a></li>
-                <li><a href="#risk">Market Risk Analyst</a></li>
-                
-              </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#login">Login</a></li>
-    </ul>
+    <a href="#login" class="btn btn-default navbar-btn" role="button"><%= translate("Sign in") %></a>
 </div>
