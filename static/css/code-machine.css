@@ -200,7 +200,7 @@
         position: relative;
 }
 
-.center-text-codemachine{
+#center-text-codemachine .col-md-4{
     text-align: center;
 }
     
