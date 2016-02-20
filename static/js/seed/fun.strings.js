@@ -226,7 +226,7 @@ fun.strings = {
     callerId: "CallerID",
     blacklist: "Blacklist",
     actions: "Actions",
-    confirmEmail: "Confirm your email address",
+    confirmEmail: "Confirm email address",
     gratsBrokeIt: "grats you broke my heart",
     growingMangoTrees: "Growing mango trees in the home landscape will give you a lifetime of fresh pungent fruit from an attractive shade tree",
     unsentimentalMonkey: "I've said before that I'm a remarkably unsentimental monkey.",
