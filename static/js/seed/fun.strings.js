@@ -73,7 +73,6 @@ fun.strings = {
     newCalendarEvent: "New Event",
     newInboundCampaign: "New Inbound Campaign",
     newOutboundCampaign: "New Outbound Campaign",
-    testConUliCambieElKey: "SPEAK WITH OUR MARKET RISK ANALYSTS",
     disposition: "Disposition",
 
     update: "Update",
@@ -913,5 +912,10 @@ fun.strings = {
     systemMonitor: "System Monitor",
     goodBye: "Good bye",
     asterisk: "*",
+    speakingWithOur: "SPEAK WITH OUR MARKET RISK ANALYSTS",
+    trainingCoursesToMaximize: "1 on 1 Training courses to maximize your returns. And insure a realistic learning curve.",
+
+
+
     pound: "#"
 };
