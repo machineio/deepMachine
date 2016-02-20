@@ -5,7 +5,8 @@ fun.views.landing = Backbone.View.extend({
     */
 
     events : {
-        'click #landing-signup-btn': 'signup'
+        'click #landing-signup-btn': 'signup',
+        'click #landing-signin-btn': 'signin'
     },
     
     /**
@@ -36,7 +37,14 @@ fun.views.landing = Backbone.View.extend({
     },
 
     signup: function(event){
-    	'use strict';
+        'use strict';
+        var test=3;
+        event.preventDefault();
+        console.log(test);
+    },
+
+    signup: function(event){
+        'use strict';
         var signupError,
             account,
             password,
