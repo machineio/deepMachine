@@ -73,7 +73,7 @@ fun.strings = {
     newCalendarEvent: "New Event",
     newInboundCampaign: "New Inbound Campaign",
     newOutboundCampaign: "New Outbound Campaign",
-
+    testConUliCambieElKey: "SPEAK WITH OUR MARKET RISK ANALYSTS",
     disposition: "Disposition",
 
     update: "Update",
