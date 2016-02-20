@@ -2,7 +2,7 @@
  * Default internationalization object
  */
 fun.strings = {
-    ioFun: "Code Machine",
+    ioFun: "Deep Machine",
     login: "Login",
     active: "Active",
     disable: "Disable",
