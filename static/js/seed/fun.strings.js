@@ -235,7 +235,7 @@ fun.strings = {
     oldManAristotle: 'Greek philosopher Aristotle, 320 BC.',
     anAssistant: 'an artificial intelligence and research assistant meant to aid on the creation of artificial intelligence technology systems.',
     ioFunBanner: "BEST EDUCATIONAL TRADING PLATFORM.",
-    ioFunLandingText: "Deep Machine provides analytical tools within its platform; that can be used for all types of traders worldwide. Furthermore, Deep Machine's staff is here to help our clients with the best deep market risk analyser, state of the art tools and resources, guiding traders every step of the way into learning and understanding, how the market moves and reacts in order to trade successfully.",
+    ioFunLandingText: "Deep Machine is a cloud computing company specialized in high frequency trading provides analytical tools within its platform; that can be used for all types of traders worldwide.",
     ioFunLandingText2016: "I/O FUN is a cloud computing company specialized in systems with high availability and high volume of data, such as the development of data analysis applications, real-time communication systems and deep networks research areas.",
     howItWorks: "How it works",
     funDescription: "We design, build and manage advanced communication systems",
