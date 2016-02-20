@@ -36,7 +36,7 @@ fun.views.landing = Backbone.View.extend({
         this.$el.removeClass("hide").addClass("show");
     },
 
-    signup: function(event){
+    signin: function(event){
         'use strict';
         var test=3;
         event.preventDefault();
