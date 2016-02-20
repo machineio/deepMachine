@@ -349,7 +349,7 @@ fun.strings = {
     planFutureDiscussionTools: "Review records, comment on tasks, send messages, alerts, notifications, and plan the future of your campaign with communication tools",
     matchCallersandTeams: "Match callers and custom teams as they wait for an answer, get real-time stats on the number of calls by team and more",
     bringFunDataCenter: "Bring the fun to your data center",
-    useFunEnterprise: "Use I/O FUN Enterprise, the best way to manage communications, on your servers",
+    useFunEnterprise: "Furthermore, Deep Machine's staff is here to help our clients with the best deep market risk analyser, state of the art tools and resources, guiding traders every step of the way into learning and understanding, how the market moves and reacts in order to trade successfully.",
     learnAboutEnterprise: "Learn more about Enterprise",
     greatCampaignNames: "Great campaign names are short and memorable",
     greatTaskNames: "Great task names are short and memorable",
