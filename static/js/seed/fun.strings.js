@@ -914,6 +914,11 @@ fun.strings = {
     asterisk: "*",
     speakingWithOur: "SPEAK WITH OUR MARKET RISK ANALYSTS",
     trainingCoursesToMaximize: "1 on 1 Training courses to maximize your returns. And insure a realistic learning curve.",
+    radeWithMarketProfessionals: "RADE WITH MARKET PROFESSIONALS",
+    safeAndSecureTrading: "100% safe and secure trading courses. Top quality material To help you become a professional Trader",
+    
+    
+
 
 
 
