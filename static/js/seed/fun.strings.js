@@ -920,7 +920,9 @@ fun.strings = {
     safeAndSecureTrading: "100% safe and secure trading courses. Top quality material. To help you become a professional Trader",
     
     safeClearRisk: "SAFE – CLEAR RISK",
-    profitRatiosStatedInOption: "Profit ratios stated in option",
+    profitRatiosStatedInOption: "Profit ratios stated in option",   
+
+    BringTheFunToYourDataCenter: "Bring the fun to your data center",
     
 
 
