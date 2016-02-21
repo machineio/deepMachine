@@ -922,7 +922,7 @@ fun.strings = {
     safeClearRisk: "SAFE – CLEAR RISK",
     profitRatiosStatedInOption: "Profit ratios stated in option",   
 
-    stateOfTheArtToolsAndSesources: "state of the art tools and resources",
+    stateOfTheArtToolsAndSesources: "State of the art tools and resources",
     
 
 
