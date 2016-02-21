@@ -73,7 +73,6 @@ fun.strings = {
     newCalendarEvent: "New Event",
     newInboundCampaign: "New Inbound Campaign",
     newOutboundCampaign: "New Outbound Campaign",
-
     disposition: "Disposition",
 
     update: "Update",
@@ -913,5 +912,21 @@ fun.strings = {
     systemMonitor: "System Monitor",
     goodBye: "Good bye",
     asterisk: "*",
+
+    speakingWithOur: "SPEAK WITH OUR MARKET RISK ANALYSTS",
+    trainingCoursesToMaximize: "1 on 1 Training courses to maximize your returns. And insure a realistic learning curve.",
+
+    radeWithMarketProfessionals: "RADE WITH MARKET PROFESSIONALS",
+    safeAndSecureTrading: "100% safe and secure trading courses. Top quality material. To help you become a professional Trader",
+    
+    safeClearRisk: "SAFE – CLEAR RISK",
+    profitRatiosStatedInOption: "Profit ratios stated in option",   
+
+    BringTheFunToYourDataCenter: "Bring the fun to your data center",
+    
+
+
+
+
     pound: "#"
 };
