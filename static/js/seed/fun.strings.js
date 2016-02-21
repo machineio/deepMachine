@@ -919,8 +919,8 @@ fun.strings = {
     radeWithMarketProfessionals: "RADE WITH MARKET PROFESSIONALS",
     safeAndSecureTrading: "100% safe and secure trading courses. Top quality material. To help you become a professional Trader",
     
-    radeWithMarketProfessionals: "RADE WITH MARKET PROFESSIONALS",
-    safeAndSecureTrading: "100% safe and secure trading courses. Top quality material. To help you become a professional Trader",
+    safeClearRisk: "SAFE – CLEAR RISK",
+    profitRatiosStatedInOption: "Profit ratios stated in option",
     
 
 
