@@ -923,6 +923,9 @@ fun.strings = {
     profitRatiosStatedInOption: "Profit ratios stated in option",   
 
     stateOfTheArtToolsAndSesources: "State of the art tools and resources",
+
+    learnMoreAboutUs: "Learn more about Us",
+
     
 
 
