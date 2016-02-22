@@ -18,6 +18,7 @@ fun.strings = {
     address: "Address",
     zipcode: "ZIP Code",
     binaryOptions: "Binary Options",
+    newTrade: "New Trade",
     predictions: "Predictions",
     city: "City",
     state: "State/Province",
