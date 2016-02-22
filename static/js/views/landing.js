@@ -38,9 +38,9 @@ fun.views.landing = Backbone.View.extend({
 
     signin: function(event){
         'use strict';
-        var test=3;
         event.preventDefault();
-        console.log(test);
+        fun.utils.redirect(fun.conf.hash.login);
+    
     },
 
     signup: function(event){
