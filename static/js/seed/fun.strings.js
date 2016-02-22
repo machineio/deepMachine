@@ -925,6 +925,8 @@ fun.strings = {
     stateOfTheArtToolsAndSesources: "State of the art tools and resources",
 
     learnMoreAboutUs: "Learn more about Us",
+    signalIndicator: "Signal Indicator",
+    
 
     
 
