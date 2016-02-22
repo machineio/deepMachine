@@ -3,16 +3,6 @@
         <input type="text" id="searchInput" class="form-control" type="search" placeholder=" " onblur="this.value=''">
     </li>
     <li class="dropdown">
-        <a id="current-budget" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-money fa-fw"></i>
-            XP 517
-        </a>
-        <ul class="dropdown-menu">
-            <li><a href="#deposit">Deposit</a></li>
-            <li><a href="#withdraw">Withdraw</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <i class="fa fa-plus fa-fw"></i>
             <%= translate("Create") %>
@@ -28,6 +18,16 @@
             <li id="nav-new-team" class="hide"><a href="#teams"><i class="fa fa-paw fa-fw"></i> <%= translate("newTeam") %></a></li>
             <li id="nav-new-org"><a href="#orgs"><i class="fa fa-users fa-fw"></i> <%= translate("newOrganization") %></a>
             </li>
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a id="current-budget" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-money fa-fw"></i>
+            XP 517
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#deposit">Deposit</a></li>
+            <li><a href="#withdraw">Withdraw</a></li>
         </ul>
     </li>
     <li>
