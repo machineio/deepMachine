@@ -104,10 +104,6 @@ fun.views.navbar = Backbone.View.extend({
         navDashboard = this.$('#fun-nav-dashboard');
         navDashboard.html(template);
 
-        if (!$("#brand-n-stuff").hasClass("fun-brand")){
-            $("#brand-n-stuff").addClass("fun-brand");
-        }
-
         // first we check for system admin
         if (context !== null && context.trim() === 'System Admin') {
             this.$('#nav-new-account').removeClass('hide').addClass('show');
