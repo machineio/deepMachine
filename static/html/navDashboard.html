@@ -3,17 +3,26 @@
         <input type="text" id="searchInput" class="form-control" type="search" placeholder=" " onblur="this.value=''">
     </li>
     <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-money fa-fw"></i>
+            Exp. Points
+        </a>
+        <ul class="dropdown-menu" style="background color: #;background: #232323;">
+            <li id="current-budget"><a href="#home">Balance $517</a></li>
+            <li><a href="#deposit">Deposit</a></li>
+            <li><a href="#withdraw">Withdraw</a></li>
+        </ul>
+    </li>
+    <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <i class="fa fa-plus fa-fw"></i>
             <%= translate("Create") %>
         </a>
         <ul class="dropdown-menu" role="menu">
             <li id="nav-new-account" class="hide"><a href="#accounts"><i class="fa fa-user-plus fa-fw"></i> <%= translate("newAccount") %></a></li>
-            <li id="nav-new-campaign"><a href="#campaigns"><i class="fa fa-dot-circle-o fa-fw"></i> <%= translate("newCampaign") %></a></li>
+            <li id="nav-new-trade"><a href="#trades"><i class="fa fa-dot-circle-o fa-fw"></i> <%= translate("newTrade") %></a></li>
             <li id="nav-new-calendar"><a href="#calendars"><i class="fa fa-calendar-plus-o fa-fw"></i> <%= translate("newCalendarEvent") %></a></li>
             <li id="nav-new-contact"><a href="#contacts"><i class="fa fa-book fa-fw"></i> <%= translate("newContact") %></a></li>
-            <li id="nav-new-cube" class="hide"><a href="#cubes"><i class="fa fa-cube fa-fw"></i> <%= translate("newCube") %></a></li>
-            <li id="nav-new-gateway" class="hide"><a href="#gateways"><i class="fa fa-train fa-fw"></i> <%= translate("newGateway") %></a></li>
             <li id="nav-new-resource" class="hide"><a href="#resources"><i class="fa fa-diamond fa-flip-vertical fa-fw"></i> <%= translate("newResource") %></a></li>
             <li id="nav-new-task"><a href="#tasks"><i class="fa fa-plug fa-fw"></i> <%= translate("newTask") %></a></li>
             <li id="nav-new-member" class="hide"><a href="#members"><i class="fa fa-user-plus fa-fw"></i> <%= translate("newMember") %></a></li>
@@ -26,19 +35,6 @@
         <a href="#messages" title="<%= translate("Messages") %>">
             <i class="fa fa-envelope fa-fw"></i>
             <%= translate("Messages") %>
-        </a>
-    </li>
-    <li class="dropdown">
-              <a href="#cashier" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cashier</a>
-              <ul class="dropdown-menu" style="background color: #;background: #232323;">
-                <li><a href="#purchase">Purchase</a></li>
-                <!--<li><a href="#redeem">Redeem</a></li>-->
-              </ul>
-          </li>
-    <li id="nav-phone">
-        <a href="#phone" title="<%= translate("phone") %>">
-            <i class="fa fa-phone fa-fw"></i>
-            <%= translate("phone") %>
         </a>
     </li>
     <li>
@@ -56,7 +52,6 @@
             <li>
                 <a href="#settings"><i class="fa fa-users fa-fw"></i> <%= translate("manageOrganizations") %></a>
             </li>
-            
             <li>
                 <a href="#calendars" title="<%= translate("Calendar") %>">
                     <i class="fa fa-calendar fa-fw"></i>
@@ -66,7 +61,7 @@
             <li>
                 <a href="#monitors" title="<%= translate("Monitor") %>">
                     <i class="fa fa-desktop fa-fw"></i>
-                    <%= translate("Monitor") %>
+                    <%= translate("Trade Monitor") %>
                 </a>
             </li>
             <li>
