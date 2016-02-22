@@ -17,6 +17,7 @@ fun.strings = {
     doNotDisturb: "Do Not Disturb",
     address: "Address",
     zipcode: "ZIP Code",
+    binaryOptions: "Binary Options",
     predictions: "Predictions",
     city: "City",
     state: "State/Province",
