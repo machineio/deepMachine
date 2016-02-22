@@ -3,12 +3,11 @@
         <input type="text" id="searchInput" class="form-control" type="search" placeholder=" " onblur="this.value=''">
     </li>
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <a id="current-budget" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-money fa-fw"></i>
-            Exp. Points
+            XP 517
         </a>
-        <ul class="dropdown-menu" style="background color: #;background: #232323;">
-            <li id="current-budget"><a href="#home">Balance $517</a></li>
+        <ul class="dropdown-menu">
             <li><a href="#deposit">Deposit</a></li>
             <li><a href="#withdraw">Withdraw</a></li>
         </ul>
@@ -32,18 +31,18 @@
         </ul>
     </li>
     <li>
-        <a href="#messages" title="<%= translate("Messages") %>">
-            <i class="fa fa-envelope fa-fw"></i>
-            <%= translate("Messages") %>
-        </a>
-    </li>
-    <li>
         <a data-toggle="dropdown" class="dropdown-toggle">
             <span data-label-placement=""><i class="fa fa-user fa-fw"></i> <%= account %></span>
         </a>
         <ul id="account-list-ul" class="dropdown-menu">
             <li>
                 <input type="radio" id="current_account_0" name="current_account" value="0"><label for="current_account_0"><i class="fa fa-user fa-fw"></i><%= account %></label>
+            </li>
+            <li>
+                <a href="#messages" title="<%= translate("Messages") %>">
+                    <i class="fa fa-envelope fa-fw"></i>
+                    <%= translate("Messages") %>
+                </a>
             </li>
             <li class="divider"></li>
             <li>
