@@ -1,6 +1,994 @@
 <div class="container">
 
     <div class="row">
+
+
+
+        <div class="col-md-12">
+            <div class="row">
+
+                <div class="pull-right">
+                    <a href="#settings" class="btn btn-default">
+                    <i class="fa fa-pencil fa-fw"></i>
+                    <%= translate("editProfile") %>
+                    </a>
+                </div>
+
+                 <ul class="nav nav-tabs">
+                    <li class="active"><a href="#profile-contributions-tab" data-toggle="tab"><i class="fa fa-stop fa-fw"></i> </a></li>
+                    <!-- <li><a href="#profile-three-tab" data-toggle="tab"><i class="fa fa-list-ol fa-fw"></i> </a></li>
+                    <li><a href="#profile-events-tab" data-toggle="tab"><i class="fa fa-align-justify fa-fw"></i> </a></li> -->
+                    <!-- <li><a href="#profile-contacts-tab" data-toggle="tab"><i class="fa fa-th fa-fw"></i> </a></li>  -->
+                </ul>
+
+                <div class="tab-content">
+
+                    <div id="profile-contributions-tab" class="tab-pane active">
+
+                        <div class="row">
+                            <section class="content">
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-2 dropdows-part">
+                                        <form id="profile-first-trade-form">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="profile_first_asset" name="profile_first_asset">Asset</label>
+
+                                                        <select id="profile_first_asset" class="form-control">
+                                                            <option value="EUR_USD">EUR/USD</option>}
+                                                            <option value="EUR_GBP">EUR/GBP</option>
+                                                            <option value="EUR_AUD">EUR/AUD</option>
+                                                            <option value="EUR_CAD">EUR/CAD</option>
+                                                            <option value="EUR_JPY">EUR/JPY</option>
+                                                            <option value="EUR_ZAR">EUR/ZAR</option>
+                                                            <option value="EUR_CHF">EUR/CHF</option>
+                                                            <option value="USD_CAD">USD/CAD</option>
+                                                            <option value="USD_JPY">USD/JPY</option>
+                                                            <option value="USD_INR">USD/INR</option>
+                                                            <option value="USD_ZAR">USD/ZAR</option>
+                                                            <option value="USD_MXN">USD/MXN</option>
+                                                            <option value="USD_CHF">USD/CHF</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="profile_first_expiry">Expiry</label>
+                                                        <select id="profile_first_expiry" class="form-control" name="profile_first_expiry">
+                                                            <option value="0">5</option>}
+                                                            <option value="1">10</option>
+                                                            <option value="2">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="4">30</option>
+                                                            <option value="5">1:00</option>
+                                                            <option value="6">2:00</option>
+                                                            <option value="7">2:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="profile_first_amount">Amount</label>
+                                                        <input id="profile_first_amount" class="form-control" type="text"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                        <div class="row text-center top-buttons-row">
+                                            <button type="button" class="btn btn">30m</button>
+                                            <button type="button" class="btn btn">1h</button>
+                                            <button type="button" class="btn btn">2h</button>
+                                            <button type="button" class="btn btn">6h</button>
+                                            <button type="button" class="btn btn">12h</button>
+                                        </div>
+                                        <!-- interactive chart -->
+                                        <div class="box box-primary" style="border-bottom: 3px solid #848180;" >
+                                            <div class="box-body">
+                                                <div id="binary_first_trade" style="height: 200px;"></div>
+                                            </div><!-- /.box-body-->
+                                        </div><!-- /.box -->
+                                    </div><!-- /.col -->
+                                    <div class="col-xs-2">
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button id="profile-first-trade-call" type="button" class="center-buttons" style="background: #587d38;">CALL</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button id="ws-tick-feed" type="button" class="center-buttons center-button-disabled">0</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button id="profile-first-trade-put" type="button" class="center-buttons" style="background: #a11e21;">PUT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 info-col">
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Potential Payout</h4>
+                                                <p>$45.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h1>60%</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.row -->
+                            </section><!-- /.content -->    
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 margin-top-profile">
+
+                        
+                            <div class="bs-example pull-right">
+
+                                <div class="btn-group">
+                                    <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><i class="fa fa-history fa-fw"></i> <span data-label-placement=""><%= translate("oneWeek") %></span> <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <input type="radio" id="act_1" name="act" value="1">
+                                            <label for="act_1"><%= translate("oneDay") %></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="act_2" name="act" value="2">
+                                            <label for="act_2"><%= translate("threeDays") %></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="act_3" name="act" value="3" checked="">
+                                            <label for="act_3"><%= translate("oneWeek") %></label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="act_4" name="act" value="4">
+                                            <label for="act_4"><%= translate("oneMonth") %></label>
+                                        </li>
+                                    </ul>
+                                </div>
+                    
+                            </div>
+                            <h4><%= translate("tradeActivity") %></h4>
+
+                            <div id="later-tasks-list2">
+                                <table id="later-tasks-list" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th><%= translate("direction") %></th>
+                                            <th><%= translate("asset") %></th>
+                                            <th><%= translate("tradeDate") %></th>
+                                            <th><%= translate("entryTime") %></th>
+                                            <th><%= translate("expireTime") %></th>
+                                            <th><%= translate("investmentAmount") %></th>
+                                            <th><%= translate("payoutPercentage") %></th>
+                                            <th><%= translate("Payout") %></th>
+                                            <th><%= translate("entryRate") %></th>
+                                            <th><%= translate("exitRate") %></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
+                                            <td>EUR/USD</td>
+                                            <td>2016-02-17</td>
+                                            <td>9:30:00</td>
+                                            <td>10:00:00</td>
+                                            <td>100</td>
+                                            <td>71%</td>
+                                            <td>171</td>
+                                            <td>1.11178</td>
+                                            <td>1.11360</td>
+                                        </tr>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
+                                            <td>GBP/USD</td>
+                                            <td>2016-02-17</td>
+                                            <td>10:00:00</td>
+                                            <td>10:30:00</td>
+                                            <td>100</td>
+                                            <td>77%</td>
+                                            <td>177</td>
+                                            <td>1.42508</td>
+                                            <td>1.42890</td>
+                                        </tr>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
+                                            <td>GBP/USD</td>
+                                            <td>2016-02-17</td>
+                                            <td>10:45:00</td>
+                                            <td>11:30:00</td>
+                                            <td>100</td>
+                                            <td>77%</td>
+                                            <td>177</td>
+                                            <td>1.42966</td>
+                                            <td>1.43264</td>
+                                        </tr>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
+                                            <td>EUR/USD</td>
+                                            <td>2016-02-17</td>
+                                            <td>10:15:00</td>
+                                            <td>11:00:00</td>
+                                            <td>100</td>
+                                            <td>71%</td>
+                                            <td>171</td>
+                                            <td>1.11209</td>
+                                            <td>1.11341</td>
+                                        </tr>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
+                                            <td>EUR/USD</td>
+                                            <td>2016-02-17</td>
+                                            <td>11:15:00</td>
+                                            <td>12:00:00</td>
+                                            <td>100</td>
+                                            <td>71%</td>
+                                            <td>171</td>
+                                            <td>1.11346</td>
+                                            <td>1.11400</td>
+                                        </tr>
+                                        <tr class="trade-loss">
+                                            <td><i class="fa fa fa-sort-desc fa-fw pull-left"></i></td>
+                                            <td>GBP/USD</td>
+                                            <td>2016-02-17</td>
+                                            <td>1:30:00</td>
+                                            <td>2:00:00</td>
+                                            <td>100</td>
+                                            <td>85%</td>
+                                            <td>0</td>
+                                            <td>1.42899</td>
+                                            <td>1.42854</td>
+                                        </tr>
+
+                                        <!-- 6 trades 2016-02-18 -->
+
+                                        <tr class="trade-loss">
+                                            <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
+                                            <td>USD/CHF</td>
+                                            <td>2016-02-18</td>
+                                            <td>09:30:00</td>
+                                            <td>10:00:00</td>
+                                            <td>100</td>
+                                            <td>75%</td>
+                                            <td>0</td>
+                                            <td>0.99668</td>
+                                            <td>0.99426</td>
+                                        </tr>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-desc fa-fw pull-left"></i></td>
+                                            <td>USD/CHF</td>
+                                            <td>2016-02-18</td>
+                                            <td>11:00:00</td>
+                                            <td>11:30:00</td>
+                                            <td>100</td>
+                                            <td>80%</td>
+                                            <td>180</td>
+                                            <td>0.99690</td>
+                                            <td>0.99296</td>
+                                        </tr>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-desc fa-fw pull-left"></i></td>
+                                            <td>USD/CHF</td>
+                                            <td>2016-02-18</td>
+                                            <td>12:00:00</td>
+                                            <td>12:30:00</td>
+                                            <td>100</td>
+                                            <td>80%</td>
+                                            <td>180</td>
+                                            <td>0.99537</td>
+                                            <td>0.99271</td>
+                                        </tr>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
+                                            <td>USD/CHF</td>
+                                            <td>2016-02-18</td>
+                                            <td>13:30:00</td>
+                                            <td>14:00:00</td>
+                                            <td>100</td>
+                                            <td>77%</td>
+                                            <td>177</td>
+                                            <td>0.99251</td>
+                                            <td>0.99426</td>
+                                        </tr>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-desc fa-fw pull-left"></i></td>
+                                            <td>USD/CHF</td>
+                                            <td>2016-02-18</td>
+                                            <td>15:00:00</td>
+                                            <td>15:30:00</td>
+                                            <td>100</td>
+                                            <td>70%</td>
+                                            <td>170</td>
+                                            <td>0.99540</td>
+                                            <td>0.99364</td>
+                                        </tr>
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-desc fa-fw pull-left"></i></td>
+                                            <td>USD/CHF</td>
+                                            <td>2016-02-18</td>
+                                            <td>16:00:00</td>
+                                            <td>16:30:00</td>
+                                            <td>100</td>
+                                            <td>80%</td>
+                                            <td>180</td>
+                                            <td>0.99502</td>
+                                            <td>0.99291</td>
+                                        </tr>
+
+                                        <!-- 6 trades 2016-02-18 -->
+
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-desc fa-fw pull-left"></i></td>
+                                            <td>EUR/USD</td>
+                                            <td>2016-02-19</td>
+                                            <td>08:30:00</td>
+                                            <td>09:00:00</td>
+                                            <td>100</td>
+                                            <td>70%</td>
+                                            <td>170</td>
+                                            <td>1.11060</td>
+                                            <td>1.10660</td>
+                                        </tr>
+
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
+                                            <td>GBT/USD</td>
+                                            <td>2016-02-19</td>
+                                            <td>11:00:00</td>
+                                            <td>11:30:00</td>
+                                            <td>100</td>
+                                            <td>75%</td>
+                                            <td>175</td>
+                                            <td>1.42553</td>
+                                            <td>1.43337</td>
+                                        </tr>
+
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-desc fa-fw pull-left"></i></td>
+                                            <td>USD/CHF</td>
+                                            <td>2016-02-19</td>
+                                            <td>11:30:00</td>
+                                            <td>12:00:00</td>
+                                            <td>100</td>
+                                            <td>72%</td>
+                                            <td>172</td>
+                                            <td>0.99172</td>
+                                            <td>0.98905</td>
+                                        </tr>
+
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-desc fa-fw pull-left"></i></td>
+                                            <td>USD/CAD</td>
+                                            <td>2016-02-19</td>
+                                            <td>12:30:00</td>
+                                            <td>13:00:00</td>
+                                            <td>100</td>
+                                            <td>80%</td>
+                                            <td>180</td>
+                                            <td>1.38124</td>
+                                            <td>1.37794</td>
+                                        </tr>
+
+                                        <tr class="trade-loss">
+                                            <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
+                                            <td>USD/JPY</td>
+                                            <td>2016-02-19</td>
+                                            <td>14:30:00</td>
+                                            <td>15:00:00</td>
+                                            <td>100</td>
+                                            <td>75%</td>
+                                            <td>0</td>
+                                            <td>112.599</td>
+                                            <td>112.570</td>
+                                        </tr>
+
+                                        <tr class="trade-win">
+                                            <td><i class="fa fa fa-sort-desc fa-fw pull-left"></i></td>
+                                            <td>EUR/GBT</td>
+                                            <td>2016-02-19</td>
+                                            <td>16:30:00</td>
+                                            <td>17:00:00</td>
+                                            <td>100</td>
+                                            <td>73%</td>
+                                            <td>173</td>
+                                            <td>0.77544</td>
+                                            <td>0.77258</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <!-- <div id="color-profile2">
+                                <div class="panel panel-default" id="color-profile">
+                                    
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <i class="fa fa fa-sort-asc fa-fw pull-left"></i>
+                                              
+                                            <p class="description">
+                                               machine-trader call 100 points on username/EUR_USD 22 hours ago
+                                            </p>
+
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa-sort-desc fa-fw pull-left"></i>
+                                              
+                                            <p class="description">
+                                               machine-trader put 50 points on username/EUR_USD 22 hours ago
+                                            </p>
+
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa-sort-desc fa-fw pull-left"></i>
+                                              
+                                            <p class="description">
+                                               machine-trader put 50 points on username/EUR_USD 22 hours ago
+                                            </p>
+
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa fa-sort-desc fa-fw pull-left"></i>
+                                              
+                                            <p class="description">
+                                               machine-trader pull username/USD_JPY  17 hours ago
+                                            </p>
+
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fa fa fa-sort-asc fa-fw pull-left"></i>
+                                              
+                                            <p class="description">
+                                               machine-trader created call username/USD_CAD  15 hours ago
+                                            </p>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> -->
+
+                            </div>
+                        </div>
+
+                        <div class="blankslate">
+                            <h4><%= translate("userNoActivityThisPeriod") %>.</h4>
+                        </div> 
+
+
+                    </div>
+
+
+                    <div id="profile-three-tab" class="tab-pane">
+
+                        <div class="row">
+                            <section class="content">
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-2 dropdows-part">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1" name="exampleInputEmail1">Asset</label>
+                                                        <select class="form-control">
+                                                            <option value="0">AUD/CHF</option>}
+                                                            <option value="1">AUD/JPY</option>
+                                                            <option value="2">AUD/NZD</option>
+                                                            <option value="3">AUD/USD</option>
+                                                            <option value="4">CAD/JPY</option>
+                                                            <option value="5">EUR/AUD</option>
+                                                            <option value="6">EUR/CAD</option>
+                                                            <option value="7">EUR/GBP</option>
+                                                            <option value="8">EUR/JPY</option>
+                                                            <option value="9">EUR/USD</option>
+                                                            <option value="10">EUR/INR</option>
+                                                            <option value="11">EUR/CNY</option>
+                                                            <option value="12">EUR/ZAR</option>
+                                                            <option value="13">EUR/MXN</option>
+                                                            <option value="14">EUR/AED</option>
+                                                            <option value="15">EUR/RUB</option>
+                                                            <option value="16">GBP/CHF</option>
+                                                            <option value="17">NZD/USD</option>
+                                                            <option value="18">USD/CAD</option>
+                                                            <option value="19">USD/CHF</option>
+                                                            <option value="20">USD/JPY</option>
+                                                            <option value="21">USD/INR</option>
+                                                            <option value="22">USD/CNY</option>
+                                                            <option value="23">USD/ZAR</option>
+                                                            <option value="24">USD/MXN</option>
+                                                            <option value="25">USD/AED</option>
+                                                            <option value="26">USD/RUB</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Expiry</label>
+                                                        <select class="form-control" name="exampleInputEmail2">
+                                                            <option value="0">5</option>}
+                                                            <option value="1">10</option>
+                                                            <option value="2">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="4">30</option>
+                                                            <option value="5">1:00</option>
+                                                            <option value="6">2:00</option>
+                                                            <option value="7">2:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Amount</label>
+                                                        <input class="form-control" type="text"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                        <div class="row text-center top-buttons-row">
+                                            <button type="button" class="btn btn">30m</button>
+                                            <button type="button" class="btn btn">1h</button>
+                                            <button type="button" class="btn btn">2h</button>
+                                            <button type="button" class="btn btn">4h</button>
+                                            <button type="button" class="btn btn">6h</button>
+                                            <button type="button" class="btn btn">12h</button>
+                                        </div>
+                                        <!-- interactive chart -->
+                                        <div class="box box-primary" style="border-bottom: 3px solid #848180;" >
+                                            <div class="box-body">
+                                                <div id="fun-time-line-chart" style="height: 200px;"></div>
+                                            </div><!-- /.box-body-->
+                                        </div><!-- /.box -->
+                                    </div><!-- /.col -->
+                                    <div class="col-xs-2">
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #587d38;">CALL</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" disabled="disabled" class="center-buttons center-button-disabled">95.975</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #a11e21;">PUT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 info-col">
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Potential Payout</h4>
+                                                <p>$45.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h1>60%</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Protected Amount</h4>
+                                                <p>$0.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.row -->
+                            </section><!-- /.content -->    
+
+                        </div>
+
+                        <div class="row">
+                            <section class="content">
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-2 dropdows-part">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1" name="exampleInputEmail1">Asset</label>
+                                                        <select class="form-control">
+                                                            <option value="0">AUD/CHF</option>}
+                                                            <option value="1">AUD/JPY</option>
+                                                            <option value="2">AUD/NZD</option>
+                                                            <option value="3">AUD/USD</option>
+                                                            <option value="4">CAD/JPY</option>
+                                                            <option value="5">EUR/AUD</option>
+                                                            <option value="6">EUR/CAD</option>
+                                                            <option value="7">EUR/GBP</option>
+                                                            <option value="8">EUR/JPY</option>
+                                                            <option value="9">EUR/USD</option>
+                                                            <option value="10">EUR/INR</option>
+                                                            <option value="11">EUR/CNY</option>
+                                                            <option value="12">EUR/ZAR</option>
+                                                            <option value="13">EUR/MXN</option>
+                                                            <option value="14">EUR/AED</option>
+                                                            <option value="15">EUR/RUB</option>
+                                                            <option value="16">GBP/CHF</option>
+                                                            <option value="17">NZD/USD</option>
+                                                            <option value="18">USD/CAD</option>
+                                                            <option value="19">USD/CHF</option>
+                                                            <option value="20">USD/JPY</option>
+                                                            <option value="21">USD/INR</option>
+                                                            <option value="22">USD/CNY</option>
+                                                            <option value="23">USD/ZAR</option>
+                                                            <option value="24">USD/MXN</option>
+                                                            <option value="25">USD/AED</option>
+                                                            <option value="26">USD/RUB</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Expiry</label>
+                                                        <select class="form-control" name="exampleInputEmail2">
+                                                            <option value="0">5</option>}
+                                                            <option value="1">10</option>
+                                                            <option value="2">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="4">30</option>
+                                                            <option value="5">1:00</option>
+                                                            <option value="6">2:00</option>
+                                                            <option value="7">2:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Amount</label>
+                                                        <input class="form-control" type="text"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                        <div class="row text-center top-buttons-row">
+                                            <button type="button" class="btn btn">30m</button>
+                                            <button type="button" class="btn btn">1h</button>
+                                            <button type="button" class="btn btn">2h</button>
+                                            <button type="button" class="btn btn">4h</button>
+                                            <button type="button" class="btn btn">6h</button>
+                                            <button type="button" class="btn btn">12h</button>
+                                        </div>
+                                        <!-- interactive chart -->
+                                        <div class="box box-primary" style="border-bottom: 3px solid #848180;" >
+                                            <div class="box-body">
+                                                <div id="fun-binary-second-graph" style="height: 200px;"></div>
+                                            </div><!-- /.box-body-->
+                                        </div><!-- /.box -->
+                                    </div><!-- /.col -->
+                                    <div class="col-xs-2">
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #587d38;">CALL</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" disabled="disabled" class="center-buttons center-button-disabled">95.975</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #a11e21;">PUT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 info-col">
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Potential Payout</h4>
+                                                <p>$45.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h1>60%</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Protected Amount</h4>
+                                                <p>$0.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.row -->
+                            </section><!-- /.content -->    
+
+                        </div>
+
+                        <div class="row">
+                            <section class="content">
+                                <br>
+                                <div class="row">
+                                    <div class="col-xs-2 dropdows-part">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1" name="exampleInputEmail1">Asset</label>
+                                                        <select class="form-control">
+                                                            <option value="0">AUD/CHF</option>}
+                                                            <option value="1">AUD/JPY</option>
+                                                            <option value="2">AUD/NZD</option>
+                                                            <option value="3">AUD/USD</option>
+                                                            <option value="4">CAD/JPY</option>
+                                                            <option value="5">EUR/AUD</option>
+                                                            <option value="6">EUR/CAD</option>
+                                                            <option value="7">EUR/GBP</option>
+                                                            <option value="8">EUR/JPY</option>
+                                                            <option value="9">EUR/USD</option>
+                                                            <option value="10">EUR/INR</option>
+                                                            <option value="11">EUR/CNY</option>
+                                                            <option value="12">EUR/ZAR</option>
+                                                            <option value="13">EUR/MXN</option>
+                                                            <option value="14">EUR/AED</option>
+                                                            <option value="15">EUR/RUB</option>
+                                                            <option value="16">GBP/CHF</option>
+                                                            <option value="17">NZD/USD</option>
+                                                            <option value="18">USD/CAD</option>
+                                                            <option value="19">USD/CHF</option>
+                                                            <option value="20">USD/JPY</option>
+                                                            <option value="21">USD/INR</option>
+                                                            <option value="22">USD/CNY</option>
+                                                            <option value="23">USD/ZAR</option>
+                                                            <option value="24">USD/MXN</option>
+                                                            <option value="25">USD/AED</option>
+                                                            <option value="26">USD/RUB</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Expiry</label>
+                                                        <select class="form-control" name="exampleInputEmail2">
+                                                            <option value="0">5</option>}
+                                                            <option value="1">10</option>
+                                                            <option value="2">15</option>
+                                                            <option value="3">20</option>
+                                                            <option value="4">30</option>
+                                                            <option value="5">1:00</option>
+                                                            <option value="6">2:00</option>
+                                                            <option value="7">2:30</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail2">Amount</label>
+                                                        <input class="form-control" type="text"></input>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-6">
+
+                                        <div class="row text-center top-buttons-row">
+                                            <button type="button" class="btn btn">30m</button>
+                                            <button type="button" class="btn btn">1h</button>
+                                            <button type="button" class="btn btn">2h</button>
+                                            <button type="button" class="btn btn">4h</button>
+                                            <button type="button" class="btn btn">6h</button>
+                                            <button type="button" class="btn btn">12h</button>
+                                        </div>
+                                        <!-- interactive chart -->
+                                        <div class="box box-primary" style="border-bottom: 3px solid #848180;" >
+                                            <div class="box-body">
+                                                <div id="interactive_0" style="height: 200px;"></div>
+                                            </div><!-- /.box-body-->
+                                        </div><!-- /.box -->
+                                    </div><!-- /.col -->
+                                    <div class="col-xs-2">
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #587d38;">CALL</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" disabled="disabled" class="center-buttons center-button-disabled">95.975</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 center-buttons-div">
+                                                <button type="button" class="center-buttons" style="background: #a11e21;">PUT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2 info-col">
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Potential Payout</h4>
+                                                <p>$45.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h1>60%</h1>
+                                            </div>
+                                        </div>
+                                        <div class="row right-info">
+                                            <div class="col-xs-12">
+                                                <h4>Protected Amount</h4>
+                                                <p>$0.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- /.row -->
+                            </section><!-- /.content -->    
+
+                        </div>
+                        
+                    </div>
+
+                    <!-- <div id="profile-contacts-tab" class="tab-pane">
+
+                        
+                    </div> -->
+
+                    <div id="profile-events-tab" class="tab-pane">
+                        <table id="done-tasks-list" class="table">
+                            <thead>
+                                <tr>
+                                    <th><%= translate("asset") %></th>
+                                    <th><%= translate("expireTime") %></th>
+                                    <th><%= translate("investment") %></th>
+                                    <th><%= translate("potentialPayout") %></th>
+                                    <th><%= translate("put") %></th>
+                                    <th><%= translate("rate") %></th>
+                                    <th><%= translate("call") %></th>
+                                    <th><%= translate("chart") %></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>20:00</td>
+                                    <td>$2</td>
+                                    <td>%200 $20</td>
+                                    <td>PUT</td>
+                                    <td>82.221</td>
+                                    <td>CALL</td>
+                                    <td>+</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+
+                    
+                        
+                </div><!-- /.tab-content -->
+
+
+            </div>
+        </div>
         
         <!-- <div class="col-md-3">
 
