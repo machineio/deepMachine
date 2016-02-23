@@ -20,7 +20,13 @@
     border: none;
 }
 
+.trade-loss{
+    background-color: #e3a18b;
+}
 
+.trade-win{
+    background-color: #acbf9e;
+}
 
 .btn-warning:active, .btn-warning.active {
     background-color: #858181;
