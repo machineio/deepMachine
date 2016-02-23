@@ -176,7 +176,7 @@ fun.views.profile = Backbone.View.extend({
                         plot.setupGrid();
                         plot.draw();
                     } else { // if(series.data.length > 10)
-                        plot = $.plot(placeholder, [series], {
+                        plot = $.plot($('#binary_first_trade'), [series], {
                             xaxis:{
                                 mode: "time",
                                 timeformat: "%H:%M:%S",
