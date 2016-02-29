@@ -345,8 +345,8 @@ fun.views.profile = Backbone.View.extend({
 
         $("#signupForm").validate({
             rules: {
-                firstname: "required",
-                lastname: "required",
+                asset: "required",
+                expiry: "required",
                 username: {
                     required: true,
                     minlength: 2
@@ -367,8 +367,8 @@ fun.views.profile = Backbone.View.extend({
                 agree: "required"
             },
             messages: {
-                firstname: "Please enter your firstname",
-                lastname: "Please enter your lastname",
+                asset: "Please select your instrument",
+                expiry: "Please enter your expiry time",
                 username: {
                     required: "Please enter a username",
                     minlength: "Your username must consist of at least 2 characters"
