@@ -154,14 +154,11 @@ fun.views.profile = Backbone.View.extend({
 
         ws.onmessage = function(event) {
 
-            data = $.parseJSON(event.data);
-            message = data['message'];
-
-            console.log(message);
+            message = $.parseJSON(event.data['message']);
 
             console.log(typeof(message));
 
-            if ("instrument" in message){
+            if (_.has(message, 'instrument')){
 
                 firstElement = document.getElementById("profile_first_asset");
                 firstAsset = firstElement.options[firstElement.selectedIndex].value;
