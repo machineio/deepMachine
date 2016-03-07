@@ -130,6 +130,7 @@ fun.views.profile = Backbone.View.extend({
             plot = null,
             series,
             data,
+            has_message,
             message,
             firstElement,
             firstAsset;
@@ -154,7 +155,14 @@ fun.views.profile = Backbone.View.extend({
 
         ws.onmessage = function(event) {
 
-            message = $.parseJSON(event.data['message']);
+
+            data = $.parseJSON(event.data);
+
+            has_message = _.has(data, 'message');
+
+            if(has_message){
+                message = $.parseJSON(data['message']);
+            }
 
             console.log(typeof(message));
 
