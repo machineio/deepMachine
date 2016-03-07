@@ -162,39 +162,43 @@ fun.views.profile = Backbone.View.extend({
 
             if(has_message){
                 message = $.parseJSON(data['message']);
-            }
 
-            console.log(typeof(message));
+                console.log(typeof(message));
 
-            if (_.has(message, 'instrument')){
+                if (_.has(message, 'instrument')){
 
-                firstElement = document.getElementById("profile_first_asset");
-                firstAsset = firstElement.options[firstElement.selectedIndex].value;
+                    firstElement = document.getElementById("profile_first_asset");
+                    firstAsset = firstElement.options[firstElement.selectedIndex].value;
 
-                if (firstAsset === message['instrument']){
+                    if (firstAsset === message['instrument']){
 
-                    $('#first-tick-feed').html(message.bid);
+                        $('#first-tick-feed').html(message.bid);
 
-                    series.data.push([moment.unix(Number(message.time)).format('x'), message.bid]);
-                    while (series.data.length > datalen) {
-                        series.data.shift();
-                    }
-                    if(plot) {
-                        plot.setData([series]);
-                        plot.setupGrid();
-                        plot.draw();
-                    } else { // if(series.data.length > 10)
-                        plot = $.plot($('#binary_first_trade'), [series], {
-                            xaxis:{
-                                mode: "time",
-                                timeformat: "%H:%M:%S",
-                                minTickSize: [2, "second"],
-                            }
-                        });
-                        plot.draw();
+                        series.data.push([moment.unix(Number(message.time)).format('x'), message.bid]);
+                        while (series.data.length > datalen) {
+                            series.data.shift();
+                        }
+                        if(plot) {
+                            plot.setData([series]);
+                            plot.setupGrid();
+                            plot.draw();
+                        } else { // if(series.data.length > 10)
+                            plot = $.plot($('#binary_first_trade'), [series], {
+                                xaxis:{
+                                    mode: "time",
+                                    timeformat: "%H:%M:%S",
+                                    minTickSize: [2, "second"],
+                                }
+                            });
+                            plot.draw();
+                        }
                     }
                 }
-            }  
+
+
+            }
+
+              
         }
         ws.onopen = function(event) {
             $('#conn_status').html('<b>Connected</b>');
