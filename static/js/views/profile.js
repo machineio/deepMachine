@@ -399,8 +399,7 @@ fun.views.profile = Backbone.View.extend({
     firstTradePut: function(event){
         console.log('first trade put');
         'use strict';
-        var signupError,
-            asset,
+        var asset,
             expiry,
             amount,
             view,
@@ -409,17 +408,10 @@ fun.views.profile = Backbone.View.extend({
             callbacks,
             validForm;
         event.preventDefault();
-        
-        signupError = this.signupError;
-        asset = this.asset.val();
-        expiry = this.expiry.val();
-        amount = this.amount.val();
 
-        console.log(asset, expiry, amount);
         // check if this view stuff is really needed
         view = this;
         
-
         $("#first-trade-form").validate({
             rules: {
                 asset: "required",
@@ -448,15 +440,16 @@ fun.views.profile = Backbone.View.extend({
                 $( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
             }
         });
-
-
-        // check for a valid form and create the new user account
         validForm = $('#first-trade-form').valid();
         if (validForm){
-            //event.preventDefault();
             console.log('yeah!');
+            asset = this.asset.val();
+            expiry = this.expiry.val();
+            amount = this.amount.val();
+
+            console.log(asset, expiry, amount);
         } else {
-          console.log('nooo!');
+          console.log('nooo! )=');
         }
     },
 
