@@ -420,7 +420,6 @@ fun.views.profile = Backbone.View.extend({
         view = this;
         
 
-
         $("#first-trade-form").validate({
             rules: {
                 asset: "required",
@@ -448,7 +447,7 @@ fun.views.profile = Backbone.View.extend({
             unhighlight: function (element, errorClass, validClass) {
                 $( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
             }
-        });s
+        });
 
 
         // check for a valid form and create the new user account
