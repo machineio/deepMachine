@@ -225,8 +225,12 @@ fun.views.profile = Backbone.View.extend({
             view,
             rules,
             validationRules,
+            time,
+            new_trade,
+            type
             callbacks,
             validForm;
+
         event.preventDefault();
         
         signupError = this.signupError;
@@ -238,7 +242,6 @@ fun.views.profile = Backbone.View.extend({
         // check if this view stuff is really needed
         view = this;
         
-
 
         $("#first-trade-form").validate({
             rules: {
@@ -268,13 +271,26 @@ fun.views.profile = Backbone.View.extend({
                 $( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
             }
         });
+        
 
-
-        // check for a valid form and create the new user account
         validForm = $('#first-trade-form').valid();
         if (validForm){
-            //event.preventDefault();
             console.log('yeah!');
+            asset = this.asset.val();
+            expiry = this.expiry.val();
+            amount = this.amount.val();
+            time = moment.utc();
+            type = 'put';
+
+            new_trade  = {
+                'asset':asset,
+                'amount':amount,
+                'expiry':expiry,
+                'time': time,
+                'type': type
+            }
+
+            console.log(new_trade)
         } else {
           console.log('nooo!');
         }
@@ -407,6 +423,9 @@ fun.views.profile = Backbone.View.extend({
             tick,
             validationRules,
             callbacks,
+            new_trade,
+            time,
+            type,
             validForm;
         event.preventDefault();
 
@@ -447,12 +466,19 @@ fun.views.profile = Backbone.View.extend({
             asset = this.asset.val();
             expiry = this.expiry.val();
             amount = this.amount.val();
-         
-            tack =  document.getElementById('first-tick-feed').value;
+            time = moment.utc();
+            type = 'put';
 
-            console.log(asset, expiry, amount, tack);
+            new_trade  = {
+                'asset':asset,
+                'amount':amount,
+                'expiry':expiry,
+                'time': time,
+                'type': type
+            }
 
-            console.log('tack tack tack!');
+            console.log(new_trade)
+            
         } else {
           console.log('nooo! )=');
         }
