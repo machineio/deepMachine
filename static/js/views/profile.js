@@ -170,7 +170,7 @@ fun.views.profile = Backbone.View.extend({
                     if (firstAsset === message['instrument']){
 
                         var comoHora = moment.utc().startOf('hour');
-                        var comoAhora = moment.utc();
+                        var comoAhora = moment.utc().add(1, 'minute');
 
                         $('#first-tick-feed').html(message.bid);
 
@@ -178,7 +178,23 @@ fun.views.profile = Backbone.View.extend({
                         while (series.data.length > datalen) {
                             series.data.shift();
                         }
-                        if(plot) {
+
+
+
+                        plot = $.plot($('#binary_first_trade'), [series], {
+                            xaxis:{
+                                mode: "time",
+                                timeformat: "%H:%M:%S",
+                                minTickSize: [2, "second"],
+                                min: comoHora.toDate(),
+                                max: comoAhora.toDate(),
+                                twelveHourClock: false
+                            }
+                        });
+                        plot.draw();
+
+
+                        /*if(plot) {
                             plot.setData([series]);
                             plot.setupGrid();
                             plot.draw();
@@ -194,7 +210,7 @@ fun.views.profile = Backbone.View.extend({
                                 }
                             });
                             plot.draw();
-                        }
+                        }*/
                     }
                 }
 
