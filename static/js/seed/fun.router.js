@@ -962,12 +962,28 @@ fun.Router = Backbone.Router.extend({
             }
         }
         
+        var startEnd = {
+            start:this.start,
+            end:this.end
+        };
+
+        var startEndLapse = {
+            start:this.start,
+            end:this.end,
+            // get time lapse from dom
+            // lapse:this.lapse,
+            lapse:'hours'
+        };
+
+        var startLapse = {
+            start:moment.utc().startOf('hour').toDate(),
+            lapse:'hours'
+        }
+
         resources = {
             user: new fun.models.User({'account':account}),
             currencies: new fun.models.Currencies(),
-            lapseCurrency: new fun.models.LapseCurrency({
-                lapse: 'hours'
-            })
+            lapseCurrenciesStart: new fun.models.LapseCurrenciesStart(startLapse)
         };
 
 
