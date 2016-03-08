@@ -118,8 +118,6 @@ fun.views.profile = Backbone.View.extend({
        
         strUser = element.options[element.selectedIndex].value;
 
-        console.log(strUser);
-
     },
 
     renderTickGraph: function(){
