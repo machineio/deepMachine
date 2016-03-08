@@ -153,6 +153,7 @@ fun.views.profile = Backbone.View.extend({
 
         ws.onmessage = function(event) {
 
+            var comoHora, comoAhora;
 
             data = $.parseJSON(event.data);
 
@@ -169,8 +170,11 @@ fun.views.profile = Backbone.View.extend({
 
                     if (firstAsset === message['instrument']){
 
-                        var comoHora = moment.utc().startOf('hour');
-                        var comoAhora = moment.utc();
+
+                        //this.renderTradeGraph:
+
+                        comoHora = moment.utc().startOf('hour');
+                        comoAhora = moment.utc();
 
                         $('#first-tick-feed').html(message.bid);
                         $('#profile-first-ask').html(message.ask);
@@ -180,8 +184,6 @@ fun.views.profile = Backbone.View.extend({
                         while (series.data.length > datalen) {
                             series.data.shift();
                         }
-
-
 
                         plot = $.plot($('#binary_first_trade'), [series], {
                             xaxis:{
@@ -194,25 +196,6 @@ fun.views.profile = Backbone.View.extend({
                             }
                         });
                         plot.draw();
-
-
-                        /*if(plot) {
-                            plot.setData([series]);
-                            plot.setupGrid();
-                            plot.draw();
-                        } else { // if(series.data.length > 10)
-                            plot = $.plot($('#binary_first_trade'), [series], {
-                                xaxis:{
-                                    mode: "time",
-                                    timeformat: "%H:%M:%S",
-                                    minTickSize: [2, "second"],
-                                    min: comoHora.toDate(),
-                                    max: comoAhora.toDate(),
-                                    twelveHourClock: false
-                                }
-                            });
-                            plot.draw();
-                        }*/
                     }
                 }
 
@@ -233,6 +216,99 @@ fun.views.profile = Backbone.View.extend({
 
     firstTradeCall: function(event){
         console.log('first trade call');
+        console.log('first trade put');
+        'use strict';
+        var signupError,
+            asset,
+            expiry,
+            amount,
+            view,
+            rules,
+            validationRules,
+            callbacks,
+            validForm;
+        event.preventDefault();
+        
+        signupError = this.signupError;
+        asset = this.asset.val();
+        expiry = this.expiry.val();
+        amount = this.amount.val();
+
+        console.log(asset, expiry, amount);
+        // check if this view stuff is really needed
+        view = this;
+        
+
+
+        $("#first-trade-form").validate({
+            rules: {
+                asset: "required",
+                expiry: "required",
+                username: {
+                    required: true,
+                    minlength: 2
+                },
+                password: {
+                    required: true,
+                    minlength: 5
+                },
+                confirm_password: {
+                    required: true,
+                    minlength: 5,
+                    equalTo: "#password"
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                agree: "required"
+            },
+            messages: {
+                asset: "Please select your instrument",
+                expiry: "Please enter your expiry time",
+                username: {
+                    required: "Please enter a username",
+                    minlength: "Your username must consist of at least 2 characters"
+                },
+                password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 5 characters long"
+                },
+                confirm_password: {
+                    required: "Please provide a password",
+                    minlength: "Your password must be at least 5 characters long",
+                    equalTo: "Please enter the same password as above"
+                },
+                email: "Please enter a valid email address",
+                agree: "Please accept our policy"
+            },
+            errorElement: "em",
+            errorPlacement: function ( error, element ) {
+                // Add the `help-block` class to the error element
+                error.addClass( "help-block" );
+                if ( element.prop( "type" ) === "checkbox" ) {
+                    error.insertAfter( element.parent( "label" ) );
+                } else {
+                    error.insertAfter( element );
+                }
+            },
+            highlight: function ( element, errorClass, validClass ) {
+                $( element ).parents( ".col-sm-5" ).addClass( "has-error" ).removeClass( "has-success" );
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
+            }
+        });
+
+
+        // check for a valid form and create the new user account
+        validForm = $('#first-trade-form').valid();
+        if (validForm){
+            //event.preventDefault();
+            console.log('yeah!');
+        } else {
+          console.log('nooo!');
+        }
     },
 
     signup: function(event){
@@ -376,7 +452,7 @@ fun.views.profile = Backbone.View.extend({
         
 
 
-        $("#signupForm").validate({
+        $("#first-trade-form").validate({
             rules: {
                 asset: "required",
                 expiry: "required",
@@ -438,7 +514,7 @@ fun.views.profile = Backbone.View.extend({
 
 
         // check for a valid form and create the new user account
-        validForm = $('#signupForm').valid();
+        validForm = $('#first-trade-form').valid();
         if (validForm){
             //event.preventDefault();
             console.log('yeah!');
