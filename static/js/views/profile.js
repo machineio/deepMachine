@@ -227,7 +227,7 @@ fun.views.profile = Backbone.View.extend({
             validationRules,
             time,
             new_trade,
-            type
+            type,
             callbacks,
             validForm;
 
