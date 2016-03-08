@@ -21,6 +21,7 @@ fun.conf = {
     uuidRecord: 'record_uuid',
     uuidBilling: 'billing_uuid',
     uuidCalendar: 'calendar_uuid',
+    uuidCurrency: 'currency_uuid',
     uuidMonitor: 'monitor_uuid',
     uuidAddress: 'address_uuid',
     uuidAlert: 'alert_uuid',
@@ -78,6 +79,11 @@ fun.conf.urls = {
     records: '/records/',
     billing: fun.utils.format('/billings/%s', fun.conf.uuidBilling),
     billings: '/billings/',
+
+
+    currency: fun.utils.format('/currencies/%s', fun.conf.uuidCurrency),
+    currencies: '/currencies/',
+
     pricing: fun.utils.format('/pricings/%s', fun.conf.uuidPricing),
     pricings: '/pricings/',
     calendars: '/calendars/',
