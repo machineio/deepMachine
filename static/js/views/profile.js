@@ -278,7 +278,7 @@ fun.views.profile = Backbone.View.extend({
             asset = this.asset.val();
             expiry = this.expiry.val();
             amount = this.amount.val();
-            time = moment.utc();
+            time = moment.utc().toDate();
             type = 'call';
 
             new_trade  = {
