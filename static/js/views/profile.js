@@ -164,10 +164,6 @@ fun.views.profile = Backbone.View.extend({
 
                 message = $.parseJSON(data['message']);
 
-                console.log('daye');
-                console.log(message);
-
-
                 if (_.has(message, 'instrument')){
 
                     firstElement = document.getElementById("profile_first_asset");
