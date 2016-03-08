@@ -221,6 +221,7 @@ fun.views.profile = Backbone.View.extend({
         var asset,
             expiry,
             amount,
+            ask,
             bid,
             view,
             rules,
@@ -275,7 +276,7 @@ fun.views.profile = Backbone.View.extend({
         validForm = $('#first-trade-form').valid();
         if (validForm){
             asset = this.asset.val();
-            ask = $('#profile-first-bid').html();
+            ask = this.ask.html();
             bid = this.bid.html();
             expiry = this.expiry.val();
             amount = this.amount.val();
