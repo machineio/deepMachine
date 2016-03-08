@@ -143,25 +143,8 @@ fun.models.Address = Backbone.Model.extend({
 });
 
 
-fun.models.Currencies = Backbone.Collection.extend({
 
-    model: fun.models.Currency,
 
-    urlRoot: fun.conf.urls.currencies,
-
-    url: function() {
-        return this.urlRoot;
-    },
-
-    sync: function(method, model, options) {
-        options.contentType = 'application/json';
-        return Backbone.sync(method, model, options);
-    },
-
-    parse: function(response){
-        return response.results;
-    }
-});
 
 
 fun.models.Currency = Backbone.Model.extend({
@@ -184,6 +167,141 @@ fun.models.Currency = Backbone.Model.extend({
     sync: function(method, model, options) {
         options.contentType = 'application/json';
         return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.CurrencyStart = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    initialize: function(options){
+        this.start = options.start;
+    },
+
+    urlRoot: fun.conf.urls.currencyStart,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
+
+
+fun.models.CurrenciesStart = Backbone.Collection.extend({
+   
+    model: fun.models.CurrencyStart,
+
+    initialize: function(options){
+        this.start = options.start;
+    },
+
+    urlRoot: fun.conf.urls.summariesStart,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        return url;
+    },
+
+    parse: function(response){
+        return response.results;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.CurrencyStartEnd = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    initialize: function(options){
+        this.start = options.start;
+        this.end = options.end;
+    },
+
+    urlRoot: fun.conf.urls.currencyStartEnd,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        url = url.replace(fun.conf.endTime, this.end);
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.CurrenciesStartEnd = Backbone.Collection.extend({
+   
+    model: fun.models.CurrencyStartEnd,
+
+    initialize:function(options){
+        this.start = options.start;
+        this.end = options.end;
+    },
+
+    urlRoot: fun.conf.urls.currenciesStartEnd,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        url = url.replace(fun.conf.endTime, this.end);
+        return url;
+    },
+
+    parse: function(response){
+        return response.results;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+
+fun.models.Currencies = Backbone.Collection.extend({
+
+    model: fun.models.Currency,
+
+    urlRoot: fun.conf.urls.currencies,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    },
+
+    parse: function(response){
+        return response.results;
     }
 });
 
