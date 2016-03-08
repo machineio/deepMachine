@@ -169,6 +169,10 @@ fun.views.profile = Backbone.View.extend({
 
                     if (firstAsset === message['instrument']){
 
+
+                        var cleanToday = moment.utc().startOf('day');
+                        var todayPlusOne = moment.utc().startOf('day').add(1, 'day');
+
                         $('#first-tick-feed').html(message.bid);
 
                         series.data.push([moment.unix(Number(message.time)).format('x'), message.bid]);
@@ -185,6 +189,9 @@ fun.views.profile = Backbone.View.extend({
                                     mode: "time",
                                     timeformat: "%H:%M:%S",
                                     minTickSize: [2, "second"],
+                                    min: cleanToday.toDate(),
+                                    max: todayPlusOne.toDate(),
+                                    twelveHourClock: false
                                 }
                             });
                             plot.draw();
