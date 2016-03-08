@@ -173,7 +173,7 @@ fun.views.profile = Backbone.View.extend({
 
                         $('#first-tick-feed').html(message.bid);
 
-                        series.data.push([moment.unix(Number(message.time)).format('x'), message.bid]);
+                        /*series.data.push([moment.unix(Number(message.time)).format('x'), message.bid]);
                         while (series.data.length > datalen) {
                             series.data.shift();
                         }
@@ -190,7 +190,7 @@ fun.views.profile = Backbone.View.extend({
                                 }
                             });
                             plot.draw();
-                        }
+                        }*/
                     }
                 }
 
