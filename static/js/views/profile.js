@@ -162,12 +162,9 @@ fun.views.profile = Backbone.View.extend({
 
             if(has_message){
 
-                console.log(data);
+                message = $.parseJSON(data['message']);
 
-
-                message = data['message'];
-
-
+                console.log('daye');
                 console.log(message);
 
 
