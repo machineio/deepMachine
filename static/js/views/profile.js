@@ -169,11 +169,8 @@ fun.views.profile = Backbone.View.extend({
 
                     if (firstAsset === message['instrument']){
 
-
-                        var cleanToday = moment.utc().startOf('day');
-                        var todayPlusOne = moment.utc().startOf('day').add(1, 'day');
-                        var comoHora = moment.utc().startOf('hour').fromNow();
-
+                        var comoHora = moment.utc().startOf('hour');
+                        var comoAhora = moment.utc();
 
                         $('#first-tick-feed').html(message.bid);
 
@@ -191,8 +188,8 @@ fun.views.profile = Backbone.View.extend({
                                     mode: "time",
                                     timeformat: "%H:%M:%S",
                                     minTickSize: [2, "second"],
-                                    min: cleanToday.toDate(),
-                                    max: todayPlusOne.toDate(),
+                                    min: comoHora.toDate(),
+                                    max: comoAhora.toDate(),
                                     twelveHourClock: false
                                 }
                             });
