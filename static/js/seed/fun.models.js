@@ -171,6 +171,28 @@ fun.models.Currency = Backbone.Model.extend({
 });
 
 
+fun.models.LapseCurrency = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+    
+    initialize: function(options) {
+        this.lapse = options.lapse;
+    },
+    
+    urlRoot: fun.conf.urls.lapseCurrency,
+    
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.lapse, this.lapse);
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
 fun.models.CurrencyStart = Backbone.Model.extend({
 
     idAttribute: 'uuid',
