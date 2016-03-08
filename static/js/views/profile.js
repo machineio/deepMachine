@@ -275,8 +275,8 @@ fun.views.profile = Backbone.View.extend({
         validForm = $('#first-trade-form').valid();
         if (validForm){
             asset = this.asset.val();
-            ask = this.ask.val();
-            bid = this.bid.val();
+            ask = this.ask.html();
+            bid = this.bid.html();
             expiry = this.expiry.val();
             amount = this.amount.val();
             time = moment.utc().unix();
