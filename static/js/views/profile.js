@@ -425,43 +425,12 @@ fun.views.profile = Backbone.View.extend({
             rules: {
                 asset: "required",
                 expiry: "required",
-                username: {
-                    required: true,
-                    minlength: 2
-                },
-                password: {
-                    required: true,
-                    minlength: 5
-                },
-                confirm_password: {
-                    required: true,
-                    minlength: 5,
-                    equalTo: "#password"
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-                agree: "required"
+                amount: "required"
             },
             messages: {
                 asset: "Please select your instrument",
                 expiry: "Please enter your expiry time",
-                username: {
-                    required: "Please enter a username",
-                    minlength: "Your username must consist of at least 2 characters"
-                },
-                password: {
-                    required: "Please provide a password",
-                    minlength: "Your password must be at least 5 characters long"
-                },
-                confirm_password: {
-                    required: "Please provide a password",
-                    minlength: "Your password must be at least 5 characters long",
-                    equalTo: "Please enter the same password as above"
-                },
-                email: "Please enter a valid email address",
-                agree: "Please accept our policy"
+                amount: "Please enter an amount of experience points"
             },
             errorElement: "em",
             errorPlacement: function ( error, element ) {
@@ -479,7 +448,7 @@ fun.views.profile = Backbone.View.extend({
             unhighlight: function (element, errorClass, validClass) {
                 $( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
             }
-        });
+        });s
 
 
         // check for a valid form and create the new user account
