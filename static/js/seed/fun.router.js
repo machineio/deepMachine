@@ -947,7 +947,33 @@ fun.Router = Backbone.Router.extend({
 
     profile: function(){
         'use strict';
-        var profile = translate('binaryOptions');
+        var account,
+            vonCount = 0,
+            resources,
+            onSuccess,
+            profile = translate('binaryOptions'),
+            message;
+
+        console.log(
+            fun.utils.format('account: %s, organization: %s', account, org)
+        );
+
+        if (!account){
+            account = localStorage.getItem("username");
+        } else {
+            if (account.substring(0, 1) === ':') { 
+                account = account.substring(1);
+            }
+        }
+        
+        resources = {
+            user: new fun.models.User({'account':account}),
+            currencies: new fun.models.Currencies(),
+            lapseCurrency: new fun.models.LapseCurrency({
+                lapse: 'hours'
+            })
+        };
+
 
         fun.utils.hideAll();
         fun.instances.navbar.render();
@@ -955,6 +981,11 @@ fun.Router = Backbone.Router.extend({
         fun.instances.subheader.render(profile);
         fun.instances.subheader.renderHeadNavProfile();
         fun.instances.profile.render();
+
+
+
+
+
         
         fun.instances.footer.render();
     },
