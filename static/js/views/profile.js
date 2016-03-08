@@ -446,6 +446,7 @@ fun.views.profile = Backbone.View.extend({
             asset = this.asset.val();
             expiry = this.expiry.val();
             amount = this.amount.val();
+            tick = $('#first-tick-feed').value
 
             console.log(asset, expiry, amount);
         } else {
