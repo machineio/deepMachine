@@ -214,6 +214,31 @@ fun.models.CurrencyStart = Backbone.Model.extend({
     }
 });
 
+fun.models.LapseCurrenciesStart = Backbone.Collection.extend({
+   
+    model: fun.models.CurrencyStart,
+
+    initialize: function(options){
+        this.start = options.start;
+    },
+
+    urlRoot: fun.conf.urls.currenciesStart,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        return url;
+    },
+
+    parse: function(response){
+        return response.results;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
 
 // so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
 // so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.

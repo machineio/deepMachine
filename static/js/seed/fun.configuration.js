@@ -87,6 +87,15 @@ fun.conf.urls = {
     lapseCurrenciesStart: fun.utils.format('/currencies/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
     lapseCurrenciesStartEnd: fun.utils.format('/currencies/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
 
+    lapseCurrency: fun.utils.format('/currencies/%s', fun.conf.lapse),
+
+
+    lapseCurrencies: fun.utils.format('/currencies/%s', fun.conf.lapse),
+    lapseCurrencyStart: fun.utils.format('/currencies/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
+    lapseCurrencyStartEnd: fun.utils.format('/currencies/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
+    
+
+
 
     pricing: fun.utils.format('/pricings/%s', fun.conf.uuidPricing),
     pricings: '/pricings/',
