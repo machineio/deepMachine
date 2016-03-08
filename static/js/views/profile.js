@@ -247,7 +247,10 @@ fun.views.profile = Backbone.View.extend({
             rules: {
                 asset: "required",
                 expiry: "required",
-                amount: "required"
+                amount: {
+                    number: true,
+                    required: true
+                },
             },
             messages: {
                 asset: "Please select your instrument",
@@ -438,7 +441,10 @@ fun.views.profile = Backbone.View.extend({
             rules: {
                 asset: "required",
                 expiry: "required",
-                amount: "required"
+                amount: {
+                    number: true,
+                    required: true
+                },
             },
             messages: {
                 asset: "Please select your instrument",
