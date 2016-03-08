@@ -161,6 +161,9 @@ fun.views.profile = Backbone.View.extend({
             has_message = _.has(data, 'message');
 
             if(has_message){
+
+                console.log(data);
+
                 message = $.parseJSON(data['message']);
 
                 if (_.has(message, 'instrument')){
