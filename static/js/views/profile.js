@@ -170,7 +170,7 @@ fun.views.profile = Backbone.View.extend({
                     if (firstAsset === message['instrument']){
 
                         var comoHora = moment.utc().startOf('hour');
-                        var comoAhora = moment.utc().add(1, 'minute');
+                        var comoAhora = moment.utc();
 
                         $('#first-tick-feed').html(message.bid);
 
