@@ -143,6 +143,51 @@ fun.models.Address = Backbone.Model.extend({
 });
 
 
+fun.models.Currencies = Backbone.Collection.extend({
+
+    model: fun.models.Currency,
+
+    urlRoot: fun.conf.urls.currencies,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    },
+
+    parse: function(response){
+        return response.results;
+    }
+});
+
+
+fun.models.Currency = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.currency,
+
+    url: function() {
+        'use strict';
+        var url;
+        if (!this.isNew()){
+            url = this.urlRoot.replace(fun.conf.uuidCurrency, this.id);
+        } else {
+            url = fun.conf.urls.currencies;
+        }
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
 fun.models.Addresses = Backbone.Collection.extend({
 
     model: fun.models.Address,
