@@ -275,12 +275,11 @@ fun.views.profile = Backbone.View.extend({
 
         validForm = $('#first-trade-form').valid();
         if (validForm){
-            console.log('yeah!');
             asset = this.asset.val();
             expiry = this.expiry.val();
             amount = this.amount.val();
             time = moment.utc();
-            type = 'put';
+            type = 'call';
 
             new_trade  = {
                 'asset':asset,
@@ -462,7 +461,6 @@ fun.views.profile = Backbone.View.extend({
         });
         validForm = $('#first-trade-form').valid();
         if (validForm){
-            console.log('yeah!');
             asset = this.asset.val();
             expiry = this.expiry.val();
             amount = this.amount.val();
