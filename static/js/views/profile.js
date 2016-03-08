@@ -404,6 +404,7 @@ fun.views.profile = Backbone.View.extend({
             amount,
             view,
             rules,
+            tick,
             validationRules,
             callbacks,
             validForm;
@@ -446,9 +447,9 @@ fun.views.profile = Backbone.View.extend({
             asset = this.asset.val();
             expiry = this.expiry.val();
             amount = this.amount.val();
-            tick = $('#first-tick-feed').value
+            tick = $('#first-tick-feed').value;
 
-            console.log(asset, expiry, amount);
+            console.log(asset, expiry, amount, tick);
         } else {
           console.log('nooo! )=');
         }
