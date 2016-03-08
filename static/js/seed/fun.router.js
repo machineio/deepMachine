@@ -954,10 +954,6 @@ fun.Router = Backbone.Router.extend({
             profile = translate('binaryOptions'),
             message;
 
-        console.log(
-            fun.utils.format('account: %s, organization: %s', account, org)
-        );
-
         if (!account){
             account = localStorage.getItem("username");
         } else {
@@ -981,11 +977,6 @@ fun.Router = Backbone.Router.extend({
         fun.instances.subheader.render(profile);
         fun.instances.subheader.renderHeadNavProfile();
         fun.instances.profile.render();
-
-
-
-
-
         
         fun.instances.footer.render();
     },
