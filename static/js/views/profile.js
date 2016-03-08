@@ -41,6 +41,8 @@ fun.views.profile = Backbone.View.extend({
         this.asset = this.$('#profile_first_asset');
         this.expiry = this.$('#profile_first_expiry');
         this.amount = this.$('#profile_first_amount');
+        this.bid = this.$('#profile-first-bid');
+        this.ask = this.$('#profile-first-ask');
         
         //this.renderBinaryGraph();
         this.renderTickGraph();
@@ -215,13 +217,11 @@ fun.views.profile = Backbone.View.extend({
     },
 
     firstTradeCall: function(event){
-        console.log('first trade call');
-        console.log('first trade put');
         'use strict';
-        var signupError,
-            asset,
+        var asset,
             expiry,
             amount,
+            bid,
             view,
             rules,
             validationRules,
@@ -232,8 +232,7 @@ fun.views.profile = Backbone.View.extend({
             validForm;
 
         event.preventDefault();
-        
-        signupError = this.signupError;
+
         asset = this.asset.val();
         expiry = this.expiry.val();
         amount = this.amount.val();
@@ -276,9 +275,11 @@ fun.views.profile = Backbone.View.extend({
         validForm = $('#first-trade-form').valid();
         if (validForm){
             asset = this.asset.val();
+            ask = this.ask.val();
+            bid = this.bid.val();
             expiry = this.expiry.val();
             amount = this.amount.val();
-            time = moment.utc().toDate();
+            time = moment.utc().unix();
             type = 'call';
 
             new_trade  = {
@@ -286,7 +287,8 @@ fun.views.profile = Backbone.View.extend({
                 'amount':amount,
                 'expiry':expiry,
                 'time': time,
-                'type': type
+                'type': type,
+                'bid': bid
             }
 
             console.log(new_trade)
