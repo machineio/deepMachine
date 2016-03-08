@@ -249,7 +249,7 @@ fun.views.profile = Backbone.View.extend({
             messages: {
                 asset: "Please select your instrument",
                 expiry: "Please enter your expiry time",
-                amount: "Please enter the amount of experience points"
+                amount: "Please enter an amount of experience points"
             },
             errorElement: "em",
             errorPlacement: function ( error, element ) {
