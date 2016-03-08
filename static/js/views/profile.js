@@ -172,6 +172,8 @@ fun.views.profile = Backbone.View.extend({
 
                         var cleanToday = moment.utc().startOf('day');
                         var todayPlusOne = moment.utc().startOf('day').add(1, 'day');
+                        var comoHora = moment.utc().startOf('hour').fromNow();
+
 
                         $('#first-tick-feed').html(message.bid);
 
