@@ -174,6 +174,13 @@ fun.views.profile = Backbone.View.extend({
 
                         $('#first-tick-feed').html(message.bid);
 
+                        $('#profile-first-ask').html(message.ask);
+                        $('#profile-first-bid').html(message.bid);
+
+                        
+
+                        
+
                         series.data.push([moment.unix(Number(message.time)).format('x'), message.bid]);
                         while (series.data.length > datalen) {
                             series.data.shift();
