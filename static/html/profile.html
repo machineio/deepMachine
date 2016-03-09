@@ -1184,7 +1184,7 @@
             </div>
             <div class="modal-body">
 
-                <p>Trouble Tickets track and manage IT problems and their solutions for multiple clients. Use this page to change the contents of an existing Trouble Ticket.</p>
+                <!-- <p>Current trade details.</p> -->
 
                 <div class="row">
                     <div class="col-md-6">
@@ -1195,20 +1195,20 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <th scope="row"><%= translate("uuid") %></th>
-                                        <td id="task-uuid"></td>
+                                        <th scope="row"><%= translate("asset") %></th>
+                                        <td id="trade-asset"></td>
                                     </tr>
                                     <tr>
-                                        <th scope="row"><%= translate("title") %></th>
-                                        <td id="task-title"></td>
+                                        <th scope="row"><%= translate("expiry") %></th>
+                                        <td id="trade-expiry"></td>
                                     </tr>
                                     <tr>
-                                        <th scope="row"><%= translate("assigned") %></th>
-                                        <td id="task-assigned"></td>    
+                                        <th scope="row"><%= translate("amount") %></th>
+                                        <td id="task-amount"></td>    
                                     </tr>
                                     <tr>
-                                        <th scope="row"><%= translate("label") %></th>
-                                        <td id="task-label"></td>
+                                        <th scope="row"><%= translate("bid") %></th>
+                                        <td id="trade-bid"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1223,8 +1223,8 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <th scope="row"><%= translate("source") %></th>
-                                        <td id="task-source"></td>
+                                        <th scope="row"><%= translate("timestamp") %></th>
+                                        <td id="trade-timestamp"></td>
                                     </tr>
                                     <tr>
                                         <th scope="row"><%= translate("status") %></th>
@@ -1234,21 +1234,21 @@
                                         <td>
                                             <div class="btn-group ">
                                                 <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
-                                                    <span id="task_status" data-label-placement="">now</span> 
+                                                    <span id="trade_status" data-label-placement="">pending</span> 
                                                     <span class="caret"></span>
                                                 </button>
                                                 <ul class="dropdown-menu">
                                                     <li>
-                                                        <input type="radio" id="task_status_now" name="task_status" value="now">
-                                                        <label for="task_status_now">now</label>
+                                                        <input type="radio" id="trade_status_now" name="trade_status" value="pending">
+                                                        <label for="task_status_now">pending</label>
                                                     </li>
                                                     <li>
-                                                        <input type="radio" id="task_status_later" name="task_status" value="later">
-                                                        <label for="task_status_later">later</label>
+                                                        <input type="radio" id="trade_status_later" name="trade_status" value="processing">
+                                                        <label for="trade_status_processing">processing</label>
                                                     </li>
                                                     <li>
-                                                        <input type="radio" id="task_status_done" name="task_status" value="done">
-                                                        <label for="task_status_done">done</label>
+                                                        <input type="radio" id="trade_status_done" name="trade_status" value="done">
+                                                        <label for="trade_status_done">done</label>
                                                     </li>
                                                 </ul>
                                             </div>
