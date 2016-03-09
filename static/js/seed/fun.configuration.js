@@ -27,6 +27,7 @@ fun.conf = {
     uuidAlert: 'alert_uuid',
     uuidContact: 'contact_uuid',
     uuidTask: 'task_uuid',
+    uuidTrade: 'trade_uuid',
     uuidCompany: 'company_uuid',
     uuidDirectory: 'directory_uuid',
     uuidPricing: 'pricing_uuid',
@@ -89,11 +90,22 @@ fun.conf.urls = {
 
     lapseCurrency: fun.utils.format('/currencies/%s', fun.conf.lapse),
 
-
     lapseCurrencies: fun.utils.format('/currencies/%s', fun.conf.lapse),
     lapseCurrencyStart: fun.utils.format('/currencies/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
     lapseCurrencyStartEnd: fun.utils.format('/currencies/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
     
+
+    trade: fun.utils.format('/currencies/%s', fun.conf.uuidCurrency),
+    trades: '/currencies/',
+
+    lapseTradesStart: fun.utils.format('/trades/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
+    lapseTradesStartEnd: fun.utils.format('/trades/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
+
+    lapseTrade: fun.utils.format('/trades/%s', fun.conf.lapse),
+
+    lapseTrades: fun.utils.format('/trades/%s', fun.conf.lapse),
+    lapseTradeStart: fun.utils.format('/trades/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
+    lapseTradeStartEnd: fun.utils.format('/trades/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
 
 
 
