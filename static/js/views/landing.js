@@ -3,7 +3,6 @@ fun.views.landing = Backbone.View.extend({
     /**
     * Bind the event functions to the different HTML elements
     */
-
     events : {
         'click #landing-signup-btn': 'signup',
         'click #landing-signin-btn': 'signin'
@@ -80,9 +79,7 @@ fun.views.landing = Backbone.View.extend({
             }
         }
         validationRules = $.extend(rules, fun.utils.validationRules);
-
         $('#langing-signup-form').validate(validationRules);
-        
         // new user account callbacks
         callbacks = {
             success: function(){
