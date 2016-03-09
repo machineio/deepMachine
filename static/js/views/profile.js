@@ -499,6 +499,10 @@ fun.views.profile = Backbone.View.extend({
         callbacks = {
             success: function(){
                 console.log('new trade success');
+
+                $('#profileTradeModal').modal({
+                    'show': true
+                });
             },
 
             error: function(model, error){
