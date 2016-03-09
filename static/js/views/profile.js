@@ -498,11 +498,33 @@ fun.views.profile = Backbone.View.extend({
     },
 
     sendNewTrade: function(new_trade){
+        var direction, bid, asset, expiry, amount, account;
+
+        direction = this.$('#trade_direction');
+        bid = this.$('#trade-bid');
+        asset = this.$('#trade-asset');
+        expiry = this.$('#trade-expiry');
+        amount = this.$('#trade-account');
+        account = this.$('#trade-account');
+
+        
+
+
+
         callbacks = {
             success: function(){
                 console.log('new trade success');
 
                 sessionStorage.setItem("newTrade", JSON.stringify(new_trade));
+
+
+                direction.html('antony');
+
+                account.val('que weon');
+
+
+
+                $('#trade-direction')
 
                 $('#profileTradeModal').modal({
                     'show': true
