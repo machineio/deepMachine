@@ -498,7 +498,7 @@ fun.views.profile = Backbone.View.extend({
     },
 
     sendNewTrade: function(new_trade){
-        var direction, bid, asset, expiry, amount, account;
+        var direction, bid, asset, expiry, amount, account, status;
 
 
         direction = this.$('#trade-direction');
