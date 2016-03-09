@@ -296,9 +296,7 @@ fun.views.profile = Backbone.View.extend({
                 'bid': bid
             }
 
-            console.log(new_trade)
-
-            this.sendNewTrade();
+            this.sendNewTrade(new_trade);
         } else {
           console.log('nooo!');
         }
@@ -493,8 +491,6 @@ fun.views.profile = Backbone.View.extend({
                 'bid': bid
             }
 
-            console.log(new_trade)
-
             this.sendNewTrade();
             
         } else {
@@ -502,8 +498,9 @@ fun.views.profile = Backbone.View.extend({
         }
     },
 
-    sendNewTrade: function(){
+    sendNewTrade: function(new_trade){
         console.log('yeah mae so process here the new fucking trade thx');
+        console.log(new_trade);
     },
 
     oneDay: function(event){
