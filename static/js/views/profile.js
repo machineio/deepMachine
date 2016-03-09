@@ -289,7 +289,7 @@ fun.views.profile = Backbone.View.extend({
                 'asset':asset,
                 'amount':amount,
                 'expiry':expiry,
-                'time': time,
+                'time': String(time),
                 'direction': direction,
                 'bid': bid
             }
@@ -484,7 +484,7 @@ fun.views.profile = Backbone.View.extend({
                 'asset':asset,
                 'amount':amount,
                 'expiry':expiry,
-                'time': time,
+                'time': String(time),
                 'direction': direction,
                 'bid': bid
             }

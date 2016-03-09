@@ -331,7 +331,6 @@ fun.models.Currencies = Backbone.Collection.extend({
     }
 });
 
-
 fun.models.Trade = Backbone.Model.extend({
 
     idAttribute: 'uuid',
