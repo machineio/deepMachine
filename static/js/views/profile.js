@@ -502,6 +502,8 @@ fun.views.profile = Backbone.View.extend({
             success: function(){
                 console.log('new trade success');
 
+                sessionStorage.setItem("newTrade", JSON.stringify(new_trade));
+
                 $('#profileTradeModal').modal({
                     'show': true
                 });
