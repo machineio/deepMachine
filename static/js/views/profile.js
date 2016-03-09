@@ -238,10 +238,8 @@ fun.views.profile = Backbone.View.extend({
         expiry = this.expiry.val();
         amount = this.amount.val();
 
-        console.log(asset, expiry, amount);
         // check if this view stuff is really needed
         view = this;
-        
 
         $("#first-trade-form").validate({
             rules: {
@@ -298,7 +296,7 @@ fun.views.profile = Backbone.View.extend({
 
             this.sendNewTrade(new_trade);
         } else {
-          console.log('nooo!');
+          console.log('check your random stuff');
         }
     },
 
@@ -494,7 +492,7 @@ fun.views.profile = Backbone.View.extend({
             this.sendNewTrade(new_trade);
             
         } else {
-          console.log('nooo! )=');
+          console.log('check your random stuff');
         }
     },
 
