@@ -95,14 +95,12 @@ fun.conf.urls = {
     lapseCurrencyStartEnd: fun.utils.format('/currencies/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
     
 
-    trade: fun.utils.format('/currencies/%s', fun.conf.uuidCurrency),
-    trades: '/currencies/',
 
+    trade: fun.utils.format('/trades/%s', fun.conf.uuidTrade),
+    trades: '/trades/',
     lapseTradesStart: fun.utils.format('/trades/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
     lapseTradesStartEnd: fun.utils.format('/trades/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
-
     lapseTrade: fun.utils.format('/trades/%s', fun.conf.lapse),
-
     lapseTrades: fun.utils.format('/trades/%s', fun.conf.lapse),
     lapseTradeStart: fun.utils.format('/trades/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
     lapseTradeStartEnd: fun.utils.format('/trades/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
