@@ -505,9 +505,12 @@ fun.views.profile = Backbone.View.extend({
         bid = this.$('#trade-bid');
         asset = this.$('#trade-asset');
         expiry = this.$('#trade-expiry');
-        amount = this.$('#trade-account');
+        amount = this.$('#trade-amount');
         account = this.$('#trade-account');
+        status = this.$('#trade-status');
 
+
+        //missing time because we need to do the moment.js magin and some shit
 
         callbacks = {
             success: function(){
@@ -519,6 +522,7 @@ fun.views.profile = Backbone.View.extend({
                 expiry.html(new_trade['expiry']);
                 account.html(new_trade['account']);
                 amount.html(new_trade['amount']);
+                status.html('pending');
 
                 $('#profileTradeModal').modal({
                     'show': true
