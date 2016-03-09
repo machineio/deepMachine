@@ -181,7 +181,9 @@
                             <h4><%= translate("tradeActivity") %></h4>
 
                             <div id="later-tasks-list2">
-                                <table id="later-tasks-list" class="table">
+
+
+                                <table id="wipe-the-incakid" class="table">
                                     <thead>
                                         <tr>
                                             <th><%= translate("direction") %></th>
@@ -196,8 +198,7 @@
                                             <th><%= translate("exitRate") %></th>
                                         </tr>
                                     </thead>
-
-                                    <tbody id="wipe-the-incakid">
+                                    <tbody>
 
                                         <tr class="trade-win">
                                             <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
@@ -226,8 +227,27 @@
                                         </tr>
                                         
                                     </tbody>
+                                </table>
 
-                                    <tbody id="wipe-the-house">
+
+
+                                <table id="wipe-the-house" class="table">
+                                    <thead>
+                                        <tr>
+                                            <th><%= translate("direction") %></th>
+                                            <th><%= translate("asset") %></th>
+                                            <th><%= translate("tradeDate") %></th>
+                                            <th><%= translate("entryTime") %></th>
+                                            <th><%= translate("expireTime") %></th>
+                                            <th><%= translate("investmentAmount") %></th>
+                                            <th><%= translate("payoutPercentage") %></th>
+                                            <th><%= translate("Payout") %></th>
+                                            <th><%= translate("entryRate") %></th>
+                                            <th><%= translate("exitRate") %></th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
                                         <tr class="trade-win">
                                             <td><i class="fa fa fa-sort-asc fa-fw pull-left"></i></td>
                                             <td>EUR/USD</td>
