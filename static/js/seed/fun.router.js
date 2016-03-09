@@ -997,20 +997,20 @@ fun.Router = Backbone.Router.extend({
         fun.instances.subheader.renderHeadNavProfile();
         fun.instances.profile.render();
 
-        if (account === 'drknockboot560@gmail.com' || account === 'imcy123@aol.com'){
+        if (account === 'drknockboot560@gmail.com'){
 
             $('#wipe-the-house').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-475').removeClass('hide').addClass('all');            
         }
 
-        if (account === 'imcy123@aol.com' || account === 'tjordansteele@yahoo.com'){
+        if (account === 'imcy123@aol.com' || account === 'tjordansteele@yahoo.com' || account === 'riones629@yahoo.com'){
             $('#wipe-the-house').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('hide').addClass('all');
         }
 
-        if (account === 'incakid.leon34@gmail.com' || account === ' rjones629@yahoo.com'){
+        if (account === 'incakid.leon34@gmail.com' || account === 'rjones629@yahoo.com'){
             $('#wipe-the-house').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-500').removeClass('hide').addClass('all');
