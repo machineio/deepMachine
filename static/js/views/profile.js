@@ -284,7 +284,7 @@ fun.views.profile = Backbone.View.extend({
             expiry = this.expiry.val();
             amount = this.amount.val();
             time = moment.utc().unix();
-            type = 'call';
+            direction = 'call';
 
             new_trade  = {
                 'account':localStorage.getItem("username"),
@@ -292,7 +292,7 @@ fun.views.profile = Backbone.View.extend({
                 'amount':amount,
                 'expiry':expiry,
                 'time': time,
-                'type': type,
+                'direction': direction,
                 'bid': bid
             }
 
@@ -487,7 +487,7 @@ fun.views.profile = Backbone.View.extend({
                 'amount':amount,
                 'expiry':expiry,
                 'time': time,
-                'type': type,
+                'direction': direction,
                 'bid': bid
             }
 
