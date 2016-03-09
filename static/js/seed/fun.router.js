@@ -1001,10 +1001,19 @@ fun.Router = Backbone.Router.extend({
 
             $('#wipe-the-house').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
-            $('#current-475').removeClass('hide').addClass('all');
+            $('#current-475').removeClass('hide').addClass('all');            
+        }
 
-            console.log('test w t');
-            
+        if (account === 'imcy123@aol.com' || account === 'tjordansteele@yahoo.com'){
+            $('#wipe-the-house').addClass('hide');
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-250').removeClass('hide').addClass('all');
+        }
+
+        if (account === 'incakid.leon34@gmail.com'){
+            $('#wipe-the-house').addClass('hide');
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-500').removeClass('hide').addClass('all');
         }
         
         fun.instances.footer.render();
