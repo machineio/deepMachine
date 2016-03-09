@@ -997,8 +997,7 @@ fun.Router = Backbone.Router.extend({
         fun.instances.subheader.renderHeadNavProfile();
         fun.instances.profile.render();
 
-        if (account === 'drknockboot560@gmail.com'){
-            console.log('here is the t');
+        if (account === 'drknockboot560@gmail.com' || account === 'imcy123@aol.com'){
 
             $('#wipe-the-house').addClass('hide');
         }
