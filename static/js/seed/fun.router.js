@@ -1000,6 +1000,11 @@ fun.Router = Backbone.Router.extend({
         if (account === 'drknockboot560@gmail.com' || account === 'imcy123@aol.com'){
 
             $('#wipe-the-house').addClass('hide');
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-475').removeClass('hide').addClass('all');
+
+            console.log('test w t');
+            
         }
         
         fun.instances.footer.render();
