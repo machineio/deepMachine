@@ -479,7 +479,7 @@ fun.views.profile = Backbone.View.extend({
             expiry = this.expiry.val();
             amount = this.amount.val();
             time = moment.utc().unix();
-            type = 'put';
+            direction = 'put';
 
             new_trade  = {
                 'account':localStorage.getItem("username"),
