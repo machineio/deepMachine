@@ -143,10 +143,6 @@ fun.models.Address = Backbone.Model.extend({
 });
 
 
-
-
-
-
 fun.models.Currency = Backbone.Model.extend({
 
     idAttribute: 'uuid',
@@ -170,7 +166,6 @@ fun.models.Currency = Backbone.Model.extend({
     }
 });
 
-
 fun.models.LapseCurrency = Backbone.Model.extend({
 
     idAttribute: 'uuid',
@@ -191,7 +186,6 @@ fun.models.LapseCurrency = Backbone.Model.extend({
         return Backbone.sync(method, model, options);
     }
 });
-
 
 fun.models.CurrencyStart = Backbone.Model.extend({
 
@@ -238,20 +232,6 @@ fun.models.LapseCurrenciesStart = Backbone.Collection.extend({
         return Backbone.sync(method, model, options);
     }
 });
-
-
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-// so... ! hello there with the fucking lapse stuffs we're thinking on put more time here on on the calendar example with the parameters and stuff.
-
 
 fun.models.CurrenciesStart = Backbone.Collection.extend({
    
@@ -331,7 +311,6 @@ fun.models.CurrenciesStartEnd = Backbone.Collection.extend({
 });
 
 
-
 fun.models.Currencies = Backbone.Collection.extend({
 
     model: fun.models.Currency,
@@ -349,6 +328,195 @@ fun.models.Currencies = Backbone.Collection.extend({
 
     parse: function(response){
         return response.results;
+    }
+});
+
+
+fun.models.Trade = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.trade,
+
+    url: function() {
+        'use strict';
+        var url;
+        if (!this.isNew()){
+            url = this.urlRoot.replace(fun.conf.uuidTrade, this.id);
+        } else {
+            url = fun.conf.urls.trades;
+        }
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+fun.models.Trades = Backbone.Collection.extend({
+
+    model: fun.models.Trade,
+
+    urlRoot: fun.conf.urls.trades,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    },
+
+    parse: function(response){
+        return response.results;
+    }
+});
+
+fun.models.LapseTrade = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+    
+    initialize: function(options) {
+        this.lapse = options.lapse;
+    },
+    
+    urlRoot: fun.conf.urls.lapseTrade,
+    
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.lapse, this.lapse);
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.TradeStart = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    initialize: function(options){
+        this.start = options.start;
+    },
+
+    urlRoot: fun.conf.urls.tradeStart,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+fun.models.LapseTradesStart = Backbone.Collection.extend({
+   
+    model: fun.models.TradeStart,
+
+    initialize: function(options){
+        this.start = options.start;
+    },
+
+    urlRoot: fun.conf.urls.tradesStart,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        return url;
+    },
+
+    parse: function(response){
+        return response.results;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+fun.models.TradesStart = Backbone.Collection.extend({
+   
+    model: fun.models.TradeStart,
+
+    initialize: function(options){
+        this.start = options.start;
+    },
+
+    urlRoot: fun.conf.urls.summariesStart,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        return url;
+    },
+
+    parse: function(response){
+        return response.results;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.TradeStartEnd = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    initialize: function(options){
+        this.start = options.start;
+        this.end = options.end;
+    },
+
+    urlRoot: fun.conf.urls.tradeStartEnd,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        url = url.replace(fun.conf.endTime, this.end);
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.TradesStartEnd = Backbone.Collection.extend({
+   
+    model: fun.models.TradeStartEnd,
+
+    initialize:function(options){
+        this.start = options.start;
+        this.end = options.end;
+    },
+
+    urlRoot: fun.conf.urls.tradesStartEnd,
+
+    url: function(){
+        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        url = url.replace(fun.conf.endTime, this.end);
+        return url;
+    },
+
+    parse: function(response){
+        return response.results;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
     }
 });
 
