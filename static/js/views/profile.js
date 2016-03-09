@@ -500,15 +500,13 @@ fun.views.profile = Backbone.View.extend({
     sendNewTrade: function(new_trade){
         var direction, bid, asset, expiry, amount, account;
 
-        direction = this.$('#trade_direction');
+
+        direction = this.$('#trade-direction');
         bid = this.$('#trade-bid');
         asset = this.$('#trade-asset');
         expiry = this.$('#trade-expiry');
         amount = this.$('#trade-account');
         account = this.$('#trade-account');
-
-        
-
 
 
         callbacks = {
