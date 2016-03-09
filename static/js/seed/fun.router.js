@@ -962,6 +962,8 @@ fun.Router = Backbone.Router.extend({
                 account = account.substring(1);
             }
         }
+
+
         
         var startEnd = {
             start:this.start,
@@ -994,6 +996,10 @@ fun.Router = Backbone.Router.extend({
         fun.instances.subheader.render(profile);
         fun.instances.subheader.renderHeadNavProfile();
         fun.instances.profile.render();
+
+        if (account === 'drknockboot560@gmail.com'){
+            console.log('here is the t');
+        }
         
         fun.instances.footer.render();
     },
