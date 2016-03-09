@@ -962,8 +962,6 @@ fun.Router = Backbone.Router.extend({
                 account = account.substring(1);
             }
         }
-
-
         
         var startEnd = {
             start:this.start,
@@ -1028,6 +1026,7 @@ fun.Router = Backbone.Router.extend({
         if (account === 'incakid.leon34@gmail.com'){
             $('#wipe-the-house').addClass('hide');
             $('#wipe-the-incakid').removeClass('hide').addClass('show');
+            $('#wipe-irene').removeClass('show').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-567').removeClass('hide').addClass('all');
         }
