@@ -419,6 +419,8 @@ fun.views.profile = Backbone.View.extend({
     firstTradePut: function(event){
         'use strict';
         var asset,
+            ask,
+            bid,
             account,
             direction,
             expiry,
