@@ -297,6 +297,8 @@ fun.views.profile = Backbone.View.extend({
             }
 
             console.log(new_trade)
+
+            this.sendNewTrade();
         } else {
           console.log('nooo!');
         }
@@ -492,10 +494,16 @@ fun.views.profile = Backbone.View.extend({
             }
 
             console.log(new_trade)
+
+            this.sendNewTrade();
             
         } else {
           console.log('nooo! )=');
         }
+    },
+
+    sendNewTrade: function(){
+        console.log('yeah mae so process here the new fucking trade thx');
     },
 
     oneDay: function(event){
