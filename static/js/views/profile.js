@@ -287,6 +287,7 @@ fun.views.profile = Backbone.View.extend({
             type = 'call';
 
             new_trade  = {
+                'account':localStorage.getItem("username"),
                 'asset':asset,
                 'amount':amount,
                 'expiry':expiry,
@@ -421,6 +422,7 @@ fun.views.profile = Backbone.View.extend({
         console.log('first trade put');
         'use strict';
         var asset,
+            account,
             expiry,
             amount,
             view,
@@ -480,6 +482,7 @@ fun.views.profile = Backbone.View.extend({
             type = 'put';
 
             new_trade  = {
+                'account':localStorage.getItem("username"),
                 'asset':asset,
                 'amount':amount,
                 'expiry':expiry,
