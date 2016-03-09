@@ -491,7 +491,7 @@ fun.views.profile = Backbone.View.extend({
                 'bid': bid
             }
 
-            this.sendNewTrade();
+            this.sendNewTrade(new_trade);
             
         } else {
           console.log('nooo! )=');
