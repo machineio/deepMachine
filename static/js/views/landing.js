@@ -48,6 +48,7 @@ fun.views.landing = Backbone.View.extend({
         var signupError,
             account,
             password,
+            location = window.location.hostname,
             email,
             view,
             rules,
@@ -152,7 +153,10 @@ fun.views.landing = Backbone.View.extend({
                 {
                     account: account,
                     password: password,
-                    email: email
+                    email: email,
+
+                    // here we put the location from where this user is made.
+                    location:location,
                 },
                 callbacks
             );
