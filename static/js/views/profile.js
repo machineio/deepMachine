@@ -499,8 +499,8 @@ fun.views.profile = Backbone.View.extend({
     },
 
     sendNewTrade: function(new_trade){
-        console.log('yeah mae so process here the new fucking trade thx');
-        console.log(new_trade);
+        trade = new fun.models.Trade(new_trade);
+        trade.save();
     },
 
     oneDay: function(event){
