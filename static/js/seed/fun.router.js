@@ -999,6 +999,8 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'drknockboot560@gmail.com'){
             console.log('here is the t');
+
+            $('#wipe-the-house').addClass('hide');
         }
         
         fun.instances.footer.render();
