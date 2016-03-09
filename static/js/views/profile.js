@@ -228,7 +228,7 @@ fun.views.profile = Backbone.View.extend({
             validationRules,
             time,
             new_trade,
-            type,
+            direction,
             callbacks,
             validForm;
 
@@ -423,6 +423,7 @@ fun.views.profile = Backbone.View.extend({
         'use strict';
         var asset,
             account,
+            direction,
             expiry,
             amount,
             view,
@@ -432,7 +433,6 @@ fun.views.profile = Backbone.View.extend({
             callbacks,
             new_trade,
             time,
-            type,
             validForm;
         event.preventDefault();
 
