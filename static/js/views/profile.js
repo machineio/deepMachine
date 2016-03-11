@@ -523,8 +523,8 @@ fun.views.profile = Backbone.View.extend({
         status = this.$('#trade-status');
         tradeOn = this.$('#trade-timestamp');
         tradeExpiry = this.$('#trade-expiry');
-        this.tradeTime = moment.utc();
-        this.tradeExpiryTime = moment.utc().add(fun.utils.getExpiryMinutes(new_trade['expiry']), 'm');
+        tradeTime = moment.utc();
+        tradeExpiryTime = moment.utc().add(fun.utils.getExpiryMinutes(new_trade['expiry']), 'm');
 
 
 
@@ -545,8 +545,8 @@ fun.views.profile = Backbone.View.extend({
 
                 // lol with the time
 
-                tradeOn.html(this.tradeTime.format('LTS'));
-                tradeExpiry.html(this.tradeExpiryTime.format('LTS'));
+                tradeOn.html(tradeTime.format('LTS'));
+                tradeExpiry.html(tradeExpiryTime.format('LTS'));
 
                 $('#profileTradeModal').modal({
                     'show': true
