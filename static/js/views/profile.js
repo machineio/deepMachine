@@ -542,8 +542,8 @@ fun.views.profile = Backbone.View.extend({
                 amount.html(new_trade['amount']);
                 status.html('pending');
 
-                tradeOn.html(tradeTime.format('LTS'));
-                tradeExpiry.html(tradeExpiryTime.format('LTS'));
+                tradeOn.html(this.tradeTime.format('LTS'));
+                tradeExpiry.html(this.tradeExpiryTime.format('LTS'));
 
                 $('#profileTradeModal').modal({
                     'show': true
