@@ -569,6 +569,11 @@ fun.views.profile = Backbone.View.extend({
         console.log(struct);
 
         console.log(struct['uuid']);
+
+        var stuff = moment(struct['time']);
+
+        console.log(stuff);
+    
         /*
         var coo = {
             uuid: struct['uuid'],
@@ -576,10 +581,10 @@ fun.views.profile = Backbone.View.extend({
             start: String(this.tradeTime.unix()),
             end: String(this.tradeExpiryTime.unix())
         };
-
         trade = new fun.models.Trade();
         trade.save(coo, {patch: true});
-*/
+        */
+
         $('#profileTradeModal').modal('hide');
 
     },
