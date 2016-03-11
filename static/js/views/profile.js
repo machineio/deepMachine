@@ -11,6 +11,7 @@ fun.views.profile = Backbone.View.extend({
         'click #profile-first-trade-put': 'firstTradePut',
         'click #profile-first-trade-call': 'firstTradeCall',
         'click #confirm-trade-btn': 'confirmTrade',
+        'click #close-trade-btn': 'cancelTrade',
         'change #profile_first_asset': 'assetTypeChange',
 
     },
@@ -500,7 +501,17 @@ fun.views.profile = Backbone.View.extend({
     },
 
     sendNewTrade: function(new_trade){
-        var direction, bid, asset, expiry, amount, account, status, tradeOn, tradeExpiry, tradeTime, tradeExpiryTime;
+        var direction,
+            bid,
+            asset,
+            expiry,
+            amount,
+            account,
+            status,
+            tradeOn,
+            tradeExpiry,
+            tradeTime,
+            tradeExpiryTime;
 
 
         direction = this.$('#trade-direction');
@@ -549,6 +560,11 @@ fun.views.profile = Backbone.View.extend({
 
     confirmTrade: function(event){
         console.log('confirm trade close and start the countdown');
+        $('#profileTradeModal').modal('hide');
+    },
+
+    cancelTrade: function(event){
+        console.log('close and remove the trade info');
         $('#profileTradeModal').modal('hide');
     },
 
