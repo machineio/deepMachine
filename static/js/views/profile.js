@@ -493,7 +493,7 @@ fun.views.profile = Backbone.View.extend({
             }
 
             this.sendNewTrade(new_trade);
-            
+
         } else {
           console.log('check your random stuff');
         }
@@ -514,8 +514,6 @@ fun.views.profile = Backbone.View.extend({
             tradeTime,
             tradeExpiryTime,
             callbacks;
-
-
         direction = this.$('#trade-direction');
         bid = this.$('#trade-bid');
         asset = this.$('#trade-asset');
@@ -525,16 +523,16 @@ fun.views.profile = Backbone.View.extend({
         status = this.$('#trade-status');
         tradeOn = this.$('#trade-timestamp');
         tradeExpiry = this.$('#trade-expiry');
-
-
-        tradeTime = moment.utc();
-        tradeExpiryTime = moment.utc().add(fun.utils.getExpiryMinutes(new_trade['expiry']), 'm');
+        this.tradeTime = moment.utc();
+        this.tradeExpiryTime = moment.utc().add(fun.utils.getExpiryMinutes(new_trade['expiry']), 'm');
 
         callbacks = {
             success: function(response){
 
                 console.log('new trade success');
                 console.log(JSON.stringify(response));
+
+                sessionStorage.setItem("confirm_trade_uuid", response.get('uuid'));
 
                 direction.html(new_trade['direction']);
                 bid.html(new_trade['bid']);
@@ -562,7 +560,19 @@ fun.views.profile = Backbone.View.extend({
 
     confirmTrade: function(event){
         console.log('confirm trade close and start the countdown');
+        
+        var coo = {
+            uuid: sessionStorage.getItem("confirm_trade_uuid"),
+            status: 'processing',
+            start: String(this.tradeTime.unix()),
+            end: String(this.tradeExpiryTime.unix())
+        };
+
+        trade = new fun.models.Trade();
+        trade.save(coo, {patch: true});
+
         $('#profileTradeModal').modal('hide');
+
     },
 
     cancelTrade: function(event){
