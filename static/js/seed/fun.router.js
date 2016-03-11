@@ -1027,7 +1027,12 @@ fun.Router = Backbone.Router.extend({
         if (account === 'rjones629@yahoo.com'){
             $('#wipe-the-house').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
-            $('#current-500').removeClass('hide').addClass('all'); //567.5
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+
+            $('#wipe-ron-jones').removeClass('hide').addClass('show');
+
+            $('#current-500').removeClass('hide').addClass('all');
         }
 
         if (account === 'incakid.leon34@gmail.com'){
