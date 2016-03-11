@@ -526,13 +526,14 @@ fun.views.profile = Backbone.View.extend({
         this.tradeTime = moment.utc();
         this.tradeExpiryTime = moment.utc().add(fun.utils.getExpiryMinutes(new_trade['expiry']), 'm');
 
+
+
         callbacks = {
             success: function(response){
 
                 console.log('new trade success');
-                console.log(JSON.stringify(response));
 
-                sessionStorage.setItem("confirm_trade_uuid", response.get('uuid'));
+                sessionStorage.setItem("confirm_trade", JSON.stringify(response));
 
                 direction.html(new_trade['direction']);
                 bid.html(new_trade['bid']);
@@ -541,6 +542,8 @@ fun.views.profile = Backbone.View.extend({
                 account.html(new_trade['account']);
                 amount.html(new_trade['amount']);
                 status.html('pending');
+
+                // lol with the time
 
                 tradeOn.html(this.tradeTime.format('LTS'));
                 tradeExpiry.html(this.tradeExpiryTime.format('LTS'));
@@ -560,9 +563,14 @@ fun.views.profile = Backbone.View.extend({
 
     confirmTrade: function(event){
         console.log('confirm trade close and start the countdown');
+
+        var struct = JSON.parse(sessionStorage.getItem("confirm_trade"));
+
+        console.log(struct);
+
         
         var coo = {
-            uuid: sessionStorage.getItem("confirm_trade_uuid"),
+            uuid: .getItem("confirm_trade_uuid"),
             status: 'processing',
             start: String(this.tradeTime.unix()),
             end: String(this.tradeExpiryTime.unix())
