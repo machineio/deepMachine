@@ -1047,7 +1047,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-irene').removeClass('show').addClass('hide');
             $('#wipe-ron-jones').removeClass('show').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
-            $('#current-567').removeClass('hide').addClass('all');
+            $('#current-1284').removeClass('hide').addClass('all');
         }
         
         fun.instances.footer.render();
