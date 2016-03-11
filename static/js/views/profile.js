@@ -498,7 +498,7 @@ fun.views.profile = Backbone.View.extend({
     },
 
     sendNewTrade: function(new_trade){
-        var direction, bid, asset, expiry, amount, account, status;
+        var direction, bid, asset, expiry, amount, account, status, tradeTime, tradeExpiryTime;
 
 
         direction = this.$('#trade-direction');
@@ -510,9 +510,8 @@ fun.views.profile = Backbone.View.extend({
         status = this.$('#trade-status');
 
 
-        var timeTest = moment.utc();
-        var xxxTest =  moment.utc().add(5, 'm');
-
+        tradeTime = moment.utc();
+        tradeExpiryTime = moment.utc().add(fun.utils.getExpiryMinutes(new_trade['expiry']), 'm');
 
         //missing time because we need to do the moment.js magin and some shit
 
@@ -532,11 +531,8 @@ fun.views.profile = Backbone.View.extend({
                     'show': true
                 });
 
-                var kakax = fun.utils.getExpiryMinutes(new_trade['expiry']);
-
-                console.log(kakax)
-
-                console.log(timeTest, xxxTest);
+            console.log(tradeTime, tradeExpiryTime);
+                
             },
 
             error: function(model, error){
