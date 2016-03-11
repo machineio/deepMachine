@@ -510,6 +510,10 @@ fun.views.profile = Backbone.View.extend({
         status = this.$('#trade-status');
 
 
+        var timeTest = moment.utc();
+        var xxxTest =  timeTest.add(5, 'm');
+
+
         //missing time because we need to do the moment.js magin and some shit
 
         callbacks = {
@@ -527,6 +531,8 @@ fun.views.profile = Backbone.View.extend({
                 $('#profileTradeModal').modal({
                     'show': true
                 });
+
+                console.log(timeTest, xxxTest);
             },
 
             error: function(model, error){
