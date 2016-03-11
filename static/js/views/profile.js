@@ -549,6 +549,7 @@ fun.views.profile = Backbone.View.extend({
 
     confirmTrade: function(event){
         console.log('confirm trade close and start the countdown');
+        $('#profileTradeModal').modal('hide');
     },
 
     oneDay: function(event){
