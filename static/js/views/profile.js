@@ -531,8 +531,7 @@ fun.views.profile = Backbone.View.extend({
                     'show': true
                 });
 
-            console.log(tradeTime, tradeExpiryTime);
-                
+            console.log(tradeTime.format('LTS'), tradeExpiryTime);
             },
 
             error: function(model, error){
