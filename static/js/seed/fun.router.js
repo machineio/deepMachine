@@ -1005,7 +1005,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-mark-carter').removeClass('hide').addClass('show');
 
 
-            $('#current-475').removeClass('hide').addClass('all');            
+            /*$('#current-475').removeClass('hide').addClass('all');*/
+            $('#current-825').removeClass('hide').addClass('all');
         }
 
         if (account === 'imcy123@aol.com' || account === 'tjordansteele@yahoo.com' || account === 'riones629@yahoo.com'){
