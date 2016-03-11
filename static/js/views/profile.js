@@ -570,7 +570,7 @@ fun.views.profile = Backbone.View.extend({
 
         console.log(struct['uuid']);
 
-        var stuff = moment(struct['time']);
+        var stuff = moment.unix(struct['time']);
 
         console.log(stuff);
     
