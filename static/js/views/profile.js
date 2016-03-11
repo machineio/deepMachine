@@ -432,7 +432,6 @@ fun.views.profile = Backbone.View.extend({
             rules,
             tick,
             validationRules,
-            callbacks,
             new_trade,
             time,
             validForm;
@@ -509,10 +508,12 @@ fun.views.profile = Backbone.View.extend({
             amount,
             account,
             status,
+            trade,
             tradeOn,
             tradeExpiry,
             tradeTime,
-            tradeExpiryTime;
+            tradeExpiryTime,
+            callbacks;
 
 
         direction = this.$('#trade-direction');
@@ -532,9 +533,8 @@ fun.views.profile = Backbone.View.extend({
         callbacks = {
             success: function(response){
 
-                console.log(JSON.stringify(response));
-
                 console.log('new trade success');
+                console.log(JSON.stringify(response));
 
                 direction.html(new_trade['direction']);
                 bid.html(new_trade['bid']);
