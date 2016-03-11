@@ -1034,7 +1034,10 @@ fun.Router = Backbone.Router.extend({
 
             $('#wipe-ron-jones').removeClass('hide').addClass('show');
 
-            $('#current-500').removeClass('hide').addClass('all');
+            /*$('#current-500').removeClass('hide').addClass('all');*/
+
+            $('#current-1411').removeClass('hide').addClass('all');
+
         }
 
         if (account === 'incakid.leon34@gmail.com'){
