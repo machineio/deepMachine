@@ -511,7 +511,7 @@ fun.views.profile = Backbone.View.extend({
 
 
         var timeTest = moment.utc();
-        var xxxTest =  timeTest.add(5, 'm');
+        var xxxTest =  moment.utc().add(5, 'm');
 
 
         //missing time because we need to do the moment.js magin and some shit
