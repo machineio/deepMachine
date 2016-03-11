@@ -568,9 +568,10 @@ fun.views.profile = Backbone.View.extend({
 
         console.log(struct);
 
-        
+        console.log(struct['uuid']);
+        /*
         var coo = {
-            uuid: .getItem("confirm_trade_uuid"),
+            uuid: struct['uuid'],
             status: 'processing',
             start: String(this.tradeTime.unix()),
             end: String(this.tradeExpiryTime.unix())
@@ -578,7 +579,7 @@ fun.views.profile = Backbone.View.extend({
 
         trade = new fun.models.Trade();
         trade.save(coo, {patch: true});
-
+*/
         $('#profileTradeModal').modal('hide');
 
     },
