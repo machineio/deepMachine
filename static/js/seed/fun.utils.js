@@ -38,6 +38,25 @@ fun.utils.updater = {
 };
 
 
+
+fun.utils.getExpiryMinutes = function(expiry) {
+    'use strict';
+    var expiry, times;
+    times = {
+        '0':5,
+        '1':10,
+        '2':15,
+        '3':20,
+        '4':30,
+        '5':60,
+        '6':120,
+        '7':150
+    };
+    return times[expiry];
+};
+
+
+
 /*
 * Fetches the session from it's container (cookie)
 * @return Object: Session data

@@ -532,6 +532,10 @@ fun.views.profile = Backbone.View.extend({
                     'show': true
                 });
 
+                var kakax = fun.utils.getExpiryMinutes(new_trade['expiry']);
+
+                console.log(kakax)
+
                 console.log(timeTest, xxxTest);
             },
 
