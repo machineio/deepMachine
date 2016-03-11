@@ -10,7 +10,9 @@ fun.views.profile = Backbone.View.extend({
         'click #act_4': 'oneMonth',
         'click #profile-first-trade-put': 'firstTradePut',
         'click #profile-first-trade-call': 'firstTradeCall',
+        'click #confirm-trade-btn': 'confirmTrade',
         'change #profile_first_asset': 'assetTypeChange',
+
     },
 
     /**
@@ -543,6 +545,10 @@ fun.views.profile = Backbone.View.extend({
         };
         trade = new fun.models.Trade();
         trade.save(new_trade, callbacks);
+    },
+
+    confirmTrade: function(event){
+        console.log('confirm trade close and start the countdown');
     },
 
     oneDay: function(event){
