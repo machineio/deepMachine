@@ -566,10 +566,6 @@ fun.views.profile = Backbone.View.extend({
 
         var struct = JSON.parse(sessionStorage.getItem("confirm_trade"));
 
-        console.log(struct);
-
-        console.log(struct['uuid']);
-
         var stuff = moment.unix(struct['time']);
 
         console.log(stuff);
