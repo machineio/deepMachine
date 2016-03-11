@@ -533,7 +533,7 @@ fun.views.profile = Backbone.View.extend({
             success: function(response){
 
                 console.log(JSON.stringify(response));
-                
+
                 console.log('new trade success');
 
                 direction.html(new_trade['direction']);
@@ -550,8 +550,6 @@ fun.views.profile = Backbone.View.extend({
                 $('#profileTradeModal').modal({
                     'show': true
                 });
-
-            console.log(tradeTime.format('LTS'), tradeExpiryTime);
             },
 
             error: function(model, error){
