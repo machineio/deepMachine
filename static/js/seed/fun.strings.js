@@ -10,6 +10,7 @@ fun.strings = {
     developers: "Developers",
     companyName: "Company Name",
     telephone: "Telephone",
+    ask: "Ask",
     dba: "DBA",
     tradeDetails: "Trade Details",
     amount: "Amount",
