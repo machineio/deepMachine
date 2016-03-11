@@ -501,6 +501,7 @@ fun.views.profile = Backbone.View.extend({
     },
 
     sendNewTrade: function(new_trade){
+        'use strict';
         var direction,
             bid,
             asset,
@@ -529,7 +530,10 @@ fun.views.profile = Backbone.View.extend({
         tradeExpiryTime = moment.utc().add(fun.utils.getExpiryMinutes(new_trade['expiry']), 'm');
 
         callbacks = {
-            success: function(){
+            success: function(response){
+
+                console.log(JSON.stringify(response));
+                
                 console.log('new trade success');
 
                 direction.html(new_trade['direction']);
