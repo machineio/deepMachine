@@ -589,9 +589,9 @@ fun.views.profile = Backbone.View.extend({
             end: String(end.unix())
         };
         trade = new fun.models.Trade();
-        trade.save(coo, {patch: true}, callbacks);
+        trade.save(coo, callbacks, {patch: true});
 
-        console.log('eat this you fucking monkey banana nonsense');
+        console.log('eatxx this you fucking monkey banana xnonxxsense');
         
 
         $('#profileTradeModal').modal('hide');
