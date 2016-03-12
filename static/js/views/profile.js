@@ -572,6 +572,16 @@ fun.views.profile = Backbone.View.extend({
         console.log(start);
         console.log(end);
 
+        var callbacks = {
+            success: function(response){
+                console.log('trade successful, now put the magin in the fucking basket');
+            },
+
+            error: function(error){
+                console.log('wrong stuff on new trade');
+            }
+        };
+
         var coo = {
             uuid: struct['uuid'],
             status: 'processing',
@@ -579,7 +589,9 @@ fun.views.profile = Backbone.View.extend({
             end: String(end.unix())
         };
         trade = new fun.models.Trade();
-        trade.save(coo, {patch: true});
+        trade.save(coo, {patch: true}, callbacks);
+
+        console.log('eat this you fucking monkey banana nonsense');
         
 
         $('#profileTradeModal').modal('hide');
