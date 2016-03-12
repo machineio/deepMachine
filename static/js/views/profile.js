@@ -50,9 +50,9 @@ fun.views.profile = Backbone.View.extend({
         //this.renderBinaryGraph();
         this.renderTickGraph();
 
-        $('#clock').countdown('2020/10/10', function(event) {
+        /*$('#clock').countdown('2020/10/10', function(event) {
             $(this).html(event.strftime('%H:%M:%S'));
-        });       
+        }); */      
     },
 
     renderTimeLineChart: function(summary){
@@ -582,7 +582,11 @@ fun.views.profile = Backbone.View.extend({
         trade = new fun.models.Trade();
         trade.save(coo, {patch: true});
 
+        $('#clock').countdown(end.toDate(), function(event) {
+            $(this).html(event.strftime('%H:%M:%S'));
+        });
 
+        console.log('lol wut please');
         $('#profileTradeModal').modal('hide');
 
     },
