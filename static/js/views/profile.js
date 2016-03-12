@@ -570,7 +570,6 @@ fun.views.profile = Backbone.View.extend({
         end = moment.unix(struct['time']).add(fun.utils.getExpiryMinutes(struct['expiry']), 'm');
 
 
-
         confirm = {
             uuid: struct['uuid'],
             status: 'processing',
@@ -578,7 +577,7 @@ fun.views.profile = Backbone.View.extend({
             end: String(end.unix())
         };
         trade = new fun.models.Trade();
-        trade.save(coo, {patch: true});
+        trade.save(confirm, {patch: true});
 
 
         $('#show-expiry-time').addClass("show").removeClass("hide");
