@@ -565,25 +565,22 @@ fun.views.profile = Backbone.View.extend({
         console.log('confirm trade close and start the countdown');
 
         var struct = JSON.parse(sessionStorage.getItem("confirm_trade"));
-
-        var stuff = moment.unix(struct['time']);
+        var start = moment.unix(struct['time']);
+        var end = moment.unix(struct['time']).add(fun.utils.getExpiryMinutes(struct['expiry']), 'm');
 
         console.log(stuff);
+        console.log(start);
+        console.log(end);
 
-        var txxx = moment.unix(struct['time']).add(fun.utils.getExpiryMinutes(struct['expiry']), 'm');
-
-        console.log(txxx);
-    
-        /*
         var coo = {
             uuid: struct['uuid'],
             status: 'processing',
-            start: String(this.tradeTime.unix()),
-            end: String(this.tradeExpiryTime.unix())
+            start: String(start.unix()),
+            end: String(end.unix())
         };
         trade = new fun.models.Trade();
         trade.save(coo, {patch: true});
-        */
+        
 
         $('#profileTradeModal').modal('hide');
 
