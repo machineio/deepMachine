@@ -582,6 +582,9 @@ fun.views.profile = Backbone.View.extend({
         trade = new fun.models.Trade();
         trade.save(coo, {patch: true});
 
+
+        $('#show-expiry-time').addClass("show").removeClass("hide");
+
         $('#clock').countdown(end.toDate(), function(event) {
             $(this).html(event.strftime('%H:%M:%S'));
         });
