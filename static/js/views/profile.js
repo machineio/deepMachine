@@ -568,7 +568,7 @@ fun.views.profile = Backbone.View.extend({
         var start = moment.unix(struct['time']);
         var end = moment.unix(struct['time']).add(fun.utils.getExpiryMinutes(struct['expiry']), 'm');
 
-        console.log(stuff);
+        console.log(struct);
         console.log(start);
         console.log(end);
 
