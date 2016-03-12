@@ -948,6 +948,7 @@ fun.strings = {
     
 
     activeTrades: "Active Trades",
+    tradeManagement: "Trade Management",
 
 
 
