@@ -281,7 +281,7 @@ fun.views.profile = Backbone.View.extend({
         if (validForm){
             asset = this.asset.val();
             ask = this.ask.html();
-            bid = this.bid.html();
+            bid = this.bid.html() || 0.0;
             expiry = this.expiry.val();
             amount = this.amount.val();
             time = moment.utc().unix();
