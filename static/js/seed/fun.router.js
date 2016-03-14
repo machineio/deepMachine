@@ -1059,15 +1059,16 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'imcy123@aol.com'){
-            $('#wipe-the-house').addClass('hide');
+            
             $('#wipe-irene').removeClass('hide').addClass('show');
+            
+            $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
             $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
-            
             $('#wipe-ron-jones').removeClass('show').addClass('hide');
             $('#wipe-village').removeClass('show').addClass('hide');
-
             $('#current-budget').removeClass('show').addClass('hide');
+
             $('#current-602').removeClass('hide').addClass('show');
         }
         
