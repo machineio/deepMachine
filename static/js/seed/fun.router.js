@@ -982,7 +982,7 @@ fun.Router = Backbone.Router.extend({
         };
 
         startLapse = {
-            start:moment.utc().startOf('hour').toDate(),
+            start:moment.utc().startOf('hour').unix(),
             lapse:'hours'
         }
 
