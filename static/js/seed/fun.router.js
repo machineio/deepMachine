@@ -1089,16 +1089,8 @@ fun.Router = Backbone.Router.extend({
             $('#current-budget').removeClass('show').addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
             $('#wipe-irene').removeClass('show').addClass('hide');
-
             $('#wipe-mark-carter').removeClass('show').addClass('hide');
-
-            $('#wipe-ron-jones').removeClass('hide').addClass('show');
-
-            /*$('#current-500').removeClass('hide').addClass('all');*/
-
-            console.log('test with g');
-
-            $('#current-1411').removeClass('hide').addClass('all');
+            $('#wipe-crazy-tracy').removeClass('hide').addClass('show');
 
         }
 
