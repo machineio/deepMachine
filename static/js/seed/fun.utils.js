@@ -15,6 +15,7 @@ var fun = {
     omnibus: _.extend({}, Backbone.Events)
 };
 
+
 /*
 * Updater deals with websocket stuff
 */
@@ -38,7 +39,9 @@ fun.utils.updater = {
 };
 
 
-
+/*
+* Updater deals with websocket stuff
+*/
 fun.utils.getExpiryMinutes = function(expiry) {
     'use strict';
     var expiry, times;
@@ -54,7 +57,6 @@ fun.utils.getExpiryMinutes = function(expiry) {
     };
     return times[expiry];
 };
-
 
 
 /*
