@@ -25,6 +25,7 @@ fun.strings = {
     tradeDate: "Trade Date",
     entryTime: "Entry Time",
     expireTime: "Expire Time",
+    tradeHistory: "Trade History",
     investmentAmount: "Investment Amount",
     payoutPercentage: "Payout Percentage",
     entryRate: "Entry Rate",
