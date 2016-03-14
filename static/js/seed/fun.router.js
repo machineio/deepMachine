@@ -1019,6 +1019,16 @@ fun.Router = Backbone.Router.extend({
         fun.instances.profile.render();
 
 
+        for (resource in resources){
+            resources[resource].fetch({
+                success: onSuccess,
+                error: function() {
+                    console.log('fuck error!');
+                }
+            });
+        }
+
+
         if (account !== 'satan'){
             $('#wipe-the-house').removeClass('show').addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
