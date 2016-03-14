@@ -83,7 +83,6 @@ a, a:hover, a:active{ outline:0px !important}
     font-family: 'LatoRegular';
     src: url('../fonts/lato-regular.eot');
     src: url('../fonts/lato-regular.eot') format('embedded-opentype'),
-         url('../fonts/lato-regular.woff2') format('woff2'),
          url('../fonts/lato-regular.woff') format('woff'),
          url('../fonts/lato-regular.ttf') format('truetype'),
          url('../fonts/lato-regular.svg#LatoRegular') format('svg');
@@ -92,7 +91,7 @@ a, a:hover, a:active{ outline:0px !important}
     font-family: 'LatoBoldBold';
     src: url('../fonts/lato-bold.eot');
     src: url('../fonts/lato-bold.eot') format('embedded-opentype'),
-         url('../fonts/lato-bold.woff2') format('woff2'),
+
          url('../fonts/lato-bold.woff') format('woff'),
          url('../fonts/lato-bold.ttf') format('truetype'),
          url('../fonts/lato-bold.svg#LatoBoldBold') format('svg');
@@ -101,7 +100,6 @@ a, a:hover, a:active{ outline:0px !important}
     font-family: 'DosisBold';
     src: url('../fonts/dosis-bold.eot');
     src: url('../fonts/dosis-bold.eot') format('embedded-opentype'),
-         url('../fonts/dosis-bold.woff2') format('woff2'),
          url('../fonts/dosis-bold.woff') format('woff'),
          url('../fonts/dosis-bold.ttf') format('truetype'),
          url('../fonts/dosis-bold.svg#DosisBold') format('svg');
