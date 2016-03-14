@@ -947,7 +947,8 @@ fun.strings = {
     signalIndicator: "Signal Indicator",
     
 
-    
+    activeTrades: "Active Trades",
+    tradeManagement: "Trade Management",
 
 
 
