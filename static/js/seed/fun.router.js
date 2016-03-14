@@ -1092,6 +1092,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-mark-carter').removeClass('show').addClass('hide');
             $('#wipe-crazy-tracy').removeClass('hide').addClass('show');
 
+            $('#current-945').removeClass('hide').addClass('all');
+            
+
         }
 
         if (account === 'incakid.leon34@gmail.com'){
