@@ -951,9 +951,14 @@ fun.Router = Backbone.Router.extend({
         var account,
             vonCount = 0,
             resources,
+            resource,
             onSuccess,
             profile = translate('binaryOptions'),
+            startEnd,
+            startEndLapse,
+            startLapse,
             message;
+
 
         if (!account){
             account = localStorage.getItem("username");
@@ -963,12 +968,12 @@ fun.Router = Backbone.Router.extend({
             }
         }
         
-        var startEnd = {
+        startEnd = {
             start:this.start,
             end:this.end
         };
 
-        var startEndLapse = {
+        startEndLapse = {
             start:this.start,
             end:this.end,
             // get time lapse from dom
@@ -976,7 +981,7 @@ fun.Router = Backbone.Router.extend({
             lapse:'hours'
         };
 
-        var startLapse = {
+        startLapse = {
             start:moment.utc().startOf('hour').toDate(),
             lapse:'hours'
         }
@@ -984,8 +989,26 @@ fun.Router = Backbone.Router.extend({
         resources = {
             user: new fun.models.User({'account':account}),
             currencies: new fun.models.Currencies(),
-            lapseCurrenciesStart: new fun.models.LapseCurrenciesStart(startLapse)
+            lapseCurrenciesStart: new fun.models.LapseCurrenciesStart(startLapse),
+            trades: new fun.models.Trades(),
         };
+
+        onSuccess = function(){
+            if(++vonCount === _.keys(resources).length){
+                console.log('get resources success!');
+
+                fun.instances.trades.renderTradesList(
+                    resources.trades
+                );
+
+                fun.instances.settings.setProfileInformation(
+                    resources.user
+                );
+            }
+        };
+
+
+        console.log('fuck some more');
 
 
         fun.utils.hideAll();
@@ -994,8 +1017,6 @@ fun.Router = Backbone.Router.extend({
         fun.instances.subheader.render(profile);
         fun.instances.subheader.renderHeadNavProfile();
         fun.instances.profile.render();
-
-
 
 
         if (account !== 'satan'){
