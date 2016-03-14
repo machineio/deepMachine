@@ -995,6 +995,18 @@ fun.Router = Backbone.Router.extend({
         fun.instances.subheader.renderHeadNavProfile();
         fun.instances.profile.render();
 
+
+
+
+        if (account !== 'satan'){
+            $('#wipe-the-house').removeClass('show').addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-mark-carter').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+        }
+
+
         if (account === 'drknockboot560@gmail.com'){
 
             $('#wipe-the-house').addClass('hide');
@@ -1049,6 +1061,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-1284').removeClass('hide').addClass('all');
         }
+
         
         fun.instances.footer.render();
     },
