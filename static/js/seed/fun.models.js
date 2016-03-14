@@ -213,13 +213,15 @@ fun.models.LapseCurrenciesStart = Backbone.Collection.extend({
     model: fun.models.CurrencyStart,
 
     initialize: function(options){
+        this.lapse = options.lapse;
         this.start = options.start;
     },
 
     urlRoot: fun.conf.urls.lapseCurrenciesStart,
 
     url: function(){
-        var url = this.urlRoot.replace(fun.conf.startTime, this.start);
+        var url = this.urlRoot.replace(fun.conf.lapse, this.lapse);
+        url = url.replace(fun.conf.startTime, this.start);
         return url;
     },
 
