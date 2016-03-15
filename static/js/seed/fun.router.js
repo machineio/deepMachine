@@ -1188,6 +1188,27 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'allen.legal@gmail.com'){
+            
+            $('#wipe-village').removeClass('hide').addClass('show');
+            
+            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-250').removeClass('show').addClass('hide');
+            $('#current-602').removeClass('show').addClass('hide');
+            $('#current-652').removeClass('hide').addClass('show');
+
+        }
+
+
+        
+
+
+
         if (account === 'affiliatemarketer3@gmail.com'){
             
             $('#wipe-village').removeClass('hide').addClass('show');
