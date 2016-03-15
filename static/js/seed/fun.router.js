@@ -1107,7 +1107,6 @@ fun.Router = Backbone.Router.extend({
 
         }
 
-        }
 
         if (account === 'isasbar1@gmail.com'){
             
