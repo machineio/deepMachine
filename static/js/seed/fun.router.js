@@ -1109,7 +1109,7 @@ fun.Router = Backbone.Router.extend({
 
         }
 
-        if (account === 'isasbari@gmail.com'){
+        if (account === 'isasbar1@gmail.com'){
             
             $('#wipe-village').removeClass('hide').addClass('show');
             
