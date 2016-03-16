@@ -1248,7 +1248,7 @@ fun.Router = Backbone.Router.extend({
         
         if (account === 'timetate@gmail.com'){
             
-            $('#wipe-affiliate').removeClass('hide').addClass('show');
+            $('#wipe-affiliate').removeClass('hide').addClass('');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
