@@ -1245,6 +1245,8 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        //$(VEA ESTO JEAN);
+           
         
         if (account === 'timetate@gmail.com'){
             
