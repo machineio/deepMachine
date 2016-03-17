@@ -1060,7 +1060,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'imcy123@aol.com'){
             
-            $('#wipe-irene').removeClass('hide').addClass('show');
+            $('#wipe-irene').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1081,7 +1081,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'village71480@yahoo.com'){
             
-            $('#wipe-village').removeClass('hide').addClass('show');
+            $('#wipe-village').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1098,7 +1098,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'chadjennings29@gmail.com'){
             
-            $('#wipe-village').removeClass('hide').addClass('show');
+            $('#wipe-village').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1117,7 +1117,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'isasbar1@gmail.com'){
             
-            $('#wipe-village').removeClass('hide').addClass('show');
+            $('#wipe-village').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1134,7 +1134,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'ecker8415@yahoo.com'){
             
-            $('#wipe-village').removeClass('hide').addClass('show');
+            $('#wipe-village').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1151,7 +1151,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'ireony555@aol.com'){
             
-            $('#wipe-village').removeClass('hide').addClass('show');
+            $('#wipe-village').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1168,7 +1168,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'annkencl@gmail.com'){
             
-            $('#wipe-village').removeClass('hide').addClass('show');
+            $('#wipe-village').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1185,7 +1185,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'jjplbgsdad@aol.com'){
             
-            $('#wipe-village').removeClass('hide').addClass('show');
+            $('#wipe-village').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1202,7 +1202,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'allen.legel@gmail.com'){
             
-            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-house').removeClass("show");
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
             $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
 
@@ -1228,7 +1228,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'affiliatemarketer3@gmail.com'){
             
-            $('#wipe-affiliate').removeClass('hide').addClass('show');
+            $('#wipe-affiliate').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1265,6 +1265,28 @@ fun.Router = Backbone.Router.extend({
             //$('#current-652').removeClass('hide').addClass('show');
 
         }
+
+         if (account === 'chadjennings29@gmail.com'){
+            
+            $('#wipe-affiliate').removeClass('hide');
+            
+            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            
+            
+            $('#current-budget').removeClass('show').addClass('hide');
+
+            $('#current-250').removeClass('show').addClass('hide');
+            $('#current-652').removeClass('hide').addClass('show');
+            //$('#current-652').removeClass('hide').addClass('show');
+
+        }
+
 
         //$(VEA ESTO JEAN);
            
@@ -1325,6 +1347,8 @@ fun.Router = Backbone.Router.extend({
             $('#current-602').removeClass('hide').addClass('show');
 
         }
+
+
 
         if (account === 'dy2selfdaily@aol.com'){
             
