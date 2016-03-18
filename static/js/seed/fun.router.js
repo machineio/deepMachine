@@ -1375,7 +1375,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'toddp@cpbgc.com'){
             
-            $('#wipe-village').removeClass('hide').addClass('show');
+            $('#wipe-todd').removeClass('hide').addClass('show');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1383,10 +1383,14 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-ron-jones').removeClass('show').addClass('hide');
             $('#wipe-affiliate').removeClass('show').addClass('hide');
             $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+             $('#wipe-village').removeClass('show').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
 
-            $('#current-602').removeClass('hide').addClass('show');
+            
+
+            $('current-750').removeClass('hide').addClass('show');
 
         }
 
