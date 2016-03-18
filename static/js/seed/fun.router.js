@@ -1439,16 +1439,18 @@ fun.Router = Backbone.Router.extend({
 
             $('#wipe-crazy-tracy').removeClass('hide');
             
-            $('#current-budget').removeClass('show').addClass('hide');
+            $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
-            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-todd').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
             $('#wipe-affiliate').removeClass('show').addClass('hide');
-
-            $('#wipe-mark-carter').removeClass('show').addClass('hide');
-            $('#wipe-ron-jones').removeClass('hide').addClass('show');
             $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
 
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-250').removeClass('show').addClass('hide'); 
             /*$('#current-500').removeClass('hide').addClass('all');*/
 
             $('#current-1411').removeClass('hide').addClass('show');
