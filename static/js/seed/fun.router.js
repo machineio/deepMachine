@@ -1436,18 +1436,16 @@ fun.Router = Backbone.Router.extend({
         
 
         if (account === 'rjones629@yahoo.com'){
-
             $('#wipe-crazy-tracy').addClass('hide');
-
-            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#current-budget').removeClass('show').addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
-            $('#wipe-ron-jones').removeClass('show').addClass('hide');
-            $('#wipe-affiliate').removeClass('show').addClass('hide');
             $('#wipe-irene').removeClass('show').addClass('hide');
-            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
-            $('#wipe-village').removeClass('show').addClass('hide');
-            $('#wipe-todd').removeClass('show').addClass('hide');
+            $('#wipe-affiliate').removeClass('show').addClass('hide');
 
+            $('#wipe-mark-carter').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('hide').addClass('show');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-todd').removeClass('show').addClass('hide');
 
             /*$('#current-500').removeClass('hide').addClass('all');*/
 
