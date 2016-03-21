@@ -1521,6 +1521,7 @@ fun.Router = Backbone.Router.extend({
 
 
         }
+        
 
         if (account === 'incakid.leon34@gmail.com'){
             $('#wipe-the-house').addClass('hide');
