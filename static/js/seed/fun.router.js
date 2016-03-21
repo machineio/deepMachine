@@ -1421,12 +1421,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-irene').removeClass('show').addClass('hide');
             $('#wipe-oilmanreed').removeClass('show').addClass('hide');
             $('#wipe-village').removeClass('show').addClass('hide');
-<<<<<<< Updated upstream
-            $('#wipe-todd').removeClass('hide').addClass('show');
-=======
-            $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
->>>>>>> Stashed changes
+
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
@@ -1507,6 +1503,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-1284').removeClass('hide').addClass('show');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
+
         }
 
          if (account === 'vwoodard1961@yahoo.com'){
