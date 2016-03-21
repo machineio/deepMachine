@@ -1500,7 +1500,7 @@ fun.Router = Backbone.Router.extend({
         if (account === 'tjordansteele@yahoo.com'){
 
 
-            $('#wipe-crazy-tracy').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide'); 
