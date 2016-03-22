@@ -1082,7 +1082,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'luanne.thorman@gmail.com'){
 
-            
+
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide'); 
@@ -1094,11 +1094,17 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
+
+            $('#wipe-crazy-tracy')removeClass('show').addClass('hide');
+
+            $('#wipe-chuma-luanne')removeClass('hide').addClass('show');
+
+
             
             
             $('#current-250').removeClass('show').addClass('hide');
             $('#current-945').removeClass('show').addClass('hide');
-            $('#current-2218').removeClass('hide').addClass('show');
+            $('#current-2218').removeClass('show').addClass('hide');
 
 
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
