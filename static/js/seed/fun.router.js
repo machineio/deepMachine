@@ -1080,6 +1080,33 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+        if (account === 'luanne.thorman@gmail.com'){
+
+            $('#wipe-crazy-tracy').removeClass('hide');
+            
+            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide'); 
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-affiliate').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-todd').removeClass('show').addClass('hide');
+            
+            
+            $('#current-250').removeClass('show').addClass('hide');
+            $('#current-945').removeClass('show').addClass('hide');
+            $('#current-2218').removeClass('hide').addClass('show');
+
+
+            $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-khern').removeClass('show').addClass('hide');
+
+        }
+
+
         if (account === 'village71480@yahoo.com'){
             
             $('#wipe-village').removeClass('hide');
