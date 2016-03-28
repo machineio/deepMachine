@@ -1596,7 +1596,10 @@ fun.Router = Backbone.Router.extend({
             $('#current-250').removeClass('show').addClass('hide');
             $('#current-945').removeClass('show').addClass('hide');
 
-            $('#current-1718').removeClass('hide').addClass('show');
+            $('#current-1718').removeClass('show').addClass('hide');
+            
+            $('#current-5502').removeClass('hide').addClass('show');
+
 
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-mredd').removeClass('show').addClass('hide');
