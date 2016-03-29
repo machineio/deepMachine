@@ -1069,7 +1069,7 @@ fun.Router = Backbone.Router.extend({
 
         if (account === 'imcy123@aol.com'){
             
-            $('#wipe-oilmanreed').removeClass('hide');
+            $('#wipe-imcy').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1083,6 +1083,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-mredd').removeClass('show').addClass('hide');
             $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
             $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
             
 
             $('#current-budget').removeClass('show').addClass('hide');
