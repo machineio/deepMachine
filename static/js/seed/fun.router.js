@@ -1061,7 +1061,7 @@ fun.Router = Backbone.Router.extend({
 
             $('#current-budget').removeClass('show').addClass('hide'); // uli este es el default que ricardo pidio para los demo account con un saldo de 250 exp points
             /*$('#current-475').removeClass('hide').addClass('all');*/
-            $('#current-8191').removeClass('hide').addClass('all');
+            $('#current-9060').removeClass('hide').addClass('all');
             $('#current-250').removeClass('show').addClass('hide');
 
         }
@@ -1095,7 +1095,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
 
-            $('#current-2599').removeClass('hide').addClass('show');
+            $('#current-2772').removeClass('hide').addClass('show');
 
         }
 
@@ -1549,7 +1549,8 @@ fun.Router = Backbone.Router.extend({
             $('#current-250').removeClass('show').addClass('hide'); 
             $('#current-750').removeClass('show').addClass('hide');
             $('#current-6402').removeClass('show').addClass('hide');
-            $('#current-9249').removeClass('hide').addClass('show');
+            $('#current-10.118').removeClass('hide').addClass('show');
+
 
         }
 
@@ -1696,7 +1697,7 @@ fun.Router = Backbone.Router.extend({
             
 
             $('#current-budget').removeClass('show').addClass('hide');
-            $('#current-7539').removeClass('hide').addClass('show');
+            $('#current-8408').removeClass('hide').addClass('show');
 
         }
 
