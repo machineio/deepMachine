@@ -1030,37 +1030,50 @@ fun.Router = Backbone.Router.extend({
 
 
         if (account !== 'satan'){
-            $('#wipe-the-house').removeClass('show').addClass('hide');
-            $('#wipe-the-incakid').removeClass('show').addClass('hide');
-            $('#wipe-irene').removeClass('show').addClass('hide');
-            $('#wipe-mark-carter').removeClass('show').addClass('hide');
-            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#all-history-trades').removeClass('show').addClass('hide');
         }
 
 
         if (account === 'drknockboot560@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
 
-            $('#wipe-the-house').addClass('hide');
-            $('#current-budget').removeClass('show').addClass('hide');
+
+            $('#wipe-drkno').removeClass('hide');
+
+            $('#wipe-the-house').removeClass('show').addClass('hide');
+            $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-affiliate').removeClass('show').addClass('hide');
             $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mark-carter').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
 
-            $('#wipe-mark-carter').removeClass('hide').addClass('show');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+            
 
-
+            $('#current-budget').removeClass('show').addClass('hide'); // uli este es el default que ricardo pidio para los demo account con un saldo de 250 exp points
             /*$('#current-475').removeClass('hide').addClass('all');*/
-            $('#current-825').removeClass('hide').addClass('all');
-        }
+            $('#current-9060').removeClass('hide').addClass('all');
+            $('#current-250').removeClass('show').addClass('hide');
 
-        if (account === 'imcy123@aol.com' || account === 'tjordansteele@yahoo.com' || account === 'riones629@yahoo.com'){
-            $('#wipe-the-house').addClass('hide');
-            $('#current-budget').removeClass('show').addClass('hide');
-            $('#current-250').removeClass('hide').addClass('all');
         }
 
         if (account === 'imcy123@aol.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
-            $('#wipe-irene').removeClass('hide');
+            $('#wipe-imcy').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
@@ -1071,16 +1084,28 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-affiliate').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+            
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
 
-            $('#current-602').removeClass('hide').addClass('show');
+            $('#current-2772').removeClass('hide').addClass('show');
 
         }
 
 
         if (account === 'luanne.thorman@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
 
 
             
@@ -1093,12 +1118,18 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-village').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
-
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
-
             $('#wipe-chuma-luanne').removeClass('hide').addClass('show');
             $('#current-budget').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
 
             
             
@@ -1116,6 +1147,7 @@ fun.Router = Backbone.Router.extend({
 
 
         if (account === 'village71480@yahoo.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-village').removeClass('hide');
             
@@ -1129,6 +1161,15 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
 
             $('#current-250').removeClass('show').addClass('hide');
             $('#current-602').removeClass('show').addClass('hide');
@@ -1137,6 +1178,7 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'chadjennings29@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-village').removeClass('hide');
             
@@ -1149,6 +1191,15 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-irene').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1159,6 +1210,7 @@ fun.Router = Backbone.Router.extend({
 
 
         if (account === 'isasbar1@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-village').removeClass('hide');
             
@@ -1171,6 +1223,15 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1180,6 +1241,7 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'ecker8415@yahoo.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-village').removeClass('hide');
             
@@ -1192,6 +1254,15 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1201,6 +1272,7 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'ireony555@aol.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-village').removeClass('hide');
             
@@ -1213,6 +1285,15 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1222,6 +1303,7 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'annkencl@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-village').removeClass('hide');
             
@@ -1234,6 +1316,15 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1243,6 +1334,7 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'jjplbgsdad@aol.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-village').removeClass('hide');
             
@@ -1255,6 +1347,15 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1264,20 +1365,27 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'allen.legel@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-the-house').removeClass("show");
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
             $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
-
             $('#wipe-ron-jones').removeClass('show').addClass('hide');
             $('#wipe-irene').removeClass('show').addClass('hide');
             $('#wipe-village').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
-
-
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-affiliate').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1288,11 +1396,8 @@ fun.Router = Backbone.Router.extend({
         }
 
 
-        
-
-
-
         if (account === 'affiliatemarketer3@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-affiliate').removeClass('hide');
             
@@ -1305,16 +1410,27 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
-            
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+            
 
             $('#current-250').removeClass('show').addClass('hide');
-            $('#current-602').removeClass('hide').addClass('show');
+            $('#current-879').removeClass('hide').addClass('show');
             //$('#current-652').removeClass('hide').addClass('show');
 
         }
 
         if (account === 'leonsilinker@yahoo.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-affiliate').removeClass('hide');
             
@@ -1328,7 +1444,14 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
-            
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
             
             $('#current-budget').removeClass('show').addClass('hide');
 
@@ -1339,6 +1462,7 @@ fun.Router = Backbone.Router.extend({
         }
 
          if (account === 'chadjennings29@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-affiliate').removeClass('hide');
             
@@ -1352,8 +1476,15 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
             
-            
+            $('#wipe-mredd').removeClass('show').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
 
             $('#current-250').removeClass('show').addClass('hide');
@@ -1363,6 +1494,7 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'ecker8415@yahoo.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-affiliate').removeClass('hide');
             
@@ -1376,7 +1508,14 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
-            
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
             
             $('#current-budget').removeClass('show').addClass('hide');
 
@@ -1387,6 +1526,7 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'mike2353@att.net'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-affiliate').removeClass('hide');
             
@@ -1400,7 +1540,14 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
-            
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
             
             $('#current-budget').removeClass('show').addClass('hide');
 
@@ -1415,6 +1562,7 @@ fun.Router = Backbone.Router.extend({
            
         
         if (account === 'timetate@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-affiliate').removeClass('hide').addClass('');
             
@@ -1427,8 +1575,15 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
-            
+            $('#wipe-mredd').removeClass('show').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
 
             $('#current-250').removeClass('show').addClass('hide');
             $('#current-625').removeClass('hide').addClass('show');
@@ -1438,6 +1593,7 @@ fun.Router = Backbone.Router.extend({
 
 
         if (account === 'oilmanreed@hotmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-oilmanreed').removeClass('hide');
             
@@ -1451,16 +1607,29 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
+            
+            
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
-            $('#current-1418').removeClass('hide').addClass('show');
+            $('#current-3164').removeClass('hide').addClass('show');
             //$('#current-652').removeClass('hide').addClass('show');
 
         }
 
 
         if (account === 'toddp@cpbgc.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-todd').removeClass('hide');
             
@@ -1474,6 +1643,235 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-village').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+         
+
+
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-250').removeClass('show').addClass('hide'); 
+            $('#current-750').removeClass('show').addClass('hide');
+            $('#current-6402').removeClass('show').addClass('hide');
+            $('#current-10118').removeClass('hide').addClass('show');
+
+
+        }
+
+
+
+        if (account === 'minaran@aol.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
+            
+            $('#wipe-minaran').removeClass('hide');
+            
+            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-affiliate').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-todd').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
+         
+         
+
+
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-250').removeClass('show').addClass('hide'); 
+            
+
+
+        }
+
+        if (account === 'paul35coachmen@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
+            
+            $('#wipe-paul').removeClass('hide');
+            
+            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-affiliate').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-todd').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
+         
+         
+
+
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-250').removeClass('show').addClass('hide'); 
+            
+
+
+        }
+
+
+
+        if (account === 'greatsavings2012@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
+            
+            $('#wipe-greatsavings').removeClass('hide');
+            
+            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-affiliate').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-todd').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+
+         
+         
+
+
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-428').removeClass('show').addClass('hide'); 
+            
+
+
+        }
+
+
+
+        if (account === 'winnerscircle@comcast.net'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
+            
+            $('#wipe-winnerscircle').removeClass('hide');
+            
+            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-affiliate').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-todd').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+
+
+         
+         
+
+
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-250').removeClass('show').addClass('hide'); 
+            
+
+
+        }
+
+
+
+        if (account === 'ashanabey@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
+            
+            $('#wipe-ashanabey').removeClass('hide');
+            
+            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-affiliate').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-todd').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+            
+
+            $('#current-budget').removeClass('show').addClass('hide');
+            $('#current-250').removeClass('show').addClass('hide'); 
+
+        }
+
+
+
+        if (account === 'mredd92@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
+            
+            $('#wipe-mredd').removeClass('hide');
+            
+            $('#wipe-wipe-todd').removeClass("show").addClass('hide');
+            $('#wipe-the-house').removeClass("show").addClass('hide');
+            $('#wipe-the-incakid').removeClass('show').addClass('hide');
+            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-ron-jones').removeClass('show').addClass('hide');
+            $('#wipe-affiliate').removeClass('show').addClass('hide');
+            $('#wipe-irene').removeClass('show').addClass('hide');
+            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1487,9 +1885,9 @@ fun.Router = Backbone.Router.extend({
 
 
         if (account === 'dy2selfdaily@aol.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-village').removeClass('hide').addClass('show');
-            
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
             $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
@@ -1499,6 +1897,14 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1509,12 +1915,12 @@ fun.Router = Backbone.Router.extend({
         
 
         if (account === 'rjones629@yahoo.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
 
             $('#wipe-ron-jones').removeClass('hide');
             
             $('#wipe-the-house').removeClass("show").addClass('hide');
             $('#wipe-the-incakid').removeClass('show').addClass('hide');
-            $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
             $('#wipe-affiliate').removeClass('show').addClass('hide');
             $('#wipe-irene').removeClass('show').addClass('hide');
@@ -1522,18 +1928,27 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-village').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide')
-            $('#wipe-khern').removeClass('show').addClass('hide');;
+            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
             /*$('#current-500').removeClass('hide').addClass('all');*/
 
-            $('#current-1878').removeClass('hide').addClass('show');
+            $('#current-2250').removeClass('hide').addClass('show');
 
         }
 
 
         if (account === 'tjordansteele@yahoo.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
 
 
             $('#wipe-crazy-tracy').removeClass('hide');
@@ -1545,28 +1960,45 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-irene').removeClass('show').addClass('hide');
             $('#wipe-oilmanreed').removeClass('show').addClass('hide');
             $('#wipe-village').removeClass('show').addClass('hide');
+            $('#wipe-village').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
-            
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
+           
             
             $('#current-250').removeClass('show').addClass('hide');
             $('#current-945').removeClass('show').addClass('hide');
-            $('#current-2218').removeClass('hide').addClass('show');
+
+            $('#current-1718').removeClass('show').addClass('hide');
+            
+            $('#current-5502').removeClass('show').addClass('hide');
+
+            $('#current-6894').removeClass('hide').addClass('show');
 
 
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
-            $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
 
 
         }
         
 
         if (account === 'incakid.leon34@gmail.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
-            $('#wipe-the-house').removeClass('hide');
+            $('#wipe-the-incakid').removeClass('hide');
 
-            $('#wipe-the-incakid').removeClass('show').addClass('hide'); 
+          
+            $('#wipe-the-house').removeClass('show').addClass('hide');
             $('#wipe-ron-jones').removeClass('show').addClass('hide');
             $('#wipe-affiliate').removeClass('show').addClass('hide');
             $('#wipe-irene').removeClass('show').addClass('hide');
@@ -1576,13 +2008,23 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-khern').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
-            $('#current-5130').removeClass('hide').addClass('show');
+            $('#current-8408').removeClass('hide').addClass('show');
 
         }
 
          if (account === 'vwoodard1961@yahoo.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-vwoodard').removeClass('hide');
             
@@ -1596,6 +2038,14 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-village').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-khern').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1606,6 +2056,7 @@ fun.Router = Backbone.Router.extend({
         }
 
         if (account === 'khern3@gmail.com.com'){
+            $('#all-history-trades').removeClass('hide').addClass('show');
             
             $('#wipe-khern').removeClass('hide');
             
@@ -1619,6 +2070,14 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-village').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-vwoodard').removeClass('show').addClass('hide');
+            $('#wipe-mredd').removeClass('show').addClass('hide');
+            $('#wipe-drkno').removeClass('show').addClass('hide');
+            $('#wipe-imcy').removeClass('show').addClass('hide');
+            $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
+            $('#wipe-ashanabey').removeClass('show').addClass('hide');
+            $('#wipe-greatsavings').removeClass('show').addClass('hide');
 
 
 
