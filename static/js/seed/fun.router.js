@@ -1030,36 +1030,7 @@ fun.Router = Backbone.Router.extend({
 
 
         if (account !== 'satan'){
-            $('#wipe-the-house').removeClass('show').addClass('hide');
-            $('#wipe-the-incakid').removeClass('show').addClass('hide');
-            $('#wipe-irene').removeClass('show').addClass('hide');
-            $('#wipe-mark-carter').removeClass('show').addClass('hide');
-            $('#wipe-ron-jones').removeClass('show').addClass('hide');
-            $('#wipe-todd').removeClass('show').addClass('hide');
-            $('#wipe-the-incakid').removeClass('show').addClass('hide');
-            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
-            $('#wipe-ron-jones').removeClass('show').addClass('hide');
-            $('#wipe-affiliate').removeClass('show').addClass('hide');
-            $('#wipe-irene').removeClass('show').addClass('hide');
-            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
-            $('#wipe-village').removeClass('show').addClass('hide');
-            $('#wipe-vwoodard').removeClass('show').addClass('hide');
-            $('#wipe-khern').removeClass('show').addClass('hide');
-            $('#wipe-mark-carter').removeClass('show').addClass('hide');
-            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
-            $('#wipe-the-house').removeClass("show").addClass('hide');
-            $('#wipe-the-incakid').removeClass('show').addClass('hide'); 
-            $('#wipe-ron-jones').removeClass('show').addClass('hide');
-            $('#wipe-affiliate').removeClass('show').addClass('hide');
-            $('#wipe-irene').removeClass('show').addClass('hide');
-            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
-            $('#wipe-village').removeClass('show').addClass('hide');
-            $('#wipe-village').removeClass('show').addClass('hide');
-            $('#wipe-vwoodard').removeClass('show').addClass('hide');
-            $('#wipe-khern').removeClass('show').addClass('hide');
-            $('#wipe-todd').removeClass('show').addClass('hide');
-            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
-            $('#wipe-wipe-mredd').removeClass('show').addClass('hide');
+            $('#all-history-trades').removeClass('show').addClass('hide');
             console.log('uli que fue');
         }
 
