@@ -16,6 +16,8 @@ fun.strings = {
     amount: "Amount",
     bid: "Bid",
     timestamp: "Time",
+    addContactDirectory: "Add Contact Directory",
+    createDirectoryList: "Create directory list",
     expiry: "Expiry",
     confirm: "Confirm",
     timeout: "Time out",
