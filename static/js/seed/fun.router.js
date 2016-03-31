@@ -1059,6 +1059,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-mredd').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
             
 
             $('#current-budget').removeClass('show').addClass('hide'); // uli este es el default que ricardo pidio para los demo account con un saldo de 250 exp points
@@ -1094,6 +1095,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-drkno').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
             
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1126,6 +1128,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-budget').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             
             
@@ -1161,6 +1164,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-250').removeClass('show').addClass('hide');
             $('#current-602').removeClass('show').addClass('hide');
@@ -1186,6 +1190,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1213,6 +1218,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1239,6 +1245,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1265,6 +1272,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1291,6 +1299,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1317,6 +1326,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1342,6 +1352,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-affiliate').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1373,6 +1384,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
             
 
             $('#current-250').removeClass('show').addClass('hide');
@@ -1400,6 +1412,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
             
             $('#current-budget').removeClass('show').addClass('hide');
 
@@ -1427,6 +1440,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
             
             $('#wipe-mredd').removeClass('show').addClass('hide');
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1456,6 +1470,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
             
             $('#current-budget').removeClass('show').addClass('hide');
 
@@ -1484,6 +1499,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
             
             $('#current-budget').removeClass('show').addClass('hide');
 
@@ -1516,6 +1532,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-250').removeClass('show').addClass('hide');
             $('#current-625').removeClass('hide').addClass('show');
@@ -1544,6 +1561,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             
             
@@ -1576,6 +1594,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
          
 
 
@@ -1609,6 +1628,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-drkno').removeClass('show').addClass('hide');
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
          
          
@@ -1641,6 +1661,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-todd').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
          
          
@@ -1676,6 +1697,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
 
+
          
          
 
@@ -1709,6 +1731,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1738,6 +1761,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide');
@@ -1766,6 +1790,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
@@ -1798,6 +1823,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
            
             
             $('#current-250').removeClass('show').addClass('hide');
@@ -1838,6 +1864,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-drkno').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
             
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1864,6 +1891,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1892,6 +1920,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-imcy').removeClass('show').addClass('hide');
             $('#wipe-minaran').removeClass('show').addClass('hide');
             $('#wipe-paul').removeClass('show').addClass('hide');
+            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
 
 
 
