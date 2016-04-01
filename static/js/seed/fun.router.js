@@ -2186,7 +2186,7 @@ fun.Router = Backbone.Router.extend({
         }
 
 
-        if (account === ' oscara.melchor@hotmail.com'){
+        if (account === 'oscara.melchor@hotmail.com'){
             $('#all-history-trades').removeClass('hide').addClass('show');
 
             $('#wipe-oscara').removeClass('hide');
