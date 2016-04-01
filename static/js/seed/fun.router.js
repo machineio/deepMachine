@@ -1064,6 +1064,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-khut').removeClass('show').addClass('hide');
             $('#wipe-tntnitro').removeClass('show').addClass('hide');
             
+            
 
             $('#current-budget').removeClass('show').addClass('hide'); // uli este es el default que ricardo pidio para los demo account con un saldo de 250 exp points
             /*$('#current-475').removeClass('hide').addClass('all');*/
