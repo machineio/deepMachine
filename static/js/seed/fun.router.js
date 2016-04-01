@@ -1513,6 +1513,9 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+
+
+
          if (account === 'chadjennings29@gmail.com'){
             $('#all-history-trades').removeClass('hide').addClass('show');
             
@@ -1549,6 +1552,10 @@ fun.Router = Backbone.Router.extend({
             //$('#current-652').removeClass('hide').addClass('show');
 
         }
+
+
+
+        
 
         if (account === 'ecker8415@yahoo.com'){
             $('#all-history-trades').removeClass('hide').addClass('show');
