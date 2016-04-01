@@ -1937,6 +1937,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-winnerscircle').removeClass('show').addClass('hide');
             $('#wipe-ashanabey').removeClass('show').addClass('hide');
             $('#wipe-greatsavings').removeClass('show').addClass('hide');
+            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
+            $('#wipe-mark-carter').removeClass('show').addClass('hide');
+         
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
