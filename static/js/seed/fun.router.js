@@ -1741,7 +1741,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-250').removeClass('show').addClass('hide'); 
             $('#current-750').removeClass('show').addClass('hide');
             $('#current-6402').removeClass('show').addClass('hide');
-            $('#current-10118').removeClass('hide').addClass('show');
+            $('#current-10435').removeClass('hide').addClass('show');
 
 
         }
@@ -2095,7 +2095,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-250').removeClass('show').addClass('hide'); 
             /*$('#current-500').removeClass('hide').addClass('all');*/
 
-            $('#current-342').removeClass('hide').addClass('show');
+            $('#current-567').removeClass('hide').addClass('show');
 
         }
 
@@ -2127,7 +2127,6 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
             $('#wipe-mark-carter').removeClass('show').addClass('hide');
             $('#wipe-ron-jones').removeClass('show').addClass('hide');
-            $('#wipe-chris').removeClass('show').addClass('hide');
             $('#wipe-chris').removeClass('show').addClass('hide');
             $('#wipe-khut').removeClass('show').addClass('hide');
             $('#wipe-tntnitro').removeClass('show').addClass('hide');
@@ -2221,7 +2220,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-250').removeClass('show').addClass('hide'); 
             /*$('#current-500').removeClass('hide').addClass('all');*/
 
-            $('#current-342').removeClass('hide').addClass('show');
+            $('#current-567').removeClass('hide').addClass('show');
 
         }
 
