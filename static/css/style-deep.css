@@ -1039,4 +1039,8 @@ sup {
 
 .list-landing-deep {
     font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
 }
