@@ -273,10 +273,8 @@ fun.Router = Backbone.Router.extend({
 
     about: function(){
         'use strict';
-        var about = translate('about');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(about);
         fun.instances.about.render();
         fun.instances.footer.render();
     },
