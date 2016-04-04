@@ -1043,4 +1043,9 @@ sup {
     font-weight: 300;
     margin-bottom: 10px;
 }
+
+.video-area .section-title h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 600;
 }
