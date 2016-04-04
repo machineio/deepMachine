@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Deep Machine: Best Deep Learning Trade System and Online Educational Platform</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="author" content="Some Stochastic Monkeys">
+
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="./static/images/favicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="/static/images/favicon.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="/static/images/favicon.png">
+        <!-- Standard iPad Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="72x72" href="/static/images/favicon.png">
+        <!-- Standard iPhone Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="57x57" href="/static/images/favicon.png">
+
+
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- ============ Menu Side Slide CSS ============ -->
+        <link rel="stylesheet" href="/static/css/menu_sideslide.css">     
+        
+        <!-- ============ Owl Carousel CSS ============ -->
+        <link rel="stylesheet" href="/static/css/owl.carousel.css"> 
+
+        <!-- ============ Font Awesome Icon CSS ============ -->
         <link rel="stylesheet" href="/static/css/font-awesome.css">
+
+        <!-- ============ Font Awesome Icon CSS ============ -->
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+
+        <!-- ============ Animate CSS ============ -->
+        <link rel="stylesheet" href="/static/css/animate.min.css">        
+
+        <!-- ============ Resource Style CSS ============ -->
+        <link rel="stylesheet" href="/static/css/style.css">      
+
+        <!-- ============ Responsive Device Layout CSS ======= -->
+        <link rel="stylesheet" href="/static/css/responsive.css">            
+
+         <!-- ============ deepmachine CSS ======= -->
+        <link rel="stylesheet" href="/static/css/deepmachine.css">  
+
         <link rel="stylesheet" href="/static/css/octicons.css">
 
         <!-- Theme style -->
@@ -37,6 +77,9 @@
         <!-- Seed CSS -->
         <link rel="stylesheet" href="/static/css/seed.css">
         <link rel="stylesheet" href="/static/css/base.css">
+
+        <!-- Modernizr runs quickly on page load to detect features -->
+        <script src="./static/js/modernizr.js"></script>
         
         <!-- All min CSS -->
         <!--
@@ -177,6 +220,30 @@
         <div  class="footer" id="fun-footer"></div>
         <!-- jquery -->
         <script src="/static/js/libs/jquery-2.1.3.min.js"></script>
+
+        <script src="/static/js/jquery-1.11.3.min.js"></script> 
+
+        <script src="/static/js/custom.js"></script>
+
+        <script src="/static/js/wow.min.js"></script>
+
+        <script src="/static/js/owl.carousel.js"></script>
+
+        <script src="/static/js/jquery.ajaxchimp.min.js"></script>
+
+        <script src="/static/js/classie.js"></script> 
+
+        <script src="/static/js/menu.js"></script>
+
+        <script src="/static/js/scrollIt.min.js"></script> 
+
+        <script src="/static/js/jquery.backTop.js"></script>
+
+        <script src="/static/js/jquery.backstretch.js"></script>
+
+        <script src="/static/js/jquery.vide.js"></script>
+
+        <script src="/static/js/jquery.fitvids.js"></script>
         
         <!-- toronja libraries -->
 
@@ -265,5 +332,20 @@
         <script src="/static/js/views/footer.js"></script>
         <!-- fun router -->
         <script src="/static/js/seed/fun.router.js"></script>
+
+        <script>
+            /* =================================
+               LOADER
+            =================================== */
+            // makes sure the whole site is loaded
+            jQuery(window).load(function() {
+                "use strict";
+                    // will first fade out the loading animation
+                jQuery("#preloader_1").fadeOut();
+                    // will fade out the whole DIV that covers the website.
+                jQuery(".preloader").delay(1000).fadeOut("slow");
+            })
+
+        </script>
     </body>
 </html>
