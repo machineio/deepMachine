@@ -140,7 +140,7 @@ ul.pagination li > a {
 }
 
 .navbar .nav > li > a:hover {
-    color: rgba(92, 153, 88, 0.81);
+    color: #FFFFFF;
     background: #686565
 }
 
