@@ -1233,7 +1233,7 @@ img {
 	
 .section-title h2{
 	color: #222222;
-    font-family: DosisBold;
+    /*font-family: DosisBold;*/
     font-size: 34px;
     font-weight: normal;
     letter-spacing: -1px;
