@@ -2343,7 +2343,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-curtis').removeClass('show').addClass('hide');
 
             $('#current-budget').removeClass('show').addClass('hide');
-            $('#current-8408').removeClass('hide').addClass('show');
+            $('#current-10879').removeClass('hide').addClass('show');
 
         }
 
