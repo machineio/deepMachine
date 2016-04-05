@@ -141,6 +141,7 @@ ul.pagination li > a {
 
 .navbar .nav > li > a:hover {
     color: rgba(92, 153, 88, 0.81);
+    background: #333333
 }
 
 .btn-default:active, .btn-default.active {
