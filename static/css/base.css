@@ -132,7 +132,7 @@ ul.pagination li > a {
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 
 .navbar .nav > li > a {
@@ -140,7 +140,7 @@ ul.pagination li > a {
 }
 
 .navbar .nav > li > a:hover {
-    color: #4e4e4e;
+    color: rgba(92, 153, 88, 0.81);
 }
 
 .btn-default:active, .btn-default.active {
