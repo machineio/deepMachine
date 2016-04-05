@@ -727,7 +727,7 @@ sup {
 }
 .subscription-form .input-box {
   width: 350px;
-  margin-top: 25px;
+  /*margin-top: 25px;*/
   margin-left: 45px;
   height: 42px;
   border-radius: 5px 0 0 5px;
