@@ -754,6 +754,7 @@ sup {
   margin-left: -5px;
   margin-top: 25px;
   border: 1px solid transparent;
+  padding: 11px 13px;
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus,
