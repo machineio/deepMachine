@@ -2460,7 +2460,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
 
-            $('#current-250').removeClass('hide').addClass('show');
+            $('#current-437').removeClass('hide').addClass('show');
 
         }
 
