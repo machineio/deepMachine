@@ -25,7 +25,10 @@ fun.views.about = Backbone.View.extend({
         this.$el.removeClass("hide").addClass("show");
     }
 
-    $(‘#home-slider’).owlCarousel({
+});
+
+
+  /*$(‘#home-slider’).owlCarousel({
                 loop:true,
                 margin:10,
                 nav:true,
@@ -40,6 +43,4 @@ fun.views.about = Backbone.View.extend({
                         items:5
                     }
                 }
-            })
-
-});
+            })*/
