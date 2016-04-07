@@ -25,7 +25,7 @@ fun.views.about = Backbone.View.extend({
         this.$el.removeClass("hide").addClass("show");
     }
 
-    $(‘#home-slider’).owl.carousel({
+    $(‘#home-slider’).owlCarousel({
                 loop:true,
                 margin:10,
                 nav:true,
