@@ -2772,6 +2772,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-annjosuccess').removeClass('show').addClass('hide');
             $('#wipe-papilindo').removeClass('show').addClass('hide');
             $('#wipe-sabco').removeClass('show').addClass('hide');
+           
             
 
             $('#current-budget').removeClass('show').addClass('hide');
