@@ -3733,6 +3733,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-eljosmith').removeClass('show').addClass('hide');
             $('#wipe-ashleymarielove').removeClass('show').addClass('hide');
             $('#wipe-johnsontilldeath').removeClass('show').addClass('hide');
+            $('#wipe-teamline').removeClass('show').addClass('hide');
            
             
 
