@@ -248,7 +248,7 @@ fun.Router = Backbone.Router.extend({
         if(fun.utils.loggedIn()){
             fun.utils.redirect(fun.conf.hash.profile);
         } else {
-            fun.utils.redirect(fun.conf.hash.landing);
+            fun.utils.redirect(fun.conf.hash.about);
         }
     },
 
