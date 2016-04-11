@@ -1068,6 +1068,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
             
 
             $('#current-budget').removeClass('show').addClass('hide'); // uli este es el default que ricardo pidio para los demo account con un saldo de 250 exp points
@@ -1111,6 +1112,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
             
 
@@ -1158,6 +1161,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
             
             
@@ -1207,6 +1212,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
 
 
@@ -1248,6 +1255,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
 
 
@@ -1291,6 +1300,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
 
 
@@ -1333,6 +1344,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
 
 
@@ -1375,6 +1388,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
 
 
@@ -1417,6 +1432,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1458,6 +1475,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
 
 
@@ -1499,6 +1518,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
 
 
@@ -1546,6 +1567,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
             
 
@@ -1588,6 +1611,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
             
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1634,6 +1659,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
 
@@ -1682,6 +1708,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
             
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1725,6 +1752,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
             
@@ -1773,6 +1801,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
+
 
 
             $('#current-250').removeClass('show').addClass('hide');
@@ -1816,6 +1846,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
             
@@ -1863,6 +1894,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
       
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1909,6 +1941,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1952,6 +1985,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
          
@@ -2000,6 +2034,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
          
@@ -2047,6 +2082,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
         
          
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2092,6 +2128,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2135,6 +2172,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
 
@@ -2179,6 +2217,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2224,6 +2263,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
          
 
@@ -2273,6 +2313,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
          
 
@@ -2322,6 +2363,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
          
 
@@ -2369,6 +2411,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
          
 
@@ -2415,6 +2458,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-annjosuccess').removeClass('show').addClass('hide');
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
 
@@ -2471,6 +2515,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
            
             
@@ -2528,6 +2573,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
         }
 
@@ -2564,6 +2610,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
 
@@ -2607,6 +2654,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
 
@@ -2654,6 +2702,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
 
 
 
@@ -2700,6 +2749,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-sabco').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
             
             
 
@@ -2750,6 +2800,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-trader').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
             
 
 
@@ -2797,6 +2848,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-papilindo').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
             
 
             
@@ -2848,6 +2900,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-annjosuccess').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
            
             
 
@@ -2896,6 +2949,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-annjosuccess').removeClass('show').addClass('hide');
             $('#wipe-trader').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
            
             
 
@@ -2945,6 +2999,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-annjosuccess').removeClass('show').addClass('hide');
             $('#wipe-trader').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
+            $('#wipe-larostr').removeClass('show').addClass('hide');
            
             
 
