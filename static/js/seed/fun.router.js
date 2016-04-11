@@ -2749,6 +2749,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-annjosuccess').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
             
 
 
