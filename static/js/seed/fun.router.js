@@ -1070,11 +1070,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
             
 
             $('#current-budget').removeClass('show').addClass('hide'); // uli este es el default que ricardo pidio para los demo account con un saldo de 250 exp points
@@ -1120,12 +1118,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
             
 
@@ -1175,12 +1169,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
-
 
             
             
@@ -1232,12 +1222,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
-
 
 
 
@@ -1281,11 +1267,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
 
@@ -1332,11 +1315,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
 
 
 
@@ -1382,11 +1363,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
 
@@ -1432,11 +1410,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
 
 
 
@@ -1482,11 +1458,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
 
@@ -1531,11 +1504,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
 
@@ -1580,11 +1550,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
 
@@ -1635,11 +1602,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
             
@@ -1685,11 +1649,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
             
@@ -1739,11 +1700,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
 
 
 
@@ -1794,11 +1753,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
 
             
             $('#current-budget').removeClass('show').addClass('hide');
@@ -1844,11 +1801,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
             
@@ -1899,11 +1853,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
 
 
 
@@ -1950,11 +1902,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
 
 
             
@@ -2004,13 +1954,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
-
-
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
       
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2059,12 +2004,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
 
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2110,11 +2052,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
 
@@ -2162,15 +2101,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-
-
-         
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
- 
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-428').removeClass('show').addClass('hide'); 
@@ -2217,11 +2150,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
         
          
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2269,11 +2200,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2319,11 +2247,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
 
@@ -2370,11 +2295,8 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2422,13 +2344,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
-
-         
+ 
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
@@ -2478,13 +2396,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
-         
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
@@ -2534,13 +2448,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
-         
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
@@ -2588,13 +2498,10 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
-            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
-         
+            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
+ 
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
@@ -2641,16 +2548,10 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
+
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
-
-
-
-
-         
+     
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
@@ -2704,11 +2605,10 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
+
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
+
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
            
             
@@ -2768,11 +2668,11 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
+
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
+
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
 
         }
 
@@ -2811,12 +2711,10 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
-            $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
-            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
+            $('#wipe-delightfulnita').removeClass('show').addClass('hide');
+
+            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2861,12 +2759,10 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
-            $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
-            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
+            $('#wipe-delightfulnita').removeClass('show').addClass('hide');
+
+            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
 
 
 
@@ -2915,12 +2811,10 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
-            $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
-            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
 
+            $('#wipe-delightfulnita').removeClass('show').addClass('hide');
+
+            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2968,12 +2862,11 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
+
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
+
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
-            
+
             
 
 
@@ -3025,13 +2918,10 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-trader').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
-            $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
-            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
-            
 
+            $('#wipe-delightfulnita').removeClass('show').addClass('hide');
+
+            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -3079,11 +2969,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
             
 
             
@@ -3137,12 +3025,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
-           
+
             
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -3192,11 +3077,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
            
             
 
@@ -3248,11 +3131,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-larostr').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
+
            
             
 
@@ -3302,13 +3183,9 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-trader').removeClass('show').addClass('hide');
             $('#wipe-desertmann').removeClass('show').addClass('hide');
             $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-<<<<<<< HEAD
             $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-=======
             $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
->>>>>>> f4e6908f6e0086d9d22cd3f09c4b6f14d9c6faa5
-           
-            
+ 
 
             $('#current-budget').removeClass('show').addClass('hide');
             $('#current-250').removeClass('show').addClass('hide'); 
