@@ -21,10 +21,10 @@
                     <div class="container">
                         <div class="row slide-signup-margins">
 
-                             
+                             <div class="right-content-image">
+                                    <img class="img-responsive" src="//static/images/slider/2.jpg" alt="" />
+                             </div>
                             <div class="col-lg-8 no-padding">
-
-                                <!--
                                 <div id="home-slider" class="home-slider owl-carousel owl-theme">
                                     <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 6120px; left: 0px; display: block; transform: translate3d(-2295px, 0px, 0px);"><div class="owl-item" style="width: 765px;"><div class="item">
                                         <img src="/static/images/slider/2.jpg" alt="Slider Image">
@@ -39,31 +39,49 @@
                                     
                                     
                                 <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page active"><span class=""></span></div></div></div></div>
-                            -->
-                                
-                                <div class="right-content-image">
-                                    <img class="img-responsive" src="/static/images/slider/2.jpg" alt="" />
-                                </div>
-
                             </div>
                             
                             <div class="col-lg-4 no-padding">
                                 <div class="top-form">
                                     <!--<h3>Subscribes & Downloads <br /> Your Free Products Copy</h3>-->
-
-                                    <form id="about-signup-form" class="form-signup" novalidate="novalidate">
-    
-                                         <div class="form-group">
-                                            <input type="text" id="about_username" name="about_username" class="form-control" placeholder="<%= translate("yourEmail") %>" autofocus="">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text" id="about_email" name="about_email" class="form-control" placeholder="<%= translate("confirmEmail") %>">
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="about_password" name="about_password" placeholder="<%= translate("createApassword") %>"/>
-                                            <p class="text-muted"><%= translate("passwordStuffs") %><p>
+                                    <form action="contact.php">
+                                        <div class="row">
+                                            <!--<div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control input-form name" name="first-name" placeholder="Your Username" />
+                                                </div>
+                                            </div>-->
+                                            <!--<div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control input-form name" name="last-name" placeholder="Last Name" />
+                                                </div>
+                                            </div>-->
+                                            
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control input-form email " name="username" placeholder="Your Username" />
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control input-form email " name="email" placeholder="Email Address" />
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control input-form email " name="password" placeholder="Create a Password" />
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-lg-12"><p>Use at least one lowercase letter, one numeral, and seven characters.</p></div>
+                                            
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <button class="btn btn-default  button">Sign Up</button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </form>
                                     
