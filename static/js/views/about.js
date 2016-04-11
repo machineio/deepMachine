@@ -4,8 +4,8 @@ fun.views.about = Backbone.View.extend({
     * Bind the event functions to the different HTML elements
     */
     events : {
-        'click #landing-signup-btn': 'signup',
-        'click #landing-signin-btn': 'signin'
+        'click #about-signup-btn': 'signup',
+        'click #about-signin-btn': 'signin'
     },
     
     /*
@@ -22,6 +22,12 @@ fun.views.about = Backbone.View.extend({
         if (!this.$el.html()){
             var template = _.template(fun.utils.getTemplate(fun.conf.templates.about));
             this.$el.html(template);
+            this.signupError = this.$('#about-alert');
+            // Form inputs
+            this.account = this.$('#about_username');
+            this.newAccount = this.account;
+            this.email = this.$('#about_email');
+            this.password = this.$('#about_password');
         }
         this.$el.removeClass("hide").addClass("show");
     },
@@ -55,29 +61,29 @@ fun.views.about = Backbone.View.extend({
         // form validation rules
         rules = {
             rules: {
-                landing_username: {
+                about_username: {
                     minlength: 2,
                     required: true
                 },
-                landing_email: {
+                about_email: {
                     required: true,
                     email: true
                 },
-                landing_password: {
+                about_password: {
                     minlength: 8,
                     required: true
                 }
             }
         }
         validationRules = $.extend(rules, fun.utils.validationRules);
-        $('#langing-signup-form').validate(validationRules);
+        $('#about-signup-form').validate(validationRules);
         // new user account callbacks
         callbacks = {
             success: function(){
                 // Clear the stuff from the inputs ;)
-                view.$('#landing_username').val('');
-                view.$('#landing_email').val('');
-                view.$('#landing_password').val('');
+                view.$('#about_username').val('');
+                view.$('#about_email').val('');
+                view.$('#about_password').val('');
                 signupError.hide();
                 // login the created user
                 fun.utils.login(account, password,
@@ -133,7 +139,7 @@ fun.views.about = Backbone.View.extend({
         };
 
         // check for a valid form and create the new user account
-        validForm = $('#langing-signup-form').valid();
+        validForm = $('#about-signup-form').valid();
         if (validForm){
             //event.preventDefault();
             this.model = new fun.models.Account();
