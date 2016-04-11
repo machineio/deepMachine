@@ -5,7 +5,8 @@ fun.views.about = Backbone.View.extend({
     */
     events : {
         'click #about-signup-btn': 'signup',
-        'click #about-signin-btn': 'signin'
+        'click #about-signin-btn': 'signin',
+        'click #subscribe-btn' : 'subscribe'
     },
     
     /*
@@ -155,6 +156,21 @@ fun.views.about = Backbone.View.extend({
                 callbacks
             );
         }
+    },
+
+
+    subscribe: function(event){
+        'use strict';
+        event.preventDefault();
+        var email = this.$('#subscribe-email').val();
+        fun.utils.subscribe(email, {
+            success : function(jqXHR, textStatus){
+                this.$('#subscribe-email').val('');
+            },
+            error : function(jqXHR, textStatus, errorThrown) {
+                console.log('subscribe error');
+            }
+        });
     }
 
 });
