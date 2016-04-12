@@ -4601,6 +4601,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-youngpaul').removeClass('show').addClass('hide');
+            $('#wipe-rjs-productions').removeClass('show').addClass('hide');
 
            
             
@@ -4664,6 +4665,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lwellszero').removeClass('show').addClass('hide');
             $('#wipe-youngpaul').removeClass('show').addClass('hide');
+            $('#wipe-rjs-productions').removeClass('show').addClass('hide');
            
             
 
