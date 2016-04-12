@@ -1085,6 +1085,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
             
 
@@ -1145,6 +1146,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
             
 
@@ -1208,6 +1210,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
             
             
@@ -1273,6 +1276,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -1330,6 +1334,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -1390,6 +1395,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -1450,6 +1456,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -1509,6 +1516,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -1569,6 +1577,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -1627,6 +1636,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -1685,6 +1695,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -1749,6 +1760,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             
@@ -1808,6 +1820,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             
@@ -1871,6 +1884,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -1936,6 +1950,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             
@@ -1996,6 +2011,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             
@@ -2060,6 +2076,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -2121,6 +2138,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -2182,6 +2200,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
       
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2244,6 +2263,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -2304,6 +2324,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -2365,6 +2386,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2426,6 +2448,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
         
          
@@ -2488,6 +2511,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2547,6 +2571,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -2607,6 +2632,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2668,6 +2694,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
  
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2732,6 +2759,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2796,6 +2824,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2858,6 +2887,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
  
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2919,6 +2949,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
      
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -2987,6 +3018,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
            
             
@@ -3060,6 +3092,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
         }
@@ -3113,6 +3146,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -3171,6 +3205,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -3233,6 +3268,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
             $('#current-budget').removeClass('show').addClass('hide');
@@ -3294,6 +3330,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
@@ -3418,6 +3455,7 @@ fun.Router = Backbone.Router.extend({
             $('#wipe-rjs-productions').removeClass('show').addClass('hide');
             $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
             $('#wipe-lilustreci').removeClass('show').addClass('hide');
+            $('#wipe-trader').removeClass('show').addClass('hide');
 
 
 
