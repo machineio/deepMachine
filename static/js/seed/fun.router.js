@@ -3321,7 +3321,7 @@ fun.Router = Backbone.Router.extend({
         if (account === 'annjosuccess@hotmail.com'){
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
-            $('#wipe-annjosuccess').removeClass('hide').addClass('show');
+            $('#wipe-annjosuccess').removeClass('hide');
             $('#current-367').removeClass('hide').addClass('show');
         }
 

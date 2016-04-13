@@ -75,6 +75,7 @@ fun.utils.hideAccountsHistory = function(){
 
 fun.utils.hideAmounts = function(){
     'use strict';
+    $('#current-budget').removeClass('show').addClass('hide');
     $('#current-250').removeClass('show').addClass('hide');
     $('#current-945').removeClass('show').addClass('hide');
     $('#current-2218').removeClass('show').addClass('hide');
