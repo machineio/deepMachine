@@ -16,6 +16,25 @@ var fun = {
 };
 
 
+
+
+/*
+* Mae uli, mae uli, mae.
+*/
+fun.utils.maeUli = function(mae){
+    'use strict';
+    var uli, mae;
+
+    console.log(mae);
+
+    console.log('mae uli, mae uli, mae');
+
+
+};
+
+
+
+
 /*
 * Updater deals with websocket stuff
 */
