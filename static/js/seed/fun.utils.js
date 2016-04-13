@@ -18,6 +18,9 @@ var fun = {
 
 fun.utils.hideAccountsHistory = function(){
     'use strict';
+    // test this stuff up
+    $('#all-history-trades').removeClass('hide').addClass('show');
+    // list of active and demo accounts
     $('#wipe-the-house').removeClass("show").addClass('hide');
     $('#wipe-the-incakid').removeClass('show').addClass('hide');
     $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
@@ -71,18 +74,13 @@ fun.utils.hideAccountsHistory = function(){
 
 fun.utils.hideAmounts = function(){
     'use strict';
-
+    $('#current-250').removeClass('show').addClass('hide');
     $('#current-945').removeClass('show').addClass('hide');
     $('#current-2218').removeClass('show').addClass('hide');
     $('#current-666').removeClass('show').addClass('hide');
-
-
     $('#current-1126').removeClass('show').addClass('hide');
-
     $('#current-4257').removeClass('show').addClass('hide');
     $('#current-250').removeClass('show').addClass('hide');
-
-
     $('#current-602').removeClass('show').addClass('hide');
     $('#current-652').removeClass('show').addClass('hide');
     $('#current-250').removeClass('show').addClass('hide');
@@ -90,7 +88,6 @@ fun.utils.hideAmounts = function(){
     $('#current-652').removeClass('show').addClass('hide');
     $('#current-879').removeClass('show').addClass('hide');
     $('#current-2534').removeClass('show').addClass('hide');
-
     $('#current-945').removeClass('show').addClass('hide');
     $('#current-1718').removeClass('show').addClass('hide');
     $('#current-5502').removeClass('show').addClass('hide');
@@ -98,12 +95,10 @@ fun.utils.hideAmounts = function(){
     $('#current-342').removeClass('show').addClass('hide');
     $('#current-567').removeClass('show').addClass('hide');
     $('#current-2250').removeClass('show').addClass('hide');
-
     $('#current-750').removeClass('show').addClass('hide');
     $('#current-6402').removeClass('show').addClass('hide');
     $('#current-6752').removeClass('show').addClass('hide');
     $('#current-428').removeClass('show').addClass('hide');
-
     $('#current-750').removeClass('show').addClass('hide');
     $('#current-10435').removeClass('show').addClass('hide');
     $('#current-3164').removeClass('show').addClass('hide');
@@ -111,9 +106,6 @@ fun.utils.hideAmounts = function(){
     // and now for something completely different
     $('#current-4257').removeClass('show').addClass('hide');
     $('#current-319').removeClass('show').addClass('hide');
-
-    console.log('lol que puts...');
-
 };
 
 
