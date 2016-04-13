@@ -33,6 +33,57 @@ fun.utils.maeUli = function(mae){
 };
 
 
+fun.utils.hideAmount = function(){
+    'use strict';
+    $('#current-250').removeClass('show').addClass('hide');
+    $('#current-945').removeClass('show').addClass('hide');
+    $('#current-2218').removeClass('show').addClass('hide');
+    $('#current-666').removeClass('show').addClass('hide');
+    $('#current-budget').removeClass('show').addClass('hide');
+    $('#current-250').removeClass('show').addClass('hide');
+    $('#current-1126').removeClass('show').addClass('hide');
+    $('#current-budget').removeClass('show').addClass('hide');
+    $('#current-4257').removeClass('show').addClass('hide');
+    $('#current-250').removeClass('show').addClass('hide');
+    $('#current-budget').removeClass('show').addClass('hide');
+    $('#current-250').removeClass('show').addClass('hide');
+    $('#current-602').removeClass('show').addClass('hide');
+    $('#current-652').removeClass('show').addClass('hide');
+    $('#current-250').removeClass('show').addClass('hide');
+    $('#current-602').removeClass('show').addClass('hide');
+    $('#current-652').removeClass('show').addClass('hide');
+    $('#current-879').removeClass('show').addClass('hide');
+    $('#current-2534').removeClass('show').addClass('hide');
+    $('#current-250').removeClass('show').addClass('hide');
+    $('#current-945').removeClass('show').addClass('hide');
+    $('#current-1718').removeClass('show').addClass('hide');
+    $('#current-5502').removeClass('show').addClass('hide');
+    $('#current-8293').removeClass('show').addClass('hide');
+    $('#current-342').removeClass('show').addClass('hide');
+    $('#current-567').removeClass('show').addClass('hide');
+    $('#current-2250').removeClass('show').addClass('hide');
+    $('#current-budget').removeClass('show').addClass('hide');
+    $('#current-250').removeClass('show').addClass('hide'); 
+    $('#current-750').removeClass('show').addClass('hide');
+    $('#current-6402').removeClass('show').addClass('hide');
+    $('#current-6752').removeClass('show').addClass('hide');
+    $('#current-428').removeClass('show').addClass('hide');
+    $('#current-budget').removeClass('show').addClass('hide');
+    $('#current-250').removeClass('show').addClass('hide'); 
+    $('#current-750').removeClass('show').addClass('hide');
+    $('#current-6402').removeClass('show').addClass('hide');
+    $('#current-10435').removeClass('show').addClass('hide');
+    $('#current-3164').removeClass('show').addClass('hide');
+
+    // and now for something completely different
+    $('#current-4257').removeClass('show').addClass('hide');
+    $('#current-319').removeClass('show').addClass('hide');
+
+    console.log('lol que puts...');
+
+};
+
+
 
 
 /*

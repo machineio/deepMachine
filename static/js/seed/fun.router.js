@@ -1033,8 +1033,9 @@ fun.Router = Backbone.Router.extend({
         var prueba = estaEsUnaFuckingVariableUli;
 
         fun.utils.maeUli(prueba);
+        fun.utils.hideAmount();
 
-        
+
 
 
         if (account !== 'satan'){
@@ -2239,6 +2240,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-10435').removeClass('hide').addClass('show');
 
 
+
         }
 
 
@@ -2422,7 +2424,8 @@ fun.Router = Backbone.Router.extend({
 
 
             $('#current-budget').removeClass('show').addClass('hide');
-            $('#current-428').removeClass('show').addClass('hide'); 
+            $('#current-428').removeClass('show').addClass('hide');
+
             
 
 
