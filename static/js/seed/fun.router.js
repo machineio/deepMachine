@@ -1025,9 +1025,8 @@ fun.Router = Backbone.Router.extend({
         }
 
         
-        fun.utils.hideAmount();
-
         if (account !== 'satan'){
+            fun.utils.hideAmounts();
             $('#all-history-trades').removeClass('show').addClass('hide');
             $('#current-250').removeClass('hide').addClass('show');
 
