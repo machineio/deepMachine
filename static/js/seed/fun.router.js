@@ -1033,13 +1033,15 @@ fun.Router = Backbone.Router.extend({
         var prueba = estaEsUnaFuckingVariableUli;
 
         fun.utils.maeUli(prueba);
+        
         fun.utils.hideAmount();
-
 
 
 
         if (account !== 'satan'){
             $('#all-history-trades').removeClass('show').addClass('hide');
+            $('#current-250').removeClass('hide').addClass('show');
+
         }
 
 
