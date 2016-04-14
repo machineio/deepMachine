@@ -77,7 +77,19 @@ fun.utils.hideAmounts = function(){
     'use strict';
     $('#current-budget').removeClass('show').addClass('hide');
     $('#current-250').removeClass('show').addClass('hide');
+    $('#current-150').removeClass('show').addClass('hide');
+    $('#current-475').removeClass('show').addClass('hide');
+    $('#current-825').removeClass('show').addClass('hide');
+    $('#current-500').removeClass('show').addClass('hide');
     $('#current-945').removeClass('show').addClass('hide');
+    $('#current-645').removeClass('show').addClass('hide');
+    $('#current-850').removeClass('show').addClass('hide');
+    $('#current-384').removeClass('show').addClass('hide');
+    $('#current-380').removeClass('show').addClass('hide');
+    $('#current-344').removeClass('show').addClass('hide');
+    $('#current-625').removeClass('show').addClass('hide');
+    $('#current-471').removeClass('show').addClass('hide');
+    $('#current-367').removeClass('show').addClass('hide');
     $('#current-2218').removeClass('show').addClass('hide');
     $('#current-666').removeClass('show').addClass('hide');
     $('#current-1126').removeClass('show').addClass('hide');
@@ -100,6 +112,7 @@ fun.utils.hideAmounts = function(){
     $('#current-750').removeClass('show').addClass('hide');
     $('#current-10435').removeClass('show').addClass('hide');
     $('#current-3164').removeClass('show').addClass('hide');
+    $('#current-2233').removeClass('show').addClass('hide');
 
     // and now for something completely different
     $('#current-4257').removeClass('show').addClass('hide');
