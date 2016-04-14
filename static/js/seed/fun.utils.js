@@ -86,16 +86,37 @@ fun.utils.hideAmounts = function(){
     $('#current-645').removeClass('show').addClass('hide');
     $('#current-850').removeClass('show').addClass('hide');
     $('#current-384').removeClass('show').addClass('hide');
+    $('#current-384b').removeClass('show').addClass('hide');
     $('#current-380').removeClass('show').addClass('hide');
     $('#current-344').removeClass('show').addClass('hide');
     $('#current-625').removeClass('show').addClass('hide');
     $('#current-471').removeClass('show').addClass('hide');
     $('#current-367').removeClass('show').addClass('hide');
+    $('#current-111').removeClass('show').addClass('hide');
+    $('#current-7539').removeClass('show').addClass('hide');
+    $('#current-2599').removeClass('show').addClass('hide');
     $('#current-2218').removeClass('show').addClass('hide');
+    $('#current-8191').removeClass('show').addClass('hide');
+    $('#current-9249').removeClass('show').addClass('hide');
+    $('#current-10118').removeClass('show').addClass('hide');
+    $('#current-11163').removeClass('show').addClass('hide');
+    $('#current-10879').removeClass('show').addClass('hide');
+    $('#current-750').removeClass('show').addClass('hide');
+    $('#current-1418').removeClass('show').addClass('hide');
+    $('#current-2772').removeClass('show').addClass('hide');
+    $('#current-3079').removeClass('show').addClass('hide');
+    $('#current-1878').removeClass('show').addClass('hide');
+    $('#current-1284').removeClass('show').addClass('hide');
+    $('#current-6025').removeClass('show').addClass('hide');
     $('#current-666').removeClass('show').addClass('hide');
+    $('#current-5130').removeClass('show').addClass('hide');
     $('#current-1126').removeClass('show').addClass('hide');
+    $('#current-6986').removeClass('show').addClass('hide');
+    $('#current-7704').removeClass('show').addClass('hide');
+    $('#current-2718').removeClass('show').addClass('hide');
     $('#current-4257').removeClass('show').addClass('hide');
     $('#current-602').removeClass('show').addClass('hide');
+    $('#current-674').removeClass('show').addClass('hide');
     $('#current-652').removeClass('show').addClass('hide');
     $('#current-879').removeClass('show').addClass('hide');
     $('#current-2534').removeClass('show').addClass('hide');
@@ -106,17 +127,14 @@ fun.utils.hideAmounts = function(){
     $('#current-342').removeClass('show').addClass('hide');
     $('#current-567').removeClass('show').addClass('hide');
     $('#current-2250').removeClass('show').addClass('hide');
-    $('#current-750').removeClass('show').addClass('hide');
     $('#current-6402').removeClass('show').addClass('hide');
     $('#current-6752').removeClass('show').addClass('hide');
     $('#current-428').removeClass('show').addClass('hide');
-    $('#current-750').removeClass('show').addClass('hide');
     $('#current-10435').removeClass('show').addClass('hide');
     $('#current-3164').removeClass('show').addClass('hide');
     $('#current-2233').removeClass('show').addClass('hide');
+    $('#current-275').removeClass('show').addClass('hide');
 
-    // and now for something completely different
-    $('#current-4257').removeClass('show').addClass('hide');
     $('#current-319').removeClass('show').addClass('hide');
 };
 
