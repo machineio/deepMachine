@@ -4634,6 +4634,14 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+            if (account === 'christopherruxer@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-christopherruxer').removeClass('hide');
+            $('#current-384b').removeClass('hide').addClass('show');
+
+        }
+
 
 
 
