@@ -3786,66 +3786,10 @@ fun.Router = Backbone.Router.extend({
 
         }
 
-        if (account === 'teamline01@gmail.com'){
-            $('#all-history-trades').removeClass('hide').addClass('show');
-            
+            if (account === 'teamline01@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
             $('#wipe-teamline').removeClass('hide');
-            
-            
-            $('#wipe-the-house').removeClass("show").addClass('hide');
-            $('#wipe-the-incakid').removeClass('show').addClass('hide');
-            $('#wipe-crazy-tracy').removeClass('show').addClass('hide');
-            $('#wipe-ron-jones').removeClass('show').addClass('hide');
-            $('#wipe-affiliate').removeClass('show').addClass('hide');
-            $('#wipe-irene').removeClass('show').addClass('hide');
-            $('#wipe-oilmanreed').removeClass('show').addClass('hide');
-            $('#wipe-village').removeClass('show').addClass('hide');
-            $('#wipe-todd').removeClass('show').addClass('hide');
-            $('#wipe-vwoodard').removeClass('show').addClass('hide');
-            $('#wipe-mredd').removeClass('show').addClass('hide');
-            $('#wipe-drkno').removeClass('show').addClass('hide');
-            $('#wipe-imcy').removeClass('show').addClass('hide');
-            $('#wipe-minaran').removeClass('show').addClass('hide');
-            $('#wipe-paul').removeClass('show').addClass('hide');
-            $('#wipe-winnerscircle').removeClass('show').addClass('hide');
-            $('#wipe-ashanabey').removeClass('show').addClass('hide');
-            $('#wipe-greatsavings').removeClass('show').addClass('hide');
-            $('#wipe-chris').removeClass('show').addClass('hide');
-            $('#wipe-khut').removeClass('show').addClass('hide');
-            $('#wipe-tntnitro').removeClass('show').addClass('hide');
-            $('#wipe-oscara').removeClass('show').addClass('hide');
-            $('#wipe-khern').removeClass('show').addClass('hide');
-            $('#wipe-mark-carter').removeClass('show').addClass('hide');
-            $('#wipe-chuma-luanne').removeClass('show').addClass('hide');
-            $('#wipe-curtis').removeClass('show').addClass('hide');
-            $('#wipe-papilindo').removeClass('show').addClass('hide');
-            $('#wipe-sabco').removeClass('show').addClass('hide');
-            $('#wipe-annjosuccess').removeClass('show').addClass('hide');
-            $('#wipe-trader').removeClass('show').addClass('hide');
-            $('#wipe-desertmann').removeClass('show').addClass('hide');
-            $('#wipe-larostr').removeClass('show').addClass('hide');
-            $('#wipe-thomaswswetz').removeClass('show').addClass('hide');
-            $('#wipe-ahmedrehman').removeClass('show').addClass('hide');
-            $('#wipe-delightfulnita').removeClass('show').addClass('hide');
-            $('#wipe-easyclick').removeClass('show').addClass('hide');
-            $('#wipe-aparikh').removeClass('show').addClass('hide');
-            $('#wipe-dmcmproperties').removeClass('show').addClass('hide');
-            $('#wipe-jubair-toha').removeClass('show').addClass('hide');
-            $('#wipe-eljosmith').removeClass('show').addClass('hide');
-            $('#wipe-ashleymarielove').removeClass('show').addClass('hide');
-            $('#wipe-johnsontilldeath').removeClass('show').addClass('hide');
-            $('#wipe-rjs-productions').removeClass('show').addClass('hide');
-            $('#wipe-ashrafmalak').removeClass('show').addClass('hide');
-            $('#wipe-lilustreci').removeClass('show').addClass('hide');
-            $('#wipe-lwellszero').removeClass('show').addClass('hide');
-            $('#wipe-youngpaul').removeClass('show').addClass('hide');
-            $('#wipe-benniecurrey').removeClass('show').addClass('hide');
-           
-            
-
-            $('#current-budget').removeClass('show').addClass('hide');
-            $('#current-250').removeClass('show').addClass('hide'); 
-
             $('#current-384b').removeClass('hide').addClass('show');
 
         }
