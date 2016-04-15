@@ -1567,6 +1567,15 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+            if (account === 'rachel.whitlow@icloud.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-whitlow').removeClass('hide');
+            $('#current-384b').removeClass('hide').addClass('show');
+
+        }
+
+
 
         
         fun.instances.footer.render();

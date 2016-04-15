@@ -71,6 +71,8 @@ fun.utils.hideAccountsHistory = function(){
     $('#wipe-benniecurrey').removeClass('show').addClass('hide');
     $('#wipe-annjosuccess').removeClass('show').addClass('hide');
     $('#wipe-christopherruxer').removeClass('show').addClass('hide');
+    $('#wipe-whitlow').removeClass('show').addClass('hide');
+    
 };
 
 
