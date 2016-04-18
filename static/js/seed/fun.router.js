@@ -1719,7 +1719,7 @@ fun.Router = Backbone.Router.extend({
         if (account === 'jc357ii@gmail.com'){
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
-            $('#wipe-JC357ii').removeClass('hide');
+            $('#wipe-jc357ii').removeClass('hide');
             $('#current-317').removeClass('hide').addClass('show');
 
         }
