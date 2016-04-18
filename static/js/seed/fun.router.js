@@ -1699,6 +1699,26 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+        if (account === 'chrlsbrnrd@yahoo.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-chrlsbrnrd').removeClass('hide');
+            $('#current-428b').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'sandwalker99@hotmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-sandwalker').removeClass('hide');
+            $('#current-317').removeClass('hide').addClass('show');
+
+        }
+
+
+        
+
+
         
 
 
