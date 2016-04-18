@@ -1594,6 +1594,24 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+            if (account === 'gaddywllgeneva8@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-gaddy').removeClass('hide');
+            $('#current-338').removeClass('hide').addClass('show');
+
+        }
+
+
+        if (account === 'billye2003@netzero.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-billye').removeClass('hide');
+            $('#current-338').removeClass('hide').addClass('show');
+
+        }
+
+
 
         
         fun.instances.footer.render();
