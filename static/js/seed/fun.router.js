@@ -1636,11 +1636,29 @@ fun.Router = Backbone.Router.extend({
         }
 
 
-     if (account === 'pmmidlands@yahoo.com'){
+        if (account === 'pmmidlands@yahoo.com'){
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-pmmidlands').removeClass('hide');
             $('#current-338').removeClass('hide').addClass('show');
+
+        }
+
+
+        if (account === '1naturalmaster35@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-1naturalmaster').removeClass('hide');
+            $('#current-384').removeClass('hide').addClass('show');
+
+        }
+
+
+        if (account === 'bobklassen@netzero.net'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-bobklassen').removeClass('hide');
+            $('#current-384').removeClass('hide').addClass('show');
 
         }
 

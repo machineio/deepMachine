@@ -80,6 +80,8 @@ fun.utils.hideAccountsHistory = function(){
     $('#wipe-bstuart').removeClass('show').addClass('hide');
     $('#wipe-bonwuamaegbu').removeClass('show').addClass('hide');
     $('#wipe-pmmidlands').removeClass('show').addClass('hide');
+    $('#wipe-1naturalmaster').removeClass('show').addClass('hide');
+    $('#wipe-bobklassen').removeClass('show').addClass('hide');
     
    
     
