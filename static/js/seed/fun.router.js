@@ -1611,15 +1611,44 @@ fun.Router = Backbone.Router.extend({
 
         }
 
-
-        if (account === 'billyt1174@aol.com'){
+        if (account === 'blakeyevans96@gmail.com'){
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
-            $('#wipe-billyt').removeClass('hide');
+            $('#wipe-blakeyevans').removeClass('hide');
             $('#current-338').removeClass('hide').addClass('show');
 
         }
 
+        if (account === 'bstuart63@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-bstuart').removeClass('hide');
+            $('#current-338').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'bonwuamaegbu@yahoo.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-bonwuamaegbu').removeClass('hide');
+            $('#current-338').removeClass('hide').addClass('show');
+
+        }
+
+
+     if (account === 'pmmidlands@yahoo.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-pmmidlands').removeClass('hide');
+            $('#current-338').removeClass('hide').addClass('show');
+
+        }
+
+
+
+
+
+        
 
 
         
