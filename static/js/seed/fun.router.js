@@ -1750,7 +1750,7 @@ fun.Router = Backbone.Router.extend({
             $('#current-273').removeClass('hide').addClass('show');
 
         }
-        
+
 
         if (account === 'dellareagan@aol.com'){
             fun.utils.hideAmounts();
@@ -1759,6 +1759,17 @@ fun.Router = Backbone.Router.extend({
             $('#current-273').removeClass('hide').addClass('show');
 
         }
+
+
+        if (account === 'dennissheehan479@yahoo.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-dennissheehan').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        }
+
+
 
 
 
