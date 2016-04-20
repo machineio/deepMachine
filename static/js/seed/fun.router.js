@@ -1787,6 +1787,16 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'dbdavisnc@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-dbdavisnc').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        }
+
+        
+
 
         
 
