@@ -99,6 +99,7 @@ fun.utils.hideAccountsHistory = function(){
     $('wipe-dbdavisnc').removeClass('show').addClass('hide');
     $('wipe-devon').removeClass('show').addClass('hide');
     $('wipe-ugc').removeClass('show').addClass('hide');
+    $('wipe-barrygurman').removeClass('show').addClass('hide');
     
     
     

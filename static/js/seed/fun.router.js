@@ -1811,6 +1811,16 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'barrygurman@rocketmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-barrygurman').removeClass('hide');
+            $('#current-297').removeClass('hide').addClass('show');
+
+        }
+
+        
+
         
 
 
