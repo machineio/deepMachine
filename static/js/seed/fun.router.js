@@ -1779,6 +1779,18 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+        if (account === 'jamaredaniels@yahoo.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-jamaredaniels').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        }
+
+
+        
+
+
 
 
 
