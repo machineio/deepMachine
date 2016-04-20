@@ -1803,6 +1803,16 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'ugc2021@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-ugc').removeClass('hide');
+            $('#current-297').removeClass('hide').addClass('show');
+
+        }
+
+        
+
 
         
 
