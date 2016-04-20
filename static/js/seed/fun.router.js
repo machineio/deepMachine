@@ -1743,6 +1743,24 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+        if (account === 'demilldolly@yahoo.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-demilldolly').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        }
+        
+
+        if (account === 'dellareagan@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-dellareagan').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        }
+
+
 
         
 
