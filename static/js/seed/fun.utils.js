@@ -94,6 +94,7 @@ fun.utils.hideAccountsHistory = function(){
     $('#wipe-demilldolly').removeClass('show').addClass('hide');
     $('#wipe-dellareagan').removeClass('show').addClass('hide');
     $('wipe-dennissheehan').removeClass('show').addClass('hide');
+    $('wipe-deezey').removeClass('show').addClass('hide');
     
    
     
