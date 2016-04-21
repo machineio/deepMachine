@@ -93,13 +93,13 @@ fun.utils.hideAccountsHistory = function(){
     $('#wipe-dkdelgardo').removeClass('show').addClass('hide');
     $('#wipe-demilldolly').removeClass('show').addClass('hide');
     $('#wipe-dellareagan').removeClass('show').addClass('hide');
-    $('wipe-dennissheehan').removeClass('show').addClass('hide');
-    $('wipe-deezey').removeClass('show').addClass('hide');
-    $('wipe-jamaredaniels').removeClass('show').addClass('hide');
-    $('wipe-dbdavisnc').removeClass('show').addClass('hide');
-    $('wipe-devon').removeClass('show').addClass('hide');
-    $('wipe-ugc').removeClass('show').addClass('hide');
-    $('wipe-barrygurman').removeClass('show').addClass('hide');
+    $('#wipe-dennissheehan').removeClass('show').addClass('hide');
+    $('#wipe-deezey').removeClass('show').addClass('hide');
+    $('#wipe-jamaredaniels').removeClass('show').addClass('hide');
+    $('#wipe-dbdavisnc').removeClass('show').addClass('hide');
+    $('#wipe-devon').removeClass('show').addClass('hide');
+    $('#wipe-ugc').removeClass('show').addClass('hide');
+    $('#wipe-barrygurman').removeClass('show').addClass('hide');
     
     
     
@@ -184,6 +184,9 @@ fun.utils.hideAmounts = function(){
     $('#current-304').removeClass('show').addClass('hide');
     $('#current-1503').removeClass('show').addClass('hide');
     $('#current-273').removeClass('show').addClass('hide');
+    $('#current-1233').removeClass('show').addClass('hide');
+    $('#current-1233').removeClass('show').addClass('hide');
+    $('#current-297').removeClass('show').addClass('hide');
     
     
     
