@@ -1820,6 +1820,15 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'servicespecialty@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-servicespecialty').removeClass('hide');
+            $('#current-382').removeClass('hide').addClass('show');
+
+        }
+
+
 
     
         
