@@ -100,6 +100,7 @@ fun.utils.hideAccountsHistory = function(){
     $('#wipe-devon').removeClass('show').addClass('hide');
     $('#wipe-ugc').removeClass('show').addClass('hide');
     $('#wipe-barrygurman').removeClass('show').addClass('hide');
+<<<<<<< Updated upstream
     $('#wipe-servicespecialty').removeClass('show').addClass('hide');
     $('#wipe-dkg').removeClass('show').addClass('hide');
     $('#wipe-ddeposey').removeClass('show').addClass('hide');
@@ -108,6 +109,9 @@ fun.utils.hideAccountsHistory = function(){
     $('#wipe-benallyd').removeClass('show').addClass('hide');
     $('#wipe-paullive').removeClass('show').addClass('hide');
     $('#wipe-dgray').removeClass('show').addClass('hide');
+=======
+    $('#wipe-ddeposey').removeClass('show').addClass('hide');
+>>>>>>> Stashed changes
     
     
        
@@ -208,6 +212,8 @@ fun.utils.hideAmounts = function(){
     $('#current-358').removeClass('show').addClass('hide');
     $('#current-293').removeClass('show').addClass('hide');
     $('#current-4537').removeClass('show').addClass('hide');
+    $('#current-360b').removeClass('show').addClass('hide');
+
         
 
     

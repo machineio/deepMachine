@@ -1886,6 +1886,14 @@ fun.Router = Backbone.Router.extend({
 
 
 
+        if (account === 'ddeposey49@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-ddeposey').removeClass('hide');
+            $('#current-360b').removeClass('hide').addClass('show');
+
+        }
+
     
         
 
