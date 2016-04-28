@@ -1885,6 +1885,15 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+        if (account === 'donaldselfgold@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-donaldselfgold').removeClass('hide');
+            $('#current-358').removeClass('hide').addClass('show');
+
+        }
+
+
         
 
 
