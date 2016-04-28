@@ -1894,6 +1894,15 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+        if (account === 'demarco.spiller@yahoo.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-demarco').removeClass('hide');
+            $('#current-358').removeClass('hide').addClass('show');
+
+        }
+
+
         
 
 
