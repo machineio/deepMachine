@@ -1903,6 +1903,17 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+        if (account === 'atvwizard@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-atvwizard').removeClass('hide');
+            $('#current-358b').removeClass('hide').addClass('show');
+
+        }
+
+        
+
+
         
 
 
