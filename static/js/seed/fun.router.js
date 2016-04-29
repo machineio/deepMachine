@@ -1911,6 +1911,15 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+
+        if (account === 'angiemamac65@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-angiemamac').removeClass('hide');
+            $('#current-336').removeClass('hide').addClass('show');
+
+        }
+
         
 
 
