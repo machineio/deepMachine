@@ -1942,7 +1942,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-atechagivens').removeClass('hide');
-            $('#current-66').removeClass('hide').addClass('show');
+            $('#current-316').removeClass('hide').addClass('show');
 
         }
 
