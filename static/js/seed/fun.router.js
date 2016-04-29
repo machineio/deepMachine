@@ -1920,6 +1920,32 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+
+        if (account === 'gmars21@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-gmars').removeClass('hide');
+            $('#current-66').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'gmars21@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-gmars').removeClass('hide');
+            $('#current-66').removeClass('hide').addClass('show');
+
+        }
+
+
+        if (account === 'atechagivens@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-atechagivens').removeClass('hide');
+            $('#current-66').removeClass('hide').addClass('show');
+
+        }
+
         
 
 
