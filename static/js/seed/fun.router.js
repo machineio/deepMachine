@@ -1925,15 +1925,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-gmars').removeClass('hide');
-            $('#current-66').removeClass('hide').addClass('show');
-
-        }
-
-        if (account === 'gmars21@gmail.com'){
-            fun.utils.hideAmounts();
-            fun.utils.hideAccountsHistory();
-            $('#wipe-gmars').removeClass('hide');
-            $('#current-66').removeClass('hide').addClass('show');
+            $('#current-384').removeClass('hide').addClass('show');
 
         }
 
@@ -1942,7 +1934,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-atechagivens').removeClass('hide');
-            $('#current-316').removeClass('hide').addClass('show');
+            $('#current-384').removeClass('hide').addClass('show');
 
         }
 
@@ -1950,7 +1942,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-demimosby').removeClass('hide');
-            $('#current-316').removeClass('hide').addClass('show');
+            $('#current-384').removeClass('hide').addClass('show');
 
         }
 
@@ -1958,7 +1950,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-jthode').removeClass('hide');
-            $('#current-316').removeClass('hide').addClass('show');
+            $('#current-384').removeClass('hide').addClass('show');
 
         }
 
@@ -1966,7 +1958,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-bunnydonna').removeClass('hide');
-            $('#current-316').removeClass('hide').addClass('show');
+            $('#current-384').removeClass('hide').addClass('show');
 
         }
 
@@ -1974,7 +1966,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-deray').removeClass('hide');
-            $('#current-316').removeClass('hide').addClass('show');
+            $('#current-384').removeClass('hide').addClass('show');
 
         }
 
@@ -1982,7 +1974,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-henryjamespollock').removeClass('hide');
-            $('#current-316').removeClass('hide').addClass('show');
+            $('#current-384').removeClass('hide').addClass('show');
 
         }
         
