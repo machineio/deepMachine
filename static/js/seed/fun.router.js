@@ -1983,7 +1983,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-elyas').removeClass('hide');
-            $('#current-318').removeClass('hide').addClass('show');
+            $('#current-385').removeClass('hide').addClass('show');
 
         }
 
@@ -1991,7 +1991,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-deliver').removeClass('hide');
-            $('#current-318').removeClass('hide').addClass('show');
+            $('#current-385').removeClass('hide').addClass('show');
 
         }
 
@@ -1999,7 +1999,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-lavonwilliams').removeClass('hide');
-            $('#current-318').removeClass('hide').addClass('show');
+            $('#current-385').removeClass('hide').addClass('show');
 
         }
 
@@ -2007,7 +2007,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-randyharrison').removeClass('hide');
-            $('#current-318').removeClass('hide').addClass('show');
+            $('#current-385').removeClass('hide').addClass('show');
 
         }
 
@@ -2015,7 +2015,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-zjavanee').removeClass('hide');
-            $('#current-318').removeClass('hide').addClass('show');
+            $('#current-385').removeClass('hide').addClass('show');
 
         }
 
@@ -2023,7 +2023,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-cal-lacoste').removeClass('hide');
-            $('#current-318').removeClass('hide').addClass('show');
+            $('#current-385').removeClass('hide').addClass('show');
 
         }
 
