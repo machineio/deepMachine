@@ -1962,6 +1962,7 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+<<<<<<< Updated upstream
         if (account === 'deray46@gmail.com'){
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
@@ -2030,6 +2031,17 @@ fun.Router = Backbone.Router.extend({
         
 
 
+=======
+
+        if (account === 'atechagivens@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-atechagivens').removeClass('hide');
+            $('#current-336').removeClass('hide').addClass('show');
+
+        }
+
+>>>>>>> Stashed changes
         
 
 
