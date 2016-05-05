@@ -2134,6 +2134,14 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'camelotent1@yahoo.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-camelotent1').removeClass('hide');
+            $('#current-274').removeClass('hide').addClass('show');
+
+        }
+
 
 
 
