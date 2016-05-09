@@ -2232,6 +2232,70 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'yvonnemariathomas88@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-yvonnemariathomas').removeClass('hide');
+            $('#current-388').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'estep1609@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-estep').removeClass('hide');
+            $('#current-388').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'erardolopez810@yahoo.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-erardolopez').removeClass('hide');
+            $('#current-388').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'polox1x@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-polox').removeClass('hide');
+            $('#current-388').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'brendaspearman@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-brendaspearman').removeClass('hide');
+            $('#current-388').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'aphilly28@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-aphilly').removeClass('hide');
+            $('#current-388').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'bigmagdy@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-bigmagdy').removeClass('hide');
+            $('#current-388').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'rich1@hotmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-rich').removeClass('hide');
+            $('#current-388').removeClass('hide').addClass('show');
+
+        }
+
 
     
 
