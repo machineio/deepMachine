@@ -163,6 +163,10 @@ fun.utils.hideAccountsHistory = function(){
     $('#wipe-lbrandtnyc').removeClass('show').addClass('hide');
     $('#wipe-deannajohnh').removeClass('show').addClass('hide');
     $('#wipe-frankjr').removeClass('show').addClass('hide');
+    $('#wipe-titoexvi').removeClass('show').addClass('hide');
+    $('#wipe-flugo').removeClass('show').addClass('hide');
+    $('#wipe-eric').removeClass('show').addClass('hide');
+    $('#wipe-fred-maloney').removeClass('show').addClass('hide');
     
     
    
@@ -294,6 +298,7 @@ fun.utils.hideAmounts = function(){
     $('#current-293b').removeClass('show').addClass('hide');
     $('#current-388').removeClass('show').addClass('hide');
     $('#current-320').removeClass('show').addClass('hide');
+     $('#current-314').removeClass('show').addClass('hide');
     
  
 

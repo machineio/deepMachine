@@ -2320,6 +2320,38 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'titoexvi65@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-titoexvi').removeClass('hide');
+            $('#current-314').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'flugo@wi.rr.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-flugo').removeClass('hide');
+            $('#current-314').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'eric903@live.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-eric').removeClass('hide');
+            $('#current-314').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'fred.g.maloney@comcast.net'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-fred-maloney').removeClass('hide');
+            $('#current-314').removeClass('hide').addClass('show');
+
+        }
+
 
 
     
