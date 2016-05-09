@@ -2353,6 +2353,15 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+        if (account === 'johnsontildeath80@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-johnsontildeath80').removeClass('hide');
+            $('#current-314b').removeClass('hide').addClass('show');
+
+        }
+
+
 
     
 
