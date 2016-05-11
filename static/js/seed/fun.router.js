@@ -2370,6 +2370,85 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'mikec0141@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-mikec').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+        if (account === 'williamhunter657@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-williamhunter').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'wtprop2012@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-wtprop').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'appltb@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-appltb').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'bestycolon@hotmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-bestycolon').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'cowboy196043@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-cowboy').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'pb6615@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-pb6615').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'josejoday2080@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-josejoday').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'healymoto@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-healymoto').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+
+        if (account === 'djcarl@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-djcarl').removeClass('hide');
+            $('#current-342b').removeClass('hide').addClass('show');
+
+        }
+
 
 
     
