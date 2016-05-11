@@ -317,6 +317,7 @@ fun.utils.hideAmounts = function(){
     $('#current-466').removeClass('show').addClass('hide');
     $('#current-4632').removeClass('show').addClass('hide');
     $('#current-438').removeClass('show').addClass('hide');
+    $('#current-495').removeClass('show').addClass('hide');
 
 
 
