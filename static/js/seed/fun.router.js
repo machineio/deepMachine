@@ -2308,7 +2308,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-deannajohnh').removeClass('hide');
-            $('#current-320').removeClass('hide').addClass('show');
+            $('#current-582').removeClass('hide').addClass('show');
 
         }
 
