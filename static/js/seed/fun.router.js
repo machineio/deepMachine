@@ -1046,7 +1046,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-imcy').removeClass('hide');
-            $('#current-1138').removeClass('hide').addClass('show');
+            $('#current-1210').removeClass('hide').addClass('show');
 
         }
 
