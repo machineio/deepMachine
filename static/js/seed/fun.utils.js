@@ -179,7 +179,14 @@ fun.utils.hideAccountsHistory = function(){
     $('#wipe-josejoday').removeClass('show').addClass('hide');
     $('#wipe-healymoto').removeClass('show').addClass('hide');
     $('#wipe-djcarl').removeClass('show').addClass('hide');
-    
+    $('#wipe-olliemclrk').removeClass('show').addClass('hide');
+    $('#wipe-brucepenigton').removeClass('show').addClass('hide');
+    $('#wipe-kevin_roberts').removeClass('show').addClass('hide');
+    $('#wipe-dwight').removeClass('show').addClass('hide');
+    $('#wipe-charleslee').removeClass('show').addClass('hide');
+    $('#wipe-kjframing').removeClass('show').addClass('hide');
+    $('#wipe-janice').removeClass('show').addClass('hide');
+    $('#wipe-1stephnasty').removeClass('show').addClass('hide');
     
     
    
