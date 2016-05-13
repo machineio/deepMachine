@@ -302,7 +302,7 @@ fun.Router = Backbone.Router.extend({
 
     expert: function(){
         'use strict';
-        var expert = translate('expert');
+        var expert = translate('Expert');
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.subheader.render(expert);
@@ -312,7 +312,7 @@ fun.Router = Backbone.Router.extend({
 
     intermediate: function(){
         'use strict';
-        var intermediate = translate('intermediate');
+        var intermediate = translate('Intermediate');
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.subheader.render(intermediate);
@@ -322,7 +322,7 @@ fun.Router = Backbone.Router.extend({
 
     beginner: function(){
         'use strict';
-        var beginner = translate('beginner');
+        var beginner = translate('Beginner');
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.subheader.render(beginner);
