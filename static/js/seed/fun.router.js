@@ -2523,6 +2523,64 @@ fun.Router = Backbone.Router.extend({
         }
 
 
+        if (account === 'mtumlin@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-mtumlin').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        } 
+
+
+
+        if (account === 'justind25@hotmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-justind25').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        } 
+
+
+        if (account === 'avendano@hotmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-avendano').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        }
+
+
+        if (account === 'hussain.pasha634@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-hussain').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        } 
+
+
+
+        if (account === 'bestycolon@hotmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-bestycolon').removeClass('hide');
+            $('#current-273').removeClass('hide').addClass('show');
+
+        } 
+
+
+
+        
+
+
+        
+
+
+
+        
+
+
 
         
 
