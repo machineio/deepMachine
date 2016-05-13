@@ -352,7 +352,7 @@ fun.Router = Backbone.Router.extend({
 
     categorizer: function(){
         'use strict';
-        var categorizer = translate('categorizer');
+        var categorizer = translate('Categorizer');
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.subheader.render(categorizer);
@@ -362,7 +362,7 @@ fun.Router = Backbone.Router.extend({
 
     risk: function(){
         'use strict';
-        var risk = translate('marketRiskAnalyst');
+        var risk = translate('Market Risk Analyst');
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.subheader.render(risk);
