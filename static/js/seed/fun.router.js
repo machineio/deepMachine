@@ -292,7 +292,7 @@ fun.Router = Backbone.Router.extend({
 
     elite: function(){
         'use strict';
-        var elite = translate('elite');
+        var elite = translate('Elite');
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.subheader.render(elite);
