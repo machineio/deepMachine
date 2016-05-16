@@ -1329,7 +1329,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-crazy-tracy').removeClass('hide');
-            $('#current-4059').removeClass('hide').addClass('show');
+            $('#current-4027').removeClass('hide').addClass('show');
         }
         
 
@@ -1524,7 +1524,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-johnsontilldeath').removeClass('hide');
-            $('#current-111').removeClass('hide').addClass('show');
+            $('#current-362').removeClass('hide').addClass('show');
         }
 
             if (account === 'rjs_productions@hotmail.com'){
