@@ -2500,7 +2500,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-kjframing').removeClass('hide');
-            $('#current-273').removeClass('hide').addClass('show');
+            $('#current-338b').removeClass('hide').addClass('show');
 
         }
 
