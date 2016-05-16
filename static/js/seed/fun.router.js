@@ -2569,6 +2569,15 @@ fun.Router = Backbone.Router.extend({
 
         } 
 
+        
+        if (account === 'axonceleste@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-axonceleste').removeClass('hide');
+            $('current-338b').removeClass('hide').addClass('show');
+
+        } 
+
 
 
         
