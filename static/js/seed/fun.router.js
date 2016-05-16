@@ -1038,7 +1038,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAccountsHistory();
             $('#wipe-drkno').removeClass('hide');
             $('#current-budget').removeClass('show').addClass('hide'); // uli este es el default que ricardo pidio para los demo account con un saldo de 250 exp points
-            $('#current-4668').removeClass('hide').addClass('show');
+            $('#current-4710').removeClass('hide').addClass('show');
 
         }
 
@@ -1188,7 +1188,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-oilmanreed').removeClass('hide');
-            $('#current-4479').removeClass('hide').addClass('show');
+            $('#current-4521').removeClass('hide').addClass('show');
 
 
         }
