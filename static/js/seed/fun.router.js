@@ -2509,7 +2509,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-janice').removeClass('hide');
-            $('#current-273').removeClass('hide').addClass('show');
+            $('#current-338b').removeClass('hide').addClass('show');
 
         }
 
@@ -2518,7 +2518,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-1stephnasty').removeClass('hide');
-            $('#current-273').removeClass('hide').addClass('show');
+            $('#current-338b').removeClass('hide').addClass('show');
 
         }
 
@@ -2527,7 +2527,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-mtumlin').removeClass('hide');
-            $('#current-273').removeClass('hide').addClass('show');
+            $('current-338b').removeClass('hide').addClass('show');
 
         } 
 
@@ -2537,7 +2537,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-justind25').removeClass('hide');
-            $('#current-273').removeClass('hide').addClass('show');
+            $('current-338b').removeClass('hide').addClass('show');
 
         } 
 
@@ -2546,7 +2546,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-avendano').removeClass('hide');
-            $('#current-273').removeClass('hide').addClass('show');
+            $('current-338b').removeClass('hide').addClass('show');
 
         }
 
@@ -2555,7 +2555,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-hussain').removeClass('hide');
-            $('#current-273').removeClass('hide').addClass('show');
+            $('#current-338b').removeClass('hide').addClass('show');
 
         } 
 
@@ -2565,7 +2565,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-bestycolon').removeClass('hide');
-            $('#current-273').removeClass('hide').addClass('show');
+            $('current-338b').removeClass('hide').addClass('show');
 
         } 
 
