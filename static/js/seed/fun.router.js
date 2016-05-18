@@ -2583,7 +2583,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-azcoeho').removeClass('hide');
-            $('current-25').removeClass('hide').addClass('show');
+            $('current-275').removeClass('hide').addClass('show');
 
         } 
 
@@ -2591,7 +2591,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-sarjmussa').removeClass('hide');
-            $('current-25').removeClass('hide').addClass('show');
+            $('current-275').removeClass('hide').addClass('show');
 
         }
 
@@ -2599,7 +2599,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-mike-w').removeClass('hide');
-            $('current-25').removeClass('hide').addClass('show');
+            $('current-275').removeClass('hide').addClass('show');
 
         }
 
@@ -2607,7 +2607,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-mennie').removeClass('hide');
-            $('current-25').removeClass('hide').addClass('show');
+            $('current-275').removeClass('hide').addClass('show');
 
         }
 
@@ -2615,7 +2615,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-rickdanre').removeClass('hide');
-            $('current-25').removeClass('hide').addClass('show');
+            $('current-275').removeClass('hide').addClass('show');
 
         }
 
@@ -2623,7 +2623,7 @@ fun.Router = Backbone.Router.extend({
             fun.utils.hideAmounts();
             fun.utils.hideAccountsHistory();
             $('#wipe-eddie96797').removeClass('hide');
-            $('current-25').removeClass('hide').addClass('show');
+            $('current-275').removeClass('hide').addClass('show');
 
         }
 
