@@ -2627,7 +2627,22 @@ fun.Router = Backbone.Router.extend({
 
         }
 
+        if (account === 'andy2740@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-andy2740').removeClass('hide');
+            $('current-340b').removeClass('hide').addClass('show');
 
+        } 
+
+
+        if (account === 'lsmoreland@cox.net'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-lsmoreland').removeClass('hide');
+            $('current-340b').removeClass('hide').addClass('show');
+
+        } 
 
         
 
