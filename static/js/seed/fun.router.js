@@ -2579,6 +2579,15 @@ fun.Router = Backbone.Router.extend({
         } 
 
 
+         if (account === 'azcoeho@earthlink.net'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-azcoeho').removeClass('hide');
+            $('current-340b').removeClass('hide').addClass('show');
+
+        } 
+
+
 
         
 
