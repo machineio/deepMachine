@@ -2644,6 +2644,15 @@ fun.Router = Backbone.Router.extend({
 
         } 
 
+
+        if (account === 'madsunintl@aol.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-madsunintl').removeClass('hide');
+            $('current-278').removeClass('hide').addClass('show');
+
+        } 
+
         
 
 
