@@ -2653,6 +2653,15 @@ fun.Router = Backbone.Router.extend({
 
         } 
 
+
+         if (account === 'farjmussa@gmail.com'){
+            fun.utils.hideAmounts();
+            fun.utils.hideAccountsHistory();
+            $('#wipe-farjmussa').removeClass('hide');
+            $('#current-317').removeClass('hide').addClass('show');
+
+        }
+
         
 
 
