@@ -199,7 +199,7 @@ fun.utils.hideAccountsHistory = function(){
     $('#wipe-rickdanre').removeClass('show').addClass('hide');
     $('#wipe-eddie96797').removeClass('show').addClass('hide');
     $('#wipe-andy2740').removeClass('show').addClass('hide');
-    $('#wipe-lsmoreland11162').removeClass('show').addClass('hide');
+    $('#wipe-lsmoreland').removeClass('show').addClass('hide');
     $('#wipe-madsunintl').removeClass('show').addClass('hide');
     $('#wipe-farjmussa').removeClass('show').addClass('hide');
 
