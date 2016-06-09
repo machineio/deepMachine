@@ -1,10 +1,14 @@
+.utility-menu {
+  margin-top: 30px;
+}
+
 .footer {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
 .top-bar {
-  margin-top: -25px !important;
+  margin-top: -160px !important;
 }
 
 .col-sm-9.col-md-10.columns {
@@ -13,10 +17,6 @@
 
 .social-icons.text-right {
   margin-top: -5px;
-}
-
-#fun-navbar {
-    margin-top: -160px !important;
 }
 
 .greenBack {
