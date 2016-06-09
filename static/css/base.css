@@ -1,3 +1,11 @@
+.col-sm-9.col-md-10.columns {
+  margin-top: 20px;
+}
+
+.social-icons.text-right {
+  margin-top: -5px;
+}
+
 #fun-navbar {
     margin-top: -160px !important;
 }
