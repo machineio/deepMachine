@@ -333,7 +333,7 @@ section:nth-of-type(even) {
   background-color: #587D38;
 }
 .btn-primary {
-  border-radius: 25px;
+  border-radius: 25px !important;
   display: inline-block;
   padding: 14px 28px 13px 28px;
   line-height: 1;
