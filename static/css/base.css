@@ -12,7 +12,7 @@
 }
 
 .top-bar {
-  margin-top: -160px !important;
+  margin-top: -160px;
 }
 
 .col-sm-9.col-md-10.columns {
@@ -259,6 +259,10 @@ textarea#contact-comment {
 }
 
 @media (max-width: 767px) {
+    .top-bar {
+      margin-top: -80px !important;
+    }
+
     .navbar .nav > li > input {
       margin-top: 0 !important;
       margin-left: 5px;
