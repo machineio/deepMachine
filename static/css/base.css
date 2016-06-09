@@ -610,7 +610,7 @@ input.error:-ms-input-placeholder {
 
 .footer {
   position: absolute;
-  bottom:0;
+  bottom: -160px !important;
   right:0;
   left:0;
 }
