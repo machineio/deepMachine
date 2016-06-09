@@ -1,3 +1,7 @@
+.top-bar {
+  margin-top: -25px !important;
+}
+
 .col-sm-9.col-md-10.columns {
   margin-top: 20px;
 }
