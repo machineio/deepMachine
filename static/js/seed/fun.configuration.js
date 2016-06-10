@@ -176,6 +176,7 @@ fun.conf.urls = {
     recordingsInbound: '/recordings/inbound/',
     recordingsOutbound: '/recordings/outbound/',
     upload: '/upload/',
+    packages: '/packages/',
 };
 
 /*
@@ -324,7 +325,8 @@ fun.conf.templates = {
     extraNavDashboard: fun.utils.format('%s/extraNavDashboard.html', fun.conf.html),
     social: fun.utils.format('%s/social.html', fun.conf.html),
     subscribe: fun.utils.format('%s/subscribe.html', fun.conf.html),
-    footer: fun.utils.format('%s/footer.html', fun.conf.html)
+    footer: fun.utils.format('%s/footer.html', fun.conf.html),
+    packages: fun.utils.format('%s/packages.html', fun.conf.html)
 };
 
 /*
@@ -390,5 +392,6 @@ fun.conf.hash = {
     companies: '#companies',
     sounds: '#sounds',
     recordings: '#recordings',
-    settings: '#settings'
+    settings: '#settings',
+    packages: '#packages',
 };

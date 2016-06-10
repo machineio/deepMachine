@@ -47,6 +47,7 @@ fun.Router = Backbone.Router.extend({
         "withdraw": "withdraw",
         "redeem":"redeem",
         "trades":"trades",
+        "packages":"packages",
         "purchase":"purchase",
         "risk":"risk",
         "trader":"trader",
@@ -105,6 +106,11 @@ fun.Router = Backbone.Router.extend({
         fun.instances.orgs = new fun.views.orgs({
             el:"#fun-orgs"
         });
+        // Packages
+        fun.instances.packages = new fun.views.orgs({
+            el:"fun-packages"
+        });
+
         // profile
         fun.instances.profile = new fun.views.profile({
             el:"#fun-profile"
@@ -277,6 +283,14 @@ fun.Router = Backbone.Router.extend({
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.about.render();
+        fun.instances.footer.render();
+    },
+
+    packages: function(){
+        'use strict';
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        fun.instances.packages.render();
         fun.instances.footer.render();
     },
 
