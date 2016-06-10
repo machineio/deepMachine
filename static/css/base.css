@@ -1,3 +1,7 @@
+.negative-margin-left {
+  margin-left: -100px;
+}
+
 .white {
   color: #FFFFFF !important;
 }
