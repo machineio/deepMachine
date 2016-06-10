@@ -4424,3 +4424,7 @@ footer.short-2 .contact-action:hover {
 .nomargin-deep {
   margin-bottom: 0px
 }
+
+.fnt-weight-deep-list {
+  font-weight: 200 !important;
+}
