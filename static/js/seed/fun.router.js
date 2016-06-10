@@ -57,7 +57,10 @@ fun.Router = Backbone.Router.extend({
         "elite":"elite",
         "categorizer":"categorizer",
         "settings": "settings",
-        "logout": "logout"
+        "logout": "logout",
+        "training": "training",
+        "aboutus": "aboutus",
+        "contactus": "contactus",
     },
 
     initialize: function(){
@@ -106,9 +109,25 @@ fun.Router = Backbone.Router.extend({
         fun.instances.orgs = new fun.views.orgs({
             el:"#fun-orgs"
         });
+
         // Packages
         fun.instances.packages = new fun.views.packages({
             el:"#fun-packages"
+        });
+
+        // Training
+        fun.instances.training = new fun.views.training({
+            el:"#fun-training"
+        });
+
+        // About Us
+        fun.instances.aboutus = new fun.views.aboutus({
+            el:"#fun-aboutus"
+        });
+
+        // Contact Us
+        fun.instances.contactus = new fun.views.contactus({
+            el:"#fun-contactus"
         });
 
         // profile
@@ -291,6 +310,27 @@ fun.Router = Backbone.Router.extend({
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.packages.render();
+        fun.instances.footer.render();
+    },
+    training: function(){
+        'use strict';
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        fun.instances.training.render();
+        fun.instances.footer.render();
+    },
+    aboutus: function(){
+        'use strict';
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        fun.instances.aboutus.render();
+        fun.instances.footer.render();
+    },
+    contactus: function(){
+        'use strict';
+        fun.utils.hideAll();
+        fun.instances.navbar.render();
+        fun.instances.contactus.render();
         fun.instances.footer.render();
     },
 

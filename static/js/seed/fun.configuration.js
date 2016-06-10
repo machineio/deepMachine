@@ -325,7 +325,10 @@ fun.conf.templates = {
     social: fun.utils.format('%s/social.html', fun.conf.html),
     subscribe: fun.utils.format('%s/subscribe.html', fun.conf.html),
     footer: fun.utils.format('%s/footer.html', fun.conf.html),
-    packages: fun.utils.format('%s/packages.html', fun.conf.html)
+    packages: fun.utils.format('%s/packages.html', fun.conf.html),
+    training: fun.utils.format('%s/training.html', fun.conf.html),
+    aboutus: fun.utils.format('%s/aboutus.html', fun.conf.html),
+    contactus: fun.utils.format('%s/contactus.html', fun.conf.html),
 };
 
 /*
@@ -393,4 +396,7 @@ fun.conf.hash = {
     recordings: '#recordings',
     settings: '#settings',
     packages: '#packages',
+    training: '#training',
+    aboutus: '#aboutus',
+    contactus: '#contactus',
 };
