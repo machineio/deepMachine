@@ -108,7 +108,7 @@ fun.Router = Backbone.Router.extend({
         });
         // Packages
         fun.instances.packages = new fun.views.orgs({
-            el:"fun-packages"
+            el:"#fun-packages"
         });
 
         // profile
@@ -2669,81 +2669,6 @@ fun.Router = Backbone.Router.extend({
 
         }
 
-        
-
-
-
-        
-
-
-
-        
-
-
-
-        
-
-
-        
-
-
-
-    
-
-
-        
-
-
-        
-
-
-        
-
-
-        
-
-
-
-
-        
-
-    
-        
-
-        
-
-
-        
-
-
-        
-
-
-
-
-
-        
-
-
-
-
-
-        
-
-
-        
-
-
-
-
-
-
-
-
-        
-
-
-        
         fun.instances.footer.render();
     },
 
