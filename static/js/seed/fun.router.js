@@ -107,7 +107,7 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-orgs"
         });
         // Packages
-        fun.instances.packages = new fun.views.orgs({
+        fun.instances.packages = new fun.views.packages({
             el:"#fun-packages"
         });
 
