@@ -176,7 +176,6 @@ fun.conf.urls = {
     recordingsInbound: '/recordings/inbound/',
     recordingsOutbound: '/recordings/outbound/',
     upload: '/upload/',
-    packages: '/packages/',
 };
 
 /*
