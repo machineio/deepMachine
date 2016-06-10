@@ -13,7 +13,7 @@ fun.views.aboutus = Backbone.View.extend({
     * Class constructor
     */
     initialize : function(options) {
-        fun.containers.packages = this.$el;
+        fun.containers.aboutus = this.$el;
     },
 
     /*
