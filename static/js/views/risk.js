@@ -1,4 +1,4 @@
-fun.views.tpd = Backbone.View.extend({
+fun.views.risk = Backbone.View.extend({
 
     /*
     * Bind the event functions to the different HTML elements
@@ -13,7 +13,7 @@ fun.views.tpd = Backbone.View.extend({
     * Class constructor
     */
     initialize : function(options) {
-        fun.containers.tpd = this.$el;
+        fun.containers.risk = this.$el;
     },
 
     /*
@@ -21,7 +21,7 @@ fun.views.tpd = Backbone.View.extend({
     */
     render : function(){
         if (!this.$el.html()){
-            var template = _.template(fun.utils.getTemplate(fun.conf.templates.tpd));
+            var template = _.template(fun.utils.getTemplate(fun.conf.templates.risk));
             this.$el.html(template);
             // this.signupError = this.$('#about-alert');
             // // Form inputs

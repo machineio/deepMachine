@@ -406,12 +406,12 @@ fun.Router = Backbone.Router.extend({
         fun.instances.footer.render();
     },
 
-    tpd: function(){
+    risk: function(){
         'use strict';
         var risk = translate('Market Risk Analyst');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.tpd.render();
+        fun.instances.risk.render();
         fun.instances.footer.render();
     },
 
