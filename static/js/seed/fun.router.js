@@ -339,7 +339,6 @@ fun.Router = Backbone.Router.extend({
         var binary = translate('binary');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(binary);
         fun.instances.binary.render();
         fun.instances.footer.render();
     },
