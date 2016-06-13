@@ -384,7 +384,6 @@ fun.Router = Backbone.Router.extend({
         var purchase = translate('purchase');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(purchase);
         fun.instances.purchase.render();
         fun.instances.footer.render();
     },
