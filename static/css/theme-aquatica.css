@@ -1471,7 +1471,7 @@ img.phone-portrait {
   display: block;
 }
 .accordion .title {
-  font-weight: 600;
+  font-weight: 300;
   font-size: 16px;
   color: #333333;
   padding: 15px 0px;
@@ -1649,7 +1649,7 @@ img.phone-portrait {
 }
 .pricing-table .price {
   padding: 40px 0px;
-  font-weight: 300;
+  font-weight: 200;
   border-bottom: 2px solid #dadada;
 }
 .pricing-table .price .sub {
@@ -1668,7 +1668,7 @@ img.phone-portrait {
   margin: 40px 0px;
 }
 .pricing-table .features li {
-  color: #333333;
+  color: #777777;
   font-size: 16px;
   text-align: center;
   margin-bottom: 16px;
