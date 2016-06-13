@@ -393,7 +393,6 @@ fun.Router = Backbone.Router.extend({
         var redeem = translate('redeem');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(redeem);
         fun.instances.redeem.render();
         fun.instances.footer.render();
     },
