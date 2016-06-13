@@ -411,7 +411,6 @@ fun.Router = Backbone.Router.extend({
         var risk = translate('Market Risk Analyst');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(risk);
         fun.instances.risk.render();
         fun.instances.footer.render();
     },
