@@ -339,7 +339,6 @@ fun.Router = Backbone.Router.extend({
         var binary = translate('binary');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(binary);
         fun.instances.binary.render();
         fun.instances.footer.render();
     },
@@ -349,7 +348,6 @@ fun.Router = Backbone.Router.extend({
         var elite = translate('Elite');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(elite);
         fun.instances.elite.render();
         fun.instances.footer.render();
     },
@@ -386,7 +384,6 @@ fun.Router = Backbone.Router.extend({
         var purchase = translate('purchase');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(purchase);
         fun.instances.purchase.render();
         fun.instances.footer.render();
     },
@@ -396,7 +393,6 @@ fun.Router = Backbone.Router.extend({
         var redeem = translate('redeem');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(redeem);
         fun.instances.redeem.render();
         fun.instances.footer.render();
     },
@@ -406,7 +402,6 @@ fun.Router = Backbone.Router.extend({
         var categorizer = translate('Categorizer');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(categorizer);
         fun.instances.categorizer.render();
         fun.instances.footer.render();
     },
@@ -416,7 +411,6 @@ fun.Router = Backbone.Router.extend({
         var risk = translate('Market Risk Analyst');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(risk);
         fun.instances.risk.render();
         fun.instances.footer.render();
     },
