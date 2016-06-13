@@ -379,7 +379,6 @@ fun.Router = Backbone.Router.extend({
         var beginner = translate('Beginner');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(beginner);
         fun.instances.beginner.render();
         fun.instances.footer.render();
     },
