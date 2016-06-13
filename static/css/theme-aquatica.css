@@ -1649,7 +1649,7 @@ img.phone-portrait {
 }
 .pricing-table .price {
   padding: 40px 0px;
-  font-weight: 600;
+  font-weight: 300;
   border-bottom: 2px solid #dadada;
 }
 .pricing-table .price .sub {
