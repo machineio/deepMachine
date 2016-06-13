@@ -1639,10 +1639,10 @@ img.phone-portrait {
   border-right: 2px solid rgba(255, 255, 255, 0.2);
 }
 .pricing-table {
-  border-top: 2px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
-  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid #dadada;
+  border-bottom: 2px solid #dadada;
+  border-left: 2px solid #dadada;
+  border-right: 2px solid #dadada;
   border-radius: 15px;
   text-align: center;
   padding-bottom: 40px;
@@ -1659,7 +1659,7 @@ img.phone-portrait {
   bottom: 10px;
 }
 .pricing-table .price .amount {
-  color: #fff;
+  color: #333333;
   font-size: 32px;
   display: inline-block;
   padding: 0px 8px;
@@ -1668,7 +1668,7 @@ img.phone-portrait {
   margin: 40px 0px;
 }
 .pricing-table .features li {
-  color: #fff;
+  color: #333333;
   font-size: 16px;
   text-align: center;
   margin-bottom: 16px;
