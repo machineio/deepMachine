@@ -402,7 +402,6 @@ fun.Router = Backbone.Router.extend({
         var categorizer = translate('Categorizer');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(categorizer);
         fun.instances.categorizer.render();
         fun.instances.footer.render();
     },
