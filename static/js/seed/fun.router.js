@@ -359,7 +359,6 @@ fun.Router = Backbone.Router.extend({
         var expert = translate('Expert');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(expert);
         fun.instances.expert.render();
         fun.instances.footer.render();
     },
@@ -369,7 +368,6 @@ fun.Router = Backbone.Router.extend({
         var intermediate = translate('Intermediate');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(intermediate);
         fun.instances.intermediate.render();
         fun.instances.footer.render();
     },
