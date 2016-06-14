@@ -1,3 +1,7 @@
+.input-group .input-group-addon, .input-group input {
+  border-color: #587D38 !important;
+}
+
 #fun-about, #fun-packages, #fun-training, #fun-aboutus, #fun-contactus, #fun-login {
   margin-top: 140px;
 }
