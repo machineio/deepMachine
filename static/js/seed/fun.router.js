@@ -885,7 +885,7 @@ fun.Router = Backbone.Router.extend({
             fun.instances.login.render();
         }
 
-        fun.instances.footer.render();
+        /*fun.instances.footer.render();*/
     },
 
     dashboard: function(account, org){
