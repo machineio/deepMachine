@@ -1055,8 +1055,8 @@ fun.Router = Backbone.Router.extend({
         fun.utils.hideAll();
         fun.instances.navbar.render();
         fun.instances.navbar.renderDropdown();
-        fun.instances.subheader.render(profile);
-        fun.instances.subheader.renderHeadNavProfile();
+        // fun.instances.subheader.render(profile);
+        // fun.instances.subheader.renderHeadNavProfile();
         fun.instances.profile.render();
 
 
