@@ -867,10 +867,10 @@ fun.Router = Backbone.Router.extend({
         } else {
             fun.utils.hideAll();
             fun.instances.navbar.render();
-            fun.instances.subheader.render(signup);
+            /*fun.instances.subheader.render(signup);*/
             fun.instances.signup.render();
         }
-        fun.instances.footer.render();
+        /*fun.instances.footer.render();*/
     },
 
     login: function(){
