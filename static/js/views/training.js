@@ -25,9 +25,9 @@ fun.views.training = Backbone.View.extend({
             this.$el.html(template);
             $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             fun.utils.templateStart();
-            fun.utils.renderBlogTrainning();
         }
         this.$el.removeClass("hide").addClass("show");
+        fun.utils.renderBlogTrainning();
     }
 
 });
