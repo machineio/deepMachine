@@ -2369,7 +2369,7 @@ input[type="submit"] {
 .photo-form-wrapper input:focus {
   outline: none;
 }
-.photo-form-wrapper input[type="submit"] {
+.photo-form-wrapper input[type="button"] {
   color: #fff !important;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
