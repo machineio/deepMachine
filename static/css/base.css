@@ -1,5 +1,4 @@
-.login_container {
-  height: 100% !important;
+#login_container {
   background-image: url('../img/hero6.jpg') cover;
 }
 
