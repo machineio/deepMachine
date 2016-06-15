@@ -294,9 +294,9 @@ fun.utils.templateStart = function(){
 
     // Twitter Feed
 
-    if($('#tweets').length){
-        twitterFetcher.fetch($('#tweets').attr('data-widget-id'), '', 5, true, true, true, '', false, fun.utils.handleTweets());
-    }
+    // if($('#tweets').length){
+    //     twitterFetcher.fetch($('#tweets').attr('data-widget-id'), '', 5, true, true, true, '', false, fun.utils.handleTweets());
+    // }
 
     // Expanding Lists (updated in Pivot 1.4.0)
     $('.expanding-ul li').click(function(){
