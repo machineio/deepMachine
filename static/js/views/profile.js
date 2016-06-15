@@ -39,6 +39,9 @@ fun.views.profile = Backbone.View.extend({
 
         this.$el.html(template);
         this.$el.removeClass("hide").addClass("show");
+        $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
+        fun.utils.templateStart();
+        fun.utils.startSlider();
 
         // Form inputs
         this.asset = this.$('#profile_first_asset');
@@ -46,7 +49,6 @@ fun.views.profile = Backbone.View.extend({
         this.amount = this.$('#profile_first_amount');
         this.bid = this.$('#profile-first-bid');
         this.ask = this.$('#profile-first-ask');
-        
         //this.renderBinaryGraph();
         this.renderTickGraph();
 
