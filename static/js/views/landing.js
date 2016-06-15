@@ -32,7 +32,6 @@ fun.views.landing = Backbone.View.extend({
             this.newAccount = this.account;
             this.email = this.$('#landing_email');
             this.password = this.$('#landing_password');
-            fun.utils.startSlider();
         }
         this.$el.removeClass("hide").addClass("show");
     },
