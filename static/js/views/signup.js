@@ -25,6 +25,9 @@ fun.views.signup = Backbone.View.extend({
             $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             template = _.template(fun.utils.getTemplate(fun.conf.templates.signup));
             this.$el.html(template);
+            $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
+            fun.utils.templateStart();
+            fun.utils.startSlider();
 
             // Cache the DOM stuff
             this.signupError = this.$('#signup-alert');
