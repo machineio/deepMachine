@@ -25,6 +25,7 @@ fun.views.packages = Backbone.View.extend({
             this.$el.html(template);
             $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             fun.utils.templateStart();
+            fun.utils.renderAccordion();
             // this.signupError = this.$('#about-alert');
             // // Form inputs
             // this.account = this.$('#about_username');
