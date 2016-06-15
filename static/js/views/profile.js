@@ -42,6 +42,8 @@ fun.views.profile = Backbone.View.extend({
         $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
         fun.utils.templateStart();
         fun.utils.startSlider();
+        $('#logoutWrapper').removeClass('hide').addClass('show');
+        $('#loginSignupWrapper').removeClass('show').addClass('hide');
 
         // Form inputs
         this.asset = this.$('#profile_first_asset');

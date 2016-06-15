@@ -1028,7 +1028,7 @@ fun.Router = Backbone.Router.extend({
         startLapse = {
             start:moment.utc().startOf('hour').unix(),
             lapse:'hours'
-        }
+        };
 
         resources = {
             user: new fun.models.User({'account':account}),
@@ -2753,6 +2753,8 @@ fun.Router = Backbone.Router.extend({
             },
             error: onSuccess
         });
+        $('#logoutWrapper').removeClass('show').addClass('hide');
+        $('#loginSignupWrapper').removeClass('hide').addClass('show');
 
         fun.instances.subheader.render(goodBye);      
         fun.instances.login.render();
