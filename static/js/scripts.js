@@ -70,7 +70,7 @@ $('form.email-form').submit(function (e) {
 		}else{
 			$(this).removeClass('field-error');
 		}
-	});]
+	});
 
     if (error === 1){
         $(this).closest('.email-form').find('.form-error').fadeIn(200);
