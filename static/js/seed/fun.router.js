@@ -1041,9 +1041,9 @@ fun.Router = Backbone.Router.extend({
             if(++vonCount === _.keys(resources).length){
                 console.log('get resources success!');
 
-                fun.instances.trades.renderTradesList(
-                    resources.trades
-                );
+                // fun.instances.trades.renderTradesList(
+                //     resources.trades
+                // );
 
                 fun.instances.settings.setProfileInformation(
                     resources.user
@@ -1069,7 +1069,6 @@ fun.Router = Backbone.Router.extend({
             });
         }
 
-        
         if (account !== 'satan'){
             fun.utils.hideAmounts();
             $('#all-history-trades').removeClass('show').addClass('hide');
