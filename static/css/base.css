@@ -15,7 +15,7 @@
   height: 100%;
 }
 
-#fun-login .main-container .login-page {
+#fun-login .main-container .login-page, #fun-signup .main-container .login-page {
   height: 100%;
   padding-top: 15vh;
 }
