@@ -44,7 +44,8 @@ fun.views.login = Backbone.View.extend({
      */
     login: function(event){
         event.preventDefault();
-        
+
+        $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
         var loginError = this.loginError;
         var username = this.username.val();
         var password = this.password.val();
