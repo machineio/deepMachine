@@ -42,18 +42,17 @@ $(window).scroll(function(){
 
 $('form.email-form').submit(function (e) {
 	// return false so form submits through jQuery rather than reloading page.
-	if(e.preventDefault) e.preventDefault(); 
+	if(e.preventDefault) e.preventDefault();
 	else e.returnValue = false;
-	
+
 	var thisForm 		= $(this).closest('.email-form'),
 		error 			= 0,
 		originalError 	= thisForm.attr('original-error'),
 		loadingSpinner;
-		
+
 	if (typeof originalError !== typeof undefined && originalError !== false) {
-		thisForm.find('.form-error').text(originalError); 
+		thisForm.find('.form-error').text(originalError);
 	}
-			
 
 	$(thisForm).find('.validate-required').each(function(){
 		if($(this).val() === ''){
@@ -63,7 +62,7 @@ $('form.email-form').submit(function (e) {
 			$(this).removeClass('field-error');
 		}
 	});
-	
+
 	$(thisForm).find('.validate-email').each(function(){
 		if(!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))){
 			$(this).addClass('field-error');
@@ -71,8 +70,7 @@ $('form.email-form').submit(function (e) {
 		}else{
 			$(this).removeClass('field-error');
 		}
-	});
-	
+	});]
 
     if (error === 1){
         $(this).closest('.email-form').find('.form-error').fadeIn(200);
@@ -82,7 +80,6 @@ $('form.email-form').submit(function (e) {
 		// Create a new loading spinner while hiding the submit button.
 		loadingSpinner = $('<div />').addClass('form-loading').insertAfter($(thisForm).find('input[type="submit"]'));
 		$(thisForm).find('input[type="submit"]').hide();
-        
         jQuery.ajax({
             type: "POST",
             url: "mail/mail.php",

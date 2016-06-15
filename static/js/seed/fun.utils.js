@@ -236,23 +236,23 @@ fun.utils.templateStart = function(){
         prefix = '-webkit-';
     }
 
-    $('.main-container section:first-child').addClass('first-child');
+    // $('.main-container section:first-child').addClass('first-child');
 
-    $('.parallax-background').each(function () {
+    // $('.parallax-background').each(function () {
 
-        if ($(this).closest('section').hasClass('first-child') && !$(this).closest('section').hasClass('slider-fullscreen')) {
-            $(this).attr('data-top', prefix + 'transform: translate3d(0px,0px, 0px)');
-            $(this).attr('data-top-bottom', prefix + 'transform: translate3d(0px,200px, 0px)');
+    //     if ($(this).closest('section').hasClass('first-child') && !$(this).closest('section').hasClass('slider-fullscreen')) {
+    //         $(this).attr('data-top', prefix + 'transform: translate3d(0px,0px, 0px)');
+    //         $(this).attr('data-top-bottom', prefix + 'transform: translate3d(0px,200px, 0px)');
 
-        } else {
+    //     } else {
 
-            $(this).attr('data-bottom-top', prefix + 'transform: translate3d(0px,-100px, 0px)');
-            $(this).attr('data-center', prefix + 'transform: translate3d(0px,0px, 0px)');
-            $(this).attr('data-top-bottom', prefix + 'transform: translate3d(0px,100px, 0px)');
+    //         $(this).attr('data-bottom-top', prefix + 'transform: translate3d(0px,-100px, 0px)');
+    //         $(this).attr('data-center', prefix + 'transform: translate3d(0px,0px, 0px)');
+    //         $(this).attr('data-top-bottom', prefix + 'transform: translate3d(0px,100px, 0px)');
 
-        }
+    //     }
 
-    });
+    // });
 
     if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
         skrollr.init({
