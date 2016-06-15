@@ -33,16 +33,18 @@ fun.utils.onYouTubeIframeAPIReady = function () {
 };
 
 fun.utils.handleTweets = function(tweets){
-    var x = tweets.length;
-    var n = 0;
-    var element = document.getElementById('tweets');
-    var html = '<ul class="slides">';
-    while(n < x) {
-    html += '<li>' + tweets[n] + '</li>';
-    n++;
+    if(tweets){
+        var x = tweets.length;
+        var n = 0;
+        var element = document.getElementById('tweets');
+        var html = '<ul class="slides">';
+        while(n < x) {
+        html += '<li>' + tweets[n] + '</li>';
+        n++;
+        }
+        html += '</ul>';
+        element.innerHTML = html;
     }
-    html += '</ul>';
-    element.innerHTML = html;
 };
 
 fun.utils.alignBottom = function (){
