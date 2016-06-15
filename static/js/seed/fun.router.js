@@ -2741,22 +2741,20 @@ fun.Router = Backbone.Router.extend({
         // the stupid shit with the navbar on logout is probably related to this.
 
         onSuccess = function(){
-            fun.instances.navbar.render()
-            fun.instances.navbar.renderDropdown();
+            fun.utils.hideAll();
+
+            fun.utils.logout({
+                success: function() {
+                    console.log('fuck error with kika and success!');
+                },
+                error: onSuccess
+            });
+            $('#logoutWrapper').removeClass('show').addClass('hide');
+            $('#loginSignupWrapper').removeClass('hide').addClass('show');
+            // fun.instances.navbar.render();
+            // fun.instances.navbar.renderDropdown();
+            window.location.href = '#landing';
         };
-
-        fun.utils.hideAll();
-
-        fun.utils.logout({
-            success: function() {
-                console.log('fuck error with kika and success!');
-            },
-            error: onSuccess
-        });
-        $('#logoutWrapper').removeClass('show').addClass('hide');
-        $('#loginSignupWrapper').removeClass('hide').addClass('show');
-
-        window.location = 'http://deepmachine.io/#landing';
     }
 });
 
