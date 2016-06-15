@@ -1,3 +1,16 @@
+.utility-inner {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.utility-inner .pull-right {
+  margin-top: -10px;
+}
+
+.nav-menu {
+    padding-top: 40px !important;
+}
+
 .login-title {
   text-align: left;
   margin-bottom: 20px;
