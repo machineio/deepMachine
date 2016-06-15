@@ -6,7 +6,7 @@
   width: 100vw !important;
 }
 
-#fun-login {
+#fun-login, #fun-signup {
   height: 100vh;
   /*padding-top: 54px;*/
 }
