@@ -15,6 +15,13 @@ var fun = {
     omnibus: _.extend({}, Backbone.Events)
 };
 
+fun.utils.renderAccordion = function(){
+    $('.accordion li').click(function(){
+        $(this).parent('.accordion').children('li').removeClass('active');
+        $(this).addClass('active');
+    });
+};
+
 fun.utils.onYouTubeIframeAPIReady = function () {
     $('.youtube-bg-iframe').each(function(index){
         $(this).attr('id', 'yt-'+index);
