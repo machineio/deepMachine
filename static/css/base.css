@@ -17,7 +17,7 @@
 }
 
 .contact-action {
-  padding-top: 5%;
+  padding-top: inherit;
 }
 
 #login_container .login-page {
