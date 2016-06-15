@@ -2,10 +2,10 @@
   height: 100vh !important;
 }
 
-.contact-action {
+/*.contact-action {
   padding-top: 7.5%;
 }
-
+*/
 #login_container .login-page {
   background-image: url('../img/hero6.jpg') !important;
 }
@@ -78,7 +78,7 @@ strong {
 }
 
 .top-bar {
-  margin-top: -140px;
+  margin-top: -190px;
 }
 
 .col-sm-9.col-md-10.columns {
