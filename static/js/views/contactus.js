@@ -21,6 +21,7 @@ fun.views.contactus = Backbone.View.extend({
     */
     render : function(){
         if (!this.$el.html()){
+            $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             var template = _.template(fun.utils.getTemplate(fun.conf.templates.contactus));
             this.$el.html(template);
         }

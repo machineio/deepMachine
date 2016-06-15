@@ -22,6 +22,7 @@ fun.views.landing = Backbone.View.extend({
         'use strict';
         var template;
         if (!this.$el.html()){
+            $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             template = _.template(fun.utils.getTemplate(fun.conf.templates.landing));
             this.$el.html(template);
             // Cache the DOM stuff

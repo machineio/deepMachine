@@ -34,6 +34,7 @@ fun.views.footer = Backbone.View.extend({
     },
 
     render: function(){
+        $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
         var template = _.template(
             fun.utils.getTemplate(fun.conf.templates.footer)
         );

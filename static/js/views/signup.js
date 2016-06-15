@@ -22,6 +22,7 @@ fun.views.signup = Backbone.View.extend({
         'use strict';
         var template;
         if (!this.$el.html()){
+            $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             template = _.template(fun.utils.getTemplate(fun.conf.templates.signup));
             this.$el.html(template);
 

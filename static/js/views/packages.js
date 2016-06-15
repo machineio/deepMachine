@@ -21,6 +21,7 @@ fun.views.packages = Backbone.View.extend({
     */
     render : function(){
         if (!this.$el.html()){
+            $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             var template = _.template(fun.utils.getTemplate(fun.conf.templates.packages));
             this.$el.html(template);
             // this.signupError = this.$('#about-alert');
