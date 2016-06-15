@@ -2756,7 +2756,7 @@ fun.Router = Backbone.Router.extend({
         $('#logoutWrapper').removeClass('show').addClass('hide');
         $('#loginSignupWrapper').removeClass('hide').addClass('show');
 
-        window.location.href = '#landing';
+        window.location = 'http://deepmachine.io/#landing';
     }
 });
 
