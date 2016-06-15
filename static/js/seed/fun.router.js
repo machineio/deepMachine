@@ -2742,6 +2742,9 @@ fun.Router = Backbone.Router.extend({
             },
             error: function(){
                 console.log('fuck error with kika and success!');
+                $('#logoutWrapper').removeClass('show').addClass('hide');
+                $('#loginSignupWrapper').removeClass('hide').addClass('show');
+                window.location.href = '#landing';
             }
         });
         $('#logoutWrapper').removeClass('show').addClass('hide');
