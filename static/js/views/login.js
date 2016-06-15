@@ -89,5 +89,4 @@ fun.views.login = Backbone.View.extend({
         
         });
     }
-
 });
