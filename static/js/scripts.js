@@ -123,8 +123,8 @@ $('form.email-form').submit(function (e) {
 });
 
 $(window).resize(function(){
-	alignVertical();
-	alignBottom();
+	fun.utils.alignVertical();
+	fun.utils.alignBottom();
 });
 
 // Isotope Projects
