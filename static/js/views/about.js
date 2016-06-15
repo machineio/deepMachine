@@ -29,6 +29,7 @@ fun.views.about = Backbone.View.extend({
             this.newAccount = this.account;
             this.email = this.$('#about_email');
             this.password = this.$('#about_password');
+            fun.utils.templateStart();
             fun.utils.startSlider();
         }
         this.$el.removeClass("hide").addClass("show");
