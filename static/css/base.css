@@ -65,8 +65,8 @@ strong {
   padding-bottom: 0 !important;
 }
 
-.top-bar .container {
-  margin-top: -160px;
+.top-bar {
+  margin-top: -140px;
 }
 
 .col-sm-9.col-md-10.columns {
