@@ -1,5 +1,3 @@
-console.log('HERE I AM!!!!!');
-
 // Nav Sticky
 $(window).scroll(function(){
 	if($(window).scrollTop() > 500 && !$('.mobile-toggle').is(":visible")){

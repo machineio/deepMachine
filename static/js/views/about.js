@@ -23,6 +23,7 @@ fun.views.about = Backbone.View.extend({
         if (!this.$el.html()){
             var template = _.template(fun.utils.getTemplate(fun.conf.templates.about));
             this.$el.html(template);
+            $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             this.signupError = this.$('#about-alert');
             // Form inputs
             this.account = this.$('#about_username');

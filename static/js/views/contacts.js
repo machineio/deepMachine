@@ -41,6 +41,7 @@ fun.views.contacts = Backbone.View.extend({
         if (!this.$el.html()){
             template = _.template(fun.utils.getTemplate(fun.conf.templates.contacts));
             this.$el.html(template);
+            $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             // DOM cache stuff on form fields
             this.contactFirstName = this.$('#contact_first_name');
             this.contactLastName = this.$('#contact_last_name');
@@ -51,6 +52,7 @@ fun.views.contacts = Backbone.View.extend({
             this.directoryDescription = this.$('#directory_description');
             // CSV input file
             this.exampleInputFile = this.$('#exampleInputFile');
+            fun.utils.templateStart();
         }
         this.newPhoneNumber.intlTelInput({
             utilsScript: "static/js/plugins/libphonenumber/utils.js"
