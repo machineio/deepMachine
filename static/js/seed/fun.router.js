@@ -2744,11 +2744,17 @@ fun.Router = Backbone.Router.extend({
                 console.log('fuck error with kika and success!');
                 $('#logoutWrapper').removeClass('show').addClass('hide');
                 $('#loginSignupWrapper').removeClass('hide').addClass('show');
+                fun.instances.navbar.render();
+                fun.instances.about.render();
+                fun.instances.footer.render();
                 window.location.href = '#landing';
             }
         });
         $('#logoutWrapper').removeClass('show').addClass('hide');
         $('#loginSignupWrapper').removeClass('hide').addClass('show');
+        fun.instances.navbar.render();
+        fun.instances.about.render();
+        fun.instances.footer.render();
         window.location.href = '#landing';
     }
 });
