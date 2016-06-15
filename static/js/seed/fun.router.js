@@ -2756,9 +2756,7 @@ fun.Router = Backbone.Router.extend({
         $('#logoutWrapper').removeClass('show').addClass('hide');
         $('#loginSignupWrapper').removeClass('hide').addClass('show');
 
-        fun.instances.subheader.render(goodBye);      
-        fun.instances.login.render();
-        fun.instances.footer.render();
+        window.location.href = '#landing';
     }
 });
 
