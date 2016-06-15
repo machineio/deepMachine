@@ -2,7 +2,7 @@
 * Fun namespace container
 */
 var fun = {
-    account: {}, 
+    account: {},
     utils: {},
     views: {},
     instances: {},

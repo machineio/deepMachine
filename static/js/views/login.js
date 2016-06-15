@@ -23,12 +23,12 @@ fun.views.login = Backbone.View.extend({
             $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             var template = _.template(fun.utils.getTemplate(fun.conf.templates.login));
             this.$el.html(template);
-            
             // Cache the DOM stuff
             this.loginError = this.$('#signin-alert');
             // form inputs
             this.username = this.$('#username');
             this.password = this.$('#password');
+            fun.utils.templateStart();
         }
         this.$el.removeClass("hide").addClass("show");
     },
