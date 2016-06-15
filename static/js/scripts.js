@@ -1,3 +1,5 @@
+console.log('HERE I AM!!!!!');
+
 function handleTweets(tweets){
           var x = tweets.length;
           var n = 0;
