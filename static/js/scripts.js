@@ -171,42 +171,6 @@ if (!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userA
 }else{
 	$('body').addClass('pointer');
 }
-// Slider Initializations
-$('.hero-slider').flexslider({});
-$('.image-slider').flexslider({ animation: "slide"});
-$('.testimonials-slider').flexslider({ directionNav: false });
-
-// Slide Sizes
-$('.slider-fullscreen .slides li').each(function(){
-	$(this).css('height', $(window).height());
-});
-$('.fullscreen-element').each(function(){
-	$(this).css('height', $(window).height());
-});
-
-
-// Feature Selector
-$('.selector-tabs li').click(function(){
-	$(this).parent('.selector-tabs').children('li').removeClass('active');
-	$(this).addClass('active');
-	var activeTab = $(this).index() + 1;
-	$(this).closest('.feature-selector').find('.selector-content').children('li').removeClass('active');
-	$(this).closest('.feature-selector').find('.selector-content').children('li:nth-child('+activeTab+')').addClass('active');
-});
-
-// Append .background-image-holder <img>'s as CSS backgrounds
-$('.background-image-holder').each(function(){
-	var imgSrc= $(this).children('img').attr('src');
-	$(this).css('background', 'url("' + imgSrc + '")');
-	$(this).children('img').hide();
-    $(this).css('background-position', '50% 0%');
-});
-
-// Accordion
-$('.accordion li').click(function(){
-	$(this).parent('.accordion').children('li').removeClass('active');
-	$(this).addClass('active');
-});
 
 /************** Parallax Scripts **************/
 

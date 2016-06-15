@@ -22,7 +22,6 @@ fun.views.landing = Backbone.View.extend({
         'use strict';
         var template;
         if (!this.$el.html()){
-            $.getScript( "/static/js/scripts.js", function(data,textStatus,jqxhr){});
             template = _.template(fun.utils.getTemplate(fun.conf.templates.landing));
             this.$el.html(template);
             // Cache the DOM stuff
@@ -32,6 +31,7 @@ fun.views.landing = Backbone.View.extend({
             this.newAccount = this.account;
             this.email = this.$('#landing_email');
             this.password = this.$('#landing_password');
+            fun.utils.startSlider();
         }
         this.$el.removeClass("hide").addClass("show");
     },
