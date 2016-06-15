@@ -1,3 +1,8 @@
+.photo-form-wrapper form input[type="submit"] {
+  max-width: none !important;
+  color: #FFFFFF !important;
+}
+
 .blog-masonry {
   padding-bottom: 30vh !important;
 }
