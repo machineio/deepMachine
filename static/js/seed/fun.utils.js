@@ -16,6 +16,7 @@ var fun = {
 };
 
 fun.utils.renderBlogTrainning = function(){
+    console.log('RENDER BLOG TRAINING');
     // Blog Masonry
     $('.blog-masonry-container').isotope({
       itemSelector: '.blog-masonry-item',
