@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	console.log('HERE I AM!!!!');
 	"use strict";
 	// Nav Sticky
 	$(window).scroll(function(){
