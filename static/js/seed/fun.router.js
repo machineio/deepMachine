@@ -1028,7 +1028,7 @@ fun.Router = Backbone.Router.extend({
         startLapse = {
             start:moment.utc().startOf('hour').unix(),
             lapse:'hours'
-        }
+        };
 
         resources = {
             user: new fun.models.User({'account':account}),
@@ -1041,9 +1041,9 @@ fun.Router = Backbone.Router.extend({
             if(++vonCount === _.keys(resources).length){
                 console.log('get resources success!');
 
-                fun.instances.trades.renderTradesList(
-                    resources.trades
-                );
+                // fun.instances.trades.renderTradesList(
+                //     resources.trades
+                // );
 
                 fun.instances.settings.setProfileInformation(
                     resources.user
@@ -1069,7 +1069,6 @@ fun.Router = Backbone.Router.extend({
             });
         }
 
-        
         if (account !== 'satan'){
             fun.utils.hideAmounts();
             $('#all-history-trades').removeClass('show').addClass('hide');
@@ -2736,28 +2735,27 @@ fun.Router = Backbone.Router.extend({
 
     logout: function(){
         'use strict';
-        var goodBye = translate('goodBye'),
-            onSuccess;
-
-        // the stupid shit with the navbar on logout is probably related to this.
-
-        onSuccess = function(){
-            fun.instances.navbar.render()
-            fun.instances.navbar.renderDropdown();
-        };
-
         fun.utils.hideAll();
-
         fun.utils.logout({
             success: function() {
-                console.log('fuck error with kika and success!');
+                console.log('Logout Fine');
             },
-            error: onSuccess
+            error: function(){
+                console.log('fuck error with kika and success!');
+                $('#logoutWrapper').removeClass('show').addClass('hide');
+                $('#loginSignupWrapper').removeClass('hide').addClass('show');
+                fun.instances.navbar.render();
+                fun.instances.about.render();
+                fun.instances.footer.render();
+                window.location.href = '#landing';
+            }
         });
-
-        fun.instances.subheader.render(goodBye);      
-        fun.instances.login.render();
+        $('#logoutWrapper').removeClass('show').addClass('hide');
+        $('#loginSignupWrapper').removeClass('hide').addClass('show');
+        fun.instances.navbar.render();
+        fun.instances.about.render();
         fun.instances.footer.render();
+        window.location.href = '#landing';
     }
 });
 
