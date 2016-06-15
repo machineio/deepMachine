@@ -2735,26 +2735,18 @@ fun.Router = Backbone.Router.extend({
 
     logout: function(){
         'use strict';
-        var goodBye = translate('goodBye'),
-            onSuccess;
-
-        // the stupid shit with the navbar on logout is probably related to this.
-
-        onSuccess = function(){
-            fun.utils.hideAll();
-
-            fun.utils.logout({
-                success: function() {
-                    console.log('fuck error with kika and success!');
-                },
-                error: onSuccess
-            });
-            $('#logoutWrapper').removeClass('show').addClass('hide');
-            $('#loginSignupWrapper').removeClass('hide').addClass('show');
-            // fun.instances.navbar.render();
-            // fun.instances.navbar.renderDropdown();
-            window.location.href = '#landing';
-        };
+        fun.utils.hideAll();
+        fun.utils.logout({
+            success: function() {
+                console.log('Logout Fine');
+            },
+            error: function(){
+                console.log('fuck error with kika and success!');
+            }
+        });
+        $('#logoutWrapper').removeClass('show').addClass('hide');
+        $('#loginSignupWrapper').removeClass('hide').addClass('show');
+        window.location.href = '#landing';
     }
 });
 
