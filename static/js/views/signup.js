@@ -66,7 +66,7 @@ fun.views.signup = Backbone.View.extend({
         event.preventDefault();
         signupError = this.signupError;
         account = $('#signup-account').val();
-        password = ('#signup-password').val();
+        password = $('#signup-password').val();
         confirmPassword = password;
         email = $('#signup-email').val();
         console.log('OVER HERE 2!!!!',account,password,confirmPassword, email);
