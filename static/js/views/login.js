@@ -58,6 +58,8 @@ fun.views.login = Backbone.View.extend({
             fun.utils.redirect(fun.conf.hash.profile);
         };
 
+        console.log('OVER HERE!!!!!!',loginError,username,password);
+
         fun.utils.login(username, password, {
             success : function(jqXHR, textStatus){
                 // currently this success call is never executed
