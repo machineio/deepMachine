@@ -14,7 +14,6 @@ fun.views.login = Backbone.View.extend({
     initialize: function(options) {
         fun.containers.login = this.$el;
     },
-    
     /**
      * Renders the login view
      */
@@ -58,15 +57,17 @@ fun.views.login = Backbone.View.extend({
             loginError.removeClass("show" ).addClass("hide");
             fun.utils.redirect(fun.conf.hash.profile);
         };
-        
+
         fun.utils.login(username, password, {
             success : function(jqXHR, textStatus){
                 // currently this success call is never executed
                 // the success stuff is going on case 200 of the error function.
                 // Why? well... I really don't fucking know...
+                console.log('JQXHR status',jqXHR);
                 loginSuccess(view, loginError);
             },
             error : function(jqXHR, textStatus, errorThrown) {
+                console.log('ERRORRRR!!',jqXHR);
                 switch(jqXHR.status) {
                     case 403:
                         var message = fun.utils.translate("usernameOrPasswordError");
@@ -86,7 +87,6 @@ fun.views.login = Backbone.View.extend({
                         break;
                 }
             }
-        
         });
     }
 });
