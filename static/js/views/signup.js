@@ -65,10 +65,10 @@ fun.views.signup = Backbone.View.extend({
             validForm;
         event.preventDefault();
         signupError = this.signupError;
-        account = this.account.val();
-        password = this.password.val();
-        confirmPassword = this.password.val();
-        email = this.email.val();
+        account = $('#signup-account').val();
+        password = ('#signup-password').val();
+        confirmPassword = password;
+        email = $('#signup-email').val();
         console.log('OVER HERE 2!!!!',account,password,confirmPassword, email);
         // check if this view stuff is really needed
         view = this;
