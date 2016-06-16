@@ -72,27 +72,27 @@ fun.views.signup = Backbone.View.extend({
         // check if this view stuff is really needed
         view = this;
         // form validation rules
-        rules = {
-            rules: {
-                signup_username: {
-                    minlength: 2,
-                    required: true
-                },
-                signup_email: {
-                    required: true,
-                    email: true
-                },
-                signup_password: {
-                    minlength: 8,
-                    required: true
-                },
-                signup_confirm_password: {
-                    required: true,
-                    minlength: 8,
-                    equalTo: '#signup_password'
-                }
-            }
-        };
+        // rules = {
+        //     rules: {
+        //         signup_username: {
+        //             minlength: 2,
+        //             required: true
+        //         },
+        //         signup_email: {
+        //             required: true,
+        //             email: true
+        //         },
+        //         signup_password: {
+        //             minlength: 8,
+        //             required: true
+        //         },
+        //         signup_confirm_password: {
+        //             required: true,
+        //             minlength: 8,
+        //             equalTo: '#signup_password'
+        //         }
+        //     }
+        // };
         // validationRules = $.extend (rules, fun.utils.validationRules);
 
         // $('#signup-form').validate(validationRules);
@@ -154,18 +154,18 @@ fun.views.signup = Backbone.View.extend({
         };
         
         // check for a valid form and create the new user account
-        validForm = $('#signup-form').valid();
-        if (validForm){
-            //event.preventDefault();
-            this.model = new fun.models.Account();
-            this.model.save(
-                {
-                    account: account,
-                    password: password,
-                    email: email
-                },
-                callbacks
-            );
-        }
+        // validForm = $('#signup-form').valid();
+        // if (validForm){
+        //     //event.preventDefault();
+        //     this.model = new fun.models.Account();
+        //     this.model.save(
+        //         {
+        //             account: account,
+        //             password: password,
+        //             email: email
+        //         },
+        //         callbacks
+        //     );
+        // }
     }
 });
