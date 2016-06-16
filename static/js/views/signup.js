@@ -149,23 +149,21 @@ fun.views.signup = Backbone.View.extend({
                 else {
                     signupError.find('p').html('what daa!?');
                 }
-                
             }
         };
-        
         // check for a valid form and create the new user account
         // validForm = $('#signup-form').valid();
         // if (validForm){
-        //     //event.preventDefault();
-        //     this.model = new fun.models.Account();
-        //     this.model.save(
-        //         {
-        //             account: account,
-        //             password: password,
-        //             email: email
-        //         },
-        //         callbacks
-        //     );
+            //event.preventDefault();
+        this.model = new fun.models.Account();
+        this.model.save(
+            {
+                account: account,
+                password: password,
+                email: email
+            },
+            callbacks
+        );
         // }
     }
 });
