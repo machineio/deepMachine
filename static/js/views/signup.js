@@ -90,13 +90,12 @@ fun.views.signup = Backbone.View.extend({
                     required: true,
                     minlength: 8,
                     equalTo: '#signup_password'
-                    
                 }
             }
-        }
-        validationRules = $.extend (rules, fun.utils.validationRules);
+        };
+        // validationRules = $.extend (rules, fun.utils.validationRules);
 
-        $('#signup-form').validate(validationRules);
+        // $('#signup-form').validate(validationRules);
         
         // new user account callbacks
         callbacks = {
