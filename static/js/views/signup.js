@@ -69,6 +69,7 @@ fun.views.signup = Backbone.View.extend({
         password = this.password.val();
         confirmPassword = this.password.val();
         email = this.email.val();
+        console.log('OVER HERE 2!!!!',account,password,confirmPassword, email);
         // check if this view stuff is really needed
         view = this;
         // form validation rules
