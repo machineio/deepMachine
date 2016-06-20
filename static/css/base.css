@@ -156,11 +156,11 @@ strong {
 }
 
 .desc-loss{
-    background-color: #AE3333;
+    color: #AE3333;
 }
 
 .asc-win{
-    background-color: #587D38;
+    color: #587D38;
 }
 
 .btn-warning:active, .btn-warning.active {
