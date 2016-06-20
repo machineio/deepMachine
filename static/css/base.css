@@ -148,11 +148,19 @@ strong {
 }
 
 .trade-loss{
-    background-color: #e3a18b;
+    /*background-color: #e3a18b;*/
 }
 
 .trade-win{
-    background-color: #acbf9e;
+    /*background-color: #acbf9e;*/
+}
+
+.desc-loss{
+    background-color: #AE3333;
+}
+
+.asc-win{
+    background-color: #587D38;
 }
 
 .btn-warning:active, .btn-warning.active {
