@@ -22,10 +22,10 @@
   }
 
   .primary-features {
-    padding: 20px;
+    padding: 20px !important;
     text-align: left;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding-top: 8vh !important;
+    padding-bottom: 8vh !important;
   }
 
   .bg-primary.short-2 .row .col-sm-12 {
