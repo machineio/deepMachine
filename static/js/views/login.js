@@ -31,32 +31,6 @@ fun.views.login = Backbone.View.extend({
         }
         this.$el.removeClass("hide").addClass("show");
     },
-
-    validateForm: function(type,data){
-        if(type==='signup'){
-            if(!fun.utils.emailValidation(data.email)){
-                swal({title:'Error',text:"Please enter a valid email",type:"error",confirmButtonText:"Cool"});
-                return;
-            } else {
-                if(data.username.length<6){
-                    swal({title:"Error",text:"The username must have at least 6 characters",type:"error",confirmButtonText:"Cool"});
-                } else {
-                    if(data.password.length<8){
-                        swal({title:"Error",text:"The password must have at least 8 characters",type:"error",confirmButtonText:"Cool"});
-                    } else {
-                        return true;
-                    }
-                }
-            }
-        } else {
-            if(data.username.length<6){
-                swal({title:"Error",text:"The username must have at least 6 characters",type:"error",confirmButtonText:"Cool"});
-                return;
-            } else {
-                return true;
-            }
-        }
-    },
     
     /**
      * signup event
@@ -86,7 +60,7 @@ fun.views.login = Backbone.View.extend({
 
         console.log('OVER HERE!!!!!!',loginError,username,password);
 
-        if(validateForm('login',{username:username,password:password})){
+        if(fun.utils.validateFormHome('login',{username:username,password:password})){
             fun.utils.login(username, password, {
                 success : function(jqXHR, textStatus){
                     // currently this success call is never executed

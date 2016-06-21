@@ -15,6 +15,32 @@ var fun = {
     omnibus: _.extend({}, Backbone.Events)
 };
 
+fun.utils.validateForm = function(type,data){
+    if(type==='signup'){
+        if(!fun.utils.emailValidation(data.email)){
+            swal({title:'Error',text:"Please enter a valid email",type:"error",confirmButtonText:"Cool"});
+            return;
+        } else {
+            if(data.username.length<6){
+                swal({title:"Error",text:"The username must have at least 6 characters",type:"error",confirmButtonText:"Cool"});
+            } else {
+                if(data.password.length<8){
+                    swal({title:"Error",text:"The password must have at least 8 characters",type:"error",confirmButtonText:"Cool"});
+                } else {
+                    return true;
+                }
+            }
+        }
+    } else {
+        if(data.username.length<6){
+            swal({title:"Error",text:"The username must have at least 6 characters",type:"error",confirmButtonText:"Cool"});
+            return;
+        } else {
+            return true;
+        }
+    }
+};
+
 fun.utils.emailValidation = function(email){
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
