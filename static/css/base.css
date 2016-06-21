@@ -1,3 +1,7 @@
+.blog-masonry-item .item-inner {
+  margin-top: 200px;
+}
+
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   .bg-primary.short-2 .row .col-sm-12 {
     margin-left: 0 !important;
