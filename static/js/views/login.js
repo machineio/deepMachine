@@ -86,35 +86,37 @@ fun.views.login = Backbone.View.extend({
 
         console.log('OVER HERE!!!!!!',loginError,username,password);
 
-        fun.utils.login(username, password, {
-            success : function(jqXHR, textStatus){
-                // currently this success call is never executed
-                // the success stuff is going on case 200 of the error function.
-                // Why? well... I really don't fucking know...
-                console.log('JQXHR status',jqXHR);
-                loginSuccess(view, loginError);
-            },
-            error : function(jqXHR, textStatus, errorThrown) {
-                console.log('ERRORRRR!!',jqXHR);
-                switch(jqXHR.status) {
-                    case 403:
-                        var message = fun.utils.translate("usernameOrPasswordError");
-                        loginError.find('p').html(message);
-                        loginError.removeClass("hide" ).addClass("show");
-                        break;
-                    case 200:
-                        // Check browser support
-                        if (typeof(Storage) != "undefined") {
-                            // Store
-                            localStorage.setItem("username", username);
-                        }
-                        loginSuccess(view, loginError);
-                        break;
-                    default:
-                        console.log('the monkey is down');
-                        break;
+        if(validateForm('login',{username:username,password:password})){
+            fun.utils.login(username, password, {
+                success : function(jqXHR, textStatus){
+                    // currently this success call is never executed
+                    // the success stuff is going on case 200 of the error function.
+                    // Why? well... I really don't fucking know...
+                    console.log('JQXHR status',jqXHR);
+                    loginSuccess(view, loginError);
+                },
+                error : function(jqXHR, textStatus, errorThrown) {
+                    console.log('ERRORRRR!!',jqXHR);
+                    switch(jqXHR.status) {
+                        case 403:
+                            var message = fun.utils.translate("usernameOrPasswordError");
+                            loginError.find('p').html(message);
+                            loginError.removeClass("hide" ).addClass("show");
+                            break;
+                        case 200:
+                            // Check browser support
+                            if (typeof(Storage) != "undefined") {
+                                // Store
+                                localStorage.setItem("username", username);
+                            }
+                            loginSuccess(view, loginError);
+                            break;
+                        default:
+                            console.log('the monkey is down');
+                            break;
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 });
