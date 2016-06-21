@@ -1,3 +1,8 @@
+.blog-masonry .container {
+  margin-top: -50px;
+  margin-bottom: 240px;
+}
+
 .blog-masonry-item .item-inner {
   margin-top: 200px;
 }
