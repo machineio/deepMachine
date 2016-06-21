@@ -1,3 +1,35 @@
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .mobile-toggle {
+    top: 30px;
+  }
+
+  .nav-menu {
+    padding-top: 24px;
+  }
+
+  .top-bar {
+    margin-top: -85px !important;
+  }
+
+  #fun-about, #fun-packages, #fun-training, #fun-aboutus, #fun-contactus, #fun-profile {
+    margin-top: 80px;
+  }
+
+  .page-header {
+    padding: 100px 0px;
+  }
+
+  .background-image-holder.parallax-background {
+    height: 100%;
+    top: 0;
+  }
+
+  .title-image {
+    width: auto;
+    height: 100%;
+  }
+}
+
 .blog-snippet-2 .title {
   width: 100% !important;
 }
