@@ -1,4 +1,13 @@
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  .bg-primary.short-2 .row .col-sm-12 {
+    margin-left: 0 !important;
+  }
+
+  .footer {
+    position: relative !important;
+    bottom: 0 !important;
+  }
+
   .mobile-toggle {
     top: 30px;
   }
