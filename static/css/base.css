@@ -13,6 +13,10 @@
     padding-top: 50%;
   }
 
+  .hero-slider .slides li {
+    height: 80vh !important;
+  }
+
   #fun-about {
     margin-bottom: -155px;
   }
