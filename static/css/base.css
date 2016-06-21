@@ -9,6 +9,10 @@
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   
+  .slides .overlay.flex-active-slide .container.align-vertical {
+    padding-top: 50%;
+  }
+
   #fun-about {
     margin-bottom: -155px;
   }
