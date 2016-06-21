@@ -9,6 +9,15 @@
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   
+  .testimonial-brand {
+    padding: 100px 0px !important;
+  }
+
+  #habla_panel_div {
+    margin-right: -20px;
+    margin-left: 100px;
+  }
+
   .video-responsive {
     text-align: center;
   }
