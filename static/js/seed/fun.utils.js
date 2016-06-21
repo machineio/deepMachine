@@ -36,7 +36,11 @@ fun.utils.validateFormHome = function(type,data){
             swal({title:"Error",text:"The username must have at least 6 characters",type:"error",confirmButtonText:"Cool"});
             return;
         } else {
-            return true;
+            if(fun.utils.emailValidation(data.username)){
+                swal({title:"Error",text:"Please enter your username instead of the email",type:"error",confirmButtonText:"Cool"});
+            } else {
+                return true;
+            }
         }
     }
 };
