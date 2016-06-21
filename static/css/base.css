@@ -4,7 +4,7 @@
   }
 
   .nav-menu {
-    padding-top: 24px;
+    padding-top: 24px !important;
   }
 
   .top-bar {
@@ -12,11 +12,11 @@
   }
 
   #fun-about, #fun-packages, #fun-training, #fun-aboutus, #fun-contactus, #fun-profile {
-    margin-top: 80px;
+    margin-top: 80px !important;
   }
 
   .page-header {
-    padding: 100px 0px;
+    padding: 100px 0px !important;
   }
 
   .background-image-holder.parallax-background {
@@ -84,7 +84,7 @@
 }
 
 .nav-menu {
-    padding-top: 40px !important;
+    padding-top: 40px;
 }
 
 .login-title {
