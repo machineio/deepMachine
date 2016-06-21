@@ -9,6 +9,10 @@
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   
+  .testimonial-area {
+    padding: 0 15px 0px !important;
+  }
+
   .testimonial-brand {
     padding: 100px 0px !important;
   }
