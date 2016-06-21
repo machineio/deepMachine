@@ -15,7 +15,7 @@ var fun = {
     omnibus: _.extend({}, Backbone.Events)
 };
 
-fun.utils.validateForm = function(type,data){
+fun.utils.validateFormHome = function(type,data){
     if(type==='signup'){
         if(!fun.utils.emailValidation(data.email)){
             swal({title:'Error',text:"Please enter a valid email",type:"error",confirmButtonText:"Cool"});
