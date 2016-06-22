@@ -9,6 +9,10 @@
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   
+  #fun-tranning {
+    margin-top: 240px !important;  
+  }
+
   .blog-masonry {
     padding-top: 0;
     padding-bottom: 0;
