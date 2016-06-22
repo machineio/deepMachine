@@ -15,7 +15,7 @@
 
   .blog-masonry {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
   }
 
   .blog-masonry .container {
@@ -114,7 +114,7 @@
 }
 
 .blog-masonry {
-  padding-bottom: 30vh !important;
+  padding-bottom: 30vh;
 }
 
 .title-image {
