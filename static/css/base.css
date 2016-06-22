@@ -7,6 +7,67 @@
   margin-top: 200px;
 }
 
+/* IPAD */
+@media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
+
+  .negative-margin-left {
+    margin-left: 0 !important;
+  }
+
+  .feature-icon-large .pull-left .icon {
+    margin-bottom: 0px !important;
+  }
+
+  .feature-icon-large .pull-right, .feature-icon-large .pull-left {
+    width: 100%;
+    text-align: center;
+  }  
+
+  .video-responsive {
+    width: 100%;
+  }
+
+  .video-responsive iframe {
+    width: 90vw;
+    height: 40vh;
+  }
+
+  .primary-features {
+    padding: 60px !important;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .hero-slider .slides li {
+    padding-top: 21vh;
+  }
+
+  #fun-about {
+    margin-top: 100px !important;
+  }
+
+  .top-bar {
+    margin-top: 0px !important;
+  }
+
+  .top-bar .logo {
+    bottom: 21px;
+  }
+
+  .mobile-toggle {
+    right: 5vw;
+    top: 2.5vh;
+  }
+
+  .icon.icon_menu {
+    font-size: 50px;
+  }
+}
+
+
+/* Iphone and general phones */
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   
   #fun-training, #fun-packages, #fun-aboutus, #fun-contactus  {
@@ -27,7 +88,7 @@
   }
 
   .testimonial-brand {
-    padding: 100px 0px !important;
+    padding: 105px 0px !important;
   }
 
   #habla_panel_div {
