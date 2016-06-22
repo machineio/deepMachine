@@ -144,7 +144,7 @@
   }
 
   .slides .overlay.flex-active-slide .container {
-    padding-top: 50%;
+    padding-top: 15vh;
   }
 
   .hero-slider .slides li {
