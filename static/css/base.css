@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   
-  #fun-training, #fun-packages, #fun-aboutus {
+  #fun-training, #fun-packages, #fun-aboutus, #fun-contactus  {
     margin-top: 240px !important;  
   }
 
@@ -84,7 +84,7 @@
     margin-top: -85px !important;
   }
 
-  #fun-about, #fun-contactus, #fun-profile {
+  #fun-about, #fun-profile {
     margin-top: 80px !important;
   }
 
