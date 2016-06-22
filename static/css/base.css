@@ -10,6 +10,10 @@
 /* IPAD */
 @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
 
+  p.lead {
+    text-align: justify !important;
+  }
+
   .negative-margin-left {
     margin-left: 0 !important;
   }
@@ -28,7 +32,7 @@
   }
 
   .video-responsive iframe {
-    width: 90vw;
+    width: 100%;
     height: 40vh;
   }
 
@@ -69,6 +73,10 @@
 
 /* Iphone and general phones */
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  
+  p.lead {
+    text-align: justify !important;
+  }
   
   #fun-training, #fun-packages, #fun-aboutus, #fun-contactus  {
     margin-top: 240px !important;  
