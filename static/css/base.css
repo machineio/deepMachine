@@ -9,7 +9,7 @@
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   
-  #fun-training {
+  #fun-training, #fun-packages {
     margin-top: 240px !important;  
   }
 
