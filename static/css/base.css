@@ -9,6 +9,15 @@
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   
+  .blog-masonry {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .blog-masonry .container {
+    margin-top: -100px !important;
+  }
+
   .testimonial-area {
     padding: 0 15px 0px !important;
   }
