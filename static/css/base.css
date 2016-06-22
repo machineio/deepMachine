@@ -10,6 +10,15 @@
 /* IPAD */
 @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
 
+  .blog-masonry {
+    padding-bottom: 0 !important;
+  }
+
+  #footer {
+    position: relative;
+    margin-top: -160px;
+  }
+
   p.lead {
     text-align: justify !important;
   }
