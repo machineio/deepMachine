@@ -1,3 +1,7 @@
+.testimonial-area {
+  padding-top: 0 !important;
+}
+
 .login-signup-mobile {
   display: none;
 }
