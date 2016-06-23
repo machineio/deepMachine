@@ -175,8 +175,8 @@ fun.views.about = Backbone.View.extend({
             name = '';
         }
 
-        if(fullname.split(' ')[1] && fullname.split(' ')[2]){
-            lastname = fullname.split(' ')[1].capitalizeFirstLetter() + fullname.split(' ')[2];
+        if(fullname.split(' ')[1]){
+            lastname = fullname.split(' ')[1] + fullname.split(' ')[2];
         } else {
             lastname = '';
         }
