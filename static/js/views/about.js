@@ -169,7 +169,7 @@ fun.views.about = Backbone.View.extend({
         var email = $('#subscribe-email-input').val();
 
         if(fullname.split(' ')[0]){
-            name = $scope.viewdata.fullname.split(' ')[0].capitalizeFirstLetter();
+            name = fullname.split(' ')[0].capitalizeFirstLetter();
         } else {
             name = '';
         }
