@@ -1,3 +1,7 @@
+.login-signup-mobile {
+  display: none;
+}
+
 .testimonial {
   padding-bottom: 0 !important;
 }
@@ -30,6 +34,10 @@
 
 /* IPAD */
 @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
+
+  .login-signup-mobile {
+    display: block;
+  }
 
   .blog-masonry {
     padding-bottom: 0 !important;
@@ -103,6 +111,10 @@
 
 /* Iphone and general phones */
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  
+  .login-signup-mobile {
+    display: block;
+  }
   
   p.lead {
     text-align: justify !important;
