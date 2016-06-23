@@ -35,6 +35,11 @@
 /* IPAD */
 @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
 
+  #about-signup-btn, #about-login-btn {
+    min-width: 40vw;
+    color: #FFFFFF !important;
+  }
+
   .login-signup-mobile {
     display: block;
   }
@@ -114,6 +119,7 @@
   
   #about-signup-btn, #about-login-btn {
     min-width: 40vw;
+    color: #FFFFFF !important;
   }
 
   .login-signup-mobile {
