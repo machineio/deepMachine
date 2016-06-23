@@ -126,6 +126,15 @@
 /* Iphone and general phones */
 @media only screen and (max-width: 767px) and (min-width: 320px) {
 
+  .menu {
+    width: 100%;
+  }
+
+  #loginSignupWrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   #navMenuMobile {
     margin-top: 20px !important;
   }
