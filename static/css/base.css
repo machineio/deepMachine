@@ -1,3 +1,9 @@
+#makeSubscribeButton {
+  min-width: 20vw !important;
+  max-width: 20vw !important;
+  width: 20vw !important;
+}
+
 .testimonial-brand {
   padding: 90px 0px !important;
 }
