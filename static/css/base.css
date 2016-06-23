@@ -35,9 +35,18 @@
 /* IPAD */
 @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
 
+  #about-login-btn {
+    color: #587D38 !important;
+  }
+  
+  #about-signup-btn {
+    color: #FFFFFF !important;
+  }
+
   #about-signup-btn, #about-login-btn {
     min-width: 40vw;
-    color: #FFFFFF !important;
+    padding: 10px 40px !important;
+    text-shadow: none !important;
   }
 
   .login-signup-mobile {
@@ -116,10 +125,19 @@
 
 /* Iphone and general phones */
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+
+  #about-login-btn {
+    color: #587D38 !important;
+  }
   
+  #about-signup-btn {
+    color: #FFFFFF !important;
+  }
+
   #about-signup-btn, #about-login-btn {
     min-width: 40vw;
-    color: #FFFFFF !important;
+    padding: 10px 40px !important;
+    text-shadow: none !important;
   }
 
   .login-signup-mobile {
