@@ -188,6 +188,7 @@ fun.views.about = Backbone.View.extend({
             label: 'deepmachine',
             email: email,
         };
+        console.log('SAVING TASK!!!!',taskModel);
 
         task = new fun.models.Task(taskModel);
         task.save();
