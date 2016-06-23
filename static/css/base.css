@@ -35,6 +35,10 @@
 /* IPAD */
 @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
 
+  .testimonial {
+    padding-bottom: 74px !important;
+  }
+
   .menu {
     width: 100%;
   }
