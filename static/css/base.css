@@ -138,6 +138,7 @@
     min-width: 40vw;
     padding: 10px 40px !important;
     text-shadow: none !important;
+    margin-top: 0 !important;
   }
 
   .login-signup-mobile {
