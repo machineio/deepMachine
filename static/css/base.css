@@ -112,10 +112,14 @@
 /* Iphone and general phones */
 @media only screen and (max-width: 767px) and (min-width: 320px) {
   
+  #about-signup-btn, #about-login-btn {
+    min-width: 40vw;
+  }
+
   .login-signup-mobile {
     display: block;
   }
-  
+
   p.lead {
     text-align: justify !important;
   }
