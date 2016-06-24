@@ -1,3 +1,11 @@
+.blog-masonry-item .link-text {
+  position: relative !important;
+  bottom: 32px;
+  right: 0 !important;
+  margin-top: 20px;
+  float: right;
+}
+
 #makeSubscribeButton {
   min-width: 20vw !important;
   max-width: 20vw !important;
@@ -361,7 +369,7 @@
   padding-top: 54px;
 }*/
 
-#fun-about, #fun-packages, #fun-training, #fun-aboutus, #fun-contactus, #fun-profile {
+#fun-about, #fun-packages, #fun-training, #fun-aboutus, #fun-contactus, #fun-profile, #fun-beginner, #fun-intermediate, #fun-expert, #fun-elite, #fun-binary, #fun-purchase, #fun-redeem, #fun-categorizer, #fun-risk {
   margin-top: 140px;
 }
 
