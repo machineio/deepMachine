@@ -199,9 +199,9 @@ fun.utils.templateStart = function(){
     $('.inner-link').smoothScroll({offset: -96, speed: 800});
 
     // Mobile Toggle
-    $('.mobile-toggle').click(function(){
-        $('nav').toggleClass('open-nav');
-    });
+    // $('.mobile-toggle').click(function(){
+    //     $('nav').toggleClass('open-nav');
+    // });
 
     // Fullscreen nav toggle
     $('.fullscreen-nav-toggle').click(function(){
