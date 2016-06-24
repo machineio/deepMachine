@@ -40,6 +40,7 @@ fun.views.navbar = Backbone.View.extend({
     },
 
     openMenu: function(){
+        console.log('HERE!!!!!!!');
         $('nav').toggleClass('open-nav');
     },
 
