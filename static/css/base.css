@@ -1,10 +1,308 @@
+.blog-masonry-item .link-text {
+  position: relative !important;
+  bottom: 32px;
+  right: 0 !important;
+  margin-top: 20px;
+  float: right;
+}
+
+#makeSubscribeButton {
+  min-width: 20vw !important;
+  max-width: 20vw !important;
+  width: 20vw !important;
+}
+
+.testimonial-brand {
+  padding: 90px 0px !important;
+}
+
+.testimonial-area {
+  padding-top: 0 !important;
+}
+
+.login-signup-mobile {
+  display: none;
+}
+
+.testimonial {
+  padding-bottom: 0 !important;
+}
+
+.video-responsive {
+  width: 100%;
+}
+
+.video-responsive iframe {
+  width: 100%;
+  height: 40vh;
+}
+
+.hero-slider .slides li {
+  padding-top: 19%;
+}
+
+.footer-margin {
+  margin-top: -261px !important;
+}
+
+.blog-masonry .container {
+  margin-top: -50px;
+  margin-bottom: 240px;
+}
+
+.blog-masonry-item .item-inner {
+  margin-top: 200px;
+}
+
+/* Mini Phones */
+@media only screen and (max-device-width: 360px) and (orientation: portrait) {
+  #fun-navbar {
+    margin-top: -165px;
+  }
+}
+
+
+/* IPAD */
+@media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: portrait) {
+
+  .testimonial {
+    padding-bottom: 74px !important;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  #loginSignupWrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #about-login-btn {
+    color: #587D38 !important;
+  }
+  
+  #about-signup-btn {
+    color: #FFFFFF !important;
+  }
+
+  #about-signup-btn, #about-login-btn {
+    min-width: 40vw;
+    padding: 10px 40px !important;
+    text-shadow: none !important;
+  }
+
+  .login-signup-mobile {
+    display: block;
+    margin-bottom: 3vh;
+  }
+
+  .blog-masonry {
+    padding-bottom: 0 !important;
+  }
+
+  #footer {
+    position: relative;
+    margin-top: -160px;
+  }
+
+  p.lead {
+    text-align: justify !important;
+  }
+
+  .negative-margin-left {
+    margin-left: 0 !important;
+  }
+
+  .feature-icon-large .pull-left .icon {
+    margin-bottom: 0px !important;
+  }
+
+  .feature-icon-large .pull-right, .feature-icon-large .pull-left {
+    width: 100%;
+    text-align: center;
+  }  
+
+  .video-responsive {
+    width: 100%;
+  }
+
+  .video-responsive iframe {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .primary-features {
+    padding: 60px !important;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .hero-slider .slides li {
+    padding-top: 21vh !important;
+  }
+
+  #fun-about {
+    margin-top: 100px !important;
+  }
+
+  .top-bar {
+    margin-top: 0px !important;
+  }
+
+  .top-bar .logo {
+    bottom: 21px !important;
+  }
+
+  .mobile-toggle {
+    right: 5vw;
+    top: 2.5vh;
+  }
+
+  .icon.icon_menu {
+    font-size: 50px;
+  }
+}
+
+
+/* Iphone and general phones */
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+
+  #navMenuMobile {
+    margin-top: 20px !important;
+  }
+
+  #about-login-btn {
+    color: #587D38 !important;
+  }
+  
+  #about-signup-btn {
+    color: #FFFFFF !important;
+  }
+
+  #about-signup-btn, #about-login-btn {
+    min-width: 40vw;
+    padding: 10px 40px !important;
+    text-shadow: none !important;
+    margin-top: 0 !important;
+  }
+
+  .login-signup-mobile {
+    display: block;
+  }
+
+  p.lead {
+    text-align: justify !important;
+  }
+
+  #fun-training, #fun-packages, #fun-aboutus, #fun-contactus, #fun-beginner, #fun-intermediate, #fun-expert, #fun-elite, #fun-binary, #fun-purchase, #fun-redeem, #fun-categorizer, #fun-risk {
+    margin-top: 240px !important;  
+  }
+
+  .blog-masonry {
+    padding-top: 0;
+    padding-bottom: 0 !important;
+  }
+
+  .blog-masonry .container {
+    margin-top: -100px !important;
+  }
+
+  .testimonial-area {
+    padding: 0 15px 0px !important;
+  }
+
+  .testimonial-brand {
+    padding: 105px 0px !important;
+  }
+
+  #habla_panel_div {
+    margin-right: -20px;
+    margin-left: 100px;
+  }
+
+  .video-responsive {
+    text-align: center;
+  }
+
+  .video-responsive iframe {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .slides .overlay.flex-active-slide .container {
+    padding-top: 15vh;
+  }
+
+  .hero-slider .slides li {
+    height: 80vh !important;
+  }
+
+  #fun-about {
+    margin-bottom: -80px;
+  }
+
+  .primary-features {
+    padding: 20px !important;
+    text-align: left;
+    padding-top: 8vh !important;
+    padding-bottom: 8vh !important;
+  }
+
+  .bg-primary.short-2 .row .col-sm-12 {
+    margin-left: 0 !important;
+  }
+
+  .footer {
+    position: relative !important;
+    bottom: 0 !important;
+  }
+
+  .mobile-toggle {
+    top: 30px;
+  }
+
+  .nav-menu {
+    padding-top: 24px !important;
+  }
+
+  .top-bar {
+    margin-top: -85px !important;
+  }
+
+  #fun-about, #fun-profile {
+    margin-top: 80px !important;
+  }
+
+  .page-header {
+    padding: 100px 0px !important;
+  }
+
+  .background-image-holder.parallax-background {
+    height: 100%;
+    top: 0;
+  }
+
+  .title-image {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.blog-snippet-2 .title {
+  width: 100% !important;
+}
+
+
 .photo-form-wrapper form input[type="button"] {
   max-width: none !important;
   color: #FFFFFF !important;
 }
 
 .blog-masonry {
-  padding-bottom: 30vh !important;
+  padding-bottom: 30vh;
 }
 
 .title-image {
@@ -47,7 +345,7 @@
 }
 
 .nav-menu {
-    padding-top: 40px !important;
+    padding-top: 40px;
 }
 
 .login-title {
@@ -71,7 +369,7 @@
   padding-top: 54px;
 }*/
 
-#fun-about, #fun-packages, #fun-training, #fun-aboutus, #fun-contactus, #fun-profile {
+#fun-about, #fun-packages, #fun-training, #fun-aboutus, #fun-contactus, #fun-profile, #fun-beginner, #fun-intermediate, #fun-expert, #fun-elite, #fun-binary, #fun-purchase, #fun-redeem, #fun-categorizer, #fun-risk {
   margin-top: 140px;
 }
 
@@ -148,11 +446,19 @@ strong {
 }
 
 .trade-loss{
-    background-color: #e3a18b;
+    /*background-color: #e3a18b;*/
 }
 
 .trade-win{
-    background-color: #acbf9e;
+    /*background-color: #acbf9e;*/
+}
+
+.desc-loss{
+    color: #AE3333;
+}
+
+.asc-win{
+    color: #587D38;
 }
 
 .btn-warning:active, .btn-warning.active {
@@ -188,8 +494,9 @@ ul.pagination li > a {
 
 .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
   line-height: inherit;
-  border-top: none;
+  /*border-top: none;*/
   font-weight: normal;
+  border-top: 1px solid #CCC !important; 
 }
 
 .btn:active, .btn.active {
@@ -732,7 +1039,7 @@ input.error:-ms-input-placeholder {
 
 .footer {
   position: absolute;
-  bottom: -160px !important;
+  bottom: -160px;
   right:0;
   left:0;
 }

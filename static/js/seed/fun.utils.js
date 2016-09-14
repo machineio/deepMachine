@@ -15,6 +15,41 @@ var fun = {
     omnibus: _.extend({}, Backbone.Events)
 };
 
+fun.utils.validateFormHome = function(type,data){
+    if(type==='signup'){
+        if(!fun.utils.emailValidation(data.email)){
+            swal({title:'Error',text:"Please enter a valid email",type:"error",confirmButtonText:"Cool"});
+            return;
+        } else {
+            if(data.username.length<6){
+                swal({title:"Error",text:"The username must have at least 6 characters",type:"error",confirmButtonText:"Cool"});
+            } else {
+                if(data.password.length<8){
+                    swal({title:"Error",text:"The password must have at least 8 characters",type:"error",confirmButtonText:"Cool"});
+                } else {
+                    return true;
+                }
+            }
+        }
+    } else {
+        if(data.username.length<6){
+            swal({title:"Error",text:"The username must have at least 6 characters",type:"error",confirmButtonText:"Cool"});
+            return;
+        } else {
+            if(fun.utils.emailValidation(data.username)){
+                swal({title:"Error",text:"Please enter your username instead of the email",type:"error",confirmButtonText:"Cool"});
+            } else {
+                return true;
+            }
+        }
+    }
+};
+
+fun.utils.emailValidation = function(email){
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+};
+
 fun.utils.renderBlogTrainning = function(){
     console.log('RENDER BLOG TRAINING');
     // Blog Masonry
@@ -164,9 +199,9 @@ fun.utils.templateStart = function(){
     $('.inner-link').smoothScroll({offset: -96, speed: 800});
 
     // Mobile Toggle
-    $('.mobile-toggle').click(function(){
-        $('nav').toggleClass('open-nav');
-    });
+    // $('.mobile-toggle').click(function(){
+    //     $('nav').toggleClass('open-nav');
+    // });
 
     // Fullscreen nav toggle
     $('.fullscreen-nav-toggle').click(function(){
@@ -802,6 +837,7 @@ fun.utils.login = function(account, password, callbacks) {
             var words  = CryptoJS.enc.Latin1.parse(auth);
             var base64 = CryptoJS.enc.Base64.stringify(words);
             xhr.setRequestHeader("Authorization", "Basic " + base64);
+            xhr.setRequestHeader("Access-Control-Allow-Origin","*");
         },
         success: function (data, textStatus, jqXHR){
 

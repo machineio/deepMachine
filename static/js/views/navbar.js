@@ -4,7 +4,8 @@ fun.views.navbar = Backbone.View.extend({
         'click #details-report-btn': 'detailsReport',
         'click input[name="current_account"]': 'setAccountContext',
         'click #current_account_0': 'goProfile',
-        'click #search': 'toggleMenu'
+        'click #search': 'toggleMenu',
+        'click .mobile-toggle': 'openMenu',
 	},
 
     initialize: function(options) {
@@ -36,6 +37,10 @@ fun.views.navbar = Backbone.View.extend({
             console.log('Out of the dungeon');
             this.renderLanding();
         }
+    },
+
+    openMenu: function(){
+        $('nav').toggleClass('open-nav');
     },
 
     renderContext: function(){

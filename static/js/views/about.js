@@ -6,7 +6,7 @@ fun.views.about = Backbone.View.extend({
     events : {
         'click #about-signup-btn': 'signup',
         'click #about-signin-btn': 'signin',
-        'click #subscribe-btn' : 'subscribe'
+        'click #makeSubscribeButton' : 'makeSubscription'
     },
     
     /*
@@ -161,6 +161,42 @@ fun.views.about = Backbone.View.extend({
         }
     },
 
+    makeSubscription: function(event){
+        'use strict';
+        event.preventDefault();
+        var name,lastname,title,description,label,taskModel,task;
+        var fullname = $('#subscribe-name-input').val();
+        var email = $('#subscribe-email-input').val();
+
+        if(fullname.split(' ')[0]){
+            console.log('IN HERE!!!!',fullname.split(' '),fullname.split(' ')[0]);
+            name = fullname.split(' ')[0]
+        } else {
+            name = '';
+        }
+
+        if(fullname.split(' ')[1]){
+            lastname = fullname.split(' ')[1] + fullname.split(' ')[2];
+        } else {
+            lastname = '';
+        }
+
+        taskModel = {
+            first_name: name,
+            last_name: lastname,
+            title: 'Subscription',
+            description: fullname + ' - ' + email,
+            label: 'deepmachine',
+            email: email,
+        };
+        console.log('SAVING TASK!!!!',taskModel);
+
+        task = new fun.models.Task(taskModel);
+        task.save();
+
+        swal('Thank you!','Please check your email for more info','success');
+
+    },
 
     subscribe: function(event){
         'use strict';
