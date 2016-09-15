@@ -439,11 +439,11 @@ nav hr {
 .top-bar .logo {
   max-width: 130px;
   position: relative;
-  bottom: 31px;
+  bottom: 21px;
 }
 .logo.logo-wide {
   max-width: 140px;
-  bottom: 25px;
+  bottom: 12px;
   margin-bottom: -6px;
 }
 .logo.logo-square {
@@ -2847,6 +2847,7 @@ footer.short-2 .contact-action:hover {
   }
   .top-bar .logo {
     bottom: 0px;
+    top:-20px;
   }
   .top-bar .logo.logo-wide {
     bottom: 3px;
