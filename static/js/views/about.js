@@ -34,6 +34,7 @@ fun.views.about = Backbone.View.extend({
             fun.utils.startSlider();
         }
         this.$el.removeClass("hide").addClass("show");
+        fun.utils.renderBlogTrainning();
     },
 
     signin: function(event){
