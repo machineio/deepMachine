@@ -46,12 +46,12 @@
 }
 
 .blog-masonry .container {
-  margin-top: -50px;
-  margin-bottom: 240px;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .blog-masonry-item .item-inner {
-  margin-top: 200px;
+  margin-top: 0;
 }
 
 /* Mini Phones */
