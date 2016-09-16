@@ -47,11 +47,11 @@
 
 .blog-masonry .container {
   margin-top: 50px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .blog-masonry-item .item-inner {
-  /*margin-top: 200px;*/
+  margin-top: 10px;
 }
 
 /* Mini Phones */
