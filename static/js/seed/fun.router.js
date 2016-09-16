@@ -271,7 +271,7 @@ fun.Router = Backbone.Router.extend({
         }
         // see if user is inside the dungeon or out of the dungeon.
         if(fun.utils.loggedIn()){
-            fun.utils.redirect(fun.conf.hash.profile);
+            fun.utils.redirect(fun.conf.hash.about);
         } else {
             fun.utils.redirect(fun.conf.hash.landing);
         }
@@ -300,6 +300,12 @@ fun.Router = Backbone.Router.extend({
     about: function(){
         'use strict';
         fun.utils.hideAll();
+
+        if(fun.utils.loggedIn()){
+            $('#logoutWrapper').removeClass('hide').addClass('show');
+            $('#loginSignupWrapper').removeClass('show').addClass('hide');
+        }
+
         fun.instances.navbar.render();
         fun.instances.about.render();
         fun.instances.footer.render();
@@ -863,7 +869,7 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var signup = translate('signUp');
         if(fun.utils.loggedIn()){
-            fun.utils.redirect(fun.conf.hash.profile);
+            fun.utils.redirect(fun.conf.hash.about);
         } else {
             fun.utils.hideAll();
             fun.instances.navbar.render();
@@ -877,7 +883,7 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var login = translate('login');
         if(fun.utils.loggedIn()){
-            fun.utils.redirect(fun.conf.hash.profile);
+            fun.utils.redirect(fun.conf.hash.about);
         } else {
             fun.utils.hideAll();
             fun.instances.navbar.render();
