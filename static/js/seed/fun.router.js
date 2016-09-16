@@ -304,6 +304,8 @@ fun.Router = Backbone.Router.extend({
         if(fun.utils.loggedIn()){
             $('#logoutWrapper').removeClass('hide').addClass('show');
             $('#loginSignupWrapper').removeClass('show').addClass('hide');
+        } else {
+            console.log('Que MAE');
         }
 
         fun.instances.navbar.render();
