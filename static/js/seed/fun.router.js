@@ -289,10 +289,10 @@ fun.Router = Backbone.Router.extend({
 
     terms: function(){
         'use strict';
-        var terms = translate('terms');
+        //var terms = translate('terms');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(terms);
+        //fun.instances.subheader.render(terms);
         fun.instances.terms.render();
         fun.instances.footer.render();
     },
@@ -596,10 +596,10 @@ fun.Router = Backbone.Router.extend({
 
     privacy: function(){
         'use strict';
-        var privacy = translate('privacy');
+        //var privacy = translate('privacy');
         fun.utils.hideAll();
         fun.instances.navbar.render();
-        fun.instances.subheader.render(privacy);
+        //fun.instances.subheader.render(privacy);
         fun.instances.privacy.render();
         fun.instances.footer.render();
     },
