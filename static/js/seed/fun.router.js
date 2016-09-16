@@ -300,12 +300,6 @@ fun.Router = Backbone.Router.extend({
     about: function(){
         'use strict';
         fun.utils.hideAll();
-
-        if(fun.utils.loggedIn()){
-            $('#logoutWrapper').removeClass('hide').addClass('show');
-            $('#loginSignupWrapper').removeClass('show').addClass('hide');
-        }
-
         fun.instances.navbar.render();
         fun.instances.about.render();
         fun.instances.footer.render();
