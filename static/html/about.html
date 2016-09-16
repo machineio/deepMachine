@@ -1,4 +1,4 @@
-<div class="main-container">
+<div class="main-container" style="margin-top: 197px;">
     <section class="hero-slider">
         <ul class="slides">
             <li class="overlay">
@@ -53,12 +53,17 @@
     <section class="blog-masonry bg-muted" style="padding: 0px;">
         <div class="container" >
             <div class="row">
+                <div class="col-md-12 text-center" style="margin-bottom: -92px;">
+                    <h1 style="margin-top: 20px;margin-bottom: 0;">Select your problem</h1>
+                </div>
+            </div>
+            <div class="row">
                 <div class="blog-masonry-container" >
                 <div class="post-meta"><h2>Unlimited Remote Support​</h2>
                      </div>
                     <div class="col-md-4 col-sm-6 blog-masonry-item branding">
                         <div class="item-inner">
-                            <a href="#">
+                            <a data-toggle="modal" data-target="#packagesModal">
                                 <img alt="Blog Preview" src="static/img/3.jpg">
                             </a>
                             <div class="post-title">
@@ -66,13 +71,13 @@
                                 
                                 <div class="post-meta">
                                 </div>
-                                <a href="#" class="link-text">Join Me</a>
+                                <a data-toggle="modal" data-target="#packagesModal" class="link-text">Join Me</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 blog-masonry-item branding">
                         <div class="item-inner">
-                            <a href="#">
+                            <a data-toggle="modal" data-target="#packagesModal">
                                 <img alt="Blog Preview" src="static/img/1.jpg">
                             </a>
                             <div class="post-title">
@@ -80,15 +85,14 @@
                                 
                                 <div class="post-meta">
                                 </div>
-                                <a href="#" class="link-text">Join Me</a>
+                                <a data-toggle="modal" data-target="#packagesModal" class="link-text">Join Me</a>
                             </div>
                         </div>
                     </div>
 
-                    
                     <div class="col-md-4 col-sm-6 blog-masonry-item branding">
                         <div class="item-inner">
-                            <a href="#">
+                            <a data-toggle="modal" data-target="#packagesModal">
                                 <img alt="Blog Preview" src="static/img/5.jpg">
                             </a>
                             <div class="post-title">
@@ -96,14 +100,14 @@
                                 
                                 <div class="post-meta">
                                 </div>
-                                <a href="#" class="link-text">Join Me</a>
+                                <a data-toggle="modal" data-target="#packagesModal" class="link-text">Join Me</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 col-sm-6 blog-masonry-item branding">
                         <div class="item-inner">
-                            <a href="#">
+                            <a data-toggle="modal" data-target="#packagesModal">
                                 <img alt="Blog Preview" src="static/img/4.jpg">
                             </a>
                             <div class="post-title">
@@ -111,15 +115,14 @@
                                
                                 <div class="post-meta">
                                 </div>
-                                <a href="#" class="link-text">Join Me</a>
+                                <a data-toggle="modal" data-target="#packagesModal" class="link-text">Join Me</a>
                             </div>
                         </div>
                     </div>
 
-
                     <div class="col-md-4 col-sm-6 blog-masonry-item branding">
                         <div class="item-inner">
-                            <a href="#">
+                            <a data-toggle="modal" data-target="#packagesModal">
                                 <img alt="Blog Preview" src="static/img/intermediate-enhancement.jpg">
                             </a>
                             <div class="post-title">
@@ -127,14 +130,14 @@
                                 
                                 <div class="post-meta">
                                 </div>
-                                <a href="#" class="link-text">Join Me</a>
+                                <a data-toggle="modal" data-target="#packagesModal" class="link-text">Join Me</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4 col-sm-6 blog-masonry-item branding">
                         <div class="item-inner">
-                            <a href="#">
+                            <a data-toggle="modal" data-target="#packagesModal">
                                 <img alt="Blog Preview" src="static/img/2.jpg">
                             </a>
                             <div class="post-title">
@@ -142,12 +145,10 @@
                                 
                                 <div class="post-meta">
                                 </div>
-                                <a href="#" class="link-text">Jooin Me</a>
+                                <a data-toggle="modal" data-target="#packagesModal" class="link-text">Join Me</a>
                             </div>
                         </div>
                     </div>
-
-                    
                 </div>
             </div>
         </div>
@@ -195,6 +196,33 @@
             </div>
         </div>
     </section>
-
-  
+</div>
+<div class="modal fade" id="packagesModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title text-center" style="color:#315FAC;" id="myModalLabel">Pricing</h3>
+            </div>
+            <div class="modal-body" style="padding:30px;">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h3>30 days</h3>
+                        <h5>$44.95</h5>
+                        <button class="btn btn-primary">ORDER NOW!</button>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3>3 months</h3>
+                        <h5>$119.97</h5>
+                        <button class="btn btn-default">ORDER NOW!</button>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h3>Annual</h3>
+                        <h5>$399.99</h5>
+                        <button class="btn btn-primary">ORDER NOW!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
