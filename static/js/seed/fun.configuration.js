@@ -339,6 +339,7 @@ fun.conf.templates = {
  Where the fuck are we using this shit up?
 */
 fun.conf.hash = {
+    about: '#about',
     home: '#home',
     landing: '#landing',
     features: '#features',
