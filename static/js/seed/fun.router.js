@@ -271,7 +271,7 @@ fun.Router = Backbone.Router.extend({
         }
         // see if user is inside the dungeon or out of the dungeon.
         if(fun.utils.loggedIn()){
-            fun.utils.redirect(fun.conf.hash.profile);
+            fun.utils.redirect(fun.conf.hash.landing);
         } else {
             fun.utils.redirect(fun.conf.hash.landing);
         }
