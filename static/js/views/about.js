@@ -33,6 +33,18 @@ fun.views.about = Backbone.View.extend({
             fun.utils.templateStart();
             fun.utils.startSlider();
         }
+
+
+        if(fun.utils.loggedIn()){
+            console.log('vamos to~o vamos');
+            $('#logoutWrapper').removeClass('hide').addClass('show');
+            $('#loginSignupWrapper').removeClass('show').addClass('hide');
+        } else {
+            console.log('Que MAE');
+        }
+
+
+
         this.$el.removeClass("hide").addClass("show");
         fun.utils.renderBlogTrainning();
     },
