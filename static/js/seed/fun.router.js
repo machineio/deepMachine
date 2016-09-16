@@ -877,11 +877,10 @@ fun.Router = Backbone.Router.extend({
         'use strict';
         var login = translate('login');
         if(fun.utils.loggedIn()){
-            fun.utils.redirect(fun.conf.hash.profile);
+            fun.utils.redirect(fun.conf.hash.landing);
         } else {
             fun.utils.hideAll();
             fun.instances.navbar.render();
-            // fun.instances.subheader.render(login);
             fun.instances.login.render();
         }
 
