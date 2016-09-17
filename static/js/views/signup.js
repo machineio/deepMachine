@@ -6,6 +6,7 @@ fun.views.signup = Backbone.View.extend({
     events : {
         'click #login-btn': 'login',
         'click #signup-btn': 'signup'
+        'click #about-btn': 'about'
     },
     
     /*
