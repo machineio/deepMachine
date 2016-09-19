@@ -47,6 +47,8 @@ fun.views.about = Backbone.View.extend({
             $('#logoutWrapper').removeClass('hide').addClass('show');
             $('#loginSignupWrapper').removeClass('show').addClass('hide');
 
+            $('#my-account-btn').html(localStorage.getItem("username"));
+
             var order = sessionStorage.getItem("order");
 
             if(order === 'one-month'){
