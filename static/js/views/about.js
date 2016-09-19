@@ -49,9 +49,22 @@ fun.views.about = Backbone.View.extend({
 
             var order = sessionStorage.getItem("order");
 
-            if(order){
+            if(order === 'one-month'){
                 $('#processOrder').modal('show');
-            } else {
+                $('#current-order').html('$44.95');
+            } 
+
+            else if(order === 'three-months'){
+                $('#processOrder').modal('show');
+                $('#current-order').html('$119.97');
+            }
+
+            else if(order === 'one-year'){
+                $('#processOrder').modal('show');
+                $('#current-order').html('$399.99');
+            }
+
+            else {
                 console.log('no orders');
             }
 
@@ -196,7 +209,7 @@ fun.views.about = Backbone.View.extend({
 
     signupThreeMonths: function(event){
         console.log('test three month');
-        sessionStorage.setItem("order", 'three-month');
+        sessionStorage.setItem("order", 'three-months');
         $('#packagesModal').modal('hide');
         fun.utils.redirect('#signup');
     },
