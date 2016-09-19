@@ -84,7 +84,7 @@ fun.conf.urls = {
     billings: '/billings/',
 
 
-    outbound: '/outbound/'
+    outbound: '/outbound/',
 
 
     currency: fun.utils.format('/currencies/%s', fun.conf.uuidCurrency),
