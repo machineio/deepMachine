@@ -43,7 +43,6 @@ fun.views.about = Backbone.View.extend({
             $('#loginSignupWrapper').removeClass('show').addClass('hide');
 
 
-
             var order = sessionStorage.getItem("order");
 
             if(order){
@@ -52,15 +51,9 @@ fun.views.about = Backbone.View.extend({
                 console.log('no orders');
             }
 
-            
-
-
-
         } else {
             console.log("we're outside the techsupport site, please login or select your order");
         }
-
-
 
         this.$el.removeClass("hide").addClass("show");
         fun.utils.renderBlogTrainning();
@@ -196,8 +189,6 @@ fun.views.about = Backbone.View.extend({
         sessionStorage.setItem("order", 'one-month');
         $('#packagesModal').modal('hide');
         fun.utils.redirect('#signup');
-        
-
     },
 
     signupThreeMonths: function(event){
@@ -206,14 +197,13 @@ fun.views.about = Backbone.View.extend({
         $('#packagesModal').modal('hide');
         fun.utils.redirect('#signup');
     },
-    
+
     signupOneYear: function(event){
         console.log('test one year');
         sessionStorage.setItem("order", 'one-year');
         $('#packagesModal').modal('hide');
         fun.utils.redirect('#signup');
     },
-    
 
     makeSubscription: function(event){
         'use strict';
