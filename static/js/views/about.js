@@ -323,7 +323,16 @@ fun.views.about = Backbone.View.extend({
     callNow: function(event){
         console.log('call now');
         var phone_number = $('#phone-number').val();
-        console.log(phone_number);
+
+        var struct = {
+            'account': localStorage.getItem('username'),
+            'extension': 7000,
+            'caller_id': 18883847935,
+            'phone_number': phone_number
+        };
+
+        call = new fun.models.Outbound(struct);
+        call.save();
     }
 
 });

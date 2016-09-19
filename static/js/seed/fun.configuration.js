@@ -31,6 +31,8 @@ fun.conf = {
     uuidCompany: 'company_uuid',
     uuidDirectory: 'directory_uuid',
     uuidPricing: 'pricing_uuid',
+
+    uuidOutbound: 'outbound_uuid',
     
     uuidAccount: 'account_uuid',
     uuidResource: 'resource_uuid',
@@ -80,6 +82,9 @@ fun.conf.urls = {
     records: '/records/',
     billing: fun.utils.format('/billings/%s', fun.conf.uuidBilling),
     billings: '/billings/',
+
+
+    outbound: '/outbound/'
 
 
     currency: fun.utils.format('/currencies/%s', fun.conf.uuidCurrency),
