@@ -1034,6 +1034,7 @@ fun.Router = Backbone.Router.extend({
 
     logout: function(){
         'use strict';
+        sesionStorage.removeItem('order');
         fun.utils.hideAll();
         fun.utils.logout({
             success: function() {
