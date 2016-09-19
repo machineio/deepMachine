@@ -9,9 +9,15 @@ fun.views.about = Backbone.View.extend({
         'click #one-year-signup': 'signupOneYear',
         'click #about-signup-btn': 'signup',
         'click #about-signin-btn': 'signin',
-        'click #makeSubscribeButton' : 'makeSubscription'
+        'click #makeSubscribeButton' : 'makeSubscription',
+        'click #selectDiners': 'selectDiners',
+        'click #selectMC': 'selectMasterCard',
+        'click #selectAmerican': 'selectAmericanExpress',
+        'click #selectVisa': 'selectVisa',
+        'click #selectDiscover': 'selectDiscover'
     },
     
+
     /*
     * Class constructor
     */
@@ -254,6 +260,26 @@ fun.views.about = Backbone.View.extend({
                 console.log('subscribe error');
             }
         });
-    }
+    },
+
+    selectDiscover: function(event){
+        console.log('test');
+    },
+
+    selectVisa: function(event){
+        console.log('test');
+    },
+
+    selectDiners: function(event){
+        console.log('test');
+    },
+
+    selectAmericanExpress: function(event){
+        console.log('test');
+    },
+
+    selectMasterCard: function(event){
+        console.log('test');
+    },
 
 });
