@@ -5,7 +5,7 @@ fun.views.about = Backbone.View.extend({
     */
     events : {
         'click #one-month-signup': 'signupOneMonths',
-        'click #three-months-signup': 'signupThreeMonths'
+        'click #three-months-signup': 'signupThreeMonths',
         'click #one-year-singup': 'signupOneYear',
         'click #about-signup-btn': 'signup',
         'click #about-signin-btn': 'signin',
