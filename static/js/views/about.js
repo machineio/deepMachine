@@ -209,7 +209,7 @@ fun.views.about = Backbone.View.extend({
 
     signupThreeMonths: function(event){
         console.log('test three month');
-        sessionStorage.setItem("order", 'three-month');
+        sessionStorage.setItem("order", 'three-months');
         $('#packagesModal').modal('hide');
         fun.utils.redirect('#signup');
     },
