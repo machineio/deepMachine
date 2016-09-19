@@ -322,6 +322,8 @@ fun.views.about = Backbone.View.extend({
     
     callNow: function(event){
         console.log('call now');
+        var phone_number = $('#phone-number').val();
+        console.log(phone_number);
     }
 
 });
