@@ -51,17 +51,17 @@ fun.views.about = Backbone.View.extend({
 
             if(order === 'one-month'){
                 $('#processOrder').modal('show');
-                $('#current-order').html('$44.95')
+                $('#current-order').html('$44.95');
             } 
 
             else if(order === 'three-months'){
                 $('#processOrder').modal('show');
-                $('#current-order').html('$119.97')
+                $('#current-order').html('$119.97');
             }
 
             else if(order === 'one-year'){
                 $('#processOrder').modal('show');
-                $('#current-order').html('$399.99')
+                $('#current-order').html('$399.99');
             }
 
             else {
