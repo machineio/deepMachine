@@ -259,8 +259,8 @@ fun.views.about = Backbone.View.extend({
         });
     },
 
-    selectDiscover: function(event){
-        console.log('Discover');
+    selectDiners: function(event){
+        console.log('Diners Club');
         $('#cc-1').removeClass('hide').addClass('show');
         $('#cc-2').removeClass('show').addClass('hide');
         $('#cc-3').removeClass('show').addClass('hide');
@@ -268,8 +268,8 @@ fun.views.about = Backbone.View.extend({
         $('#cc-5').removeClass('show').addClass('hide');
     },
 
-    selectVisa: function(event){
-        console.log('Visa');
+    selectDiscover: function(event){
+        console.log('Discover');
         $('#cc-1').removeClass('show').addClass('hide');
         $('#cc-2').removeClass('hide').addClass('show');
         $('#cc-3').removeClass('show').addClass('hide');
@@ -277,12 +277,21 @@ fun.views.about = Backbone.View.extend({
         $('#cc-5').removeClass('show').addClass('hide');
     },
 
-    selectDiners: function(event){
-        console.log('Diners Club');
+    selectMasterCard: function(event){
+        console.log('Master Card');
         $('#cc-1').removeClass('show').addClass('hide');
         $('#cc-2').removeClass('show').addClass('hide');
         $('#cc-3').removeClass('hide').addClass('show');
         $('#cc-4').removeClass('show').addClass('hide');
+        $('#cc-5').removeClass('show').addClass('hide');
+    },
+
+    selectVisa: function(event){
+        console.log('Visa');
+        $('#cc-1').removeClass('show').addClass('hide');
+        $('#cc-2').removeClass('show').addClass('hide');
+        $('#cc-3').removeClass('show').addClass('hide');
+        $('#cc-4').removeClass('hide').addClass('show');
         $('#cc-5').removeClass('show').addClass('hide');
     },
 
@@ -291,17 +300,8 @@ fun.views.about = Backbone.View.extend({
         $('#cc-1').removeClass('show').addClass('hide');
         $('#cc-2').removeClass('show').addClass('hide');
         $('#cc-3').removeClass('show').addClass('hide');
-        $('#cc-4').removeClass('hide').addClass('show');
-        $('#cc-5').removeClass('show').addClass('hide');
-    },
-
-    selectMasterCard: function(event){
-        console.log('Master Card');
-        $('#cc-1').removeClass('show').addClass('hide');
-        $('#cc-2').removeClass('show').addClass('hide');
-        $('#cc-3').removeClass('show').addClass('hide');
         $('#cc-4').removeClass('show').addClass('hide');
         $('#cc-5').removeClass('hide').addClass('show');
     },
-
+    
 });
