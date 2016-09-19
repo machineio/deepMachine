@@ -2,6 +2,16 @@
  * Default internationalization object
  */
 fun.strings = {
+    enterMerchant: "Enter merchant",
+    enterAddress: "Your address",
+    enterPhone: "Phone number",
+    enterEmail: "Email address",
+    enterFunds: "Selected package",
+    enterCardNumber: "Enter card number",
+    expiryMonth: "Expiry Month",
+    expiryYear: "Expiry Year",
+    nameOnTheCard: "Name on the card",
+    agreeTermsAndPrivacy: "Agree Terms and Privacy policy",
     ioFun: "Deep Machine",
     login: "Login",
     active: "Active",
