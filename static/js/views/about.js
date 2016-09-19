@@ -39,11 +39,25 @@ fun.views.about = Backbone.View.extend({
 
 
         if(fun.utils.loggedIn()){
-            console.log('vamos to~o vamos');
             $('#logoutWrapper').removeClass('hide').addClass('show');
             $('#loginSignupWrapper').removeClass('show').addClass('hide');
+
+
+
+            var order = sessionStorage.getItem("order");
+
+            if(order){
+                $('#processOrder').modal('show');
+            } else {
+                console.log('no orders');
+            }
+
+            
+
+
+
         } else {
-            console.log('Que MAE');
+            console.log("we're outside the techsupport site, please login or select your order");
         }
 
 
