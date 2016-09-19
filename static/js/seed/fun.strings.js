@@ -11,7 +11,7 @@ fun.strings = {
     expiryMonth: "Expiry Month",
     expiryYear: "Expiry Year",
     nameOnTheCard: "Name on the card",
-    agreeTermsAndPrivacy: "Agree Terms and Privacy policy",
+    agreeTermsAndPrivacy: "I agree with the terms of service and privacy policy.",
     ioFun: "Deep Machine",
     login: "Login",
     active: "Active",
