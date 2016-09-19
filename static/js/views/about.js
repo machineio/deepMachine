@@ -43,11 +43,9 @@ fun.views.about = Backbone.View.extend({
             fun.utils.startSlider();
         }
 
-
         if(fun.utils.loggedIn()){
             $('#logoutWrapper').removeClass('hide').addClass('show');
             $('#loginSignupWrapper').removeClass('show').addClass('hide');
-
 
             var order = sessionStorage.getItem("order");
 
@@ -60,7 +58,6 @@ fun.views.about = Backbone.View.extend({
         } else {
             console.log("we're outside the techsupport site, please login or select your order");
         }
-
         this.$el.removeClass("hide").addClass("show");
         fun.utils.renderBlogTrainning();
     },
@@ -263,23 +260,23 @@ fun.views.about = Backbone.View.extend({
     },
 
     selectDiscover: function(event){
-        console.log('test');
+        console.log('Discover');
     },
 
     selectVisa: function(event){
-        console.log('test');
+        console.log('Visa');
     },
 
     selectDiners: function(event){
-        console.log('test');
+        console.log('Diners Club');
     },
 
     selectAmericanExpress: function(event){
-        console.log('test');
+        console.log('American Express');
     },
 
     selectMasterCard: function(event){
-        console.log('test');
+        console.log('Master Card');
     },
 
 });
