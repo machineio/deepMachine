@@ -4,6 +4,7 @@ fun.views.about = Backbone.View.extend({
     * Bind the event functions to the different HTML elements
     */
     events : {
+        'click #call-now': 'callNow',
         'click #one-month-signup': 'signupOneMonths',
         'click #three-months-signup': 'signupThreeMonths',
         'click #one-year-signup': 'signupOneYear',
@@ -319,4 +320,8 @@ fun.views.about = Backbone.View.extend({
         $('#cc-5').removeClass('hide').addClass('show');
     },
     
+    callNow: function(event){
+        console.log('call now');
+    }
+
 });
