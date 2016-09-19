@@ -4,6 +4,9 @@ fun.views.about = Backbone.View.extend({
     * Bind the event functions to the different HTML elements
     */
     events : {
+        'click #one-month-signup': 'signupOneMonths',
+        'click #three-months-signup': 'signupThreeMonths'
+        'click #one-year-singup': 'signupOneYear',
         'click #about-signup-btn': 'signup',
         'click #about-signin-btn': 'signin',
         'click #makeSubscribeButton' : 'makeSubscription'
@@ -173,6 +176,19 @@ fun.views.about = Backbone.View.extend({
             );
         }
     },
+
+    signupOneMonths: function(event){
+        console.log('test one month');
+    },
+
+    signupThreeMonths: function(event){
+        console.log('test three month');
+    },
+    
+    signupOneYear: function(event){
+        console.log('test one year');
+    },
+    
 
     makeSubscription: function(event){
         'use strict';
