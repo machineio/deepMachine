@@ -178,7 +178,12 @@ fun.views.about = Backbone.View.extend({
     },
 
     signupOneMonths: function(event){
-        console.log('test one month');
+        console.log('testing one month with chuma');
+        sessionStorage.setItem("order", 'one-month');
+        $('#packagesModal').modal('hide');
+        fun.utils.redirect('#signup');
+        
+
     },
 
     signupThreeMonths: function(event){
