@@ -114,7 +114,7 @@ fun.Router = Backbone.Router.extend({
         // fun.instances.packages = new fun.views.packages({
         //     el:"#fun-packages"
         // });
-        
+
 
         // Training
         fun.instances.training = new fun.views.training({
@@ -135,6 +135,7 @@ fun.Router = Backbone.Router.extend({
         // fun.instances.profile = new fun.views.profile({
         //     el:"#fun-profile"
         // });
+        
         // members
         // fun.instances.members = new fun.views.members({
         //     el:"#fun-members"
