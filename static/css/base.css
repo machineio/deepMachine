@@ -1,8 +1,9 @@
 .call-section .row {
-  padding: 100px;
+  padding: 0 100px;
 }
 
 .call-section .row .col-md-12 .input-group input {
+  background-color: transparent !important;
   margin-top: 4px;
   width: 98%;
   border: 2px solid #315FAC !important;
