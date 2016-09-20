@@ -135,7 +135,7 @@ fun.Router = Backbone.Router.extend({
         // fun.instances.profile = new fun.views.profile({
         //     el:"#fun-profile"
         // });
-        
+
         // members
         // fun.instances.members = new fun.views.members({
         //     el:"#fun-members"
@@ -208,6 +208,7 @@ fun.Router = Backbone.Router.extend({
         fun.instances.purchase = new fun.views.purchase({
             el:"#fun-purchase"
         });
+        
         // beginner
         // fun.instances.beginner = new fun.views.beginner({
         //     el:"#fun-beginner"
