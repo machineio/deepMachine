@@ -1,5 +1,5 @@
 .call-section .call-section-title {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .call-section .call-section-body {
   padding: 0 100px;
@@ -129,7 +129,8 @@
   }
 
   .negative-margin-left {
-    margin-left: 0 !important;
+    text-align: center;
+    margin-left: 40px;
   }
 
   .feature-icon-large .pull-left .icon {
@@ -391,9 +392,7 @@
   margin-top: 140px;
 }
 
-.negative-margin-left {
-  margin-left: -100px;
-}
+
 
 .white {
   color: #FFFFFF !important;
