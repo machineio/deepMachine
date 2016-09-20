@@ -208,6 +208,7 @@ fun.Router = Backbone.Router.extend({
         fun.instances.purchase = new fun.views.purchase({
             el:"#fun-purchase"
         });
+
         
         // beginner
         // fun.instances.beginner = new fun.views.beginner({
