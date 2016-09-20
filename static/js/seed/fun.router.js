@@ -86,9 +86,9 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-privacy"
         });
         // security
-        fun.instances.security = new fun.views.security({
-            el:"#fun-security"
-        });
+        // fun.instances.security = new fun.views.security({
+        //     el:"#fun-security"
+        // });
         // status
         fun.instances.status = new fun.views.status({
             el:"#fun-status"
@@ -106,14 +106,14 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-dashboard"
         });
         // orgs
-        fun.instances.orgs = new fun.views.orgs({
-            el:"#fun-orgs"
-        });
+        // fun.instances.orgs = new fun.views.orgs({
+        //     el:"#fun-orgs"
+        // });
 
         // Packages
-        fun.instances.packages = new fun.views.packages({
-            el:"#fun-packages"
-        });
+        // fun.instances.packages = new fun.views.packages({
+        //     el:"#fun-packages"
+        // });
 
         // Training
         fun.instances.training = new fun.views.training({
@@ -135,65 +135,65 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-profile"
         });
         // members
-        fun.instances.members = new fun.views.members({
-            el:"#fun-members"
-        });
+        // fun.instances.members = new fun.views.members({
+        //     el:"#fun-members"
+        // });
         // teams
-        fun.instances.teams = new fun.views.teams({
-            el:"#fun-teams"
-        });
+        // fun.instances.teams = new fun.views.teams({
+        //     el:"#fun-teams"
+        // });
         // tasks
-        fun.instances.tasks = new fun.views.tasks({
-            el:"#fun-tasks"
-        });
+        // fun.instances.tasks = new fun.views.tasks({
+        //     el:"#fun-tasks"
+        // });
         // contact
-        fun.instances.contact = new fun.views.contact({
-            el:"#fun-contact"
-        });
+        // fun.instances.contact = new fun.views.contact({
+        //     el:"#fun-contact"
+        // });
         // contacts
-        fun.instances.contacts = new fun.views.contacts({
-            el:"#fun-contacts"
-        });
+        // fun.instances.contacts = new fun.views.contacts({
+        //     el:"#fun-contacts"
+        // });
         // assets
-        fun.instances.assets = new fun.views.assets({
-            el:"#fun-assets"
-        });
+        // fun.instances.assets = new fun.views.assets({
+        //     el:"#fun-assets"
+        // });
         // currencies
-        fun.instances.currencies = new fun.views.currencies({
-            el:"#fun-currencies"
-        });
+        // fun.instances.currencies = new fun.views.currencies({
+        //     el:"#fun-currencies"
+        // });
         // deposit
-        fun.instances.deposit = new fun.views.deposit({
-            el:"#fun-deposit"
-        });
+        // fun.instances.deposit = new fun.views.deposit({
+        //     el:"#fun-deposit"
+        // });
         // stocks
-        fun.instances.stocks = new fun.views.stocks({
-            el:"#fun-stocks"
-        });
+        // fun.instances.stocks = new fun.views.stocks({
+        //     el:"#fun-stocks"
+        // });
         // withdraw
-        fun.instances.withdraw = new fun.views.withdraw({
-            el:"#fun-withdraw"
-        });
+        // fun.instances.withdraw = new fun.views.withdraw({
+        //     el:"#fun-withdraw"
+        // });
         // accounts
-        fun.instances.accounts = new fun.views.accounts({
-            el:"#fun-accounts"
-        });
+        // fun.instances.accounts = new fun.views.accounts({
+        //     el:"#fun-accounts"
+        // });
         // resources
-        fun.instances.resources = new fun.views.resources({
-            el:"#fun-resources"
-        });
+        // fun.instances.resources = new fun.views.resources({
+        //     el:"#fun-resources"
+        // });
         // messages
-        fun.instances.messages = new fun.views.messages({
-            el:"#fun-messages"
-        });
+        // fun.instances.messages = new fun.views.messages({
+        //     el:"#fun-messages"
+        // });
         // about
         fun.instances.about = new fun.views.about({
             el:"#fun-about"
         });
         // binary
-        fun.instances.binary = new fun.views.binary({
-            el:"#fun-binary"
-        });
+        // fun.instances.binary = new fun.views.binary({
+        //     el:"#fun-binary"
+        // });
         // education
         fun.instances.education = new fun.views.education({
             el:"#fun-education"
@@ -207,45 +207,45 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-purchase"
         });
         // beginner
-        fun.instances.beginner = new fun.views.beginner({
-            el:"#fun-beginner"
-        });
+        // fun.instances.beginner = new fun.views.beginner({
+        //     el:"#fun-beginner"
+        // });
         // intermediate
-        fun.instances.intermediate = new fun.views.intermediate({
-            el:"#fun-intermediate"
-        });
+        // fun.instances.intermediate = new fun.views.intermediate({
+        //     el:"#fun-intermediate"
+        // });
         // expert
-        fun.instances.expert = new fun.views.expert({
-            el:"#fun-expert"
-        });
+        // fun.instances.expert = new fun.views.expert({
+        //     el:"#fun-expert"
+        // });
         // elite
-        fun.instances.elite = new fun.views.elite({
-            el:"#fun-elite"
-        });
+        // fun.instances.elite = new fun.views.elite({
+        //     el:"#fun-elite"
+        // });
         // categorizer
-        fun.instances.categorizer = new fun.views.categorizer({
-            el:"#fun-categorizer"
-        });
+        // fun.instances.categorizer = new fun.views.categorizer({
+        //     el:"#fun-categorizer"
+        // });
         // risk
-        fun.instances.risk = new fun.views.risk({
-            el:"#fun-risk"
-        });
-        // trader
-        fun.instances.trader = new fun.views.trader({
-            el:"#fun-trader"
-        });
-        // reports
-        fun.instances.reports = new fun.views.reports({
-            el:"#fun-reports"
-        });
+        // fun.instances.risk = new fun.views.risk({
+        //     el:"#fun-risk"
+        // });
+        // // trader
+        // fun.instances.trader = new fun.views.trader({
+        //     el:"#fun-trader"
+        // });
+        // // reports
+        // fun.instances.reports = new fun.views.reports({
+        //     el:"#fun-reports"
+        // });
         // signup
         fun.instances.signup = new fun.views.signup({
             el:"#fun-signup"
         });
-        // settings
-        fun.instances.settings = new fun.views.settings({
-            el:"#fun-settings"
-        });
+        // // settings
+        // fun.instances.settings = new fun.views.settings({
+        //     el:"#fun-settings"
+        // });
         // extra
         fun.instances.extra = new fun.views.extra({
             el:"#fun-extra"
