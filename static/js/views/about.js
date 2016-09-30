@@ -17,13 +17,17 @@ fun.views.about = Backbone.View.extend({
         'click #selectVisa': 'selectVisa',
         'click #selectDiscover': 'selectDiscover',
         'click .cancel': 'cancelPayment',
+        'clikc #success-continue': 'successContinue',
         'click #diners-pay-btn': 'payDiners',
         'click #discover-pay-btn': 'payDiscover',
         'click #master-pay-btn': 'payMaster',
         'click #visa-pay-btn': 'payVisa',
         'click #amex-pay-btn': 'payAmex',
     },
-    
+
+    successContinue: function(event){
+        $('#successTrans').modal('hide');
+    },
 
     payAmex: function(event){
         console.log('pay amex');
