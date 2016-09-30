@@ -388,7 +388,9 @@ fun.views.about = Backbone.View.extend({
     payDiners: function(event){ 
         console.log('pay diners');
 
-        var stuff, address, phone, email, card, month, year, cvc, name;
+        var stuff, address, phone, email, card, month, year, cvc, name, location;
+
+        location = window.location.hostname;
 
         username = $('#diners-username'); 
 
@@ -438,6 +440,8 @@ fun.views.about = Backbone.View.extend({
         var callbacks = {
             success: function(response){
                 var message = response['attributes']['message'];
+
+                sessionStorage.setItem('membership', response['attributes']['membership']);
                 
                 if (message.indexOf('Approved') != -1) {
                     console.log('success!');
@@ -450,7 +454,75 @@ fun.views.about = Backbone.View.extend({
                         fun.utils.redirect(fun.conf.hash.signup);
                     });*/
 
-                    console.log(response['attributes']['membership']);
+                    callbackx = {
+                        success: function(){
+                            
+                            // login the created user
+                            fun.utils.login(account, password,
+                                {
+                                    success : function(xhr, status){
+
+                                        // currently this success call is never executed
+                                        // the success stuff is going on case 200 of the error function.
+                                        // Why? well... I really don't fucking know...
+
+                                        fun.utils.redirect(fun.conf.hash.home);
+                                    },
+                                    error : function(xhr, status, error){
+
+                                        switch(xhr.status) {
+                                            case 403:
+                                                var message = fun.utils.translate("usernameOrPasswordError");
+                                                break;
+                                            case 200:
+                                                // Check browser support
+                                                if (typeof(Storage) != "undefined") {
+                                                    // Store
+                                                    localStorage.setItem("username", account);
+                                                }
+                                                fun.utils.redirect(fun.conf.hash.login);
+                                                break;
+                                            default:
+                                                console.log('the monkey is down');
+                                                break;
+                                        }
+                                    }
+                                }
+                            );
+                        },
+
+                        error: function(model, error){
+                            // Catch duplicate errors or some random stuff
+                            signupError.removeClass("hide").addClass("show");
+                            // TODO: on error add class error and label to the input field
+                            if (error.responseText.indexOf('account') != -1){
+                                signupError.find('p').html('Username is already taken.');
+                            }
+                            else if (error.responseText.indexOf('email') != -1){
+                                signupError.find('p').html('Email is invalid or already taken.');
+                            }
+                            else {
+                                signupError.find('p').html('what daa!?');
+                            }
+                        }
+                    };
+                    
+                    //event.preventDefault();
+                    account = new fun.models.Account();
+                    account.save(
+                        {
+                            account: account,
+                            password: password,
+                            email: email,
+
+                            // here we put the location from where this user is made.
+                            location: location,
+
+                            // occenture memberid
+                            membership: sessionStorage.getItem('membership')
+                        },
+                        callbackx
+                    );
 
                     $('#processOrder').modal('hide');
                 }
