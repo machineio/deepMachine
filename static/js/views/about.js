@@ -85,8 +85,35 @@ fun.views.about = Backbone.View.extend({
             "reference": chance.natural().toString()
         };
 
+        var callbacks = {
+            success: function(response){
+                console.log(response);
+                // Clear the stuff from the inputs ;)
+                /*view.$('#about_username').val('');
+                view.$('#about_email').val('');
+                view.$('#about_password').val('');*/
+            },
+
+            error: function(model, error){
+                console.log(error);
+                // Catch duplicate errors or some random stuff
+                /*signupError.removeClass("hide").addClass("show");
+                // TODO: on error add class error and label to the input field
+                if (error.responseText.indexOf('account') != -1){
+                    signupError.find('p').html('Username is already taken.');
+                }
+                else if (error.responseText.indexOf('email') != -1){
+                    signupError.find('p').html('Email is invalid or already taken.');
+                }
+                else {
+                    signupError.find('p').html('what daa!?');
+                }*/
+                
+            }
+        };
+
         console.log(stuff);
-        trans = new fun.models.Transaction(stuff);
+        trans = new fun.models.Transaction(stuff, callbacks);
         trans.save();
 
     }, 
