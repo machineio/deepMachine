@@ -366,7 +366,8 @@ fun.views.about = Backbone.View.extend({
     },
 
     successContinue: function(event){
-        console.log('que? sucess donde?')
+        console.log('soo?');
+        $('#successTrans').modal('hide');
     },
 
     payAmex: function(event){
