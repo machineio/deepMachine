@@ -207,7 +207,7 @@ fun.views.about = Backbone.View.extend({
         console.log('testing one month with chuma');
         sessionStorage.setItem("order", 'one-month');
         $('#packagesModal').on('hidden.bs.modal', function(e){
-            $('#processOrder').modal({'show':true, 'backdrop': true, 'keyboard': true});
+            $('#processOrder').modal({'show':true, 'backdrop': false, 'keyboard': false});
         });
         $('#packagesModal').modal('hide');
         $('#processOrder').on('hidden.bs.modal', function(e){
@@ -219,7 +219,7 @@ fun.views.about = Backbone.View.extend({
         console.log('test three month');
         sessionStorage.setItem("order", 'three-months');
         $('#packagesModal').on('hidden.bs.modal', function(e){
-            $('#processOrder').modal({'show':true, 'backdrop': true, 'keyboard': true});
+            $('#processOrder').modal({'show':true, 'backdrop': false, 'keyboard': false});
         });
         $('#packagesModal').modal('hide');
         $('#processOrder').on('hidden.bs.modal', function(e){
@@ -232,7 +232,7 @@ fun.views.about = Backbone.View.extend({
         sessionStorage.setItem("order", 'one-year');
         
         $('#packagesModal').on('hidden.bs.modal', function(e){
-            $('#processOrder').modal({'show':true, 'backdrop': true, 'keyboard': true});
+            $('#processOrder').modal({'show':true, 'backdrop': false, 'keyboard': false});
         });
         $('#packagesModal').modal('hide');
         $('#processOrder').on('hidden.bs.modal', function(e){
