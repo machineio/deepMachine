@@ -26,6 +26,7 @@ fun.views.about = Backbone.View.extend({
     },
 
     successContinue: function(event){
+        console.log('que? sucess donde?')
         $('#successTrans').modal('hide');
     },
 
