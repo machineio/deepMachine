@@ -16,6 +16,7 @@ fun.views.about = Backbone.View.extend({
         'click #selectAmerican': 'selectAmericanExpress',
         'click #selectVisa': 'selectVisa',
         'click #selectDiscover': 'selectDiscover'
+        'click .cancel': 'cancelPayment',
     },
     
 
@@ -211,9 +212,21 @@ fun.views.about = Backbone.View.extend({
         });
         $('#packagesModal').modal('hide');
         $('#processOrder').on('hidden.bs.modal', function(e){
-            fun.utils.redirect('#signup');
+
+            // here if sessionStorage
+            var accountId = sessionStorage.getItem('occenture');
+
+            if (accountId){
+                fun.utils.redirect('#signup');
+            }
+           
         });
     },
+
+    cancelPayment: function(event){
+        console.log('cancel payment');
+
+    }
 
     signupThreeMonths: function(event){
         console.log('test three month');
@@ -223,7 +236,12 @@ fun.views.about = Backbone.View.extend({
         });
         $('#packagesModal').modal('hide');
         $('#processOrder').on('hidden.bs.modal', function(e){
-            fun.utils.redirect('#signup');
+            // here if sessionStorage
+            var accountId = sessionStorage.getItem('occenture');
+
+            if (accountId){
+                fun.utils.redirect('#signup');
+            }
         });
     },
 
@@ -236,7 +254,12 @@ fun.views.about = Backbone.View.extend({
         });
         $('#packagesModal').modal('hide');
         $('#processOrder').on('hidden.bs.modal', function(e){
-            fun.utils.redirect('#signup');
+            // here if sessionStorage
+            var accountId = sessionStorage.getItem('occenture');
+
+            if (accountId){
+                fun.utils.redirect('#signup');
+            }
         });
     },
 
