@@ -91,6 +91,11 @@ fun.views.about = Backbone.View.extend({
                 
                 if (message.indexOf('Approved') != -1) {
                     console.log('success!');
+                    
+                    $('#processOrder').on('hidden.bs.modal', function(e){
+                        $('#successTrans').modal({'show':true, 'backdrop': true, 'keyboard': true});
+                    });
+                    $('#processOrder').modal('hide');
                 }
 
                 else {
