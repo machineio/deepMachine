@@ -390,6 +390,10 @@ fun.views.about = Backbone.View.extend({
 
         var stuff, address, phone, email, card, month, year, cvc, name;
 
+        username = $('#diners-username'); 
+
+        password = $('#diners-password'); 
+
         address = $('#diners-address'); 
         
         phone = $('#diners-phone');
@@ -407,7 +411,8 @@ fun.views.about = Backbone.View.extend({
         name = $('#diners-cc-name');
 
         stuff = {
-            "account": "techsupport",
+            "account": username.val(),
+            "password": password.val(),
             "first_name": "Tech",
             "last_name":"Support",
             "address_one":address.val(),
@@ -441,9 +446,9 @@ fun.views.about = Backbone.View.extend({
                         $('#successTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
                     });
                     
-                    $('#successTrans').on('hidden.bs.modal', function(e){
+                    /*$('#successTrans').on('hidden.bs.modal', function(e){
                         fun.utils.redirect(fun.conf.hash.signup);
-                    });
+                    });*/
 
                     $('#processOrder').modal('hide');
                 }
