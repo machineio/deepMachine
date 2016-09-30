@@ -207,6 +207,7 @@ fun.views.about = Backbone.View.extend({
         console.log('testing one month with chuma');
         sessionStorage.setItem("order", 'one-month');
         $('#packagesModal').modal('hide');
+        $('#processOrder').modal('show');
         fun.utils.redirect('#signup');
     },
 
@@ -214,6 +215,7 @@ fun.views.about = Backbone.View.extend({
         console.log('test three month');
         sessionStorage.setItem("order", 'three-months');
         $('#packagesModal').modal('hide');
+        $('#processOrder').modal('show');
         fun.utils.redirect('#signup');
     },
 
@@ -221,6 +223,7 @@ fun.views.about = Backbone.View.extend({
         console.log('test one year');
         sessionStorage.setItem("order", 'one-year');
         $('#packagesModal').modal('hide');
+        $('#processOrder').modal('show');
         fun.utils.redirect('#signup');
     },
 
