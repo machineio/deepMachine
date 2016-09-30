@@ -15,7 +15,7 @@ fun.views.about = Backbone.View.extend({
         'click #selectMC': 'selectMasterCard',
         'click #selectAmerican': 'selectAmericanExpress',
         'click #selectVisa': 'selectVisa',
-        'click #selectDiscover': 'selectDiscover'
+        'click #selectDiscover': 'selectDiscover',
         'click .cancel': 'cancelPayment',
     },
     
@@ -225,8 +225,8 @@ fun.views.about = Backbone.View.extend({
 
     cancelPayment: function(event){
         console.log('cancel payment');
-
-    }
+        $('#processOrder').modal('hide');
+    },
 
     signupThreeMonths: function(event){
         console.log('test three month');
