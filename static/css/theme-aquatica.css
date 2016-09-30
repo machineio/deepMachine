@@ -437,9 +437,11 @@ nav hr {
   top: 0;
 }
 .top-bar .logo {
-  max-width: 130px;
-  position: relative;
-  bottom: 21px;
+  max-width: 250px;
+    max-height: 200px;
+    position: relative;
+    margin-left: 0px;
+    margin-bottom: 20px;
 }
 .logo.logo-wide {
   max-width: 140px;
@@ -459,7 +461,7 @@ nav hr {
   bottom: 20px !important;
 }
 .nav-menu {
-  padding-top: 60px;
+  padding-top: 0px;
 }
 .nav-menu .social-icons {
   float: right;
@@ -508,18 +510,20 @@ nav hr {
   margin-right: 0px;
 }
 .menu li a {
-  font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #777777;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  transition: all .5s ease;
-  padding-bottom: 40px;
-  display: inline-block;
-  line-height: 14px;
+    font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777777;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    padding-bottom: 40px;
+    display: inline-block;
+    line-height: 33px;
+    margin-left: 85px;
+    margin-right: -45px;
 }
 .menu li a:hover {
   color: #333333;
