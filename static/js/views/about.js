@@ -82,11 +82,11 @@ fun.views.about = Backbone.View.extend({
             "exp_month":month.val(),
             "exp_year":year.val(),
             "cvv":cvc.val(),
-            "reference": "18"}
-    },
+            "reference": "18"
+        };
 
-
-    console.log(stuff);
+        console.log(stuff);
+    }, 
 
     /*
     * Class constructor
