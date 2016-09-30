@@ -87,6 +87,7 @@ fun.views.about = Backbone.View.extend({
 
         var callbacks = {
             success: function(response){
+                console.log('que?');
                 console.log(response);
                 // Clear the stuff from the inputs ;)
                 /*view.$('#about_username').val('');
@@ -113,8 +114,8 @@ fun.views.about = Backbone.View.extend({
         };
 
         console.log(stuff);
-        trans = new fun.models.Transaction(stuff, callbacks);
-        trans.save();
+        trans = new fun.models.Transaction();
+        trans.save(stuff, callbacks);
 
     }, 
 
