@@ -88,7 +88,7 @@ fun.views.about = Backbone.View.extend({
         var callbacks = {
             success: function(response){
                 console.log('que?');
-                console.log(response);
+                console.log(response['attributes']['message']);
                 // Clear the stuff from the inputs ;)
                 /*view.$('#about_username').val('');
                 view.$('#about_email').val('');
