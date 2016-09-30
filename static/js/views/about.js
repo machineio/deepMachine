@@ -17,8 +17,33 @@ fun.views.about = Backbone.View.extend({
         'click #selectVisa': 'selectVisa',
         'click #selectDiscover': 'selectDiscover',
         'click .cancel': 'cancelPayment',
+        'click #diners-pay-btn': 'payDiners',
+        'click #discover-pay-btn': 'payDiscover',
+        'click #master-pay-btn': 'payMaster',
+        'click #visa-pay-btn': 'payVisa',
+        'click #amex-pay-btn': 'payAmex',
     },
     
+
+    payAmex: function(event){
+        console.log('pay amex');
+
+    },
+    payVisa: function(event){
+        console.log('pay visa');
+    },
+    payMaster: function(event){
+        console.log('pay master');
+
+    },
+    payDiscover: function(event){
+        console.log('pay discover');
+
+    },
+    payDiners: function(event){ 
+        console.log('pay diners');
+
+    },
 
     /*
     * Class constructor
