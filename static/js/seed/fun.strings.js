@@ -7,6 +7,8 @@ fun.strings = {
     enterPhone: "Phone number",
     enterEmail: "Email address",
     enterFunds: "Selected package",
+    enterUsername: "Your username",
+    enterPassword: "Your password",
     enterCardNumber: "Enter card number",
     expiryMonth: "Expiry Month",
     expiryYear: "Expiry Year",
