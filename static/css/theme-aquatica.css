@@ -470,7 +470,7 @@ nav hr {
   margin-top: 16px;
 }
 .utility-menu .utility-inner {
-  padding-bottom: 16px;
+  padding-bottom: 0px;
 }
 .utility-menu .btn {
   min-width: 60px;
