@@ -206,25 +206,38 @@ fun.views.about = Backbone.View.extend({
     signupOneMonths: function(event){
         console.log('testing one month with chuma');
         sessionStorage.setItem("order", 'one-month');
+        $('#packagesModal').on('hidden.bs.modal', function(e){
+            $('#processOrder').modal('show');
+        });
         $('#packagesModal').modal('hide');
-        $('#processOrder').modal('show');
-        fun.utils.redirect('#signup');
+        $('#processOrder').on('hidden.bs.modal', function(e){
+            fun.utils.redirect('#signup');
+        });
     },
 
     signupThreeMonths: function(event){
         console.log('test three month');
         sessionStorage.setItem("order", 'three-months');
+        $('#packagesModal').on('hidden.bs.modal', function(e){
+            $('#processOrder').modal('show');
+        });
         $('#packagesModal').modal('hide');
-        $('#processOrder').modal('show');
-        fun.utils.redirect('#signup');
+        $('#processOrder').on('hidden.bs.modal', function(e){
+            fun.utils.redirect('#signup');
+        });
     },
 
     signupOneYear: function(event){
         console.log('test one year');
         sessionStorage.setItem("order", 'one-year');
+        
+        $('#packagesModal').on('hidden.bs.modal', function(e){
+            $('#processOrder').modal('show');
+        });
         $('#packagesModal').modal('hide');
-        $('#processOrder').modal('show');
-        fun.utils.redirect('#signup');
+        $('#processOrder').on('hidden.bs.modal', function(e){
+            fun.utils.redirect('#signup');
+        });
     },
 
     makeSubscription: function(event){
