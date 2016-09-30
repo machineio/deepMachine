@@ -43,7 +43,50 @@ fun.views.about = Backbone.View.extend({
     payDiners: function(event){ 
         console.log('pay diners');
 
+        var stuff, address, phone, email, card, month, year, cvc, name;
+
+        address = $('#diners-address'); 
+        
+        phone = $('#diners-phone');
+
+        email = $('#diners-email');
+
+        card = $('#diners-cc-number');
+
+        month = $('#diners-exp-month');
+
+        year = $('#diners-exp-year');
+
+        cvc = $('#diners-cc-cvc');
+
+        name = $('#diners-cc-name');
+
+        stuff = {
+            "account": "perroloco",
+            "first_name": "Jose",
+            "last_name":"Hernandez",
+            "address_one":address.val(),
+            "address_two":"test test",
+            "city":"test",
+            "state":"FL",
+            "zip_code":"50685",
+            "email":email.val(),
+            "country":"US",
+            "date_of_birth":"23/05/1988",
+            "last_4_ssn":"2222",
+            "phone_number":phone.val(),
+            "card_type":"Visa",
+            "amount":"1",
+            "name_on_cc":name.val(),
+            "card_number":card.val(),
+            "exp_month":month.val(),
+            "exp_year":year.val(),
+            "cvv":cvc.val(),
+            "reference": "18"}
     },
+
+
+    console.log(stuff);
 
     /*
     * Class constructor
