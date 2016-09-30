@@ -1382,6 +1382,51 @@ fun.models.Outbound = Backbone.Model.extend({
 });
 
 
+fun.models.Transaction = Backbone.Model.extend({
+
+    idAttribute: 'uuid',
+
+    urlRoot: fun.conf.urls.transaction,
+
+    url: function() {
+        'use strict';
+        var url;
+        if (!this.isNew()){
+            url = this.urlRoot.replace(fun.conf.uuidTransaction, this.id);
+        } else {
+            url = fun.conf.urls.transactions;
+        }
+        return url;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
+fun.models.Transactions = Backbone.Collection.extend({
+
+    model: fun.models.Transaction,
+
+    urlRoot: fun.conf.urls.transactions,
+
+    url: function() {
+        return this.urlRoot;
+    },
+
+    parse: function(response){
+        return response.transactions;
+    },
+
+    sync: function(method, model, options) {
+        options.contentType = 'application/json';
+        return Backbone.sync(method, model, options);
+    }
+});
+
+
 fun.models.Contact = Backbone.Model.extend({
 
     idAttribute: 'uuid',

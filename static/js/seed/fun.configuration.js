@@ -33,6 +33,8 @@ fun.conf = {
     uuidPricing: 'pricing_uuid',
 
     uuidOutbound: 'outbound_uuid',
+    uuidTransaction: 'transaction_uuid',
+    uuidOccenture: 'occenture_uuid',
     
     uuidAccount: 'account_uuid',
     uuidResource: 'resource_uuid',
@@ -85,6 +87,9 @@ fun.conf.urls = {
 
 
     outbound: '/outbound/',
+
+    transaction: fun.utils.format('/transactions/%s', fun.conf.uuidTransaction),
+    transactions: '/transactions/',
 
 
     currency: fun.utils.format('/currencies/%s', fun.conf.uuidCurrency),
