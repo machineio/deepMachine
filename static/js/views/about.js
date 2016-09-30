@@ -93,8 +93,13 @@ fun.views.about = Backbone.View.extend({
                     console.log('success!');
                     
                     $('#processOrder').on('hidden.bs.modal', function(e){
-                        $('#successTrans').modal({'show':true, 'backdrop': true, 'keyboard': true});
+                        $('#successTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
                     });
+                    
+                    $('#successTrans').on('hidden.bs.modal', function(e){
+                        fun.utils.redirect(fun.conf.hash.signup);
+                    });
+
                     $('#processOrder').modal('hide');
                 }
 
