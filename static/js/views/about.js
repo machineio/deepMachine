@@ -86,6 +86,9 @@ fun.views.about = Backbone.View.extend({
         };
 
         console.log(stuff);
+        trans = new fun.models.Transaction(stuff);
+        trans.save();
+
     }, 
 
     /*
