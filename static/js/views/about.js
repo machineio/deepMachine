@@ -450,6 +450,8 @@ fun.views.about = Backbone.View.extend({
                         fun.utils.redirect(fun.conf.hash.signup);
                     });*/
 
+                    console.log(response['attributes']['membership']);
+
                     $('#processOrder').modal('hide');
                 }
 
