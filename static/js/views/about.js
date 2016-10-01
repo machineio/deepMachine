@@ -33,6 +33,11 @@ fun.views.about = Backbone.View.extend({
     */
     initialize : function(options) {
         fun.containers.about = this.$el;
+
+        fun.messages.on("show:membership", function(){
+            console.log('on show membership on about');
+            $("#memberInfo").modal('show');
+        }, this);
     },
     
     /*
@@ -210,11 +215,6 @@ fun.views.about = Backbone.View.extend({
                 callbacks
             );
         }
-    },
-
-    showMembership: function(event){
-        console.log('show membership');
-        //$('#memberInfo').modal({'show':true, 'backdrop': false, 'keyboard': false});
     },
 
     signupOneMonths: function(event){

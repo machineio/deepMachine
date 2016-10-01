@@ -15,7 +15,7 @@ fun.views.footer = Backbone.View.extend({
 
     initialize : function(options) {
         fun.containers.footer = this.$el;
-        fun.omnibus.on("obelix:message", function(){
+        fun.messages.on("obelix:message", function(){
             this.incomingCall();
         }, this);
     },
