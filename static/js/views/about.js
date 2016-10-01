@@ -36,6 +36,7 @@ fun.views.about = Backbone.View.extend({
 
         fun.messages.on("show:membership", function(){
             console.log('on show membership on about');
+            $("#memberInfo").modal('show');
         }, this);
     },
     
