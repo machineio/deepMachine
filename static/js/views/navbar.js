@@ -16,11 +16,11 @@ fun.views.navbar = Backbone.View.extend({
         this.account = localStorage.getItem("username");
         this.context = sessionStorage.getItem("context");
 
-        fun.omnibus.on("change:context", function(){
+        fun.messages.on("change:context", function(){
             this.renderContext();
         }, this);
 
-        fun.omnibus.on("change:system_admin", function(){
+        fun.messages.on("change:system_admin", function(){
             this.renderContext();
         }, this);
     },
