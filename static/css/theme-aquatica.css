@@ -393,13 +393,13 @@ section:nth-of-type(even) {
 .link-text {
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 2px solid #315FAC;
+  border-bottom: 2px solid #E61D25;
   display: inline-block;
   padding-bottom: 0px;
-  color: #315FAC;
+  color: #E61D25;
 }
 nav hr {
   border: none;
