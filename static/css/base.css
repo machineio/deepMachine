@@ -1,3 +1,4 @@
+
 .m-t-10 {
   margin-top: 10px;
 }
@@ -793,7 +794,8 @@ body {
 }
 
 #user-plans {
-    color:#2A9EC5;
+    color:
+    ;
 }
 
 
@@ -1036,7 +1038,7 @@ input.error:-ms-input-placeholder {
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: #587d38;
+    background-color: #e61d25;
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
