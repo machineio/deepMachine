@@ -370,7 +370,10 @@ fun.views.about = Backbone.View.extend({
     },
 
     successContinue: function(event){
-        console.log('soo?');
+        $('#successTrans').on('hidden.bs.modal', function(e){
+            $('#memberInfo').modal({'show':true, 'backdrop': false, 'keyboard': false});
+        });
+
         $('#successTrans').modal('hide');
     },
 
