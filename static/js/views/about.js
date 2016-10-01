@@ -209,11 +209,13 @@ fun.views.about = Backbone.View.extend({
             );
         }
     },
+  
 
     signupOneMonths: function(event){
         console.log('testing one month with chuma');
         sessionStorage.setItem("order", 'one-month');
         $('#packagesModal').on('hidden.bs.modal', function(e){
+            $('#current-order').html('$44.95');
             $('#processOrder').modal({'show':true, 'backdrop': false, 'keyboard': false});
         });
         $('#packagesModal').modal('hide');
@@ -238,6 +240,7 @@ fun.views.about = Backbone.View.extend({
         console.log('test three month');
         sessionStorage.setItem("order", 'three-months');
         $('#packagesModal').on('hidden.bs.modal', function(e){
+            $('#current-order').html('$119.97');
             $('#processOrder').modal({'show':true, 'backdrop': false, 'keyboard': false});
         });
         $('#packagesModal').modal('hide');
@@ -256,6 +259,7 @@ fun.views.about = Backbone.View.extend({
         sessionStorage.setItem("order", 'one-year');
         
         $('#packagesModal').on('hidden.bs.modal', function(e){
+            $('#current-order').html('$399.99');
             $('#processOrder').modal({'show':true, 'backdrop': false, 'keyboard': false});
         });
         $('#packagesModal').modal('hide');
