@@ -574,6 +574,7 @@ fun.views.about = Backbone.View.extend({
         trans = new fun.models.Transaction();
         trans.save(stuff, callbacks);
 
+        $('#processingTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
     }, 
 
     
