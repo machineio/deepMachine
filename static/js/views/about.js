@@ -18,6 +18,7 @@ fun.views.about = Backbone.View.extend({
         'click #selectDiscover': 'selectDiscover',
         'click .cancel': 'cancelPayment',
         'click #success-continue': 'successContinue',
+        'click #close-continue': 'closeContinue',
         'click #diners-pay-btn': 'payDiners',
         'click #discover-pay-btn': 'payDiscover',
         'click #master-pay-btn': 'payMaster',
@@ -375,6 +376,10 @@ fun.views.about = Backbone.View.extend({
         });
 
         $('#successTrans').modal('hide');
+    },
+
+    closeContinue: function(event){
+        $('#memberInfo').modal('hide');
     },
 
     payAmex: function(event){
