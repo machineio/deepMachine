@@ -33,6 +33,10 @@ fun.views.about = Backbone.View.extend({
     */
     initialize : function(options) {
         fun.containers.about = this.$el;
+
+        fun.messages.on("show:membership", function(){
+            console.log('on show membership on about');
+        }, this);
     },
     
     /*
