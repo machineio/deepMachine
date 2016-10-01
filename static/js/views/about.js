@@ -213,7 +213,8 @@ fun.views.about = Backbone.View.extend({
     },
 
     showMembership: function(event){
-        $('#memberInfo').modal('show');
+        console.log('show membership');
+        $('#memberInfo').modal({'show':true, 'backdrop': false, 'keyboard': false});
     },
 
     signupOneMonths: function(event){
