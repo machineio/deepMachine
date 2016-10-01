@@ -212,11 +212,6 @@ fun.views.about = Backbone.View.extend({
         }
     },
 
-    showMembership: function(event){
-        console.log('show membership');
-        //$('#memberInfo').modal({'show':true, 'backdrop': false, 'keyboard': false});
-    },
-
     signupOneMonths: function(event){
         console.log('testing one month with chuma');
         sessionStorage.setItem("order", 'one-month');

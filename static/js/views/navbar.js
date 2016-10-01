@@ -6,6 +6,8 @@ fun.views.navbar = Backbone.View.extend({
         'click #current_account_0': 'goProfile',
         'click #search': 'toggleMenu',
         'click .mobile-toggle': 'openMenu',
+        'click #my-account-btn': 'showMembership'
+
 	},
 
     initialize: function(options) {
@@ -41,6 +43,12 @@ fun.views.navbar = Backbone.View.extend({
 
     openMenu: function(){
         $('nav').toggleClass('open-nav');
+    },
+
+
+    showMembership: function(event){
+        console.log('show membership');
+        fun.messages.trigger("show:membership");
     },
 
     renderContext: function(){
