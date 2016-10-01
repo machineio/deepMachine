@@ -12,7 +12,7 @@ var fun = {
     conf: {},
     session: {}, //account and context maybe?
     cache: {templates : {}},
-    omnibus: _.extend({}, Backbone.Events)
+    messages: _.extend({}, Backbone.Events)    
 };
 
 fun.utils.validateFormHome = function(type,data){
