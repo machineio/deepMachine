@@ -450,19 +450,20 @@ fun.views.about = Backbone.View.extend({
                 
                 if (message.indexOf('Approved') != -1) {
 
-
                     var order = sessionStorage.getItem("order");
 
                     if (order === 'three-months'){
-                        console.log('three-months')
+                        $('#trans-amount').html('$119.97');
+                        $('#period-trans').html('3 MONTHS');
                     }
 
                     else if (order === 'one-year'){
-                        console.log('one-year')
+                        $('#trans-amount').html('$399.99');
+                        $('#period-trans').html('Annual');
                     }
 
                     else if (order === 'one-month'){
-                        console.log('one-month')
+                        console.log('one-month');
                         $('#trans-amount').html('$44.95');
                         $('#period-trans').html('30 Days');
                     }
