@@ -57,7 +57,7 @@ fun.views.about = Backbone.View.extend({
 
             $('#my-account-btn').html(localStorage.getItem("username"));
 
-            var order = sessionStorage.getItem("order");
+            /*var order = sessionStorage.getItem("order");
 
             if(order === 'one-month'){
                 $('#processOrder').modal('show');
@@ -76,7 +76,7 @@ fun.views.about = Backbone.View.extend({
 
             else {
                 console.log('no orders');
-            }
+            }*/
 
         } else {
             console.log("we're outside the techsupport site, please login or select your order");
