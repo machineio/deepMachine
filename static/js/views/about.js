@@ -24,6 +24,7 @@ fun.views.about = Backbone.View.extend({
         'click #master-pay-btn': 'payMaster',
         'click #visa-pay-btn': 'payVisa',
         'click #amex-pay-btn': 'payAmex',
+        'click #my-account-btn': 'showMembership'
     },
 
    
@@ -210,7 +211,10 @@ fun.views.about = Backbone.View.extend({
             );
         }
     },
-  
+
+    showMembership: function(event){
+        $('#memberInfo').modal('show');
+    },
 
     signupOneMonths: function(event){
         console.log('testing one month with chuma');
