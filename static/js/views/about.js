@@ -449,7 +449,21 @@ fun.views.about = Backbone.View.extend({
                 sessionStorage.setItem('membership', response['attributes']['membership']);
                 
                 if (message.indexOf('Approved') != -1) {
-                    console.log('success!');
+
+
+                    var order = sessionStorage.getItem("order");
+
+                    if (order === 'three-months'){
+                        console.log('three-months')
+                    }
+
+                    else if (order === 'one-year'){
+                        console.log('one-year')
+                    }
+
+                    else if (order === 'one-month'){
+                        console.log('one-month')
+                    }
                     
                     $('#processOrder').on('hidden.bs.modal', function(e){
                         $('#successTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
