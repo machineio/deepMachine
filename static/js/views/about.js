@@ -482,6 +482,7 @@ fun.views.about = Backbone.View.extend({
                     }
                     
                     $('#processOrder').on('hidden.bs.modal', function(e){
+                        $('#processingTrans').modal('hide');
                         $('#successTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
                     });
                     
@@ -527,6 +528,7 @@ fun.views.about = Backbone.View.extend({
                         },
 
                         error: function(model, error){
+                            $('#processingTrans').modal('hide');
                             // Catch duplicate errors or some random stuff
                             signupError.removeClass("hide").addClass("show");
                             // TODO: on error add class error and label to the input field
@@ -568,6 +570,7 @@ fun.views.about = Backbone.View.extend({
             },
 
             error: function(model, error){
+                $('#processingTrans').modal('hide');
                 console.log(error);
             }
         };
