@@ -2365,8 +2365,8 @@ input[type="submit"] {
   margin-bottom: 30px;
 }
 .photo-form-wrapper .btn-filled {
-  background-color: #315FAC;
-  border-color: #315FAC;
+  background-color: #E61D25;
+  border-color: #E61D25;
 }
 .photo-form-wrapper input:focus {
   outline: none;
