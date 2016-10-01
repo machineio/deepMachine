@@ -18,11 +18,13 @@ fun.views.about = Backbone.View.extend({
         'click #selectDiscover': 'selectDiscover',
         'click .cancel': 'cancelPayment',
         'click #success-continue': 'successContinue',
+        'click #close-continue': 'closeContinue',
         'click #diners-pay-btn': 'payDiners',
         'click #discover-pay-btn': 'payDiscover',
         'click #master-pay-btn': 'payMaster',
         'click #visa-pay-btn': 'payVisa',
         'click #amex-pay-btn': 'payAmex',
+        'click #my-account-btn': 'showMembership'
     },
 
    
@@ -209,7 +211,11 @@ fun.views.about = Backbone.View.extend({
             );
         }
     },
-  
+
+    showMembership: function(event){
+        console.log('show membership');
+        $('#memberInfo').modal({'show':true, 'backdrop': false, 'keyboard': false});
+    },
 
     signupOneMonths: function(event){
         console.log('testing one month with chuma');
@@ -375,6 +381,10 @@ fun.views.about = Backbone.View.extend({
         });
 
         $('#successTrans').modal('hide');
+    },
+
+    closeContinue: function(event){
+        $('#memberInfo').modal('hide');
     },
 
     payAmex: function(event){
