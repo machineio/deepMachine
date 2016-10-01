@@ -326,24 +326,24 @@ section:nth-of-type(even) {
   transition: all .3s ease;
   min-width: 155px;
 }
-.btn:hover {
+.btn.hover {
   background: none;
   color: #fff;
-  border-color: #315FAC;
-  background-color: #315FAC;
+  border-color: #E61D25;
+  background-color: #E61D25;
 }
 .btn-primary {
   border-radius: 25px !important;
   display: inline-block;
   padding: 14px 28px 13px 28px;
   line-height: 1;
-  border: 2px solid #315FAC;
+  border: 3px solid #E61D25;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #315FAC;
+  color: #231f20;
 }
 .btn-primary.btn-filled {
   background: #315FAC;
