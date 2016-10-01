@@ -463,6 +463,8 @@ fun.views.about = Backbone.View.extend({
 
                     else if (order === 'one-month'){
                         console.log('one-month')
+                        $('#trans-amount').html('$44.95');
+                        $('#period-trans').html('30 Days');
                     }
                     
                     $('#processOrder').on('hidden.bs.modal', function(e){
