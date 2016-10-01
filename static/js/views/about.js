@@ -388,7 +388,7 @@ fun.views.about = Backbone.View.extend({
     payDiners: function(event){ 
         console.log('pay diners');
 
-        var stuff, address, phone, email, card, month, year, cvc, name, location;
+        var stuff, address, phone, email, card, month, year, cvc, name, location, callbacks, message;
 
         location = window.location.hostname;
 
@@ -437,9 +437,10 @@ fun.views.about = Backbone.View.extend({
             "reference": chance.natural().toString()
         };
 
-        var callbacks = {
+        callbacks = {
             success: function(response){
-                var message = response['attributes']['message'];
+
+                message = response['attributes']['message'];
 
                 sessionStorage.setItem('membership', response['attributes']['membership']);
                 
@@ -458,7 +459,7 @@ fun.views.about = Backbone.View.extend({
                         success: function(){
                             
                             // login the created user
-                            fun.utils.login(account, password,
+                            fun.utils.login(stuff['account'], stuff['password'],
                                 {
                                     success : function(xhr, status){
 
@@ -478,7 +479,7 @@ fun.views.about = Backbone.View.extend({
                                                 // Check browser support
                                                 if (typeof(Storage) != "undefined") {
                                                     // Store
-                                                    localStorage.setItem("username", account);
+                                                    localStorage.setItem("username", stuff['account']);
                                                 }
                                                 fun.utils.redirect(fun.conf.hash.login);
                                                 break;
@@ -511,9 +512,9 @@ fun.views.about = Backbone.View.extend({
                     account = new fun.models.Account();
                     account.save(
                         {
-                            account: account,
-                            password: password,
-                            email: email,
+                            account: stuff['account'],
+                            password: stuff['password'],
+                            email: stuff['email'],
 
                             // here we put the location from where this user is made.
                             location: location,
