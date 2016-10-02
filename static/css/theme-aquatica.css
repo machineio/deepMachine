@@ -329,8 +329,8 @@ section:nth-of-type(even) {
 .btn:hover {
   background: none;
   color: #fff;
-  border-color: #E61D25;
-  background-color: #E61D25;
+  border-color: #9E1620;
+  background-color: #9E1620;
 }
 .btn-primary
  {
@@ -338,7 +338,7 @@ section:nth-of-type(even) {
   display: inline-block;
   padding: 14px 28px 13px 28px;
   line-height: 1;
-  border: 3px solid #E61D25;
+  border: 3px solid #9E1620;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
@@ -397,10 +397,10 @@ section:nth-of-type(even) {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 2px solid #E61D25;
+  border-bottom: 2px solid #9E1620;
   display: inline-block;
   padding-bottom: 0px;
-  color: #E61D25;
+  color: #9E1620;
 }
 nav hr {
   border: none;
@@ -2366,8 +2366,8 @@ input[type="submit"] {
   margin-bottom: 30px;
 }
 .photo-form-wrapper .btn-filled {
-  background-color: #E61D25;
-  border-color: #E61D25;
+  background-color: #9E1620;
+  border-color: #9E1620;
 }
 .photo-form-wrapper input:focus {
   outline: none;
