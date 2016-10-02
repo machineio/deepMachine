@@ -110,11 +110,10 @@ fun.Router = Backbone.Router.extend({
         //     el:"#fun-orgs"
         // });
 
-        // Packages
-        // fun.instances.packages = new fun.views.packages({
-        //     el:"#fun-packages"
-        // });
-
+        Packages
+        fun.instances.packages = new fun.views.packages({
+            el:"#fun-packages"
+        });
 
         // Training
         fun.instances.training = new fun.views.training({

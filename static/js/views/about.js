@@ -16,7 +16,6 @@ fun.views.about = Backbone.View.extend({
         'click #selectAmerican': 'selectAmericanExpress',
         'click #selectVisa': 'selectVisa',
         'click #selectDiscover': 'selectDiscover',
-        'click .cancel': 'cancelPayment',
         'click #success-continue': 'successContinue',
         'click #close-continue': 'closeContinue',
         'click #diners-pay-btn': 'payDiners',
@@ -24,10 +23,10 @@ fun.views.about = Backbone.View.extend({
         'click #master-pay-btn': 'payMaster',
         'click #visa-pay-btn': 'payVisa',
         'click #amex-pay-btn': 'payAmex',
-        'click #my-account-btn': 'showMembership'
+        'click #my-account-btn': 'showMembership',
+        'click .cancel': 'cancelPayment',        
     },
 
-   
     /*
     * Class constructor
     */
@@ -57,34 +56,10 @@ fun.views.about = Backbone.View.extend({
             fun.utils.templateStart();
             fun.utils.startSlider();
         }
-
         if(fun.utils.loggedIn()){
             $('#logoutWrapper').removeClass('hide').addClass('show');
             $('#loginSignupWrapper').removeClass('show').addClass('hide');
-
             $('#my-account-btn').html(localStorage.getItem("username"));
-
-            /*var order = sessionStorage.getItem("order");
-
-            if(order === 'one-month'){
-                $('#processOrder').modal('show');
-                $('#current-order').html('$44.95');
-            } 
-
-            else if(order === 'three-months'){
-                $('#processOrder').modal('show');
-                $('#current-order').html('$119.97');
-            }
-
-            else if(order === 'one-year'){
-                $('#processOrder').modal('show');
-                $('#current-order').html('$399.99');
-            }
-
-            else {
-                console.log('no orders');
-            }*/
-
         } else {
             console.log("we're outside the techsupport site, please login or select your order");
         }
@@ -96,7 +71,6 @@ fun.views.about = Backbone.View.extend({
         'use strict';
         event.preventDefault();
         fun.utils.redirect(fun.conf.hash.login);
-    
     },
 
     signup: function(event){
@@ -262,8 +236,8 @@ fun.views.about = Backbone.View.extend({
 
     signupOneYear: function(event){
         console.log('test one year');
+        var accountId;
         sessionStorage.setItem("order", 'one-year');
-        
         $('#packagesModal').on('hidden.bs.modal', function(e){
             $('#current-order').html('$399.99');
             $('#processOrder').modal({'show':true, 'backdrop': false, 'keyboard': false});
@@ -271,8 +245,10 @@ fun.views.about = Backbone.View.extend({
         $('#packagesModal').modal('hide');
         $('#processOrder').on('hidden.bs.modal', function(e){
             // here if sessionStorage
-            var accountId = sessionStorage.getItem('occenture');
-
+            accountId = sessionStorage.getItem('occenture');
+            // so we're on occenture with this so tell me about membership ids
+            // again then, please think on why we're handle this with
+            // the accountId variable... 
             if (accountId){
                 fun.utils.redirect('#signup');
             }
@@ -485,10 +461,6 @@ fun.views.about = Backbone.View.extend({
                         $('#processingTrans').modal('hide');
                         $('#successTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
                     });
-                    
-                    /*$('#successTrans').on('hidden.bs.modal', function(e){
-                        fun.utils.redirect(fun.conf.hash.signup);
-                    });*/
 
                     callbackx = {
                         success: function(){
