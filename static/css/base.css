@@ -1038,7 +1038,7 @@ input.error:-ms-input-placeholder {
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: #e61d25;
+    background-color: #9E1620;
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 
