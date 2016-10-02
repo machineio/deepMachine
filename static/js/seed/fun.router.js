@@ -105,12 +105,13 @@ fun.Router = Backbone.Router.extend({
         fun.instances.dashboard = new fun.views.dashboard({
             el:"#fun-dashboard"
         });
+        
         // orgs
         // fun.instances.orgs = new fun.views.orgs({
         //     el:"#fun-orgs"
         // });
 
-        Packages
+        // Packages
         fun.instances.packages = new fun.views.packages({
             el:"#fun-packages"
         });
