@@ -1114,6 +1114,12 @@ fun.views.about = Backbone.View.extend({
             error: function(model, error){
                 $('#processingTrans').modal('hide');
                 console.log(error);
+
+                // aqui mae hoy 
+                $('#processOrder').on('hidden.bs.modal', function(e){
+                        $('#processingTrans').modal('hide');
+                        $('#successTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+                    });
             }
         };
 
@@ -1624,7 +1630,10 @@ fun.views.about = Backbone.View.extend({
                 }
 
                 else {
-                    console.log('error!');
+                    $('#processOrder').on('hidden.bs.modal', function(e){
+                        $('#processingTrans').modal('hide');
+                        $('#deniedTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+                    });
                 }
             },
 
