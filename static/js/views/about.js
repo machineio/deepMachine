@@ -612,7 +612,7 @@ fun.views.about = Backbone.View.extend({
         };
 
         // check for a valid form and create the new user account
-        validForm = $('#diners-pay-form').valid();
+        validForm = $('#discover-pay-form').valid();
         if (validForm){
             event.preventDefault();
             trans = new fun.models.Transaction();
