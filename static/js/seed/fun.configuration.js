@@ -31,16 +31,14 @@ fun.conf = {
     uuidCompany: 'company_uuid',
     uuidDirectory: 'directory_uuid',
     uuidPricing: 'pricing_uuid',
-
     uuidOutbound: 'outbound_uuid',
     uuidTransaction: 'transaction_uuid',
     uuidOccenture: 'occenture_uuid',
-    
     uuidAccount: 'account_uuid',
     uuidResource: 'resource_uuid',
     uuidMessage: 'message_uuid',
-    // you need to think on time
 
+    // you need to think on time
     lapse: 'lapse',
     startTime: 'start_time',
     endTime: 'end_time',
@@ -84,28 +82,17 @@ fun.conf.urls = {
     records: '/records/',
     billing: fun.utils.format('/billings/%s', fun.conf.uuidBilling),
     billings: '/billings/',
-
-
     outbound: '/outbound/',
-
     transaction: fun.utils.format('/transactions/%s', fun.conf.uuidTransaction),
     transactions: '/transactions/',
-
-
     currency: fun.utils.format('/currencies/%s', fun.conf.uuidCurrency),
     currencies: '/currencies/',
-
     lapseCurrenciesStart: fun.utils.format('/currencies/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
     lapseCurrenciesStartEnd: fun.utils.format('/currencies/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
-
     lapseCurrency: fun.utils.format('/currencies/%s', fun.conf.lapse),
-
     lapseCurrencies: fun.utils.format('/currencies/%s', fun.conf.lapse),
     lapseCurrencyStart: fun.utils.format('/currencies/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
     lapseCurrencyStartEnd: fun.utils.format('/currencies/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
-    
-
-
     trade: fun.utils.format('/trades/%s', fun.conf.uuidTrade),
     trades: '/trades/',
     lapseTradesStart: fun.utils.format('/trades/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
@@ -114,9 +101,6 @@ fun.conf.urls = {
     lapseTrades: fun.utils.format('/trades/%s', fun.conf.lapse),
     lapseTradeStart: fun.utils.format('/trades/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
     lapseTradeStartEnd: fun.utils.format('/trades/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
-
-
-
     pricing: fun.utils.format('/pricings/%s', fun.conf.uuidPricing),
     pricings: '/pricings/',
     calendars: '/calendars/',
@@ -128,8 +112,6 @@ fun.conf.urls = {
     summariesStart: fun.utils.format('/records/summaries/start/%s', fun.conf.startTime),
     summariesStartEnd: fun.utils.format('/records/summaries/start/%s/end/%s', fun.conf.startTime, fun.conf.endTime),
     lapseSummary: fun.utils.format('/records/summary/%s', fun.conf.lapse),
-
-
     lapseSummaries: fun.utils.format('/records/summaries/%s', fun.conf.lapse),
     lapseSummaryStart: fun.utils.format('/records/summary/%s/start/%s', fun.conf.lapse, fun.conf.startTime),
     lapseSummaryStartEnd: fun.utils.format('/records/summary/%s/start/%s/end/%s', fun.conf.lapse, fun.conf.startTime, fun.conf.endTime),
@@ -209,7 +191,6 @@ fun.conf.templates = {
     currencies: fun.utils.format('%s/currencies.html', fun.conf.html),
     stocks: fun.utils.format('%s/stocks.html', fun.conf.html),
     deposit: fun.utils.format('%s/deposit.html', fun.conf.html),
-
     purchase: fun.utils.format('%s/purchase.html', fun.conf.html),
     redeem: fun.utils.format('%s/redeem.html', fun.conf.html),
     beginner: fun.utils.format('%s/beginner.html', fun.conf.html),
@@ -217,7 +198,6 @@ fun.conf.templates = {
     expert: fun.utils.format('%s/expert.html', fun.conf.html),
     elite: fun.utils.format('%s/elite.html', fun.conf.html),
     categorizer: fun.utils.format('%s/categorizer.html', fun.conf.html),
-
     withdraw: fun.utils.format('%s/withdraw.html', fun.conf.html),
     features: fun.utils.format('%s/features.html', fun.conf.html),
     calendars: fun.utils.format('%s/calendars.html', fun.conf.html),
@@ -343,10 +323,6 @@ fun.conf.templates = {
 
 /*
  Hash tags for backbone.js router
-
- or
-
- Where the fuck are we using this shit up?
 */
 fun.conf.hash = {
     about: '#about',
@@ -355,7 +331,6 @@ fun.conf.hash = {
     features: '#features',
     enterprise: '#enterprise',
     education: '#education',
-
     redeem: '#redeem',
     purchase: '#purchase',
     beginner: '#beginner',
@@ -366,7 +341,6 @@ fun.conf.hash = {
     forums: '#forums',
     trader: '#trader',
     risk: '#risk',
-
     terms: '#terms',
     privacy: '#privacy',
     security: '#security',
@@ -374,13 +348,11 @@ fun.conf.hash = {
     help: '#help',
     signup: '#signup',
     login: '#login',
-
     contact: '#contact',
     assets: '#assets',
     stocks: '#stocks',
     deposit: '#deposit',
     withdraw: '#withdraw',
-
     accounts: '#accounts',
     messages: '#messages',
     resources: '#resources',
@@ -397,7 +369,6 @@ fun.conf.hash = {
     phone: '#phone',
     reports: '#reports',
     reportsWithPage: '#reports/p{page}',
-    
     contacts: '#contacts',
     cubes: '#cubes',
     contactsWithPage: '#contacts/p{page}',

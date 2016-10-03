@@ -193,9 +193,9 @@ fun.Router = Backbone.Router.extend({
             el:"#fun-about"
         });
         // binary
-        // fun.instances.binary = new fun.views.binary({
-        //     el:"#fun-binary"
-        // });
+        fun.instances.binary = new fun.views.binary({
+            el:"#fun-binary"
+        });
         // education
         fun.instances.education = new fun.views.education({
             el:"#fun-education"
@@ -211,21 +211,21 @@ fun.Router = Backbone.Router.extend({
 
         
         // beginner
-        // fun.instances.beginner = new fun.views.beginner({
-        //     el:"#fun-beginner"
-        // });
+        fun.instances.beginner = new fun.views.beginner({
+            el:"#fun-beginner"
+        });
         // intermediate
-        // fun.instances.intermediate = new fun.views.intermediate({
-        //     el:"#fun-intermediate"
-        // });
+        fun.instances.intermediate = new fun.views.intermediate({
+            el:"#fun-intermediate"
+        });
         // expert
-        // fun.instances.expert = new fun.views.expert({
-        //     el:"#fun-expert"
-        // });
+        fun.instances.expert = new fun.views.expert({
+            el:"#fun-expert"
+        });
         // elite
-        // fun.instances.elite = new fun.views.elite({
-        //     el:"#fun-elite"
-        // });
+        fun.instances.elite = new fun.views.elite({
+            el:"#fun-elite"
+        });
         // categorizer
         // fun.instances.categorizer = new fun.views.categorizer({
         //     el:"#fun-categorizer"
