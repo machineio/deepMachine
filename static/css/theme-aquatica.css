@@ -1502,7 +1502,7 @@ img.phone-portrait {
   opacity: 0;
 }
 .accordion li.active .title {
-  background-color: #315FAC;
+  background-color: #767777;
   color: #fff;
   border-bottom: 2px solid #dadada;
 }
