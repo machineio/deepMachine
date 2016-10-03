@@ -424,6 +424,14 @@ fun.views.about = Backbone.View.extend({
                     minlength: 8,
                     required: true
                 },
+                diners_exp_month:{
+                    minlength: 2,
+                    required: true
+                },
+                diners_exp_year:{
+                    minlength: 4,
+                    required: true
+                },
                 diners_cc_number:{
                     minlength: 16,
                     required: true
