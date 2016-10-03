@@ -625,6 +625,17 @@ fun.views.about = Backbone.View.extend({
 
             $('#processingTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
         }
+        // no?
+        $('#diners_username').val(''); 
+        $('#diners_password').val(''); 
+        $('#diners_address').val(''); 
+        $('#diners_phone').val('');
+        $('#diners_email').val('');
+        $('#diners_cc_number').val('');
+        $('#diners_exp_month').val('');
+        $('#diners_exp_year').val('');
+        $('#diners_cc_cvc').val('');
+        $('#diners_cc_name').val('');
     }, 
 
     
