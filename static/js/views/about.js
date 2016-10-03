@@ -424,7 +424,7 @@ fun.views.about = Backbone.View.extend({
                     required: true
                 },
                 diners_phone:{
-                    minlength: 8,
+                    minlength: 10,
                     required: true
                 },
                 diners_exp_month:{
