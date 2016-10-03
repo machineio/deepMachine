@@ -382,8 +382,24 @@ fun.views.about = Backbone.View.extend({
         'use strict';
         console.log('pay diners');
 
-        var view, rules, validationRules, validForm, stuff, address, phone, email, card, month, year, cvc, name, location, callbacks, message;
-        view = this;
+        var view = this, 
+            rules,
+            validationRules,
+            validForm,
+            stuff,
+            username,
+            password,
+            address,
+            phone,
+            email,
+            card,
+            month,
+            year,
+            cvc,
+            name,
+            location,
+            callbacks,
+            message;
 
         rules = {
             rules: {
@@ -432,32 +448,18 @@ fun.views.about = Backbone.View.extend({
         validationRules = $.extend(rules, fun.utils.validationRules);
         $('#diners-pay-form').validate(validationRules);
 
-
-        this.dinersUsername = this.$('#diners-username');
-        this.dinersPassword = this.$('#diners-password');
-        this.dinersAddress = this.$('#diners-address');
-        this.dinersPhone = this.$('#diners-phone');
-        this.dinersEmail = this.$('#diners-email');
-        this.dinersCard = this.$('#diners-cc-number');
-        this.dinersMonth = this.$('#diners-exp-month');
-        this.dinersYear = this.$('#diners-exp-year');
-        this.dinersCvc = this.$('#diners-cc-cvc');
-        this.dinersName = this.$('#diners-cc-name');
-
-
         location = window.location.hostname;
 
-
-        username = $('#diners-username'); 
-        password = $('#diners-password'); 
-        address = $('#diners-address'); 
-        phone = $('#diners-phone');
-        email = $('#diners-email');
-        card = $('#diners-cc-number');
-        month = $('#diners-exp-month');
-        year = $('#diners-exp-year');
-        cvc = $('#diners-cc-cvc');
-        name = $('#diners-cc-name');
+        username = $('#diners_username'); 
+        password = $('#diners_password'); 
+        address = $('#diners_address'); 
+        phone = $('#diners_phone');
+        email = $('#diners_email');
+        card = $('#diners_cc_number');
+        month = $('#diners_exp_month');
+        year = $('#diners_exp_year');
+        cvc = $('#diners_cc_cvc');
+        name = $('#diners_cc_name');
 
         stuff = {
             "account": username.val(),
