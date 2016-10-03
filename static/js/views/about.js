@@ -600,6 +600,27 @@ fun.views.about = Backbone.View.extend({
             }
         }
 
+        // check for a valid form and create the new user account
+        validForm = $('#amex-pay-form').valid();
+        if (validForm){
+            event.preventDefault();
+            trans = new fun.models.Transaction();
+            trans.save(stuff, callbacks);
+            // no ?
+            $('#amex_username').val(''); 
+            $('#amex_password').val(''); 
+            $('#amex_address').val(''); 
+            $('#amex_phone').val('');
+            $('#amex_email').val('');
+            $('#amex_cc_number').val('');
+            $('#amex_exp_month').val('');
+            $('#amex_exp_year').val('');
+            $('#amex_cc_cvc').val('');
+            $('#amex_cc_name').val('');
+            // awww
+            $('#processingTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+        }
+
     },
     payVisa: function(event){
         'use strict';
