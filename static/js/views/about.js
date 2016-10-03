@@ -1634,10 +1634,17 @@ fun.views.about = Backbone.View.extend({
                         $('#processingTrans').modal('hide');
                         $('#deniedTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
                     });
+                    $('#processOrder').modal('hide');
                 }
             },
 
             error: function(model, error){
+                
+                $('#processOrder').on('hidden.bs.modal', function(e){
+                        $('#processingTrans').modal('hide');
+                        $('#deniedTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+                    });
+                $('#processOrder').modal('hide');
                 $('#processingTrans').modal('hide');
                 console.log(error);
             }
