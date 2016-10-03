@@ -392,6 +392,7 @@ fun.views.about = Backbone.View.extend({
             address,
             phone,
             email,
+            trans,
             card,
             month,
             year,
