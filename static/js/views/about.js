@@ -440,6 +440,9 @@ fun.views.about = Backbone.View.extend({
                 amex_cc_name:{
                     minlength: 4,
                     required: true
+                },
+                amex_agree_terms:{
+                    required: true
                 }
             }
         }
@@ -699,6 +702,9 @@ fun.views.about = Backbone.View.extend({
                 visa_cc_name:{
                     minlength: 4,
                     required: true
+                },
+                visa_agree_terms:{
+                    required: true
                 }
             }
         }
@@ -956,6 +962,9 @@ fun.views.about = Backbone.View.extend({
                 },
                 master_cc_name:{
                     minlength: 4,
+                    required: true
+                },
+                master_agree_terms:{
                     required: true
                 }
             }
