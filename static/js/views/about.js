@@ -420,8 +420,8 @@ fun.views.about = Backbone.View.extend({
                     required: true
                 },
                 diners_cc_cvc:{
-                    minlength: 3
-                    required true,
+                    minlength: 3,
+                    required: true,
                 },
                 diners_cc_name:{
                     minlength: 4,
