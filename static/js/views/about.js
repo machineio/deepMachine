@@ -387,6 +387,7 @@ fun.views.about = Backbone.View.extend({
             validationRules,
             validForm,
             stuff,
+            account,
             username,
             password,
             address,
@@ -401,6 +402,7 @@ fun.views.about = Backbone.View.extend({
             location,
             callbacks,
             callbackx,
+            membership,
             message;
 
         rules = {
