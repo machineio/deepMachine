@@ -330,54 +330,59 @@
                         <div class="tab-panel hide" id="cc-2">
                             <div class="credit-card-div" style= "  margin-top: 0px;  margin-bottom: 0px; margin-right:0px; margin-left: 0px; overflow: hidden;">
                                 <div class="panel panel-default" >
-                                    <div class="panel-heading">
+                                    <form id="discover-pay-form" class="panel-heading">
                                         <div class="row ">
 
+
+
                                             <!-- <div class="col-md-12">
-                                                <input id="discover-merchant" type="text" class="form-control" placeholder="<%= translate("enterMerchant") %>" />
+                                                <input id="diners-merchant" type="text" class="form-control" placeholder="<%= translate("enterMerchant") %>" />
                                             </div> -->
 
-                                            <div class="col-md-12">
-                                                <input id="discover-address" type="text" class="form-control" placeholder="<%= translate("enterAddress") %>" />
+                                            <div class="form-group col-md-12">
+                                                <input id="discover_username" type="text" name="discover_username" class="form-control" placeholder="<%= translate("enterUsername") %>" />
                                             </div>
 
-                                            <div class="col-md-12">
-                                                <input id="discover-phone" type="text" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                            <div class="form-group col-md-12">
+                                                <input id="discover_password" type="text" name="discover_password" class="form-control" placeholder="<%= translate("enterPassword") %>" />
                                             </div>
 
-                                            <div class="col-md-12">
-                                                <input id="discover-email" type="text" class="form-control" placeholder="Enter Email" />
+                                            <div class="form-group col-md-12">
+                                                <input id="discover_address" type="text" name="discover_address" class="form-control" placeholder="<%= translate("enterAddress") %>" />
                                             </div>
-                                            <!-- <div class="col-md-12">
-                                                <input id="discover-funds" type="text" class="form-control" placeholder="Enter Funds" />
-                                            </div> -->
-                                            <div class="col-md-12">
-                                                <input id="discover-cc-number" type="text" class="form-control" placeholder="Enter Card Number" />
+
+                                            <div class="form-group col-md-12">
+                                                <input id="discover_phone" type="text" name="discover_phone" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="discover_email" type="text" name="discover_email" class="form-control" placeholder="<%= translate("enterEmail") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="discover_cc_number" type="text" name="discover_cc_number" class="form-control" placeholder="<%= translate("enterCardNumber") %>" />
                                             </div>
                                         </div>
                                         <div class="row ">
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > Expiry Month</span>
-                                                <input id="discover-exp-month" type="text" class="form-control" placeholder="MM" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryMonth") %></span>
+                                                <input id="discover_exp_month" name="discover_exp_month" type="text" class="form-control" placeholder="MM" />
                                             </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > Expiry Year</span>
-                                                <input id="discover-exp-year" type="text" class="form-control" placeholder="YY" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryYear") %></span>
+                                                <input id="discover_exp_year" name="discover_exp_year" type="text" class="form-control" placeholder="YY" />
                                             </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
                                                 <span class="help-block text-muted small-font" > CVC/CVV/CID</span>
-                                                <input id="discover-cc-cvc" type="text" class="form-control" placeholder="CVC/CVV/CID" />
+                                                <input id="discover_cc_cvc" name="discover_cc_cvc" type="text" class="form-control" placeholder="CVC/CVV/CID" />
                                             </div>
                                             
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
                                                 <i class="fa fa-credit-card fa-fw"></i>
                                             </div>
-                                            
                                         </div>
                                         
                                         <div class="row ">
-                                            <div class="col-md-12 pad-adjust">
-                                                <input id="discover-cc-name" type="text" class="form-control" placeholder="Name On The Card" />
+                                            <div class="form-group col-md-12 pad-adjust">
+                                                <input id="discover_cc_name" name="discover_cc_name" type="text" class="form-control" placeholder="<%= translate("nameOnTheCard") %>" />
                                             </div>
                                         </div>
                                         <div class="row">
@@ -401,68 +406,75 @@
                    
                                         <img src="static/images/discover.png" class="img-responsive">
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-panel hide" id="cc-3">
                             <div class="credit-card-div" style= "  margin-top: 0px;  margin-bottom: 0px; margin-right:0px; margin-left: 0px; overflow: hidden;">
                                 <div class="panel panel-default" >
-                                    <div class="panel-heading">
+
+
+                                    <form id="master-pay-form" class="panel-heading">
                                         <div class="row ">
 
+
+
                                             <!-- <div class="col-md-12">
-                                                <input id="master-merchant" type="text" class="form-control" placeholder="<%= translate("enterMerchant") %>" />
+                                                <input id="diners-merchant" type="text" class="form-control" placeholder="<%= translate("enterMerchant") %>" />
                                             </div> -->
 
-                                            <div class="col-md-12">
-                                                <input id="master-address" type="text" class="form-control" placeholder="<%= translate("enterAddress") %>" />
+                                            <div class="form-group col-md-12">
+                                                <input id="master_username" type="text" name="master_username" class="form-control" placeholder="<%= translate("enterUsername") %>" />
                                             </div>
 
-                                            <div class="col-md-12">
-                                                <input id="master-phone" type="text" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                            <div class="form-group col-md-12">
+                                                <input id="master_password" type="text" name="master_password" class="form-control" placeholder="<%= translate("enterPassword") %>" />
                                             </div>
 
-                                            <div class="col-md-12">
-                                                <input id="master-email" type="text" class="form-control" placeholder="Enter Email" />
+                                            <div class="form-group col-md-12">
+                                                <input id="master_address" type="text" name="master_address" class="form-control" placeholder="<%= translate("enterAddress") %>" />
                                             </div>
-                                            <!-- <div class="col-md-12">
-                                                <input id="master-funds" type="text" class="form-control" placeholder="Enter Funds" />
-                                            </div> -->
-                                            <div class="col-md-12">
-                                                <input id="master-cc-number" type="text" class="form-control" placeholder="Enter Card Number" />
+
+                                            <div class="form-group col-md-12">
+                                                <input id="master_phone" type="text" name="master_phone" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="master_email" type="text" name="master_email" class="form-control" placeholder="<%= translate("enterEmail") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="master_cc_number" type="text" name="master_cc_number" class="form-control" placeholder="<%= translate("enterCardNumber") %>" />
                                             </div>
                                         </div>
                                         <div class="row ">
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > Expiry Month</span>
-                                                <input id="master-exp-month" type="text" class="form-control" placeholder="MM" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryMonth") %></span>
+                                                <input id="master_exp_month" name="master_exp_month" type="text" class="form-control" placeholder="MM" />
                                             </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > Expiry Year</span>
-                                                <input id="master-exp-year" type="text" class="form-control" placeholder="YY" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryYear") %></span>
+                                                <input id="master_exp_year" name="master_exp_year" type="text" class="form-control" placeholder="YY" />
                                             </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > CVC</span>
-                                                <input id="master-cc-cvc" type="text" class="form-control" placeholder="CVC" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > CVC/CVV/CID</span>
+                                                <input id="master_cc_cvc" name="master_cc_cvc" type="text" class="form-control" placeholder="CVC/CVV/CID" />
                                             </div>
                                             
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
                                                 <i class="fa fa-credit-card fa-fw"></i>
                                             </div>
-                                            
                                         </div>
                                         
                                         <div class="row ">
-                                            <div class="col-md-12 pad-adjust">
-                                                <input id="master-cc-name" type="text" class="form-control" placeholder="Name On The Card" />
+                                            <div class="form-group col-md-12 pad-adjust">
+                                                <input id="master_cc_name" name="master_cc_name" type="text" class="form-control" placeholder="<%= translate("nameOnTheCard") %>" />
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-12 pad-adjust">
+                                            <div class="form-group col-md-12 pad-adjust">
                                                 <div class="checkbox">
                                                     <label>
-                                                        <input type="checkbox" checked class="text-muted"> I agree to the terms of service and privacy policy.
+                                                        <input type="checkbox" class="text-muted"> <%= translate("agreeTermsAndPrivacy") %>.
                                                     </label>
                                                 </div>
                                             </div>
@@ -479,68 +491,72 @@
                    
                                         <img src="static/images/mastercard.png" class="img-responsive">
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-panel hide" id="cc-4">
                             <div class="credit-card-div" style= "  margin-top: 0px;  margin-bottom: 0px; margin-right:0px; margin-left: 0px; overflow: hidden;">
                                 <div class="panel panel-default" >
-                                    <div class="panel-heading">
+
+                                    <form id="visa-pay-form" class="panel-heading">
                                         <div class="row ">
 
                                             <!-- <div class="col-md-12">
-                                                <input id="visa-merchant" type="text" class="form-control" placeholder="<%= translate("enterMerchant") %>" />
+                                                <input id="diners-merchant" type="text" class="form-control" placeholder="<%= translate("enterMerchant") %>" />
                                             </div> -->
 
-                                            <div class="col-md-12">
-                                                <input id="visa-address" type="text" class="form-control" placeholder="<%= translate("enterAddress") %>" />
+                                            <div class="form-group col-md-12">
+                                                <input id="visa_username" type="text" name="visa_username" class="form-control" placeholder="<%= translate("enterUsername") %>" />
                                             </div>
 
-                                            <div class="col-md-12">
-                                                <input id="visa-phone" type="text" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                            <div class="form-group col-md-12">
+                                                <input id="visa_password" type="text" name="visa_password" class="form-control" placeholder="<%= translate("enterPassword") %>" />
                                             </div>
 
-                                            <div class="col-md-12">
-                                                <input id="visa-email" type="text" class="form-control" placeholder="Enter Email" />
+                                            <div class="form-group col-md-12">
+                                                <input id="visa_address" type="text" name="visa_address" class="form-control" placeholder="<%= translate("enterAddress") %>" />
                                             </div>
-                                            <!-- <div class="col-md-12">
-                                                <input id="visa-funds" type="text" class="form-control" placeholder="Enter Funds" />
-                                            </div> -->
-                                            <div class="col-md-12">
-                                                <input id="visa-cc-number" type="text" class="form-control" placeholder="Enter Card Number" />
+
+                                            <div class="form-group col-md-12">
+                                                <input id="visa_phone" type="text" name="visa_phone" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="visa_email" type="text" name="visa_email" class="form-control" placeholder="<%= translate("enterEmail") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="visa_cc_number" type="text" name="visa_cc_number" class="form-control" placeholder="<%= translate("enterCardNumber") %>" />
                                             </div>
                                         </div>
                                         <div class="row ">
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > Expiry Month</span>
-                                                <input id="visa-exp-month" type="text" class="form-control" placeholder="MM" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryMonth") %></span>
+                                                <input id="visa_exp_month" name="visa_exp_month" type="text" class="form-control" placeholder="MM" />
                                             </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > Expiry Year</span>
-                                                <input id="visa-exp-year" type="text" class="form-control" placeholder="YY" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryYear") %></span>
+                                                <input id="visa_exp_year" name="visa_exp_year" type="text" class="form-control" placeholder="YY" />
                                             </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > CCV</span>
-                                                <input id="visa-cc-cvc" type="text" class="form-control" placeholder="CCV" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > CVC/CVV/CID</span>
+                                                <input id="visa_cc_cvc" name="visa_cc_cvc" type="text" class="form-control" placeholder="CVC/CVV/CID" />
                                             </div>
                                             
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
                                                 <i class="fa fa-credit-card fa-fw"></i>
                                             </div>
-                                            
                                         </div>
                                         
                                         <div class="row ">
-                                            <div class="col-md-12 pad-adjust">
-                                                <input id="visa-cc-name" type="text" class="form-control" placeholder="Name On The Card" />
+                                            <div class="form-group col-md-12 pad-adjust">
+                                                <input id="visa_cc_name" name="visa_cc_name" type="text" class="form-control" placeholder="<%= translate("nameOnTheCard") %>" />
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-12 pad-adjust">
+                                            <div class="form-group col-md-12 pad-adjust">
                                                 <div class="checkbox">
                                                     <label>
-                                                        <input type="checkbox" checked class="text-muted"> I agree to the terms of service and privacy policy.
+                                                        <input type="checkbox" class="text-muted"> <%= translate("agreeTermsAndPrivacy") %>.
                                                     </label>
                                                 </div>
                                             </div>
@@ -556,14 +572,88 @@
                                          <div class="container-fluid" style= "  margin-top: 0px;  margin-bottom: 0px; margin-right:0px; margin-left: 175px; overflow: hidden;">
                    
                                         <img src="static/images/visa.png" class="img-responsive">
-                                        </div> 
-                                    </div>
+                                        </div>
+
+                                    </form>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-panel hide" id="cc-5">
                             <div class="credit-card-div" style= "  margin-top: 0px;  margin-bottom: 0px; margin-right:0px; margin-left: 0px; overflow: hidden;">
                                 <div class="panel panel-default" >
+
+
+                                    <form id="amex-pay-form" class="panel-heading">
+                                        <div class="row ">
+
+                                            <div class="form-group col-md-12">
+                                                <input id="amex_username" type="text" name="amex_username" class="form-control" placeholder="<%= translate("enterUsername") %>" />
+                                            </div>
+
+                                            <div class="form-group col-md-12">
+                                                <input id="amex_password" type="text" name="amex_password" class="form-control" placeholder="<%= translate("enterPassword") %>" />
+                                            </div>
+
+                                            <div class="form-group col-md-12">
+                                                <input id="amex_address" type="text" name="amex_address" class="form-control" placeholder="<%= translate("enterAddress") %>" />
+                                            </div>
+
+                                            <div class="form-group col-md-12">
+                                                <input id="amex_phone" type="text" name="amex_phone" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="amex_email" type="text" name="amex_email" class="form-control" placeholder="<%= translate("enterEmail") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="amex_cc_number" type="text" name="amex_cc_number" class="form-control" placeholder="<%= translate("enterCardNumber") %>" />
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryMonth") %></span>
+                                                <input id="amex_exp_month" name="amex_exp_month" type="text" class="form-control" placeholder="MM" />
+                                            </div>
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryYear") %></span>
+                                                <input id="amex_exp_year" name="amex_exp_year" type="text" class="form-control" placeholder="YY" />
+                                            </div>
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > CVC/CVV/CID</span>
+                                                <input id="amex_cc_cvc" name="amex_cc_cvc" type="text" class="form-control" placeholder="CVC/CVV/CID" />
+                                            </div>
+                                            
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <i class="fa fa-credit-card fa-fw"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row ">
+                                            <div class="form-group col-md-12 pad-adjust">
+                                                <input id="amex_cc_name" name="amex_cc_name" type="text" class="form-control" placeholder="<%= translate("nameOnTheCard") %>" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col-md-12 pad-adjust">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" class="text-muted"> <%= translate("agreeTermsAndPrivacy") %>.
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                                <input type="submit" class="btn btn-primary cancel" value="CANCEL" />
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                                                <input id="amex-pay-btn" type="submit"  class="btn btn-primary " value="PAY NOW" />
+                                            </div>
+                                        </div>
+                                        <div class="container-fluid" style= "  margin-top: 0px;  margin-bottom: 0px; margin-right:0px; margin-left: 175px; overflow: hidden;">
+                   
+                                        <img src="static/images/americanexpress.png" class="img-responsive">
+                                        </div>
+                                    </form>
                                     <div class="panel-heading">
                                         <div class="row ">
                                             <!-- <div class="col-md-12">

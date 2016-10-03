@@ -368,25 +368,15 @@ fun.views.about = Backbone.View.extend({
 
     },
     payVisa: function(event){
-        console.log('pay visa');
-    },
-    payMaster: function(event){
-        console.log('pay master');
-
-    },
-    payDiscover: function(event){
-        console.log('pay discover');
-
-    },
-    payDiners: function(event){
         'use strict';
-        console.log('pay diners');
+        console.log('pay visa');
 
         var view = this, 
             rules,
             validationRules,
             validForm,
             stuff,
+            account,
             username,
             password,
             address,
@@ -401,6 +391,782 @@ fun.views.about = Backbone.View.extend({
             location,
             callbacks,
             callbackx,
+            membership,
+            message;
+
+        rules = {
+            rules: {
+                visa_username: {
+                    minlength: 2,
+                    required: true
+                },
+                visa_email: {
+                    required: true,
+                    email: true
+                },
+                visa_password: {
+                    minlength: 8,
+                    required: true
+                },
+                visa_address:{
+                    minlength: 8,
+                    required: true
+                },
+                visa_phone:{
+                    minlength: 10,
+                    required: true
+                },
+                visa_exp_month:{
+                    minlength: 2,
+                    required: true
+                },
+                visa_exp_year:{
+                    minlength: 4,
+                    required: true
+                },
+                visa_cc_number:{
+                    minlength: 16,
+                    required: true
+                },
+                visa_month:{
+                    minlength: 2,
+                    required: true
+                },
+                visa_year:{
+                    minlength: 4,
+                    required: true
+                },
+                visa_cc_cvc:{
+                    minlength: 3,
+                    required: true,
+                },
+                visa_cc_name:{
+                    minlength: 4,
+                    required: true
+                }
+            }
+        }
+        validationRules = $.extend(rules, fun.utils.validationRules);
+        $('#visa-pay-form').validate(validationRules);
+
+        location = window.location.hostname;
+
+        username = $('#visa_username'); 
+        password = $('#visa_password'); 
+        address = $('#visa_address'); 
+        phone = $('#visa_phone');
+        email = $('#visa_email');
+        card = $('#visa_cc_number');
+        month = $('#visa_exp_month');
+        year = $('#visa_exp_year');
+        cvc = $('#visa_cc_cvc');
+        name = $('#visa_cc_name');
+
+        stuff = {
+            "account": username.val(),
+            "password": password.val(),
+            "first_name": "Tech",
+            "last_name":"Support",
+            "address_one":address.val(),
+            "address_two":"24-7",
+            "city":"test",
+            "state":"FL",
+            "zip_code":"50685",
+            "email": email.val(),
+            "country": "US",
+            "date_of_birth": "23/05/1988",
+            "last_4_ssn": "2222",
+            "phone_number": phone.val(),
+            "card_type": "Visa",
+            "amount": "1",
+            "name_on_cc": name.val(),
+            "card_number": card.val(),
+            "exp_month": month.val(),
+            "exp_year": year.val(),
+            "cvv": cvc.val(),
+            "reference": chance.natural().toString()
+        };
+
+        callbacks = {
+            success: function(response){
+
+                message = response['attributes']['message'];
+
+                sessionStorage.setItem('membership', response['attributes']['membership']);
+                
+                if (message.indexOf('Approved') != -1) {
+
+                    var order = sessionStorage.getItem("order");
+
+                    if (order === 'three-months'){
+                        $('#trans-amount').html('$119.97');
+                        $('#period-trans').html('3 MONTHS');
+                    }
+
+                    else if (order === 'one-year'){
+                        $('#trans-amount').html('$399.99');
+                        $('#period-trans').html('Annual');
+                    }
+
+                    else if (order === 'one-month'){
+                        console.log('one-month');
+                        $('#trans-amount').html('$44.95');
+                        $('#period-trans').html('30 Days');
+                    }
+                    
+                    $('#processOrder').on('hidden.bs.modal', function(e){
+                        $('#processingTrans').modal('hide');
+                        $('#successTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+                    });
+
+                    callbackx = {
+                        success: function(){
+                            
+                            // login the created user
+                            fun.utils.login(stuff['account'], stuff['password'],
+                                {
+                                    success : function(xhr, status){
+
+                                        // currently this success call is never executed
+                                        // the success stuff is going on case 200 of the error function.
+                                        // Why? well... I really don't fucking know...
+
+                                        fun.utils.redirect(fun.conf.hash.home);
+                                    },
+                                    error : function(xhr, status, error){
+
+                                        switch(xhr.status) {
+                                            case 403:
+                                                var message = fun.utils.translate("usernameOrPasswordError");
+                                                break;
+                                            case 200:
+                                                // Check browser support
+                                                if (typeof(Storage) != "undefined") {
+                                                    // Store
+                                                    localStorage.setItem("username", stuff['account']);
+                                                }
+                                                fun.utils.redirect(fun.conf.hash.login);
+                                                break;
+                                            default:
+                                                console.log('the monkey is down');
+                                                break;
+                                        }
+                                    }
+                                }
+                            );
+                        },
+
+                        error: function(model, error){
+                            $('#processingTrans').modal('hide');
+                            // Catch duplicate errors or some random stuff
+                            signupError.removeClass("hide").addClass("show");
+                            // TODO: on error add class error and label to the input field
+                            if (error.responseText.indexOf('account') != -1){
+                                signupError.find('p').html('Username is already taken.');
+                            }
+                            else if (error.responseText.indexOf('email') != -1){
+                                signupError.find('p').html('Email is invalid or already taken.');
+                            }
+                            else {
+                                signupError.find('p').html('what daa!?');
+                            }
+                        }
+                    };
+                    
+                    //event.preventDefault();
+                    account = new fun.models.Account();
+                    account.save(
+                        {
+                            account: stuff['account'],
+                            password: stuff['password'],
+                            email: stuff['email'],
+
+                            // here we put the location from where this user is made.
+                            location: location,
+
+                            // occenture memberid
+                            membership: sessionStorage.getItem('membership')
+                        },
+                        callbackx
+                    );
+
+                    $('#processOrder').modal('hide');
+                }
+
+                else {
+                    console.log('error!');
+                }
+            },
+
+            error: function(model, error){
+                $('#processingTrans').modal('hide');
+                console.log(error);
+            }
+        };
+
+        // check for a valid form and create the new user account
+        validForm = $('#visa-pay-form').valid();
+        if (validForm){
+            event.preventDefault();
+            trans = new fun.models.Transaction();
+            trans.save(stuff, callbacks);
+            // no ?
+            $('#visa_username').val(''); 
+            $('#visa_password').val(''); 
+            $('#visa_address').val(''); 
+            $('#visa_phone').val('');
+            $('#visa_email').val('');
+            $('#visa_cc_number').val('');
+            $('#visa_exp_month').val('');
+            $('#visa_exp_year').val('');
+            $('#visa_cc_cvc').val('');
+            $('#visa_cc_name').val('');
+            // awww
+            $('#processingTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+        }
+    },
+    payMaster: function(event){
+        'use strict';
+        console.log('pay master');
+
+        var view = this, 
+            rules,
+            validationRules,
+            validForm,
+            stuff,
+            account,
+            username,
+            password,
+            address,
+            phone,
+            email,
+            trans,
+            card,
+            month,
+            year,
+            cvc,
+            name,
+            location,
+            callbacks,
+            callbackx,
+            membership,
+            message;
+
+        rules = {
+            rules: {
+                master_username: {
+                    minlength: 2,
+                    required: true
+                },
+                master_email: {
+                    required: true,
+                    email: true
+                },
+                master_password: {
+                    minlength: 8,
+                    required: true
+                },
+                master_address:{
+                    minlength: 8,
+                    required: true
+                },
+                master_phone:{
+                    minlength: 10,
+                    required: true
+                },
+                master_exp_month:{
+                    minlength: 2,
+                    required: true
+                },
+                master_exp_year:{
+                    minlength: 4,
+                    required: true
+                },
+                master_cc_number:{
+                    minlength: 16,
+                    required: true
+                },
+                master_month:{
+                    minlength: 2,
+                    required: true
+                },
+                master_year:{
+                    minlength: 4,
+                    required: true
+                },
+                master_cc_cvc:{
+                    minlength: 3,
+                    required: true,
+                },
+                master_cc_name:{
+                    minlength: 4,
+                    required: true
+                }
+            }
+        }
+        validationRules = $.extend(rules, fun.utils.validationRules);
+        $('#master-pay-form').validate(validationRules);
+
+        location = window.location.hostname;
+
+        username = $('#master_username'); 
+        password = $('#master_password'); 
+        address = $('#master_address'); 
+        phone = $('#master_phone');
+        email = $('#master_email');
+        card = $('#master_cc_number');
+        month = $('#master_exp_month');
+        year = $('#master_exp_year');
+        cvc = $('#master_cc_cvc');
+        name = $('#master_cc_name');
+
+        stuff = {
+            "account": username.val(),
+            "password": password.val(),
+            "first_name": "Tech",
+            "last_name":"Support",
+            "address_one":address.val(),
+            "address_two":"24-7",
+            "city":"test",
+            "state":"FL",
+            "zip_code":"50685",
+            "email": email.val(),
+            "country": "US",
+            "date_of_birth": "23/05/1988",
+            "last_4_ssn": "2222",
+            "phone_number": phone.val(),
+            "card_type": "Visa",
+            "amount": "1",
+            "name_on_cc": name.val(),
+            "card_number": card.val(),
+            "exp_month": month.val(),
+            "exp_year": year.val(),
+            "cvv": cvc.val(),
+            "reference": chance.natural().toString()
+        };
+
+        callbacks = {
+            success: function(response){
+
+                message = response['attributes']['message'];
+
+                sessionStorage.setItem('membership', response['attributes']['membership']);
+                
+                if (message.indexOf('Approved') != -1) {
+
+                    var order = sessionStorage.getItem("order");
+
+                    if (order === 'three-months'){
+                        $('#trans-amount').html('$119.97');
+                        $('#period-trans').html('3 MONTHS');
+                    }
+
+                    else if (order === 'one-year'){
+                        $('#trans-amount').html('$399.99');
+                        $('#period-trans').html('Annual');
+                    }
+
+                    else if (order === 'one-month'){
+                        console.log('one-month');
+                        $('#trans-amount').html('$44.95');
+                        $('#period-trans').html('30 Days');
+                    }
+                    
+                    $('#processOrder').on('hidden.bs.modal', function(e){
+                        $('#processingTrans').modal('hide');
+                        $('#successTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+                    });
+
+                    callbackx = {
+                        success: function(){
+                            
+                            // login the created user
+                            fun.utils.login(stuff['account'], stuff['password'],
+                                {
+                                    success : function(xhr, status){
+
+                                        // currently this success call is never executed
+                                        // the success stuff is going on case 200 of the error function.
+                                        // Why? well... I really don't fucking know...
+
+                                        fun.utils.redirect(fun.conf.hash.home);
+                                    },
+                                    error : function(xhr, status, error){
+
+                                        switch(xhr.status) {
+                                            case 403:
+                                                var message = fun.utils.translate("usernameOrPasswordError");
+                                                break;
+                                            case 200:
+                                                // Check browser support
+                                                if (typeof(Storage) != "undefined") {
+                                                    // Store
+                                                    localStorage.setItem("username", stuff['account']);
+                                                }
+                                                fun.utils.redirect(fun.conf.hash.login);
+                                                break;
+                                            default:
+                                                console.log('the monkey is down');
+                                                break;
+                                        }
+                                    }
+                                }
+                            );
+                        },
+
+                        error: function(model, error){
+                            $('#processingTrans').modal('hide');
+                            // Catch duplicate errors or some random stuff
+                            signupError.removeClass("hide").addClass("show");
+                            // TODO: on error add class error and label to the input field
+                            if (error.responseText.indexOf('account') != -1){
+                                signupError.find('p').html('Username is already taken.');
+                            }
+                            else if (error.responseText.indexOf('email') != -1){
+                                signupError.find('p').html('Email is invalid or already taken.');
+                            }
+                            else {
+                                signupError.find('p').html('what daa!?');
+                            }
+                        }
+                    };
+                    
+                    //event.preventDefault();
+                    account = new fun.models.Account();
+                    account.save(
+                        {
+                            account: stuff['account'],
+                            password: stuff['password'],
+                            email: stuff['email'],
+
+                            // here we put the location from where this user is made.
+                            location: location,
+
+                            // occenture memberid
+                            membership: sessionStorage.getItem('membership')
+                        },
+                        callbackx
+                    );
+
+                    $('#processOrder').modal('hide');
+                }
+
+                else {
+                    console.log('error!');
+                }
+            },
+
+            error: function(model, error){
+                $('#processingTrans').modal('hide');
+                console.log(error);
+            }
+        };
+
+        // check for a valid form and create the new user account
+        validForm = $('#master-pay-form').valid();
+        if (validForm){
+            event.preventDefault();
+            trans = new fun.models.Transaction();
+            trans.save(stuff, callbacks);
+            // no ?
+            $('#master_username').val(''); 
+            $('#master_password').val(''); 
+            $('#master_address').val(''); 
+            $('#master_phone').val('');
+            $('#master_email').val('');
+            $('#master_cc_number').val('');
+            $('#master_exp_month').val('');
+            $('#master_exp_year').val('');
+            $('#master_cc_cvc').val('');
+            $('#master_cc_name').val('');
+            // awww
+            $('#processingTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+        }
+
+    },
+    payDiscover: function(event){
+        'use strict';
+        console.log('pay discover');
+
+        var view = this, 
+            rules,
+            validationRules,
+            validForm,
+            stuff,
+            account,
+            username,
+            password,
+            address,
+            phone,
+            email,
+            trans,
+            card,
+            month,
+            year,
+            cvc,
+            name,
+            location,
+            callbacks,
+            callbackx,
+            membership,
+            message;
+
+        rules = {
+            rules: {
+                discover_username: {
+                    minlength: 2,
+                    required: true
+                },
+                discover_email: {
+                    required: true,
+                    email: true
+                },
+                discover_password: {
+                    minlength: 8,
+                    required: true
+                },
+                discover_address:{
+                    minlength: 8,
+                    required: true
+                },
+                discover_phone:{
+                    minlength: 10,
+                    required: true
+                },
+                discover_exp_month:{
+                    minlength: 2,
+                    required: true
+                },
+                discover_exp_year:{
+                    minlength: 4,
+                    required: true
+                },
+                discover_cc_number:{
+                    minlength: 16,
+                    required: true
+                },
+                discover_month:{
+                    minlength: 2,
+                    required: true
+                },
+                discover_year:{
+                    minlength: 4,
+                    required: true
+                },
+                discover_cc_cvc:{
+                    minlength: 3,
+                    required: true,
+                },
+                discover_cc_name:{
+                    minlength: 4,
+                    required: true
+                }
+            }
+        }
+        validationRules = $.extend(rules, fun.utils.validationRules);
+        $('#discover-pay-form').validate(validationRules);
+
+        location = window.location.hostname;
+
+        username = $('#discover_username'); 
+        password = $('#discover_password'); 
+        address = $('#discover_address'); 
+        phone = $('#discover_phone');
+        email = $('#discover_email');
+        card = $('#discover_cc_number');
+        month = $('#discover_exp_month');
+        year = $('#discover_exp_year');
+        cvc = $('#discover_cc_cvc');
+        name = $('#discover_cc_name');
+
+        stuff = {
+            "account": username.val(),
+            "password": password.val(),
+            "first_name": "Tech",
+            "last_name":"Support",
+            "address_one":address.val(),
+            "address_two":"24-7",
+            "city":"test",
+            "state":"FL",
+            "zip_code":"50685",
+            "email": email.val(),
+            "country": "US",
+            "date_of_birth": "23/05/1988",
+            "last_4_ssn": "2222",
+            "phone_number": phone.val(),
+            "card_type": "Visa",
+            "amount": "1",
+            "name_on_cc": name.val(),
+            "card_number": card.val(),
+            "exp_month": month.val(),
+            "exp_year": year.val(),
+            "cvv": cvc.val(),
+            "reference": chance.natural().toString()
+        };
+
+        callbacks = {
+            success: function(response){
+
+                message = response['attributes']['message'];
+
+                sessionStorage.setItem('membership', response['attributes']['membership']);
+                
+                if (message.indexOf('Approved') != -1) {
+
+                    var order = sessionStorage.getItem("order");
+
+                    if (order === 'three-months'){
+                        $('#trans-amount').html('$119.97');
+                        $('#period-trans').html('3 MONTHS');
+                    }
+
+                    else if (order === 'one-year'){
+                        $('#trans-amount').html('$399.99');
+                        $('#period-trans').html('Annual');
+                    }
+
+                    else if (order === 'one-month'){
+                        console.log('one-month');
+                        $('#trans-amount').html('$44.95');
+                        $('#period-trans').html('30 Days');
+                    }
+                    
+                    $('#processOrder').on('hidden.bs.modal', function(e){
+                        $('#processingTrans').modal('hide');
+                        $('#successTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+                    });
+
+                    callbackx = {
+                        success: function(){
+                            
+                            // login the created user
+                            fun.utils.login(stuff['account'], stuff['password'],
+                                {
+                                    success : function(xhr, status){
+
+                                        // currently this success call is never executed
+                                        // the success stuff is going on case 200 of the error function.
+                                        // Why? well... I really don't fucking know...
+
+                                        fun.utils.redirect(fun.conf.hash.home);
+                                    },
+                                    error : function(xhr, status, error){
+
+                                        switch(xhr.status) {
+                                            case 403:
+                                                var message = fun.utils.translate("usernameOrPasswordError");
+                                                break;
+                                            case 200:
+                                                // Check browser support
+                                                if (typeof(Storage) != "undefined") {
+                                                    // Store
+                                                    localStorage.setItem("username", stuff['account']);
+                                                }
+                                                fun.utils.redirect(fun.conf.hash.login);
+                                                break;
+                                            default:
+                                                console.log('the monkey is down');
+                                                break;
+                                        }
+                                    }
+                                }
+                            );
+                        },
+
+                        error: function(model, error){
+                            $('#processingTrans').modal('hide');
+                            // Catch duplicate errors or some random stuff
+                            signupError.removeClass("hide").addClass("show");
+                            // TODO: on error add class error and label to the input field
+                            if (error.responseText.indexOf('account') != -1){
+                                signupError.find('p').html('Username is already taken.');
+                            }
+                            else if (error.responseText.indexOf('email') != -1){
+                                signupError.find('p').html('Email is invalid or already taken.');
+                            }
+                            else {
+                                signupError.find('p').html('what daa!?');
+                            }
+                        }
+                    };
+                    
+                    //event.preventDefault();
+                    account = new fun.models.Account();
+                    account.save(
+                        {
+                            account: stuff['account'],
+                            password: stuff['password'],
+                            email: stuff['email'],
+
+                            // here we put the location from where this user is made.
+                            location: location,
+
+                            // occenture memberid
+                            membership: sessionStorage.getItem('membership')
+                        },
+                        callbackx
+                    );
+
+                    $('#processOrder').modal('hide');
+                }
+
+                else {
+                    console.log('error!');
+                }
+            },
+
+            error: function(model, error){
+                $('#processingTrans').modal('hide');
+                console.log(error);
+            }
+        };
+
+        // check for a valid form and create the new user account
+        validForm = $('#discover-pay-form').valid();
+        if (validForm){
+            event.preventDefault();
+            trans = new fun.models.Transaction();
+            trans.save(stuff, callbacks);
+            // no ?
+            $('#discover_username').val(''); 
+            $('#discover_password').val(''); 
+            $('#discover_address').val(''); 
+            $('#discover_phone').val('');
+            $('#discover_email').val('');
+            $('#discover_cc_number').val('');
+            $('#discover_exp_month').val('');
+            $('#discover_exp_year').val('');
+            $('#discover_cc_cvc').val('');
+            $('#discover_cc_name').val('');
+            // awww
+            $('#processingTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+        }
+    },
+    payDiners: function(event){
+        'use strict';
+        console.log('pay diners');
+
+        var view = this, 
+            rules,
+            validationRules,
+            validForm,
+            stuff,
+            account,
+            username,
+            password,
+            address,
+            phone,
+            email,
+            trans,
+            card,
+            month,
+            year,
+            cvc,
+            name,
+            location,
+            callbacks,
+            callbackx,
+            membership,
             message;
 
         rules = {
@@ -422,7 +1188,7 @@ fun.views.about = Backbone.View.extend({
                     required: true
                 },
                 diners_phone:{
-                    minlength: 8,
+                    minlength: 10,
                     required: true
                 },
                 diners_exp_month:{
@@ -620,7 +1386,18 @@ fun.views.about = Backbone.View.extend({
             event.preventDefault();
             trans = new fun.models.Transaction();
             trans.save(stuff, callbacks);
-
+            // no ?
+            $('#diners_username').val(''); 
+            $('#diners_password').val(''); 
+            $('#diners_address').val(''); 
+            $('#diners_phone').val('');
+            $('#diners_email').val('');
+            $('#diners_cc_number').val('');
+            $('#diners_exp_month').val('');
+            $('#diners_exp_year').val('');
+            $('#diners_cc_cvc').val('');
+            $('#diners_cc_name').val('');
+            // awww
             $('#processingTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
         }
     }, 
