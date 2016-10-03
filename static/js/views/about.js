@@ -400,6 +400,7 @@ fun.views.about = Backbone.View.extend({
             name,
             location,
             callbacks,
+            callbackx,
             message;
 
         rules = {
