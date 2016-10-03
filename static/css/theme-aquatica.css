@@ -1,5 +1,5 @@
 .bg-primary {
-  background-color: #315FAC !important;
+  background-color: #231f20 !important;
 }
 .bg-secondary-1 {
   background-color: #535753 !important;
@@ -97,8 +97,8 @@ h5,
 h5,
 h6 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  color: #333333;
+  font-weight: 500;
+  color: #231f20;
   margin: 0px;
 }
 .alt-font {
@@ -329,24 +329,25 @@ section:nth-of-type(even) {
 .btn:hover {
   background: none;
   color: #fff;
-  border-color: #315FAC;
-  background-color: #315FAC;
+  border-color: #767777;
+  background-color: #767777;
 }
-.btn-primary {
+.btn-primary
+ {
   border-radius: 25px !important;
   display: inline-block;
   padding: 14px 28px 13px 28px;
   line-height: 1;
-  border: 2px solid #315FAC;
+  border: 3px solid #9E1620;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #315FAC;
+  color: #231f20;
 }
 .btn-primary.btn-filled {
-  background: #315FAC;
+  background: ;
   color: #fff;
 }
 .btn-white {
@@ -393,13 +394,13 @@ section:nth-of-type(even) {
 .link-text {
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 2px solid #315FAC;
+  border-bottom: 2px solid #9E1620;
   display: inline-block;
   padding-bottom: 0px;
-  color: #315FAC;
+  color: #9E1620;
 }
 nav hr {
   border: none;
@@ -437,10 +438,9 @@ nav hr {
   top: 0;
 }
 .top-bar .logo {
-  max-width: 250px;
-    max-height: 250px;
-    position: relative;
-    margin:5px;
+  max-width: 200px;
+  position: relative;
+  margin:5px;
     
 }
 .logo.logo-wide {
@@ -521,7 +521,7 @@ nav hr {
     transition: all .5s ease;
     padding-left: 60px;
     display: inline-block;
-    line-height: 42px;
+    line-height: 62px;
     margin-left: 65px;
     margin-right: -60px;;
 }
@@ -1485,7 +1485,7 @@ img.phone-portrait {
   border-bottom: 2px solid #dadada;
 }
 .accordion .title:hover {
-  background-color: #315FAC;
+  background-color: #767777;
   color: #fff;
 }
 .accordion li:last-child .title,
@@ -1502,7 +1502,7 @@ img.phone-portrait {
   opacity: 0;
 }
 .accordion li.active .title {
-  background-color: #315FAC;
+  background-color: #767777;
   color: #fff;
   border-bottom: 2px solid #dadada;
 }
@@ -2304,8 +2304,8 @@ input[type="submit"] {
   display: inline-block;
   padding: 14px 28px 13px 28px;
   line-height: 1;
-  border: 2px solid #315FAC;
-  color: #315FAC;
+  
+  
   max-width: 155px;
   font-family: "Raleway", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -2323,6 +2323,7 @@ input[type="submit"] {
 .contact-center .form-wrapper {
   text-align: center;
   margin-top: 48px;
+  margin-bottom: 48px;
 }
 .contact-photo {
   position: relative;
@@ -2366,8 +2367,8 @@ input[type="submit"] {
   margin-bottom: 30px;
 }
 .photo-form-wrapper .btn-filled {
-  background-color: #315FAC;
-  border-color: #315FAC;
+  background-color: ;
+  border-color: ;
 }
 .photo-form-wrapper input:focus {
   outline: none;
@@ -2699,8 +2700,8 @@ iframe.mail-list-form {
   display: none !important;
 }
 footer {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 footer.social h1 {
   margin-bottom: 24px;
@@ -2799,7 +2800,7 @@ footer.short-2 .contact-action {
   right: 0px;
   height: 100%;
   width: 25%;
-  background:  #2A4FC5;
+  background:#4f5051;
   z-index: 3;
   top: 0;
   text-align: center;
@@ -2817,7 +2818,7 @@ footer.short-2 .contact-action .arrow_right {
   top: 2px;
 }
 footer.short-2 .contact-action:hover {
-  background: #3160AC;
+  background: #231f20;
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .top-bar {
@@ -4121,7 +4122,8 @@ footer.short-2 .contact-action:hover {
     margin-top: 0;
   }
 }
-.elements h1 {
+.elements
+ h1 {
   margin-bottom: 16px;
 }
 .pagination li a {

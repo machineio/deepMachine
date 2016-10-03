@@ -1,3 +1,4 @@
+
 .m-t-10 {
   margin-top: 10px;
 }
@@ -321,7 +322,7 @@
 
 .photo-form-wrapper form input[type="button"] {
   max-width: none !important;
-  color: #FFFFFF !important;
+  color: #231f20 !important;
 }
 
 .blog-masonry {
@@ -793,7 +794,8 @@ body {
 }
 
 #user-plans {
-    color:#2A9EC5;
+    color:
+    ;
 }
 
 
@@ -965,7 +967,7 @@ body {
 /* Wrapper for page content to push down footer */
 label.error {
     background-color: transparent !important;
-    color: #da547b;
+    color: #9e1c20;
 }
 
 input.error::-webkit-input-placeholder {
@@ -1036,7 +1038,7 @@ input.error:-ms-input-placeholder {
 }
 ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-    background-color: #587d38;
+    background-color: #9E1620;
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
 

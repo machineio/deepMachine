@@ -26,7 +26,7 @@ fun.views.contacts = Backbone.View.extend({
     initialize: function(options){
         fun.containers.contacts = this.$el;
 
-        fun.omnibus.on("add:contact", function(){
+        fun.messages.on("add:contact", function(){
             this.updateResourceInfo();
         }, this);
     },
@@ -353,7 +353,7 @@ fun.views.contacts = Backbone.View.extend({
             view.$('#contact_last_name').val('');
             view.$('#new-phone-number').val('');
             view.$('#new-email').val('');
-            fun.omnibus.trigger("add:contact");
+            fun.messages.trigger("add:contact");
         }
     },
 
