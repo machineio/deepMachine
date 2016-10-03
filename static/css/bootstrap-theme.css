@@ -68,7 +68,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2a9ec5', endColorstr='#ff2a9ec5', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #2b669a;
+  border-color: #767777;
 }
 .btn-primary:hover,
 .btn-primary:focus {
@@ -78,7 +78,7 @@
 .btn-primary:active,
 .btn-primary.active {
   background-color: #767777;
-  border-color: #2b669a;
+  border-color: #767777;
 }
 .btn-primary:disabled,
 .btn-primary[disabled] {
