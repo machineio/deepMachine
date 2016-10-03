@@ -257,39 +257,39 @@
                                             </div> -->
 
                                             <div class="form-group col-md-12">
-                                                <input id="diners_username" type="text" class="form-control" placeholder="<%= translate("enterUsername") %>" />
+                                                <input id="diners_username" type="text" name="diners_username" class="form-control" placeholder="<%= translate("enterUsername") %>" />
                                             </div>
 
                                             <div class="form-group col-md-12">
-                                                <input id="diners_password" type="text" class="form-control" placeholder="<%= translate("enterPassword") %>" />
+                                                <input id="diners_password" type="text" name="diners_password" class="form-control" placeholder="<%= translate("enterPassword") %>" />
                                             </div>
 
                                             <div class="form-group col-md-12">
-                                                <input id="diners_address" type="text" class="form-control" placeholder="<%= translate("enterAddress") %>" />
+                                                <input id="diners_address" type="text" name="diners_address" class="form-control" placeholder="<%= translate("enterAddress") %>" />
                                             </div>
 
                                             <div class="form-group col-md-12">
-                                                <input id="diners_phone" type="text" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                                <input id="diners_phone" type="text" name="diners_phone" class="form-control" placeholder="<%= translate("enterPhone") %>" />
                                             </div>
                                             <div class="form-group col-md-12">
-                                                <input id="diners_email" type="text" class="form-control" placeholder="<%= translate("enterEmail") %>" />
+                                                <input id="diners_email" type="text" name="diners_email" class="form-control" placeholder="<%= translate("enterEmail") %>" />
                                             </div>
                                             <div class="form-group col-md-12">
-                                                <input id="diners_cc_number" type="text" class="form-control" placeholder="<%= translate("enterCardNumber") %>" />
+                                                <input id="diners_cc_number" type="text" name="dinners_cc_number" class="form-control" placeholder="<%= translate("enterCardNumber") %>" />
                                             </div>
                                         </div>
                                         <div class="row ">
                                             <div class="form-group col-md-3 col-sm-3 col-xs-3">
                                                 <span class="help-block text-muted small-font" > <%= translate("expiryMonth") %></span>
-                                                <input id="diners_exp_month" type="text" class="form-control" placeholder="MM" />
+                                                <input id="diners_exp_month" name="diners_exp_month" type="text" class="form-control" placeholder="MM" />
                                             </div>
                                             <div class="form-group col-md-3 col-sm-3 col-xs-3">
                                                 <span class="help-block text-muted small-font" > <%= translate("expiryYear") %></span>
-                                                <input id="diners_exp_year" type="text" class="form-control" placeholder="YY" />
+                                                <input id="diners_exp_year" name="diners_exp_year" type="text" class="form-control" placeholder="YY" />
                                             </div>
                                             <div class="form-group col-md-3 col-sm-3 col-xs-3">
                                                 <span class="help-block text-muted small-font" > CVC/CVV/CID</span>
-                                                <input id="diners_cc_cvc" type="text" class="form-control" placeholder="CVC/CVV/CID" />
+                                                <input id="diners_cc_cvc" name="diners_cc_cvc" type="text" class="form-control" placeholder="CVC/CVV/CID" />
                                             </div>
                                             
                                             <div class="form-group col-md-3 col-sm-3 col-xs-3">
@@ -299,14 +299,14 @@
                                         
                                         <div class="row ">
                                             <div class="form-group col-md-12 pad-adjust">
-                                                <input id="diners_cc_name" type="text" class="form-control" placeholder="<%= translate("nameOnTheCard") %>" />
+                                                <input id="diners_cc_name" name="diners_cc_name" type="text" class="form-control" placeholder="<%= translate("nameOnTheCard") %>" />
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="form-group col-md-12 pad-adjust">
                                                 <div class="checkbox">
                                                     <label>
-                                                        <input type="checkbox" checked class="text-muted"> <%= translate("agreeTermsAndPrivacy") %>.
+                                                        <input type="checkbox" class="text-muted"> <%= translate("agreeTermsAndPrivacy") %>.
                                                     </label>
                                                 </div>
                                             </div>
