@@ -378,31 +378,85 @@ fun.views.about = Backbone.View.extend({
         console.log('pay discover');
 
     },
-    payDiners: function(event){ 
+    payDiners: function(event){
+        'use strict';
         console.log('pay diners');
 
-        var stuff, address, phone, email, card, month, year, cvc, name, location, callbacks, message;
+        var view, rules, validationRules, validForm, stuff, address, phone, email, card, month, year, cvc, name, location, callbacks, message;
+        view = this;
+
+        rules = {
+            rules: {
+                diners_username: {
+                    minlength: 2,
+                    required: true
+                },
+                diners_email: {
+                    required: true,
+                    email: true
+                },
+                diners_password: {
+                    minlength: 8,
+                    required: true
+                },
+                diners_address:{
+                    minlength: 8,
+                    required: true
+                },
+                diners_phone:{
+                    minlength: 8,
+                    required: true
+                },
+                diners_cc_number:{
+                    minlength: 16,
+                    required: true
+                },
+                diners_month:{
+                    minlength: 2,
+                    required: true
+                },
+                diners_year:{
+                    minlength: 4,
+                    required: true
+                },
+                diners_cc_cvc:{
+                    minlength: 3
+                    required true,
+                },
+                diners_cc_name:{
+                    minlength: 4,
+                    required: true
+                }
+            }
+        }
+        validationRules = $.extend(rules, fun.utils.validationRules);
+        $('#diners-pay-form').validate(validationRules);
+
+
+        this.dinersUsername = this.$('#diners-username');
+        this.dinersPassword = this.$('#diners-password');
+        this.dinersAddress = this.$('#diners-address');
+        this.dinersPhone = this.$('#diners-phone');
+        this.dinersEmail = this.$('#diners-email');
+        this.dinersCard = this.$('#diners-cc-number');
+        this.dinersMonth = this.$('#diners-exp-month');
+        this.dinersYear = this.$('#diners-exp-year');
+        this.dinersCvc = this.$('#diners-cc-cvc');
+        this.dinersName = this.$('#diners-cc-name');
+
 
         location = window.location.hostname;
 
+
         username = $('#diners-username'); 
-
         password = $('#diners-password'); 
-
         address = $('#diners-address'); 
-        
         phone = $('#diners-phone');
-
         email = $('#diners-email');
-
         card = $('#diners-cc-number');
-
         month = $('#diners-exp-month');
-
         year = $('#diners-exp-year');
-
         cvc = $('#diners-cc-cvc');
-
         name = $('#diners-cc-name');
 
         stuff = {
