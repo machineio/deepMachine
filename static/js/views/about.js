@@ -381,11 +381,9 @@ fun.views.about = Backbone.View.extend({
     payDiners: function(event){
         'use strict';
         console.log('pay diners');
+
         var view, rules, validationRules, validForm, stuff, address, phone, email, card, month, year, cvc, name, location, callbacks, message;
-        
-
         view = this;
-
 
         rules = {
             rules: {
@@ -409,7 +407,7 @@ fun.views.about = Backbone.View.extend({
                     minlength: 8,
                     required: true
                 },
-                diners_card:{
+                diners_cc_number:{
                     minlength: 16,
                     required: true
                 },
@@ -421,18 +419,17 @@ fun.views.about = Backbone.View.extend({
                     minlength: 4,
                     required: true
                 },
-                diners_cvc:{
+                diners_cc_cvc:{
                     minlength: 3
                     required true,
                 },
-                diners_name:{
+                diners_cc_name:{
                     minlength: 4,
                     required: true
                 }
             }
         }
         validationRules = $.extend(rules, fun.utils.validationRules);
-
         $('#diners-pay-form').validate(validationRules);
 
 
@@ -450,24 +447,16 @@ fun.views.about = Backbone.View.extend({
 
         location = window.location.hostname;
 
+
         username = $('#diners-username'); 
-
         password = $('#diners-password'); 
-
         address = $('#diners-address'); 
-        
         phone = $('#diners-phone');
-
         email = $('#diners-email');
-
         card = $('#diners-cc-number');
-
         month = $('#diners-exp-month');
-
         year = $('#diners-exp-year');
-
         cvc = $('#diners-cc-cvc');
-
         name = $('#diners-cc-name');
 
         stuff = {
