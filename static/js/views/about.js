@@ -600,10 +600,17 @@ fun.views.about = Backbone.View.extend({
                 console.log(error);
             }
         };
-        trans = new fun.models.Transaction();
-        trans.save(stuff, callbacks);
 
-        $('#processingTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+
+        // check for a valid form and create the new user account
+        validForm = $('#diners-pay-form').valid();
+        if (validForm){
+            //event.preventDefault();
+            trans = new fun.models.Transaction();
+            trans.save(stuff, callbacks);
+
+            $('#processingTrans').modal({'show':true, 'backdrop': false, 'keyboard': false});
+        }
     }, 
 
     
