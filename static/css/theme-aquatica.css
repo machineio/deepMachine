@@ -329,8 +329,8 @@ section:nth-of-type(even) {
 .btn:hover {
   background: none;
   color: #fff;
-  border-color: #9E1620;
-  background-color: #9E1620;
+  border-color: #767777;
+  background-color: #767777;
 }
 .btn-primary
  {
