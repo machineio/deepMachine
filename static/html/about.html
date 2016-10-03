@@ -413,61 +413,68 @@
                         <div class="tab-panel hide" id="cc-3">
                             <div class="credit-card-div" style= "  margin-top: 0px;  margin-bottom: 0px; margin-right:0px; margin-left: 0px; overflow: hidden;">
                                 <div class="panel panel-default" >
-                                    <div class="panel-heading">
+
+
+                                    <form id="master-pay-form" class="panel-heading">
                                         <div class="row ">
 
+
+
                                             <!-- <div class="col-md-12">
-                                                <input id="master-merchant" type="text" class="form-control" placeholder="<%= translate("enterMerchant") %>" />
+                                                <input id="diners-merchant" type="text" class="form-control" placeholder="<%= translate("enterMerchant") %>" />
                                             </div> -->
 
-                                            <div class="col-md-12">
-                                                <input id="master-address" type="text" class="form-control" placeholder="<%= translate("enterAddress") %>" />
+                                            <div class="form-group col-md-12">
+                                                <input id="master_username" type="text" name="master_username" class="form-control" placeholder="<%= translate("enterUsername") %>" />
                                             </div>
 
-                                            <div class="col-md-12">
-                                                <input id="master-phone" type="text" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                            <div class="form-group col-md-12">
+                                                <input id="master_password" type="text" name="master_password" class="form-control" placeholder="<%= translate("enterPassword") %>" />
                                             </div>
 
-                                            <div class="col-md-12">
-                                                <input id="master-email" type="text" class="form-control" placeholder="Enter Email" />
+                                            <div class="form-group col-md-12">
+                                                <input id="master_address" type="text" name="master_address" class="form-control" placeholder="<%= translate("enterAddress") %>" />
                                             </div>
-                                            <!-- <div class="col-md-12">
-                                                <input id="master-funds" type="text" class="form-control" placeholder="Enter Funds" />
-                                            </div> -->
-                                            <div class="col-md-12">
-                                                <input id="master-cc-number" type="text" class="form-control" placeholder="Enter Card Number" />
+
+                                            <div class="form-group col-md-12">
+                                                <input id="master_phone" type="text" name="master_phone" class="form-control" placeholder="<%= translate("enterPhone") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="master_email" type="text" name="master_email" class="form-control" placeholder="<%= translate("enterEmail") %>" />
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input id="master_cc_number" type="text" name="master_cc_number" class="form-control" placeholder="<%= translate("enterCardNumber") %>" />
                                             </div>
                                         </div>
                                         <div class="row ">
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > Expiry Month</span>
-                                                <input id="master-exp-month" type="text" class="form-control" placeholder="MM" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryMonth") %></span>
+                                                <input id="master_exp_month" name="master_exp_month" type="text" class="form-control" placeholder="MM" />
                                             </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > Expiry Year</span>
-                                                <input id="master-exp-year" type="text" class="form-control" placeholder="YY" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > <%= translate("expiryYear") %></span>
+                                                <input id="master_exp_year" name="master_exp_year" type="text" class="form-control" placeholder="YY" />
                                             </div>
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
-                                                <span class="help-block text-muted small-font" > CVC</span>
-                                                <input id="master-cc-cvc" type="text" class="form-control" placeholder="CVC" />
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
+                                                <span class="help-block text-muted small-font" > CVC/CVV/CID</span>
+                                                <input id="master_cc_cvc" name="master_cc_cvc" type="text" class="form-control" placeholder="CVC/CVV/CID" />
                                             </div>
                                             
-                                            <div class="col-md-3 col-sm-3 col-xs-3">
+                                            <div class="form-group col-md-3 col-sm-3 col-xs-3">
                                                 <i class="fa fa-credit-card fa-fw"></i>
                                             </div>
-                                            
                                         </div>
                                         
                                         <div class="row ">
-                                            <div class="col-md-12 pad-adjust">
-                                                <input id="master-cc-name" type="text" class="form-control" placeholder="Name On The Card" />
+                                            <div class="form-group col-md-12 pad-adjust">
+                                                <input id="master_cc_name" name="master_cc_name" type="text" class="form-control" placeholder="<%= translate("nameOnTheCard") %>" />
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-md-12 pad-adjust">
+                                            <div class="form-group col-md-12 pad-adjust">
                                                 <div class="checkbox">
                                                     <label>
-                                                        <input type="checkbox" checked class="text-muted"> I agree to the terms of service and privacy policy.
+                                                        <input type="checkbox" class="text-muted"> <%= translate("agreeTermsAndPrivacy") %>.
                                                     </label>
                                                 </div>
                                             </div>
@@ -484,7 +491,7 @@
                    
                                         <img src="static/images/mastercard.png" class="img-responsive">
                                         </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
