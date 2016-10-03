@@ -212,6 +212,7 @@ fun.views.about = Backbone.View.extend({
     },
 
     cancelPayment: function(event){
+        event.preventDefault();
         console.log('cancel payment');
         $('#processOrder').modal('hide');
     },
