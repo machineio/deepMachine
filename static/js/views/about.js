@@ -1231,6 +1231,9 @@ fun.views.about = Backbone.View.extend({
                 discover_cc_name:{
                     minlength: 4,
                     required: true
+                },
+                discover_agree_terms:{
+                    required: true
                 }
             }
         }
@@ -1489,6 +1492,9 @@ fun.views.about = Backbone.View.extend({
                 diners_cc_name:{
                     minlength: 4,
                     required: true
+                },
+                diners_agree_terms:{
+                    required:true
                 }
             }
         }
